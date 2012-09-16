@@ -1,10 +1,9 @@
 package com.dmide.plugins;
 
 /**
- * @author Adolph C.
+ * The abstract plugin class is used by the Plugin Manager to extend the IDE.
  *
- *         The abstract plugin class is used by the Plugin Manager to extend the
- *         IDE.
+ * @author Adolph C.
  */
 public abstract class AbstractPlugin {
 	/**
@@ -45,7 +44,9 @@ public abstract class AbstractPlugin {
 
 	/**
 	 * Used to process events sent by the PluginContainer, or other plugins.
-	 * @param evt the event that was passed.
+	 *
+	 * @param evt
+	 *            the event that was passed.
 	 */
 	public abstract void pluginEvent(PluginEvent evt);
 }

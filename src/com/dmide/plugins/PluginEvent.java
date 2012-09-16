@@ -2,6 +2,7 @@ package com.dmide.plugins;
 
 /**
  * Events passed to plugins for processing.
+ *
  * @author Adolph C.
  *
  */
@@ -28,11 +29,11 @@ public class PluginEvent {
 
 	/**
 	 * @param referenceClass
-	 * @return the argument of this PluginEvent as an instance of the Reference Class,
-	 *         if the arg cannot be casted correctly, null is returned.
+	 * @return the argument of this PluginEvent as an instance of the Reference
+	 *         Class, if the arg cannot be casted correctly, null is returned.
 	 */
 	public <T> T getArgument(Class<T> referenceClass) {
-		if(referenceClass.isInstance(this.arg)) {
+		if (referenceClass.isInstance(this.arg)) {
 			return referenceClass.cast(this.arg);
 		} else {
 			return null;
@@ -40,8 +41,8 @@ public class PluginEvent {
 	}
 
 	/**
-	 * @return whether of not this event has been handled, if true, the plugin container
-	 *         will no longer pass this event to other plugins.
+	 * @return whether of not this event has been handled, if true, the plugin
+	 *         container will no longer pass this event to other plugins.
 	 */
 	public boolean isHandled() {
 		return this.handled;
@@ -53,6 +54,5 @@ public class PluginEvent {
 	public void setHandled(boolean handled) {
 		this.handled = handled;
 	}
-
 
 }

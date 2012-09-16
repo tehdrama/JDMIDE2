@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- The above is not important. -->
+<bundle>
+	<!-- Text Content: The name of the bundle: -->
+	<name>Example Bundle</name>
+	
+	<!-- The author if this plugin. -->
+	<author>ExPixel</author>
+	
+	<!--
+		Text Content:	The version as text. Not too important
+						but it allows more descriptive versioning.
+		Attributes:
+			int: The version if this bundle as an integer.
+	  -->
+	<version int="1">1.0.1</version>
+	
+	<!-- 
+		A bundle can have as many dependencies as it needs.
+		
+		Text Content:	The reference name of bundle that must be included
+						for this plugin to work. A reference name is the simple
+						author name followed by a period and then the simple
+						name of the bundle. e.g. "expixel.testplugin"
+	 -->
+	<dependency>expixel.testplugin</dependency>
+	
+	<!-- 
+		Text Content:	Relative path to a jar file (actual plugin) included in this
+						bundle. Like dependencies, you may add as many as you need.
+	 -->
+	<include>jars/example-plugin.jar</include>
+</bundle>

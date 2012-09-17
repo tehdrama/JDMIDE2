@@ -4,10 +4,13 @@ import java.io.File;
 import java.io.IOException;
 
 import com.dmide.plugins.PluginManager;
+import com.dmide.ui.DMIDEUI;
 
 public class DMIDEMain {
 	static PluginManager pluginManager;
 	static File pluginLookUp;
+
+	DMIDEUI uiInstance;
 
 	public static void main(String[] args) {
 		if(args.length >= 1) {
@@ -26,5 +29,7 @@ public class DMIDEMain {
 	public void start() throws IOException {
 		DMIDEMain.pluginManager = PluginManager.getInstance();
 		DMIDEMain.pluginManager.getPlugins(DMIDEMain.pluginLookUp);
+		this.uiInstance = DMIDEUI.getInstance();
+		this.uiInstance.generate();
 	}
 }

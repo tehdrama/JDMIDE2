@@ -1,4 +1,4 @@
-package com.dmide.plugins;
+package com.dmide.util;
 
 /**
  * Events passed to plugins for processing.
@@ -6,10 +6,38 @@ package com.dmide.plugins;
  * @author Adolph C.
  *
  */
-public class PluginEvent {
+public class IDEEvent {
 	String evtName;
 	Object arg;
 	boolean handled = false;
+	private boolean blockOnHandled;
+
+	/**
+	 * @param evtName
+	 */
+	public IDEEvent(String evtName) {
+		this.evtName = evtName;
+	}
+
+	/**
+	 * @param evtName
+	 * @param arg
+	 */
+	public IDEEvent(String evtName, Object arg) {
+		this.evtName = evtName;
+		this.arg = arg;
+	}
+
+	/**
+	 * @param evtName
+	 * @param arg
+	 * @param blockOnHandled
+	 */
+	public IDEEvent(String evtName, Object arg, boolean blockOnHandled) {
+		this.evtName = evtName;
+		this.arg = arg;
+		this.blockOnHandled = blockOnHandled;
+	}
 
 	/**
 	 *
@@ -53,6 +81,10 @@ public class PluginEvent {
 	 */
 	public void setHandled(boolean handled) {
 		this.handled = handled;
+	}
+
+	public boolean blockOnHandled() {
+		return this.blockOnHandled;
 	}
 
 }

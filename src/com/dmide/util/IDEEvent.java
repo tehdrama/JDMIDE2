@@ -10,7 +10,7 @@ public class IDEEvent {
 	String evtName;
 	Object arg;
 	boolean handled = false;
-	private boolean blockOnHandled;
+	private boolean blockOnHandled = false;
 
 	/**
 	 * @param evtName

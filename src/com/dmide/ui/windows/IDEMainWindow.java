@@ -5,10 +5,14 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTabbedPane;
 import javax.swing.border.EmptyBorder;
 
+import com.dmide.ui.filetree.FileTree;
+
+@SuppressWarnings("serial")
 public class IDEMainWindow extends JFrame {
 
 	private JPanel contentPane;
@@ -18,6 +22,9 @@ public class IDEMainWindow extends JFrame {
 	private JSplitPane splitPane_1;
 	private JTabbedPane tabbedPane_1;
 	private JTabbedPane tabbedPane_2;
+	private JPanel panel_1;
+	private JScrollPane scrollPane;
+	private FileTree tree;
 
 	/**
 	 * Launch the application.
@@ -86,6 +93,7 @@ public class IDEMainWindow extends JFrame {
 	public JTabbedPane getTabbedPane_1() {
 		if (this.tabbedPane_1 == null) {
 			this.tabbedPane_1 = new JTabbedPane(JTabbedPane.TOP);
+			this.tabbedPane_1.addTab("File Tree", null, this.getPanel_1(), null);
 		}
 		return this.tabbedPane_1;
 	}
@@ -94,5 +102,26 @@ public class IDEMainWindow extends JFrame {
 			this.tabbedPane_2 = new JTabbedPane(JTabbedPane.TOP);
 		}
 		return this.tabbedPane_2;
+	}
+	public JPanel getPanel_1() {
+		if (this.panel_1 == null) {
+			this.panel_1 = new JPanel();
+			this.panel_1.setLayout(new BorderLayout(0, 0));
+			this.panel_1.add(this.getScrollPane(), BorderLayout.CENTER);
+		}
+		return this.panel_1;
+	}
+	public JScrollPane getScrollPane() {
+		if (this.scrollPane == null) {
+			this.scrollPane = new JScrollPane();
+			this.scrollPane.setViewportView(this.getTree_1());
+		}
+		return this.scrollPane;
+	}
+	public FileTree getTree_1() {
+		if (this.tree == null) {
+			this.tree = new FileTree();
+		}
+		return this.tree;
 	}
 }

@@ -3,6 +3,7 @@ package com.dmide;
 import java.io.File;
 import java.io.IOException;
 
+import com.dmide.environment.DMEnvironment;
 import com.dmide.plugins.PluginManager;
 import com.dmide.ui.DMIDEUI;
 
@@ -24,6 +25,7 @@ public class DMIDEMain {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		DMEnvironment.setDMEFile(new File("C:/Documents and Settings/Saoude1/My Documents/Dropbox/BYOND Projects/Relics/Relics.dme"));
 	}
 
 	public void start() throws IOException {

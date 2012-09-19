@@ -2,7 +2,7 @@ package com.dmide.util;
 
 /**
  * Sent events by the IDEEventHandler.
- * @author Adolph Celestin
+ * @author Adolph C.
  *
  */
 public interface IDEEventWatcher {

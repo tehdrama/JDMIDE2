@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Handles events being sent across the IDE.
  *
- * @author Saoude1
+ * @author Adolph C.
  *
  */
 public class IDEEventHandler {

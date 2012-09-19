@@ -4,8 +4,10 @@ import java.io.File;
 import java.io.IOException;
 
 import com.dmide.environment.DMEnvironment;
+import com.dmide.files.FileOpenHandler;
 import com.dmide.plugins.PluginManager;
 import com.dmide.ui.DMIDEUI;
+import com.dmide.util.events.IDEEventHandler;
 
 public class DMIDEMain {
 	static PluginManager pluginManager;
@@ -33,5 +35,10 @@ public class DMIDEMain {
 		DMIDEMain.pluginManager.getPlugins(DMIDEMain.pluginLookUp);
 		this.uiInstance = DMIDEUI.getInstance();
 		this.uiInstance.generate();
+		this.init();
+	}
+
+	public void init() {
+		IDEEventHandler.addWatcher(FileOpenHandler.getInstance());
 	}
 }

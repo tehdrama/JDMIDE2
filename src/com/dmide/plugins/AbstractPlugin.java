@@ -1,6 +1,6 @@
 package com.dmide.plugins;
 
-import com.dmide.util.IDEEvent;
+import com.dmide.util.events.IDEEvent;
 
 /**
  * The abstract plugin class is used by the Plugin Manager to extend the IDE.

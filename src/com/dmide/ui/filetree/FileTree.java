@@ -14,10 +14,10 @@ import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreePath;
 
-import com.dmide.util.IDEEvent;
-import com.dmide.util.IDEEventHandler;
-import com.dmide.util.IDEEventWatcher;
 import com.dmide.util.IDEFile;
+import com.dmide.util.events.IDEEvent;
+import com.dmide.util.events.IDEEventHandler;
+import com.dmide.util.events.IDEEventWatcher;
 
 @SuppressWarnings("serial")
 public class FileTree extends JTree implements IDEEventWatcher {
@@ -159,7 +159,6 @@ public class FileTree extends JTree implements IDEEventWatcher {
 
 			@Override
 			public void mouseExited(MouseEvent e) {
-				// TODO Auto-generated method stub
 
 			}
 
@@ -183,7 +182,7 @@ public class FileTree extends JTree implements IDEEventWatcher {
 		if(o instanceof IDEFile) {
 			File f  = this.getAbsoluteFile(((IDEFile) o));
 			IDEEventHandler.sendIDEEvent(new IDEEvent("file.tree.openfile", f));
-			System.out.println("File Clicked: " + f.getPath());
+			//System.out.println("File Clicked: " + f.getPath());
 		}
 	}
 }

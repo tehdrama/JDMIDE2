@@ -2,8 +2,8 @@ package com.dmide.environment;
 
 import java.io.File;
 
-import com.dmide.util.IDEEvent;
-import com.dmide.util.IDEEventHandler;
+import com.dmide.util.events.IDEEvent;
+import com.dmide.util.events.IDEEventHandler;
 
 public class DMEnvironment {
 	static File dmeFile;

@@ -1,4 +1,4 @@
-package com.dmide.util;
+package com.dmide.util.events;
 
 /**
  * Events passed to plugins for processing.

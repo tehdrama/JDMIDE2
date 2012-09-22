@@ -18,6 +18,7 @@ import com.dmide.util.IDEFile;
 import com.dmide.util.events.IDEEvent;
 import com.dmide.util.events.IDEEventHandler;
 import com.dmide.util.events.IDEEventWatcher;
+import com.dmide.util.misc.IDEProcess;
 
 @SuppressWarnings("serial")
 public class FileTree extends JTree implements IDEEventWatcher {
@@ -89,10 +90,19 @@ public class FileTree extends JTree implements IDEEventWatcher {
 
 	public IDEFile createTree(File dme) {
 		this.root = new IDEFile(dme);
+		IDEProcess treeLoadProcess = new IDEProcess();
+		treeLoadProcess.start();
+		treeLoadProcess.setProgress(-1);
 		ArrayList<Path> paths = this.getDirectoryPaths(dme.getParentFile());
-		for(Path p : paths) {
-			this.addPath(p);
+		if(paths.size() > 0) {
+			for(int i = 0; i < paths.size(); i++) {
+				Path p = paths.get(i);
+				if( p == null ) continue;
+				this.addPath(p);
+				//treeLoadProcess.setProgress( ((double)i) / ((double)paths.size()) * 100 );
+			}
 		}
+		treeLoadProcess.end();
 		return this.root;
 	}
 

@@ -1,13 +1,21 @@
 package com.dmide.util.misc;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 import javax.swing.Icon;
 import javax.swing.filechooser.FileSystemView;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.commons.io.FilenameUtils;
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
 
 public class MiscIO {
 
@@ -16,8 +24,8 @@ public class MiscIO {
 	 * Associations between icon extensions and their icons.
 	 */
 	Map<String, Icon> extIconAssoc;
+	String ln = "\n";
 
-	static MiscIO instance;
 
 	public Icon getFileTypeIcon(File f) {
 		if(!f.exists()) return null;
@@ -32,6 +40,35 @@ public class MiscIO {
 		}
 		return this.extIconAssoc.get(ext);
 	}
+
+	public String readFileString(File f) {
+		System.out.println("Reading: " + f.getPath());
+		Scanner scanner = null;
+		try {
+			scanner = new Scanner(f);
+			StringBuilder b = new StringBuilder();
+			while(scanner.hasNextLine()) {
+				b.append(scanner.nextLine());
+				b.append(this.ln);
+			}
+			scanner.close();
+			return b.toString();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} finally {
+			if(scanner != null) {scanner.close();}
+		}
+		return null;
+	}
+
+	public Document getXMLDocument(File xmlFile) throws SAXException, IOException, ParserConfigurationException {
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		DocumentBuilder docBuilder = dbf.newDocumentBuilder();
+		Document doc = docBuilder.parse(xmlFile);
+		return doc;
+	}
+
+	static MiscIO instance;
 
 	public static MiscIO getInstance() {
 		if(instance == null) {instance = new MiscIO();}

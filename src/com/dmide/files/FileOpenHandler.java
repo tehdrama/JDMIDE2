@@ -1,8 +1,12 @@
 package com.dmide.files;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.commons.io.FilenameUtils;
+
+import com.dmide.ui.editors.DefaultEditors;
 import com.dmide.ui.editors.FileEditor;
 import com.dmide.util.events.IDEEvent;
 import com.dmide.util.events.IDEEventWatcher;
@@ -12,6 +16,7 @@ public class FileOpenHandler implements IDEEventWatcher {
 
 	static {
 		fileExtensionAssoc = new HashMap<String, FileEditor>();
+		DefaultEditors.addDefaultEditors();
 	}
 
 	public static void setEditorAssociation(String extension, FileEditor editor) {
@@ -22,9 +27,16 @@ public class FileOpenHandler implements IDEEventWatcher {
 	public void eventRecieved(IDEEvent e) {
 		switch(e.getEventName()) {
 		case "file.tree.openfile":
-			System.out.println("Opening file from tree: " + e.getArgument());
+			this.tryOpenFile(e.getArgument(File.class));
+			e.setHandled(true);
 			break;
 		}
+	}
+
+	private void tryOpenFile(File argument) {
+		if(argument == null) return;
+		String ext = FilenameUtils.getExtension(argument.getName());
+		if(fileExtensionAssoc.containsKey(ext)) {fileExtensionAssoc.get(ext).edit(argument);}
 	}
 
 	static FileOpenHandler instance;

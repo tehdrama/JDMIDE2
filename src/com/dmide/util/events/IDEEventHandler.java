@@ -16,6 +16,7 @@ public class IDEEventHandler {
 	}
 
 	public static boolean sendIDEEvent(IDEEvent e) {
+		System.out.println("Sending Event: " + e.getEventName());
 		for(IDEEventWatcher watcher : eventWatchers) {
 			watcher.eventRecieved(e);
 			if(e.blockOnHandled() && e.isHandled()) break;

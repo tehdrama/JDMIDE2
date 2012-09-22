@@ -3,6 +3,9 @@ package com.dmide;
 import java.io.File;
 import java.io.IOException;
 
+import org.fife.ui.rsyntaxtextarea.AbstractTokenMakerFactory;
+import org.fife.ui.rsyntaxtextarea.TokenMakerFactory;
+
 import com.dmide.environment.DMEnvironment;
 import com.dmide.files.FileOpenHandler;
 import com.dmide.plugins.PluginManager;
@@ -38,7 +41,15 @@ public class DMIDEMain {
 		this.init();
 	}
 
+	public void registerDMTokenMaker() {
+		AbstractTokenMakerFactory atmf =
+				(AbstractTokenMakerFactory) TokenMakerFactory.getDefaultInstance();
+		atmf.putMapping("text/dm", "com.dmide.syntax.DMTokenMaker");
+	}
+
 	public void init() {
+		IDE.getInstance();
+		this.registerDMTokenMaker();
 		IDEEventHandler.addWatcher(FileOpenHandler.getInstance());
 	}
 }

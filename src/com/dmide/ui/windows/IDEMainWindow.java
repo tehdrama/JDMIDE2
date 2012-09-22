@@ -5,10 +5,15 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JProgressBar;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTabbedPane;
 import javax.swing.border.EmptyBorder;
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+
+import net.miginfocom.swing.MigLayout;
 
 import com.dmide.ui.filetree.FileTree;
 
@@ -21,10 +26,12 @@ public class IDEMainWindow extends JFrame {
 	private JTabbedPane tabbedPane;
 	private JSplitPane splitPane_1;
 	private JTabbedPane tabbedPane_1;
-	private JTabbedPane tabbedPane_2;
+	private JTabbedPane fileEditorPane;
 	private JPanel panel_1;
 	private JScrollPane scrollPane;
 	private FileTree tree;
+	private JPanel panel_2;
+	private JProgressBar progressBar;
 
 	/**
 	 * Launch the application.
@@ -55,15 +62,17 @@ public class IDEMainWindow extends JFrame {
 		this.setContentPane(this.contentPane);
 		this.contentPane.setLayout(new BorderLayout(0, 0));
 		this.contentPane.add(this.getSplitPane(), BorderLayout.CENTER);
+		this.contentPane.add(this.getPanel_2(), BorderLayout.SOUTH);
 	}
 
 	public JSplitPane getSplitPane() {
 		if (this.splitPane == null) {
 			this.splitPane = new JSplitPane();
+			this.splitPane.setResizeWeight(0.5);
 			this.splitPane.setOrientation(JSplitPane.VERTICAL_SPLIT);
 			this.splitPane.setRightComponent(this.getPanel());
 			this.splitPane.setLeftComponent(this.getSplitPane_1());
-			this.splitPane.setDividerLocation(350);
+			this.splitPane.setDividerLocation(320);
 		}
 		return this.splitPane;
 	}
@@ -85,7 +94,7 @@ public class IDEMainWindow extends JFrame {
 		if (this.splitPane_1 == null) {
 			this.splitPane_1 = new JSplitPane();
 			this.splitPane_1.setLeftComponent(this.getTabbedPane_1());
-			this.splitPane_1.setRightComponent(this.getTabbedPane_2());
+			this.splitPane_1.setRightComponent(this.getFileEditorPane());
 			this.splitPane_1.setDividerLocation(200);
 		}
 		return this.splitPane_1;
@@ -97,11 +106,11 @@ public class IDEMainWindow extends JFrame {
 		}
 		return this.tabbedPane_1;
 	}
-	public JTabbedPane getTabbedPane_2() {
-		if (this.tabbedPane_2 == null) {
-			this.tabbedPane_2 = new JTabbedPane(JTabbedPane.TOP);
+	public JTabbedPane getFileEditorPane() {
+		if (this.fileEditorPane == null) {
+			this.fileEditorPane = new JTabbedPane(JTabbedPane.TOP);
 		}
-		return this.tabbedPane_2;
+		return this.fileEditorPane;
 	}
 	public JPanel getPanel_1() {
 		if (this.panel_1 == null) {
@@ -121,7 +130,30 @@ public class IDEMainWindow extends JFrame {
 	public FileTree getTree_1() {
 		if (this.tree == null) {
 			this.tree = new FileTree();
+			this.tree.setModel(new DefaultTreeModel(
+				new DefaultMutableTreeNode("No Environment") {
+					{
+					}
+				}
+			));
 		}
 		return this.tree;
+	}
+	public JPanel getPanel_2() {
+		if (this.panel_2 == null) {
+			this.panel_2 = new JPanel();
+			this.panel_2.setLayout(new MigLayout("", "[grow]", "[20.00]"));
+			this.panel_2.add(this.getProgressBar_1(), "cell 0 0,growx");
+		}
+		return this.panel_2;
+	}
+	public JProgressBar getProgressBar_1() {
+		if (this.progressBar == null) {
+			this.progressBar = new JProgressBar();
+		}
+		return this.progressBar;
+	}
+	public JProgressBar getProgressBar() {
+		return this.getProgressBar_1();
 	}
 }

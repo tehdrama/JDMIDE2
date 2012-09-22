@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<menubar id="mainmenubar">
+	<menu id="menus.file" text="File">
+		<item id="menus.file.new" text="New..." acc="Ctrl+N" />
+		<item id="menus.file.open" text="Open..." acc="Ctrl+O" />
+		<item id="menus.file.close" text="Close" acc="Ctrl+W" />
+		
+		<separator />
+		
+		<item id="menus.file.save" text="Save" acc="Ctrl+S" />
+		<item id="menus.file.saveas" text="Save As..." />
+		<item id="menus.file.saveall" text="Save All" acc="Ctrl+Shift+S" />
+		
+		<separator />
+		
+		<item id="menus.file.newenvironment" text="New Environment..." acc="Ctrl+Shift+N" />
+		<item id="menus.file.openenvironment" text="Open Environment..." acc="Ctrl+Shift+O" />
+		<menu id="menus.file.recentenvironment" text="Recent Environments" />
+		
+		<separator />
+		
+		<item id="menus.file.openprojectfolder" text="Open Project Folder..." />
+		
+		<separator />
+		
+		<item id="menus.file.close" text="Close" />
+	</menu>
+	
+	<menu id="menus.edit" text="Edit">
+	</menu>
+	
+	<menu id="menus.option" text="Option">
+	</menu>
+	
+	<menu id="menus.build" text="Build">
+	</menu>
+	
+	<menu id="menus.help" text="Help">
+	</menu>
+</menubar>

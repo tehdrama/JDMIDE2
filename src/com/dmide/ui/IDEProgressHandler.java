@@ -47,11 +47,21 @@ public class IDEProgressHandler implements IDEEventWatcher {
 		if(this.progressBar == null) return;
 		int max = 0;
 
+		final StringBuilder sbtasks = new StringBuilder();
+
+		boolean first = true;
+
 		for(IDEProcess p : this.processes) {
-			max += p.getProgress();
-			if(p.getProgress() < 0) {
-				max = -1; // indeterminate...
-				break;
+			if(!first) {sbtasks.append(", ");}
+			else {first = false;}
+
+			sbtasks.append(p.getDescription());
+
+			if(max != -1) {
+				max += p.getProgress();
+				if(p.getProgress() < 0) {
+					max = -1; // indeterminate...
+				}
 			}
 		}
 
@@ -66,6 +76,7 @@ public class IDEProgressHandler implements IDEEventWatcher {
 			{@Override
 			public void run() {
 				pbar.setIndeterminate(true);
+				pbar.setToolTipText(sbtasks.toString());
 			}};
 		} else if(max == 0 || n < 1) {
 			prun = new Runnable() {
@@ -73,12 +84,14 @@ public class IDEProgressHandler implements IDEEventWatcher {
 			public void run() {
 				pbar.setIndeterminate(false);
 				pbar.setValue(0);
+				pbar.setToolTipText("No tasks at this time...");
 			}};
 		} else {
 			prun = new Runnable() {
 				@Override
 			public void run() {
 				pbar.setValue( _max / n );
+				pbar.setToolTipText(sbtasks.toString());
 			}};
 		}
 

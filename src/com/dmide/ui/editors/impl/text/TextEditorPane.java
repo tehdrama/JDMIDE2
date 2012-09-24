@@ -1,4 +1,4 @@
-package com.dmide.ui.editors.impl.dm;
+package com.dmide.ui.editors.impl.text;
 
 import java.awt.BorderLayout;
 import java.io.File;
@@ -6,16 +6,25 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
+import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 import org.fife.ui.rtextarea.RTextScrollPane;
 
 import com.dmide.ui.editors.FileEditorPane;
 import com.dmide.util.misc.Misc;
 
-@SuppressWarnings("serial")
-public class DMFileEditorPane extends FileEditorPane {
+public class TextEditorPane extends FileEditorPane {
 
 	@Override
 	public void onClose() {
+	}
+
+	@Override
+	public void createUI() {
+		this.textArea = new RSyntaxTextArea(25, 70);
+		this.scrollPane = new RTextScrollPane(this.textArea);
+		this.setLayout(new BorderLayout());
+		this.add(this.scrollPane, BorderLayout.CENTER);
+		this.textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_NONE);
 	}
 
 	@Override
@@ -59,15 +68,6 @@ public class DMFileEditorPane extends FileEditorPane {
 				e.printStackTrace();
 			}
 		}
-	}
-
-	@Override
-	public void createUI() {
-		this.textArea = new RSyntaxTextArea(25, 70);
-		this.scrollPane = new RTextScrollPane(this.textArea);
-		this.setLayout(new BorderLayout());
-		this.add(this.scrollPane, BorderLayout.CENTER);
-		this.textArea.setSyntaxEditingStyle("text/dm");
 	}
 
 	RSyntaxTextArea textArea;

@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <menubar id="mainmenubar">
 	<menu id="menus.file" text="File">
-		<item id="menus.file.new" text="New..." acc="Ctrl+N" />
-		<item id="menus.file.open" text="Open..." acc="Ctrl+O" />
-		<item id="menus.file.close" text="Close" acc="Ctrl+W" />
+		<item id="menus.file.new" text="New..." acc="ctrl N" icon="%assets%/document--plus.png" />
+		<item id="menus.file.open" text="Open..." acc="ctrl O" icon="%assets%/document--arrow.png" />
+		<item id="menus.file.close" text="Close" acc="ctrl W" />
 		
 		<separator />
 		
-		<item id="menus.file.save" text="Save" acc="Ctrl+S" />
+		<item id="menus.file.save" text="Save" acc="ctrl S" icon="%assets%/disk.png" />
 		<item id="menus.file.saveas" text="Save As..." />
-		<item id="menus.file.saveall" text="Save All" acc="Ctrl+Shift+S" />
+		<item id="menus.file.saveall" text="Save All" acc="ctrl shift S" />
 		
 		<separator />
 		
-		<item id="menus.file.newenvironment" text="New Environment..." acc="Ctrl+Shift+N" />
-		<item id="menus.file.openenvironment" text="Open Environment..." acc="Ctrl+Shift+O" />
+		<item id="menus.file.newenvironment" text="New Environment..." acc="ctrl shift N" />
+		<item id="menus.file.openenvironment" text="Open Environment..." acc="ctrl shift O" />
 		<menu id="menus.file.recentenvironment" text="Recent Environments" />
 		
 		<separator />
@@ -23,16 +23,18 @@
 		
 		<separator />
 		
-		<item id="menus.file.close" text="Close" />
+		<item id="menus.file.close" text="Close" icon="%assets%/cross-button.png" acc="ctrl Q" />
 	</menu>
 	
 	<menu id="menus.edit" text="Edit">
 	</menu>
 	
-	<menu id="menus.option" text="Option">
+	<menu id="menus.options" text="Options">
+		<item id="menus.options.preferences" text="Preferences..." icon="%assets%/gear.png" />
 	</menu>
 	
 	<menu id="menus.build" text="Build">
+		<item id="menus.build.compile" text="Compile..." acc="ctrl K" icon="%assets%/hammer-screwdriver.png" />
 	</menu>
 	
 	<menu id="menus.help" text="Help">

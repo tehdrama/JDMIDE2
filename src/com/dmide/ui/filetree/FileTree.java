@@ -90,7 +90,7 @@ public class FileTree extends JTree implements IDEEventWatcher {
 
 	public IDEFile createTree(File dme) {
 		this.root = new IDEFile(dme);
-		IDEProcess treeLoadProcess = new IDEProcess();
+		IDEProcess treeLoadProcess = new IDEProcess("Loading File Tree");
 		treeLoadProcess.start();
 		treeLoadProcess.setProgress(-1);
 		ArrayList<Path> paths = this.getDirectoryPaths(dme.getParentFile());
@@ -112,11 +112,11 @@ public class FileTree extends JTree implements IDEEventWatcher {
 		this.ideFiles.clear();
 		//this.walkDirectoryTree(dmeFile.getParentFile());
 		//this.getDirectoryPaths(dmeFile.getParentFile());
+		this.DME = dmeFile;
 		this.createTree(dmeFile);
 		DefaultTreeModel newModel = new DefaultTreeModel(this.root);
 		this.setModel(newModel);
 		this.revalidate();
-		this.DME = dmeFile;
 		System.out.println("File tree opening environment: " + dmeFile.getName());
 	}
 
@@ -147,7 +147,8 @@ public class FileTree extends JTree implements IDEEventWatcher {
 	public File getAbsoluteFile(IDEFile ideFile) {
 		if(this.DME == null) return ideFile.getFileObject();
 		if(ideFile.getAbsolute() != null) return ideFile.getAbsolute();
-		ideFile.setAbsolute(new File(this.DME.getParent(), ideFile.getFileObject().getPath()));
+		ideFile.setAbsolute(new File(this.DME.getParentFile(),
+				ideFile.getFileObject().getPath()));
 		return ideFile.getAbsolute();
 	}
 

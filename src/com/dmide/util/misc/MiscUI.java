@@ -3,11 +3,13 @@ package com.dmide.util.misc;
 import java.io.File;
 import java.io.IOException;
 
+import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JSeparator;
+import javax.swing.KeyStroke;
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.w3c.dom.Document;
@@ -93,7 +95,16 @@ public class MiscUI {
 	private void parseMenuItem(Element elem, JComponent parent, PropertiesHolder props) {
 		String text = elem.hasAttribute("text") ? elem.getAttribute("text") : null;
 		String id = elem.hasAttribute("id") ? elem.getAttribute("id") : null;
+		String iconU = elem.hasAttribute("icon") ? elem.getAttribute("icon") : null;
+		String acc = elem.hasAttribute("acc") ? elem.getAttribute("acc") : null;
 		JMenuItem _item = new JMenuItem(text);
+		if(iconU != null) {
+			iconU = iconU.replace("%assets%", "/com/dmide/assets");
+			_item.setIcon(new ImageIcon(this.getClass().getResource(iconU)));
+		}
+		if(acc != null) {
+			_item.setAccelerator(KeyStroke.getKeyStroke(acc));
+		}
 		if(id != null && props != null) {props.setProperty(id, _item);}
 		if(parent != null) {parent.add(_item);}
 	}

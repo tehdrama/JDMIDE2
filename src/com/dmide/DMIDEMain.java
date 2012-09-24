@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.fife.ui.rsyntaxtextarea.AbstractTokenMakerFactory;
 import org.fife.ui.rsyntaxtextarea.TokenMakerFactory;
 
+import com.dmide.compiler.DMCompiler;
 import com.dmide.environment.DMEnvironment;
 import com.dmide.files.FileOpenHandler;
 import com.dmide.plugins.PluginManager;
@@ -34,11 +35,11 @@ public class DMIDEMain {
 	}
 
 	public void start() throws IOException {
+		this.init();
 		DMIDEMain.pluginManager = PluginManager.getInstance();
 		DMIDEMain.pluginManager.getPlugins(DMIDEMain.pluginLookUp);
 		this.uiInstance = DMIDEUI.getInstance();
 		this.uiInstance.generate();
-		this.init();
 	}
 
 	public void registerDMTokenMaker() {
@@ -49,7 +50,9 @@ public class DMIDEMain {
 
 	public void init() {
 		IDE.getInstance();
+		DMIDE.load();
 		this.registerDMTokenMaker();
+		IDEEventHandler.addWatcher(DMCompiler.getInstance());
 		IDEEventHandler.addWatcher(FileOpenHandler.getInstance());
 	}
 }

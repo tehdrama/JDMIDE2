@@ -7,10 +7,14 @@ public class IDEProcess {
 	int progress;
 	int id;
 	static int IDCounter = 0;
+	String desc;
 
-	public IDEProcess() {
+	public IDEProcess(String desc) {
 		this.id = IDEProcess.IDCounter++;
+		this.desc = desc;
 	}
+
+	public String getDescription() {return this.desc;}
 
 	@Override
 	public boolean equals(Object obj) {

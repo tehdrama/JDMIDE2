@@ -15,6 +15,11 @@ public class DMEnvironment {
 
 	public static void setDMEFile(File f) {
 		dmeFile = f;
+		System.out.println("Setting DME: " + f.getPath());
 		IDEEventHandler.sendIDEEvent(new IDEEvent("environment.open", dmeFile));
+	}
+
+	public static File getDMEFile() {
+		return dmeFile;
 	}
 }

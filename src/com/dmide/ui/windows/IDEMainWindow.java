@@ -150,6 +150,7 @@ public class IDEMainWindow extends JFrame {
 	public JProgressBar getProgressBar_1() {
 		if (this.progressBar == null) {
 			this.progressBar = new JProgressBar();
+			this.progressBar.setToolTipText("No tasks at this time...");
 		}
 		return this.progressBar;
 	}

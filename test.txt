@@ -1,0 +1,1714 @@
+loading Relics.dme
+code\#def.dm:78:warning: #warn COMPILED IN TEST MODE
+loading UI.dmf
+loading map.dmm
+loading UI.dmf
+
+<mob file="code\#def.dm:61">mob
+	<proc file="code\#def.dm:62">Login</proc>
+	<proc file="code\#def.dm:67">autologin</proc>
+	<proc file="code\Admin Panel.dm:396">admin_panel_wait_for_text</proc>
+	<proc file="code\Admin Panel.dm:514">varget</proc>
+	<proc file="code\Admin Panel.dm:517">varset</proc>
+	<proc file="code\Save.dm:5">save</proc>
+	<proc file="code\Save.dm:6">load</proc>
+	<proc file="code\Save.dm:101">rebuildCharacter</proc>
+	<proc file="code\util.dm:75">addOverlay</proc>
+	<proc file="code\util.dm:79">removeOverlay</proc>
+	<proc file="code\util.dm:83">clearOverlays</proc>
+	<proc file="code\util.dm:86">updateOverlays</proc>
+	<proc file="code\util.dm:141">get_input</proc>
+	<proc file="code\util.dm:150">_alert</proc>
+	<proc file="code\battle\projectiles-def.dm:31">test</proc>
+	<proc file="code\HUDS\Dialog.dm:145">show_text</proc>
+	<proc file="code\HUDS\Dialog.dm:146">wait_for_text</proc>
+	<proc file="code\HUDS\Dialog.dm:147">next_message</proc>
+	<proc file="code\HUDS\HUDS.dm:183">showHPInfo</proc>
+	<proc file="code\HUDS\HUDS.dm:185">showMPInfo</proc>
+	<proc file="code\HUDS\HUDS.dm:187">showExpInfo</proc>
+	<proc file="code\HUDS\HUDS.dm:189">showInfoComponent</proc>
+	<proc file="code\HUDS\HUDS.dm:197">hideInfoComponent</proc>
+	<proc file="code\HUDS\HUDS.dm:275">showItemInformation</proc>
+	<proc file="code\HUDS\HUDS.dm:284">hideItemInformation</proc>
+	<proc file="code\HUDS\HUDS.dm:287">showingItemInformation</proc>
+	<proc file="code\HUDS\HUDS.dm:290">createItemInformation</proc>
+	<proc file="code\HUDS\HUDS.dm:297">getInformation</proc>
+	<proc file="code\Items\Item def.dm:88">giveItem</proc>
+	<proc file="code\mobs\Login Screen.dm:12">login_Info</proc>
+	<proc file="code\mobs\Login Screen.dm:14">signup_Info</proc>
+	<proc file="code\mobs\Login Screen.dm:17">login_clickedLogin</proc>
+	<proc file="code\mobs\Login Screen.dm:31">login_clickedSignUp</proc>
+	<proc file="code\mobs\Login Screen.dm:35">clearLoginSignUpFields</proc>
+	<proc file="code\mobs\Login Screen.dm:45">signup_clickedSignUp</proc>
+	<proc file="code\mobs\Login Screen.dm:70">signup_clickedLogin</proc>
+	<proc file="code\mobs\NPC\#1 npc_def.dm:3">_action</proc>
+	<proc file="code\mobs\player\NewChar.dm:91">finishCharacterBuilding</proc>
+	<proc file="code\mobs\player\player util.dm:3">updateHealthUI</proc>
+	<proc file="code\mobs\player\player util.dm:6">updateManaUI</proc>
+	<proc file="code\mobs\player\player util.dm:9">updateExpUI</proc>
+	<proc file="code\mobs\player\player util.dm:12">updateStatUIs</proc>
+	<proc file="code\mobs\player\player util.dm:21">lockMovement</proc>
+	<proc file="code\mobs\player\player util.dm:24">unlockMovement</proc>
+	<var file="code\Admin Panel.dm:72">stat_panel_open
+		<val file="code\Admin Panel.dm:72">FALSE</val>
+	</var>
+	<var file="code\Quests\Quests.dm:41">killx</var>
+	<proc file="code\Admin Panel.dm:73">Stat</proc>
+	<verb file="code\Admin Panel.dm:77">stat_panel_closed</verb>
+	<verb file="code\Admin Panel.dm:391">admin_panel_command</verb>
+	<verb file="code\mobs\Login Screen.dm:77">LoginClickLogin_UI</verb>
+	<verb file="code\mobs\Login Screen.dm:79">LoginClickSignUp_UI</verb>
+	<verb file="code\mobs\Login Screen.dm:82">SignUpClickSignUp_UI</verb>
+	<verb file="code\mobs\Login Screen.dm:84">SignUpClickLogin_UI</verb>
+	<var file="code\Admin Panel.dm:388">admin_panel_waiting_for_text
+		<val file="code\Admin Panel.dm:388">FALSE</val>
+	</var>
+	<var file="code\Admin Panel.dm:389">admin_panel_wait_text
+		<val file="code\Admin Panel.dm:389">null</val>
+	</var>
+	<var file="code\Admin Panel.dm:511">_vars
+		<var file="code\Admin Panel.dm:511">"world.log"
+			<val file="code\Admin Panel.dm:511">"world_log.txt"</val>
+		</var>
+	</var>
+	<var file="code\Game.dm:2">icon
+		<val file="code\Game.dm:2">'icons/Character/MaleBase.dmi'</val>
+	</var>
+	<var file="code\Game.dm:3">icon_state
+		<val file="code\Game.dm:3">"idle"</val>
+	</var>
+	<var file="code\Game.dm:4">step_size
+		<val file="Relics.dme:22">16</val>
+	</var>
+	<var file="code\util.dm:72">_overlays
+		<val file="code\util.dm:72">null</val>
+	</var>
+	<var file="code\HUDS\HUDS.dm:181">info_component</var>
+	<var file="code\HUDS\HUDS.dm:273">hud_item_information
+		<val file="code\HUDS\HUDS.dm:273">null</val>
+	</var>
+	<proc file="code\mobs\Move.dm:2">Move</proc>
+	<var file="code\mobs\player\player util.dm:19">movement_locked
+		<val file="code\mobs\player\player util.dm:19">FALSE</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:3">hp
+		<val file="code\mobs\player\player variables.dm:3">50</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:4">maxhp
+		<val file="code\mobs\player\player variables.dm:4">100</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:5">mp
+		<val file="code\mobs\player\player variables.dm:5">60</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:6">maxmp
+		<val file="code\mobs\player\player variables.dm:6">100</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:7">exp
+		<val file="code\mobs\player\player variables.dm:7">70</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:8">maxexp
+		<val file="code\mobs\player\player variables.dm:8">100</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:10">strength
+		<val file="code\mobs\player\player variables.dm:10">4</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:11">efficiency
+		<val file="code\mobs\player\player variables.dm:11">2.3</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:12">defense
+		<val file="code\mobs\player\player variables.dm:12">20</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:13">magic_power
+		<val file="code\mobs\player\player variables.dm:13">0</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:15">resistance</var>
+	<var file="code\mobs\player\player variables.dm:17">inventory</var>
+	<var file="code\mobs\player\player variables.dm:19">level
+		<val file="code\mobs\player\player variables.dm:19">1</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:21">affinity
+		<val file="code\mobs\player\player variables.dm:21">0</val>
+	</var>
+	<var file="code\Quests\Quests.dm:30">quests</var>
+	<var file="code\Quests\Quests.dm:31">completed_quests</var>
+</mob>
+<var file="code\Admin Panel.dm:3">admins</var>
+<var file="code\Admin Panel.dm:5">_world_log_text
+	<val file="code\Admin Panel.dm:5">null</val>
+</var>
+<var file="code\Admin Panel.dm:7">admin_panel_help
+	<val file="code\Admin Panel.dm:37">"\n<font color=yellow>\n<b>Admin Panel Help</b>\n<u>Commands:</u><ul>\n<li>savefile.get \\\[key\]</li>\n<li>user.create \\\[username\] \\\[password\]</li>\n<li>user.exists \\\[username\]</li>\n<li>auth \\\[username\] \\\[password\]</li>\n<li>teleport-loc \\\[x\] \\\[y\] \\\[z\]</li>\n<li>create \\\[type\]</li>\n<li>print \\\[text\]</li>\n<li>world.set_log \\\[file\]</li>\n<li>world.get_log</li>\n<li>world.set_name \\\[name\]</li>\n<li>file.output_text \\\[file\] \\\[?(-xmp|-browser)\] \\\[?(-xmp|-browser)\]</li>\n<li>files.list \\\[directory\]</li>\n<li>file.exists \\\[file\]</li>\n<li>file.size \\\[file\]</li>\n<li>savefile.output \\\[savefile\]</li>\n<li>file.delete \\\[file\]</li>\n<li>/clear</li>\n<li>close</li>\n<li>open-stat-panel</li>\n<li>script.exec \\\[script file\] \\\[?(-comments)\]</li>\n<li>savefiles.pack \\\[file\] \\\[?(-delete)\]</li>\n<li>savefiles.unpack \\\[file\]</li>\n<li>md5 \\\[string\]</li>\n<li>commands.list_args</li>\n</ul>\n</font>\n"</val>
+</var>
+<var file="code\Admin Panel.dm:39">arg_length_check
+	<var file="code\Admin Panel.dm:40">"savefile.get"
+		<val file="code\Admin Panel.dm:40">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:41">"user.create"
+		<val file="code\Admin Panel.dm:41">2</val>
+	</var>
+	<var file="code\Admin Panel.dm:42">"user.exists"
+		<val file="code\Admin Panel.dm:42">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:43">"auth"
+		<val file="code\Admin Panel.dm:43">2</val>
+	</var>
+	<var file="code\Admin Panel.dm:44">"teleport-loc"
+		<val file="code\Admin Panel.dm:44">3</val>
+	</var>
+	<var file="code\Admin Panel.dm:45">"create"
+		<val file="code\Admin Panel.dm:45">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:46">"print"
+		<val file="code\Admin Panel.dm:46">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:48">"world.set_log"
+		<val file="code\Admin Panel.dm:48">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:49">"world.set_name"
+		<val file="code\Admin Panel.dm:49">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:51">"file.output_text"
+		<val file="code\Admin Panel.dm:51">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:52">"files.list"
+		<val file="code\Admin Panel.dm:52">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:53">"file.exists"
+		<val file="code\Admin Panel.dm:53">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:54">"file.delete"
+		<val file="code\Admin Panel.dm:54">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:55">"file.size"
+		<val file="code\Admin Panel.dm:55">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:57">"script.exec"
+		<val file="code\Admin Panel.dm:57">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:59">"savefile.output"
+		<val file="code\Admin Panel.dm:59">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:60">"savefiles.pack"
+		<val file="code\Admin Panel.dm:60">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:61">"savefiles.unpack"
+		<val file="code\Admin Panel.dm:61">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:63">"vars.set"
+		<val file="code\Admin Panel.dm:63">2</val>
+	</var>
+	<var file="code\Admin Panel.dm:64">"vars.get"
+		<val file="code\Admin Panel.dm:64">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:65">"global.vars.set"
+		<val file="code\Admin Panel.dm:65">2</val>
+	</var>
+	<var file="code\Admin Panel.dm:66">"global.vars.get"
+		<val file="code\Admin Panel.dm:66">1</val>
+	</var>
+	<var file="code\Admin Panel.dm:68">"md5"
+		<val file="code\Admin Panel.dm:68">1</val>
+	</var>
+</var>
+<proc file="code\Admin Panel.dm:82">admin_command</proc>
+<proc file="code\Admin Panel.dm:334">admin_command_fail</proc>
+<proc file="code\Admin Panel.dm:340">_timed_admin_reboot</proc>
+<proc file="code\Admin Panel.dm:351">admin_panel_output</proc>
+<proc file="code\Admin Panel.dm:356">getCommandTokens</proc>
+<proc file="code\Admin Panel.dm:379">trim</proc>
+<proc file="code\Admin Panel.dm:380">isWhitespace</proc>
+<proc file="code\Admin Panel.dm:417">get_temp_file</proc>
+<proc file="code\Admin Panel.dm:419">create_save_zip</proc>
+<proc file="code\Admin Panel.dm:423">evaluate_var_gets</proc>
+<proc file="code\Admin Panel.dm:430">var_get_from_text</proc>
+<proc file="code\Admin Panel.dm:455">var_get_global</proc>
+<proc file="code\Admin Panel.dm:457">var_set_global</proc>
+<proc file="code\Admin Panel.dm:459">var_get</proc>
+<proc file="code\Admin Panel.dm:465">var_set</proc>
+<proc file="code\Save.dm:71">getFileForUser</proc>
+<proc file="code\Save.dm:73">createUser</proc>
+<proc file="code\Save.dm:83">auth</proc>
+<proc file="code\Save.dm:90">userExists</proc>
+<proc file="code\ScreenText.dm:2">dd_text2list</proc>
+<proc file="code\Strings.dm:24">startswith</proc>
+<proc file="code\util.dm:11">islist</proc>
+<proc file="code\util.dm:14">affinityToString</proc>
+<proc file="code\util.dm:25">stringtoAffinity</proc>
+<proc file="code\util.dm:36">relicTypeToString</proc>
+<proc file="code\util.dm:42">getAffinityColor</proc>
+<proc file="code\util.dm:56">getSigned</proc>
+<proc file="code\util.dm:60">getSignedNumber</proc>
+<proc file="code\util.dm:66">enemies</proc>
+<proc file="code\util.dm:91">getAngle</proc>
+<proc file="code\util.dm:96">arctan</proc>
+<proc file="code\util.dm:98">getAngleAtoms</proc>
+<proc file="code\util.dm:103">get_step_x</proc>
+<proc file="code\util.dm:104">get_step_y</proc>
+<proc file="code\util.dm:155">set_mouse_drag_pointer</proc>
+<proc file="code\util.dm:164">icon_cache_get</proc>
+<proc file="code\util.dm:172">save_icon_cache</proc>
+<proc file="code\util.dm:177">load_icon_cache</proc>
+<proc file="code\util.dm:192">format_file_size</proc>
+<proc file="code\util.dm:204">rand_word</proc>
+<proc file="code\Items\Item def.dm:70">tryStack</proc>
+<proc file="code\Items\Relic Fusing.dm:8">getRelicCombination</proc>
+<proc file="code\mobs\player\NewChar.dm:14">newCharWindowWidth</proc>
+<proc file="code\mobs\player\NewChar.dm:15">newCharWindowHeight</proc>
+<proc file="code\mobs\player\NewChar.dm:16">newCharWindowX</proc>
+<proc file="code\mobs\player\NewChar.dm:17">newCharWindowY</proc>
+<proc file="code\mobs\player\NewChar.dm:73">wrapInteractor</proc>
+<proc file="code\mobs\player\NewChar.dm:82">getInteractor</proc>
+<proc file="code\mobs\player\player util.dm:29">_lockMovement</proc>
+<proc file="code\mobs\player\player util.dm:31">_unlockMovement</proc>
+<object file="code\Admin Panel.dm:405">client
+	<proc file="code\Admin Panel.dm:407">open_admin_panel</proc>
+	<proc file="code\hooks.dm:15">set_hook</proc>
+	<proc file="code\hooks.dm:18">push_hook_back</proc>
+	<proc file="code\hooks.dm:24">clear_hook</proc>
+	<proc file="code\hooks.dm:28">push_hook_forward</proc>
+	<proc file="code\hooks.dm:35">hook_invoke</proc>
+	<proc file="code\Save.dm:12">save</proc>
+	<proc file="code\Save.dm:29">save_special</proc>
+	<proc file="code\Save.dm:36">load</proc>
+	<proc file="code\Save.dm:55">loadSpecial</proc>
+	<proc file="code\Save.dm:57">tryLoad</proc>
+	<proc file="code\Save.dm:61">setCharAvailable</proc>
+	<proc file="code\Save.dm:65">getCharAvailable</proc>
+	<proc file="code\util.dm:113">wait_for_input</proc>
+	<proc file="code\util.dm:117">wait_for_free_input</proc>
+	<proc file="code\util.dm:120">get_input</proc>
+	<proc file="code\util.dm:146">_alert</proc>
+	<proc file="code\#lib\_forum_account_keyboard.dm:53">key_up</proc>
+	<proc file="code\#lib\_forum_account_keyboard.dm:55">key_down</proc>
+	<proc file="code\#lib\_forum_account_keyboard.dm:59">key_repeat</proc>
+	<proc file="code\#lib\_forum_account_keyboard.dm:64">click</proc>
+	<proc file="code\#lib\_forum_account_keyboard.dm:67">__default_action</proc>
+	<proc file="code\#lib\_forum_account_keyboard.dm:97">lock_input</proc>
+	<proc file="code\#lib\_forum_account_keyboard.dm:100">unlock_input</proc>
+	<proc file="code\#lib\_forum_account_keyboard.dm:103">clear_input</proc>
+	<proc file="code\#lib\_forum_account_keyboard.dm:180">set_macros</proc>
+	<proc file="code\HUDS\Dialog.dm:135">show_text</proc>
+	<proc file="code\HUDS\Dialog.dm:137">wait_for_text</proc>
+	<proc file="code\HUDS\Dialog.dm:139">next_message</proc>
+	<proc file="code\HUDS\HUDS.dm:40">initHuds</proc>
+	<proc file="code\HUDS\HUDS.dm:43">installHuds</proc>
+	<proc file="code\HUDS\HUDS.dm:100">createHUDDialog</proc>
+	<proc file="code\HUDS\HUDS.dm:446">add_open_window</proc>
+	<proc file="code\HUDS\HUDS.dm:450">remove_open_window</proc>
+	<proc file="code\HUDS\HUDS.dm:457">setWindowFilter</proc>
+	<proc file="code\HUDS\HUDS.dm:463">removeWindowFilter</proc>
+	<proc file="code\HUDS\HUDS.dm:466">filterWindows</proc>
+	<proc file="code\HUDS\HUDS.dm:474">filter_exclude_windows</proc>
+	<proc file="code\HUDS\HUDS.dm:480">filter_include_windows</proc>
+	<proc file="code\HUDS\HUDS.dm:486">allow_open_window</proc>
+	<proc file="code\mobs\player\NewChar.dm:5">createNewCharacter</proc>
+	<proc file="code\mobs\player\NewChar.dm:213">introduction</proc>
+	<var file="code\hooks.dm:11">_hook
+		<val file="code\hooks.dm:11">null</val>
+	</var>
+	<var file="code\hooks.dm:12">_last_hooks</var>
+	<proc file="code\hooks.dm:44">key_down</proc>
+	<proc file="code\hooks.dm:48">key_up</proc>
+	<proc file="code\hooks.dm:88">New</proc>
+	<var file="code\keys.dm:2">shift_down
+		<val file="code\keys.dm:2">FALSE</val>
+	</var>
+	<var file="code\keys.dm:3">ctrl_down
+		<val file="code\keys.dm:3">FALSE</val>
+	</var>
+	<proc file="code\keys.dm:4">key_down</proc>
+	<proc file="code\keys.dm:9">key_up</proc>
+	<var file="code\Save.dm:10">username</var>
+	<var file="code\util.dm:109">input_result
+		<val file="code\util.dm:109">null</val>
+	</var>
+	<var file="code\util.dm:110">input_open
+		<val file="code\util.dm:110">FALSE</val>
+	</var>
+	<verb file="code\util.dm:134">set_input_text_result</verb>
+	<verb file="code\#lib\_forum_account_keyboard.dm:112">KeyDown</verb>
+	<verb file="code\#lib\_forum_account_keyboard.dm:127">KeyUp</verb>
+	<verb file="code\#lib\_forum_account_keyboard.dm:143">KeyRepeat</verb>
+	<var file="code\world.dm:4">perspective
+		<val file="code\world.dm:4">EDGE_PERSPECTIVE</val>
+	</var>
+	<var file="code\#lib\_forum_account_keyboard.dm:41">__default_action
+		<var file="code\#lib\_forum_account_keyboard.dm:42">"north"
+			<val file="code\#lib\_forum_account_keyboard.dm:42">"North"</val>
+		</var>
+		<var file="code\#lib\_forum_account_keyboard.dm:43">"south"
+			<val file="code\#lib\_forum_account_keyboard.dm:43">"South"</val>
+		</var>
+		<var file="code\#lib\_forum_account_keyboard.dm:44">"east"
+			<val file="code\#lib\_forum_account_keyboard.dm:44">"East"</val>
+		</var>
+		<var file="code\#lib\_forum_account_keyboard.dm:45">"west"
+			<val file="code\#lib\_forum_account_keyboard.dm:45">"West"</val>
+		</var>
+		<var file="code\#lib\_forum_account_keyboard.dm:46">"southeast"
+			<val file="code\#lib\_forum_account_keyboard.dm:46">"Southeast"</val>
+		</var>
+		<var file="code\#lib\_forum_account_keyboard.dm:47">"southwest"
+			<val file="code\#lib\_forum_account_keyboard.dm:47">"Southwest"</val>
+		</var>
+		<var file="code\#lib\_forum_account_keyboard.dm:48">"northeast"
+			<val file="code\#lib\_forum_account_keyboard.dm:48">"Northeast"</val>
+		</var>
+		<var file="code\#lib\_forum_account_keyboard.dm:49">"northwest"
+			<val file="code\#lib\_forum_account_keyboard.dm:49">"Northwest"</val>
+		</var>
+		<var file="code\#lib\_forum_account_keyboard.dm:50">"center"
+			<val file="code\#lib\_forum_account_keyboard.dm:50">"Center"</val>
+		</var>
+	</var>
+	<var file="code\#lib\_forum_account_keyboard.dm:78">keys</var>
+	<var file="code\#lib\_forum_account_keyboard.dm:84">input_lock
+		<val file="code\#lib\_forum_account_keyboard.dm:84">0</val>
+	</var>
+	<var file="code\#lib\_forum_account_keyboard.dm:90">focus</var>
+	<proc file="code\#lib\_forum_account_keyboard.dm:157">New</proc>
+	<proc file="code\#lib\_forum_account_keyboard.dm:168">Click</proc>
+	<proc file="code\#lib\_super_antx_simple_move.dm:5">New</proc>
+	<proc file="code\#lib\_super_antx_simple_move.dm:10">North</proc>
+	<proc file="code\#lib\_super_antx_simple_move.dm:11">South</proc>
+	<proc file="code\#lib\_super_antx_simple_move.dm:12">East</proc>
+	<proc file="code\#lib\_super_antx_simple_move.dm:13">West</proc>
+	<proc file="code\#lib\_super_antx_simple_move.dm:14">Northeast</proc>
+	<proc file="code\#lib\_super_antx_simple_move.dm:15">Northwest</proc>
+	<proc file="code\#lib\_super_antx_simple_move.dm:16">Southeast</proc>
+	<proc file="code\#lib\_super_antx_simple_move.dm:17">Southwest</proc>
+	<var file="code\HUDS\HUDS.dm:38">huds</var>
+	<var file="code\HUDS\HUDS.dm:441">window_filter
+		<val file="code\HUDS\HUDS.dm:441">null</val>
+	</var>
+	<var file="code\HUDS\HUDS.dm:442">open_windows
+		<val file="code\HUDS\HUDS.dm:442">null</val>
+	</var>
+	<var file="code\HUDS\HUDS.dm:443">exclude
+		<val file="code\HUDS\HUDS.dm:443">FALSE</val>
+	</var>
+	<proc file="code\mobs\Login.dm:4">New</proc>
+	<var file="code\mobs\player\NewChar.dm:2">making_new_character
+		<val file="code\mobs\player\NewChar.dm:2">FALSE</val>
+	</var>
+	<var file="code\mobs\player\NewChar.dm:3">newChar</var>
+</object>
+<object file="code\Admin Panel.dm:472">GlobalVarContainer
+	<var file="code\Admin Panel.dm:473">_vars</var>
+	<proc file="code\Admin Panel.dm:476">varget</proc>
+	<proc file="code\Admin Panel.dm:479">varset</proc>
+	<proc file="code\Admin Panel.dm:483">_save</proc>
+	<proc file="code\Admin Panel.dm:494">_load</proc>
+</object>
+<var file="code\Admin Panel.dm:522">gvc</var>
+<object file="code\Fonts.dm:35">TextFont
+	<object file="code\Fonts.dm:50">El_Font
+		<var file="code\Fonts.dm:51">mode
+			<val file="code\Fonts.dm:51">1</val>
+		</var>
+		<var file="code\Fonts.dm:52">width
+			<val file="code\Fonts.dm:52">8</val>
+		</var>
+		<var file="code\Fonts.dm:53">height
+			<val file="code\Fonts.dm:53">16</val>
+		</var>
+		<var file="code\Fonts.dm:54">horizontal_offset
+			<val file="code\Fonts.dm:54">0</val>
+		</var>
+		<var file="code\Fonts.dm:55">space_width
+			<val file="code\Fonts.dm:55">4</val>
+		</var>
+		<var file="code\Fonts.dm:56">tab_width
+			<val file="code\Fonts.dm:56">4</val>
+		</var>
+		<var file="code\Fonts.dm:57">line_height_offset
+			<val file="code\Fonts.dm:57">2</val>
+		</var>
+		<var file="code\Fonts.dm:58">icon
+			<val file="code\Fonts.dm:58">'icons/HUDS/Fonts/CourierNewBold10pt.dmi'</val>
+		</var>
+		<var file="code\Fonts.dm:59">extra_pad
+			<val file="code\Fonts.dm:59">1</val>
+		</var>
+		<var file="code\Fonts.dm:60">space_pad
+			<val file="code\Fonts.dm:60">1</val>
+		</var>
+	</object>
+	<object file="code\Fonts.dm:61">ShadowFont
+		<var file="code\Fonts.dm:62">mode
+			<val file="code\Fonts.dm:62">1</val>
+		</var>
+		<var file="code\Fonts.dm:63">width
+			<val file="code\Fonts.dm:63">6</val>
+		</var>
+		<var file="code\Fonts.dm:64">height
+			<val file="code\Fonts.dm:64">10</val>
+		</var>
+		<var file="code\Fonts.dm:65">horizontal_offset
+			<val file="code\Fonts.dm:65">0</val>
+		</var>
+		<var file="code\Fonts.dm:66">space_width
+			<val file="code\Fonts.dm:66">4</val>
+		</var>
+		<var file="code\Fonts.dm:67">tab_width
+			<val file="code\Fonts.dm:67">4</val>
+		</var>
+		<var file="code\Fonts.dm:68">line_height_offset
+			<val file="code\Fonts.dm:68">2</val>
+		</var>
+		<var file="code\Fonts.dm:69">icon
+			<val file="code\Fonts.dm:69">'icons/HUDS/Fonts/_Font.dmi'</val>
+		</var>
+		<var file="code\Fonts.dm:70">extra_pad
+			<val file="code\Fonts.dm:70">1</val>
+		</var>
+		<var file="code\Fonts.dm:71">space_pad
+			<val file="code\Fonts.dm:71">1</val>
+		</var>
+	</object>
+	<var file="code\ScreenText.dm:68">mode
+		<val file="code\ScreenText.dm:68">1</val>
+	</var>
+	<var file="code\ScreenText.dm:69">width</var>
+	<var file="code\ScreenText.dm:70">height</var>
+	<var file="code\ScreenText.dm:71">horizontal_offset</var>
+	<var file="code\ScreenText.dm:72">space_width
+		<val file="code\ScreenText.dm:72">3</val>
+	</var>
+	<var file="code\ScreenText.dm:73">tab_width
+		<val file="code\ScreenText.dm:73">4</val>
+	</var>
+	<var file="code\ScreenText.dm:74">line_height_offset
+		<val file="code\ScreenText.dm:74">2</val>
+	</var>
+	<var file="code\ScreenText.dm:75">icon</var>
+	<var file="code\ScreenText.dm:76">extra_pad
+		<val file="code\ScreenText.dm:76">1</val>
+	</var>
+	<var file="code\ScreenText.dm:77">space_pad
+		<val file="code\ScreenText.dm:77">1</val>
+	</var>
+	<var file="code\ScreenText.dm:78">cached_colors</var>
+	<proc file="code\ScreenText.dm:81">getLetterWidth</proc>
+	<proc file="code\ScreenText.dm:86">getVariableWidth</proc>
+	<proc file="code\ScreenText.dm:88">getColor</proc>
+	<object file="code\ScreenText.dm:101">Default
+		<var file="code\ScreenText.dm:103">mode
+			<val file="code\ScreenText.dm:103">1</val>
+		</var>
+		<var file="code\ScreenText.dm:104">width
+			<val file="code\ScreenText.dm:104">7</val>
+		</var>
+		<var file="code\ScreenText.dm:105">height
+			<val file="code\ScreenText.dm:105">9</val>
+		</var>
+		<var file="code\ScreenText.dm:106">horizontal_offset
+			<val file="code\ScreenText.dm:106">1</val>
+		</var>
+	</object>
+</object>
+<var file="code\Fonts.dm:74">shadowFont</var>
+<var file="code\Fonts.dm:75">courierFont</var>
+<object file="code\hooks.dm:51">DefaultHook
+	<var file="code\hooks.dm:52">cli</var>
+	<proc file="code\hooks.dm:53">New</proc>
+	<proc file="code\hooks.dm:57">keydown</proc>
+	<proc file="code\hooks.dm:58">keyup</proc>
+	<proc file="code\hooks.dm:59">savehook</proc>
+	<proc file="code\hooks.dm:61">keydown</proc>
+	<proc file="code\hooks.dm:75">keyup</proc>
+</object>
+<var file="code\Save.dm:1">savable_variables</var>
+<object file="code\ScreenText.dm:109">TextObjectInfoHolder
+	<var file="code\ScreenText.dm:111">Width</var>
+	<var file="code\ScreenText.dm:112">Height</var>
+	<var file="code\ScreenText.dm:113">Text</var>
+	<var file="code\ScreenText.dm:114">Overlay</var>
+</object>
+<obj file="code\ScreenText.dm:116">TextObject
+	<var file="code\ScreenText.dm:117">parent_type
+		<val file="code\ScreenText.dm:117">/Component</val>
+	</var>
+	<var file="code\ScreenText.dm:118">overlay_text</var>
+	<proc file="code\ScreenText.dm:120">Copy</proc>
+</obj>
+<object file="code\ScreenText.dm:126">TemporaryTextHolder
+	<var file="code\ScreenText.dm:128">current_x_pos
+		<val file="code\ScreenText.dm:128">0</val>
+	</var>
+	<var file="code\ScreenText.dm:129">current_y_pos
+		<val file="code\ScreenText.dm:129">0</val>
+	</var>
+	<var file="code\ScreenText.dm:130">highest_width_reached
+		<val file="code\ScreenText.dm:130">0</val>
+	</var>
+	<var file="code\ScreenText.dm:131">highest_height_reached
+		<val file="code\ScreenText.dm:131">0</val>
+	</var>
+	<var file="code\ScreenText.dm:132">max_width</var>
+	<var file="code\ScreenText.dm:133">max_height</var>
+	<var file="code\ScreenText.dm:134">Font</var>
+	<var file="code\ScreenText.dm:135">overlay_object</var>
+	<var file="code\ScreenText.dm:139">char</var>
+	<var file="code\ScreenText.dm:136">LAYER</var>
+	<var file="code\ScreenText.dm:137">height_reached
+		<val file="code\ScreenText.dm:137">0</val>
+	</var>
+	<var file="code\ScreenText.dm:138">first_line_break
+		<val file="code\ScreenText.dm:138">TRUE</val>
+	</var>
+	<proc file="code\ScreenText.dm:141">AddLetter</proc>
+	<proc file="code\ScreenText.dm:157">AddTab</proc>
+	<proc file="code\ScreenText.dm:163">AddLineBreak</proc>
+	<proc file="code\ScreenText.dm:174">ForceAddLetter</proc>
+</object>
+<object file="code\ScreenText.dm:190">left_overs
+	<var file="code\ScreenText.dm:191">more_text
+		<val file="code\ScreenText.dm:191">""</val>
+	</var>
+</object>
+<object file="code\ScreenText.dm:193">TextWriter
+	<var file="code\ScreenText.dm:194">cache</var>
+	<var file="code\ScreenText.dm:195">current_color
+		<val file="code\ScreenText.dm:195">"null"</val>
+	</var>
+	<var file="code\ScreenText.dm:196">current_icon</var>
+	<proc file="code\ScreenText.dm:198">WrapText</proc>
+	<proc file="code\ScreenText.dm:206">WordWrap</proc>
+	<proc file="code\ScreenText.dm:217">GetWordSize</proc>
+	<proc file="code\ScreenText.dm:237">changeColor</proc>
+	<proc file="code\ScreenText.dm:247">WriteText</proc>
+</object>
+<object file="code\ScreenText.dm:308">WordGroupHandler
+	<var file="code\ScreenText.dm:309">group</var>
+	<var file="code\ScreenText.dm:310">font</var>
+	<var file="code\ScreenText.dm:311">current_size
+		<val file="code\ScreenText.dm:311">0</val>
+	</var>
+	<var file="code\ScreenText.dm:312">x
+		<val file="code\ScreenText.dm:312">0</val>
+	</var>
+	<var file="code\ScreenText.dm:313">y
+		<val file="code\ScreenText.dm:313">0</val>
+	</var>
+	<proc file="code\ScreenText.dm:315">feed</proc>
+</object>
+<object file="code\ScreenText.dm:318">WordWriter
+	<var file="code\ScreenText.dm:319">cache</var>
+	<proc file="code\ScreenText.dm:321">getWordGroup</proc>
+	<proc file="code\ScreenText.dm:327">processWord</proc>
+	<proc file="code\ScreenText.dm:330">getLink</proc>
+</object>
+<object file="code\ScreenText.dm:340">WordGroup
+	<var file="code\ScreenText.dm:341">words</var>
+	<var file="code\ScreenText.dm:342">height</var>
+	<var file="code\ScreenText.dm:343">width</var>
+	<proc file="code\ScreenText.dm:350">screen</proc>
+</object>
+<obj file="code\ScreenText.dm:359">ScreenTextLink
+	<var file="code\ScreenText.dm:360">parent_type
+		<val file="code\ScreenText.dm:360">/obj</val>
+	</var>
+	<var file="code\ScreenText.dm:361">link</var>
+	<proc file="code\ScreenText.dm:362">New</proc>
+	<proc file="code\ScreenText.dm:366">Click</proc>
+</obj>
+<var file="code\ScreenText.dm:370">TextWriter</var>
+<var file="code\ScreenText.dm:371">DefaultFont</var>
+<obj file="code\turfs.dm:1">TurfEdit
+	<var file="code\turfs.dm:2">parent_type
+		<val file="code\turfs.dm:2">/obj</val>
+	</var>
+	<var file="code\turfs.dm:3">icon
+		<val file="code\turfs.dm:3">'icons/turfs/turf_edit.dmi'</val>
+	</var>
+	<proc file="code\turfs.dm:5">mod</proc>
+	<proc file="code\turfs.dm:6">New</proc>
+	<obj file="code\turfs.dm:11">Density
+		<var file="code\turfs.dm:12">icon_state
+			<val file="code\turfs.dm:12">"d"</val>
+		</var>
+		<proc file="code\turfs.dm:13">mod</proc>
+	</obj>
+</obj>
+<turf file="code\turfs.dm:16">turf
+	<turf file="code\turfs.dm:17">set_1
+		<var file="code\turfs.dm:18">icon
+			<val file="code\turfs.dm:18">'icons/turfs/turfs1.dmi'</val>
+		</var>
+	</turf>
+	<turf file="code\turfs.dm:19">dirt1
+		<var file="code\turfs.dm:20">icon
+			<val file="code\turfs.dm:20">'icons/turfs/dirt1.dmi'</val>
+		</var>
+	</turf>
+	<turf file="code\turfs.dm:21">dirt2
+		<var file="code\turfs.dm:22">icon
+			<val file="code\turfs.dm:22">'icons/turfs/dirt2.dmi'</val>
+		</var>
+	</turf>
+	<turf file="code\turfs.dm:23">grass
+		<var file="code\turfs.dm:24">icon
+			<val file="code\turfs.dm:24">'icons/turfs/grass.dmi'</val>
+		</var>
+	</turf>
+	<turf file="code\turfs.dm:25">grass2
+		<var file="code\turfs.dm:26">icon
+			<val file="code\turfs.dm:26">'icons/turfs/grass2.dmi'</val>
+		</var>
+	</turf>
+	<turf file="code\turfs.dm:27">bridges
+		<var file="code\turfs.dm:28">icon
+			<val file="code\turfs.dm:28">'icons/turfs/bridges.dmi'</val>
+		</var>
+	</turf>
+	<turf file="code\turfs.dm:29">hole
+		<var file="code\turfs.dm:30">icon
+			<val file="code\turfs.dm:30">'icons/turfs/hole.dmi'</val>
+		</var>
+	</turf>
+	<turf file="code\turfs.dm:31">hole2
+		<var file="code\turfs.dm:32">icon
+			<val file="code\turfs.dm:32">'icons/turfs/hole2.dmi'</val>
+		</var>
+	</turf>
+	<turf file="code\turfs.dm:33">hole_black
+		<var file="code\turfs.dm:34">icon
+			<val file="code\turfs.dm:34">'icons/turfs/hole black.dmi'</val>
+		</var>
+	</turf>
+	<turf file="code\turfs.dm:35">tree_tops
+		<var file="code\turfs.dm:36">icon
+			<val file="code\turfs.dm:36">'icons/turfs/tree_tops.dmi'</val>
+		</var>
+		<var file="code\turfs.dm:37">layer</var>
+	</turf>
+	<turf file="code\turfs.dm:38">tree_bottoms
+		<var file="code\turfs.dm:39">icon
+			<val file="code\turfs.dm:39">'icons/turfs/tree_bottoms.dmi'</val>
+		</var>
+		<var file="code\turfs.dm:40">layer</var>
+	</turf>
+	<proc file="code\Items\Relic Fusing HUD.dm:161">DblClick</proc>
+</turf>
+<object file="code\util.dm:3">atom
+	<proc file="code\util.dm:5">_flick</proc>
+</object>
+<var file="code\util.dm:159">cache_icons</var>
+<var file="code\util.dm:160">_save_icon_cache
+	<val file="code\util.dm:160">TRUE</val>
+</var>
+<var file="code\util.dm:161">_load_icon_cache
+	<val file="code\util.dm:161">TRUE</val>
+</var>
+<object file="code\world.dm:1">world
+	<var file="code\world.dm:2">view
+		<val file="code\world.dm:2">"25x19"</val>
+	</var>
+	<var file="code\world.dm:3">mob
+		<val file="code\world.dm:3">/player</val>
+	</var>
+	<proc file="code\world.dm:7">New</proc>
+	<proc file="code\world.dm:27">Del</proc>
+</object>
+<object file="code\#lib\_forum_account_keyboard.dm:13">datum
+	<proc file="code\#lib\_forum_account_keyboard.dm:19">key_up</proc>
+	<proc file="code\#lib\_forum_account_keyboard.dm:20">key_down</proc>
+	<proc file="code\#lib\_forum_account_keyboard.dm:29">key_repeat</proc>
+	<proc file="code\#lib\_forum_account_keyboard.dm:33">click</proc>
+</object>
+<mob file="code\#lib\_super_antx_simple_move.dm:50">player
+	<proc file="code\#lib\_super_antx_simple_move.dm:53">Login</proc>
+	<verb file="code\#lib\_super_antx_simple_move.dm:63">north</verb>
+	<verb file="code\#lib\_super_antx_simple_move.dm:68">north_up</verb>
+	<verb file="code\#lib\_super_antx_simple_move.dm:73">south</verb>
+	<verb file="code\#lib\_super_antx_simple_move.dm:78">south_up</verb>
+	<verb file="code\#lib\_super_antx_simple_move.dm:83">east</verb>
+	<verb file="code\#lib\_super_antx_simple_move.dm:88">east_up</verb>
+	<verb file="code\#lib\_super_antx_simple_move.dm:93">west</verb>
+	<verb file="code\#lib\_super_antx_simple_move.dm:98">west_up</verb>
+	<var file="code\#lib\_super_antx_simple_move.dm:117">animate_movement
+		<val file="code\#lib\_super_antx_simple_move.dm:117">2</val>
+	</var>
+	<var file="code\#lib\_super_antx_simple_move.dm:121">move_delay
+		<val file="code\#lib\_super_antx_simple_move.dm:121">1</val>
+	</var>
+	<var file="code\#lib\_super_antx_simple_move.dm:124">move_disabled
+		<val file="code\#lib\_super_antx_simple_move.dm:124">0</val>
+	</var>
+	<var file="code\#lib\_super_antx_simple_move.dm:128">move_type
+		<val file="code\#lib\_super_antx_simple_move.dm:128">1</val>
+	</var>
+	<var file="code\#lib\_super_antx_simple_move.dm:131">move_int
+		<val file="code\#lib\_super_antx_simple_move.dm:131">0</val>
+	</var>
+	<var file="code\#lib\_super_antx_simple_move.dm:135">key1
+		<val file="code\#lib\_super_antx_simple_move.dm:135">0</val>
+	</var>
+	<var file="code\#lib\_super_antx_simple_move.dm:136">key2
+		<val file="code\#lib\_super_antx_simple_move.dm:136">0</val>
+	</var>
+	<var file="code\#lib\_super_antx_simple_move.dm:137">key3
+		<val file="code\#lib\_super_antx_simple_move.dm:137">0</val>
+	</var>
+	<var file="code\#lib\_super_antx_simple_move.dm:138">key4
+		<val file="code\#lib\_super_antx_simple_move.dm:138">0</val>
+	</var>
+	<proc file="code\#lib\_super_antx_simple_move.dm:146">MovementLoop</proc>
+	<proc file="code\#lib\_super_antx_simple_move.dm:166">canMove</proc>
+	<proc file="code\#lib\_super_antx_simple_move.dm:181">stepDefault</proc>
+	<proc file="code\#lib\_super_antx_simple_move.dm:222">stepStrafe</proc>
+	<proc file="code\#lib\_super_antx_simple_move.dm:287">stepDiagonal</proc>
+	<proc file="code\#lib\_super_antx_simple_move.dm:335">keySet</proc>
+	<proc file="code\#lib\_super_antx_simple_move.dm:343">keyDel</proc>
+	<var file="code\mobs\player\players.dm:2">parent_type
+		<val file="code\mobs\player\players.dm:2">/mob</val>
+	</var>
+	<var file="code\mobs\player\players.dm:3">bound_width
+		<val file="code\mobs\player\players.dm:3">32</val>
+	</var>
+	<var file="code\mobs\player\players.dm:4">bound_height
+		<val file="code\mobs\player\players.dm:4">32</val>
+	</var>
+	<var file="code\mobs\player\players.dm:5">move_type
+		<val file="code\mobs\player\players.dm:5">1</val>
+	</var>
+	<var file="code\mobs\player\players.dm:6">move_delay
+		<val file="code\mobs\player\players.dm:6">0</val>
+	</var>
+	<var file="code\mobs\player\players.dm:7">pixel_y
+		<val file="code\mobs\player\players.dm:7">-2</val>
+	</var>
+	<var file="code\mobs\player\players.dm:8">pixel_x
+		<val file="code\mobs\player\players.dm:8">-17</val>
+	</var>
+</mob>
+<obj file="code\battle\projectiles-def.dm:1">projectile
+	<var file="code\battle\projectiles-def.dm:2">parent_type
+		<val file="code\battle\projectiles-def.dm:2">/obj</val>
+	</var>
+	<var file="code\battle\projectiles-def.dm:4">density
+		<val file="code\battle\projectiles-def.dm:4">0</val>
+	</var>
+	<var file="code\battle\projectiles-def.dm:7">moving
+		<val file="code\battle\projectiles-def.dm:7">FALSE</val>
+	</var>
+	<var file="code\battle\projectiles-def.dm:8">delay
+		<val file="code\battle\projectiles-def.dm:8">1</val>
+	</var>
+	<var file="code\battle\projectiles-def.dm:10">speed
+		<val file="code\battle\projectiles-def.dm:10">5</val>
+	</var>
+	<var file="code\battle\projectiles-def.dm:12">owner</var>
+	<proc file="code\battle\projectiles-def.dm:15">_move</proc>
+	<proc file="code\battle\projectiles-def.dm:17">hit</proc>
+	<proc file="code\battle\projectiles-def.dm:18">stopped</proc>
+	<proc file="code\battle\projectiles-def.dm:19">clash</proc>
+	<proc file="code\battle\projectiles-def.dm:21">Move</proc>
+	<proc file="code\battle\projectiles-def.dm:25">Cross</proc>
+	<obj file="code\battle\projectiles.dm:2">test_projectile
+		<var file="code\battle\projectiles.dm:3">icon
+			<val file="code\battle\projectiles.dm:3">'icons/test_projectile.dmi'</val>
+		</var>
+		<var file="code\battle\projectiles.dm:4">bound_width
+			<val file="code\battle\projectiles.dm:4">16</val>
+		</var>
+		<var file="code\battle\projectiles.dm:5">bound_height
+			<val file="code\battle\projectiles.dm:5">16</val>
+		</var>
+	</obj>
+</obj>
+<obj file="code\HUDS\Dialog.dm:1">DialogBox
+	<var file="code\HUDS\Dialog.dm:5">invisibility
+		<val file="code\HUDS\Dialog.dm:5">101</val>
+	</var>
+	<var file="code\HUDS\Dialog.dm:6">parent_type
+		<val file="code\HUDS\Dialog.dm:6">/Component</val>
+	</var>
+	<var file="code\HUDS\Dialog.dm:7">message_queue</var>
+	<var file="code\HUDS\Dialog.dm:8">displayingMessage
+		<val file="code\HUDS\Dialog.dm:8">FALSE</val>
+	</var>
+	<var file="code\HUDS\Dialog.dm:9">textObject</var>
+	<var file="code\HUDS\Dialog.dm:10">hidden
+		<val file="code\HUDS\Dialog.dm:10">FALSE</val>
+	</var>
+	<var file="code\HUDS\Dialog.dm:11">default_leftovers</var>
+	<var file="code\HUDS\Dialog.dm:12">waiting
+		<val file="code\HUDS\Dialog.dm:12">FALSE</val>
+	</var>
+	<var file="code\HUDS\Dialog.dm:13">reset_wait
+		<val file="code\HUDS\Dialog.dm:13">FALSE</val>
+	</var>
+	<proc file="code\HUDS\Dialog.dm:15">addToQueue</proc>
+	<proc file="code\HUDS\Dialog.dm:26">displayMessage</proc>
+	<proc file="code\HUDS\Dialog.dm:45">show</proc>
+	<proc file="code\HUDS\Dialog.dm:53">nextMessage</proc>
+	<proc file="code\HUDS\Dialog.dm:69">hide</proc>
+	<proc file="code\HUDS\Dialog.dm:78">createTextObject</proc>
+	<proc file="code\HUDS\Dialog.dm:81">addTextObject</proc>
+	<proc file="code\HUDS\Dialog.dm:88">waitForQueue</proc>
+	<obj file="code\HUDS\Dialog.dm:112">DefaultDialogBox
+		<var file="code\HUDS\Dialog.dm:113">icon
+			<val file="code\HUDS\Dialog.dm:113">'icons/HUDS/Dialog Box.dmi'</val>
+		</var>
+	</obj>
+	<proc file="code\HUDS\Dialog.dm:128">redraw</proc>
+</obj>
+<obj file="code\HUDS\HUD_def.dm:1">HUD
+	<var file="code\HUDS\HUD_def.dm:2">parent_type
+		<val file="code\HUDS\HUD_def.dm:2">/obj</val>
+	</var>
+	<var file="code\HUDS\HUD_def.dm:3">layer</var>
+	<var file="code\HUDS\HUD_def.dm:5">screen_x
+		<val file="code\HUDS\HUD_def.dm:5">0</val>
+	</var>
+	<var file="code\HUDS\HUD_def.dm:6">screen_y
+		<val file="code\HUDS\HUD_def.dm:6">0</val>
+	</var>
+	<var file="code\HUDS\HUD_def.dm:7">screen_x_offset
+		<val file="code\HUDS\HUD_def.dm:7">0</val>
+	</var>
+	<var file="code\HUDS\HUD_def.dm:8">screen_y_offset
+		<val file="code\HUDS\HUD_def.dm:8">0</val>
+	</var>
+	<var file="code\HUDS\HUD_def.dm:9">screen_map
+		<val file="code\HUDS\HUD_def.dm:9">""</val>
+	</var>
+	<proc file="code\HUDS\HUD_def.dm:10">New</proc>
+	<proc file="code\HUDS\HUD_def.dm:24">setClient</proc>
+	<proc file="code\HUDS\HUD_def.dm:27">changeScreenX</proc>
+	<proc file="code\HUDS\HUD_def.dm:29">changeScreenY</proc>
+	<proc file="code\HUDS\HUD_def.dm:31">changeScreenOX</proc>
+	<proc file="code\HUDS\HUD_def.dm:33">changeScreenOY</proc>
+	<proc file="code\HUDS\HUD_def.dm:36">setScreenX</proc>
+	<proc file="code\HUDS\HUD_def.dm:38">setScreenY</proc>
+	<proc file="code\HUDS\HUD_def.dm:40">setScreenOX</proc>
+	<proc file="code\HUDS\HUD_def.dm:42">setScreenOY</proc>
+	<proc file="code\HUDS\HUD_def.dm:44">setScreenMap</proc>
+	<proc file="code\HUDS\HUD_def.dm:47">setScreenLoc</proc>
+	<proc file="code\HUDS\HUD_def.dm:71">screenLocChanged</proc>
+</obj>
+<obj file="code\HUDS\HUD_def.dm:74">Component
+	<var file="code\HUDS\HUD_def.dm:75">parent_type
+		<val file="code\HUDS\HUD_def.dm:75">/HUD</val>
+	</var>
+	<proc file="code\HUDS\HUD_def.dm:77">New</proc>
+	<proc file="code\HUDS\HUD_def.dm:86">Del</proc>
+	<var file="code\HUDS\HUD_def.dm:96">cx</var>
+	<var file="code\HUDS\HUD_def.dm:97">cy</var>
+	<var file="code\HUDS\HUD_def.dm:98">width</var>
+	<var file="code\HUDS\HUD_def.dm:99">height</var>
+	<var file="code\HUDS\HUD_def.dm:100">parent</var>
+	<var file="code\HUDS\HUD_def.dm:101">children</var>
+	<var file="code\HUDS\HUD_def.dm:102">user</var>
+	<var file="code\HUDS\HUD_def.dm:103">deleteChildren
+		<val file="code\HUDS\HUD_def.dm:103">TRUE</val>
+	</var>
+	<proc file="code\HUDS\HUD_def.dm:106">setUser</proc>
+	<proc file="code\HUDS\HUD_def.dm:110">getX</proc>
+	<proc file="code\HUDS\HUD_def.dm:112">getY</proc>
+	<proc file="code\HUDS\HUD_def.dm:114">getWidth</proc>
+	<proc file="code\HUDS\HUD_def.dm:116">getHeight</proc>
+	<proc file="code\HUDS\HUD_def.dm:118">getParent</proc>
+	<proc file="code\HUDS\HUD_def.dm:121">setParent</proc>
+	<proc file="code\HUDS\HUD_def.dm:129">addChild</proc>
+	<proc file="code\HUDS\HUD_def.dm:137">removeChild</proc>
+	<proc file="code\HUDS\HUD_def.dm:144">hasChildren</proc>
+	<proc file="code\HUDS\HUD_def.dm:149">getChildren</proc>
+	<proc file="code\HUDS\HUD_def.dm:151">setInvisibility</proc>
+	<proc file="code\HUDS\HUD_def.dm:159">setX</proc>
+	<proc file="code\HUDS\HUD_def.dm:165">setY</proc>
+	<proc file="code\HUDS\HUD_def.dm:171">setWidth</proc>
+	<proc file="code\HUDS\HUD_def.dm:177">setHeight</proc>
+	<proc file="code\HUDS\HUD_def.dm:180">updateSize</proc>
+	<proc file="code\HUDS\HUD_def.dm:183">draw</proc>
+	<proc file="code\HUDS\HUD_def.dm:184">reset</proc>
+	<proc file="code\HUDS\HUD_def.dm:188">redraw</proc>
+	<proc file="code\HUDS\HUD_def.dm:192">updateChildrenPos</proc>
+	<proc file="code\HUDS\HUD_def.dm:206">updatePosition</proc>
+	<obj file="code\HUDS\HUD_def.dm:222">Label
+		<var file="code\HUDS\HUD_def.dm:223">ltext
+			<val file="code\HUDS\HUD_def.dm:223">""</val>
+		</var>
+		<proc file="code\HUDS\HUD_def.dm:224">updateSize</proc>
+		<proc file="code\HUDS\HUD_def.dm:226">setText</proc>
+		<proc file="code\HUDS\HUD_def.dm:227">getText</proc>
+		<proc file="code\HUDS\HUD_def.dm:228">draw</proc>
+		<obj file="code\mobs\player\NewChar.dm:33">NewCharName
+			<proc file="code\mobs\player\NewChar.dm:34">draw</proc>
+			<proc file="code\mobs\player\NewChar.dm:37">clicked</proc>
+		</obj>
+		<obj file="code\mobs\player\NewChar.dm:57">affinityLabel
+			<proc file="code\mobs\player\NewChar.dm:58">draw</proc>
+		</obj>
+	</obj>
+	<obj file="code\HUDS\HUDS.dm:30">StaticIcon
+		<obj file="code\HUDS\HUDS.dm:30">TopLeftHolderBackground
+			<var file="code\HUDS\HUDS.dm:31">icon
+				<val file="code\HUDS\HUDS.dm:31">'icons/HUDS/Info Display/top_left_background.dmi'</val>
+			</var>
+			<var file="code\HUDS\HUDS.dm:32">layer</var>
+			<proc file="code\HUDS\HUDS.dm:33">DblClick</proc>
+		</obj>
+		<proc file="code\HUDS\HUDS.dm:107">reset</proc>
+		<proc file="code\HUDS\HUDS.dm:108">redraw</proc>
+		<proc file="code\HUDS\HUDS.dm:109">draw</proc>
+		<obj file="code\Items\Inventory HUD.dm:2">ItemHolder
+			<var file="code\Items\Inventory HUD.dm:3">icon
+				<val file="code\Items\Inventory HUD.dm:3">'icons/HUDS/Item Window/item ui holder.dmi'</val>
+			</var>
+			<var file="code\Items\Inventory HUD.dm:4">icon_state
+				<val file="code\Items\Inventory HUD.dm:4">"normal"</val>
+			</var>
+			<var file="code\Items\Inventory HUD.dm:5">_pos
+				<val file="code\Items\Inventory HUD.dm:5">0</val>
+			</var>
+			<var file="code\Items\Inventory HUD.dm:6">item</var>
+		</obj>
+		<obj file="code\Items\Inventory HUD.dm:7">InventoryButton
+			<var file="code\Items\Inventory HUD.dm:8">icon_state
+				<val file="code\Items\Inventory HUD.dm:8">"normal"</val>
+			</var>
+			<var file="code\Items\Inventory HUD.dm:9">window</var>
+			<proc file="code\Items\Inventory HUD.dm:10">MouseEntered</proc>
+			<proc file="code\Items\Inventory HUD.dm:13">MouseExited</proc>
+			<proc file="code\Items\Inventory HUD.dm:17">setParentInventory</proc>
+			<obj file="code\Items\Inventory HUD.dm:22">InventoryArrowRight
+				<var file="code\Items\Inventory HUD.dm:23">icon
+					<val file="code\Items\Inventory HUD.dm:23">'icons/HUDS/right arrow.dmi'</val>
+				</var>
+				<proc file="code\Items\Inventory HUD.dm:24">Click</proc>
+			</obj>
+			<obj file="code\Items\Inventory HUD.dm:27">InventoryArrowLeft
+				<var file="code\Items\Inventory HUD.dm:28">icon
+					<val file="code\Items\Inventory HUD.dm:28">'icons/HUDS/left arrow.dmi'</val>
+				</var>
+				<proc file="code\Items\Inventory HUD.dm:29">Click</proc>
+			</obj>
+		</obj>
+		<obj file="code\Items\Relic Fusing HUD.dm:115">RelicCombiningSlot
+			<var file="code\Items\Relic Fusing HUD.dm:116">item_rep</var>
+			<var file="code\Items\Relic Fusing HUD.dm:117">held_item</var>
+			<var file="code\Items\Relic Fusing HUD.dm:118">icon
+				<val file="code\Items\Relic Fusing HUD.dm:118">'icons/HUDS/Holder.dmi'</val>
+			</var>
+			<var file="code\Items\Relic Fusing HUD.dm:119">mouse_opacity
+				<val file="code\Items\Relic Fusing HUD.dm:119">2</val>
+			</var>
+			<proc file="code\Items\Relic Fusing HUD.dm:121">clearItem</proc>
+			<proc file="code\Items\Relic Fusing HUD.dm:126">setItem</proc>
+			<proc file="code\Items\Relic Fusing HUD.dm:131">create_item_rep</proc>
+			<proc file="code\Items\Relic Fusing HUD.dm:135">MouseDown</proc>
+			<proc file="code\Items\Relic Fusing HUD.dm:138">MouseDrop</proc>
+		</obj>
+	</obj>
+	<obj file="code\HUDS\HUDS.dm:112">HPManaBack
+		<var file="code\HUDS\HUDS.dm:113">icon
+			<val file="code\HUDS\HUDS.dm:113">'icons/HUDS/Info Display/mana_hp_back.dmi'</val>
+		</var>
+		<proc file="code\HUDS\HUDS.dm:114">redraw</proc>
+		<var file="code\HUDS\HUDS.dm:115">mouse_opacity
+			<val file="code\HUDS\HUDS.dm:115">0</val>
+		</var>
+	</obj>
+	<obj file="code\HUDS\HUDS.dm:116">ExpBack
+		<var file="code\HUDS\HUDS.dm:117">icon
+			<val file="code\HUDS\HUDS.dm:117">'icons/HUDS/Info Display/exp_back.dmi'</val>
+		</var>
+		<proc file="code\HUDS\HUDS.dm:118">redraw</proc>
+	</obj>
+	<obj file="code\HUDS\HUDS.dm:119">HPDisplay
+		<var file="code\HUDS\HUDS.dm:120">value
+			<val file="code\HUDS\HUDS.dm:120">100</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:121">_icon
+			<val file="code\HUDS\HUDS.dm:121">'icons/HUDS/Info Display/hp bar.dmi'</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:122">maptext_width
+			<val file="code\HUDS\HUDS.dm:122">100</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:123">maptext_height
+			<val file="code\HUDS\HUDS.dm:123">32</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:124">mouse_opacity
+			<val file="code\HUDS\HUDS.dm:124">2</val>
+		</var>
+		<proc file="code\HUDS\HUDS.dm:126">setValue</proc>
+		<proc file="code\HUDS\HUDS.dm:130">getValue</proc>
+		<proc file="code\HUDS\HUDS.dm:132">redraw</proc>
+		<proc file="code\HUDS\HUDS.dm:135">MouseEntered</proc>
+		<proc file="code\HUDS\HUDS.dm:137">MouseExited</proc>
+	</obj>
+	<obj file="code\HUDS\HUDS.dm:139">MPDisplay
+		<var file="code\HUDS\HUDS.dm:140">value
+			<val file="code\HUDS\HUDS.dm:140">100</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:141">_icon
+			<val file="code\HUDS\HUDS.dm:141">'icons/HUDS/Info Display/mana bar.dmi'</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:142">maptext_width
+			<val file="code\HUDS\HUDS.dm:142">100</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:143">maptext_height
+			<val file="code\HUDS\HUDS.dm:143">32</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:144">mouse_opacity
+			<val file="code\HUDS\HUDS.dm:144">2</val>
+		</var>
+		<proc file="code\HUDS\HUDS.dm:146">setValue</proc>
+		<proc file="code\HUDS\HUDS.dm:150">getValue</proc>
+		<proc file="code\HUDS\HUDS.dm:152">redraw</proc>
+		<proc file="code\HUDS\HUDS.dm:155">MouseEntered</proc>
+		<proc file="code\HUDS\HUDS.dm:157">MouseExited</proc>
+	</obj>
+	<obj file="code\HUDS\HUDS.dm:159">ExpDisplay
+		<var file="code\HUDS\HUDS.dm:160">value
+			<val file="code\HUDS\HUDS.dm:160">100</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:161">_icon
+			<val file="code\HUDS\HUDS.dm:161">'icons/HUDS/Info Display/exp bar.dmi'</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:162">maptext_width
+			<val file="code\HUDS\HUDS.dm:162">100</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:163">maptext_height
+			<val file="code\HUDS\HUDS.dm:163">32</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:164">mouse_opacity
+			<val file="code\HUDS\HUDS.dm:164">2</val>
+		</var>
+		<proc file="code\HUDS\HUDS.dm:166">setValue</proc>
+		<proc file="code\HUDS\HUDS.dm:170">getValue</proc>
+		<proc file="code\HUDS\HUDS.dm:172">redraw</proc>
+		<proc file="code\HUDS\HUDS.dm:175">MouseEntered</proc>
+		<proc file="code\HUDS\HUDS.dm:177">MouseExited</proc>
+	</obj>
+	<obj file="code\HUDS\HUDS.dm:311">MouseOver
+		<var file="code\HUDS\HUDS.dm:313">normal_state</var>
+		<var file="code\HUDS\HUDS.dm:314">mouse_over_state</var>
+		<var file="code\HUDS\HUDS.dm:315">mouse_over
+			<val file="code\HUDS\HUDS.dm:315">FALSE</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:316">_icon</var>
+		<proc file="code\HUDS\HUDS.dm:317">MouseEntered</proc>
+		<proc file="code\HUDS\HUDS.dm:321">MouseExited</proc>
+		<proc file="code\HUDS\HUDS.dm:325">reset</proc>
+		<proc file="code\HUDS\HUDS.dm:326">draw</proc>
+		<obj file="code\HUDS\HUDS.dm:332">InventoryOpenButton
+			<var file="code\HUDS\HUDS.dm:333">_icon
+				<val file="code\HUDS\HUDS.dm:333">'icons/HUDS/TopRightButton.dmi'</val>
+			</var>
+			<var file="code\HUDS\HUDS.dm:334">normal_state
+				<val file="code\HUDS\HUDS.dm:334">"inventory-normal"</val>
+			</var>
+			<var file="code\HUDS\HUDS.dm:335">mouse_over_state
+				<val file="code\HUDS\HUDS.dm:335">"inventory-selected"</val>
+			</var>
+			<proc file="code\HUDS\HUDS.dm:336">New</proc>
+			<proc file="code\HUDS\HUDS.dm:340">Click</proc>
+		</obj>
+		<obj file="code\HUDS\HUDS.dm:344">StatsOpenButton
+			<var file="code\HUDS\HUDS.dm:345">_icon
+				<val file="code\HUDS\HUDS.dm:345">'icons/HUDS/TopRightButton.dmi'</val>
+			</var>
+			<var file="code\HUDS\HUDS.dm:346">normal_state
+				<val file="code\HUDS\HUDS.dm:346">"stats-normal"</val>
+			</var>
+			<var file="code\HUDS\HUDS.dm:347">mouse_over_state
+				<val file="code\HUDS\HUDS.dm:347">"stats-selected"</val>
+			</var>
+			<proc file="code\HUDS\HUDS.dm:348">New</proc>
+			<proc file="code\HUDS\HUDS.dm:352">Click</proc>
+		</obj>
+		<obj file="code\HUDS\HUDS.dm:356">QuestsOpenButton
+			<var file="code\HUDS\HUDS.dm:357">_icon
+				<val file="code\HUDS\HUDS.dm:357">'icons/HUDS/TopRightButton.dmi'</val>
+			</var>
+			<var file="code\HUDS\HUDS.dm:358">normal_state
+				<val file="code\HUDS\HUDS.dm:358">"quests-normal"</val>
+			</var>
+			<var file="code\HUDS\HUDS.dm:359">mouse_over_state
+				<val file="code\HUDS\HUDS.dm:359">"quests-selected"</val>
+			</var>
+			<proc file="code\HUDS\HUDS.dm:360">New</proc>
+			<proc file="code\HUDS\HUDS.dm:364">Click</proc>
+		</obj>
+		<obj file="code\Items\Relic Fusing HUD.dm:147">FuseEqualsSign
+			<var file="code\Items\Relic Fusing HUD.dm:148">_icon
+				<val file="code\Items\Relic Fusing HUD.dm:148">'icons/HUDS/equals sign.dmi'</val>
+			</var>
+			<var file="code\Items\Relic Fusing HUD.dm:149">normal_state
+				<val file="code\Items\Relic Fusing HUD.dm:149">"normal"</val>
+			</var>
+			<var file="code\Items\Relic Fusing HUD.dm:150">mouse_over_state
+				<val file="code\Items\Relic Fusing HUD.dm:150">"over"</val>
+			</var>
+			<var file="code\Items\Relic Fusing HUD.dm:151">mouse_opacity
+				<val file="code\Items\Relic Fusing HUD.dm:151">2</val>
+			</var>
+			<var file="code\Items\Relic Fusing HUD.dm:152">win</var>
+			<proc file="code\Items\Relic Fusing HUD.dm:154">Click</proc>
+			<proc file="code\Items\Relic Fusing HUD.dm:157">setWindow</proc>
+		</obj>
+		<obj file="code\mobs\player\NewChar.dm:21">NewCharDoneButton
+			<var file="code\mobs\player\NewChar.dm:22">bound_width
+				<val file="code\mobs\player\NewChar.dm:22">100</val>
+			</var>
+			<var file="code\mobs\player\NewChar.dm:23">mouse_opacity
+				<val file="code\mobs\player\NewChar.dm:23">2</val>
+			</var>
+			<proc file="code\mobs\player\NewChar.dm:24">draw</proc>
+			<proc file="code\mobs\player\NewChar.dm:29">Click</proc>
+		</obj>
+		<obj file="code\mobs\player\NewChar.dm:64">Interactor
+			<var file="code\mobs\player\NewChar.dm:65">int</var>
+			<var file="code\mobs\player\NewChar.dm:66">mouse_over_state
+				<val file="code\mobs\player\NewChar.dm:66">"over"</val>
+			</var>
+			<var file="code\mobs\player\NewChar.dm:67">normal_state
+				<val file="code\mobs\player\NewChar.dm:67">"normal"</val>
+			</var>
+			<var file="code\mobs\player\NewChar.dm:68">_icon
+				<val file="code\mobs\player\NewChar.dm:68">'icons/HUDS/right arrow.dmi'</val>
+			</var>
+			<proc file="code\mobs\player\NewChar.dm:69">Click</proc>
+		</obj>
+	</obj>
+	<obj file="code\HUDS\HUDS.dm:379">Selectable
+		<var file="code\HUDS\HUDS.dm:380">selected
+			<val file="code\HUDS\HUDS.dm:380">FALSE</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:381">group</var>
+		<proc file="code\HUDS\HUDS.dm:384">toggle_select</proc>
+		<proc file="code\HUDS\HUDS.dm:387">setSelected</proc>
+		<proc file="code\HUDS\HUDS.dm:394">setGroup</proc>
+		<obj file="code\mobs\player\NewChar.dm:42">AffinitySelectable
+			<var file="code\mobs\player\NewChar.dm:43">affinity
+				<val file="code\mobs\player\NewChar.dm:43">1</val>
+			</var>
+			<var file="code\mobs\player\NewChar.dm:44">icon
+				<val file="code\mobs\player\NewChar.dm:44">'icons/HUDS/Affinity.dmi'</val>
+			</var>
+			<proc file="code\mobs\player\NewChar.dm:45">reset</proc>
+			<proc file="code\mobs\player\NewChar.dm:46">redraw</proc>
+			<proc file="code\mobs\player\NewChar.dm:47">draw</proc>
+			<proc file="code\mobs\player\NewChar.dm:51">Click</proc>
+		</obj>
+	</obj>
+</obj>
+<object file="code\HUDS\HUDS - Windows.dm:1">WindowCreator
+	<var file="code\HUDS\HUDS - Windows.dm:2">cache</var>
+	<var file="code\HUDS\HUDS - Windows.dm:4">adding_obj</var>
+	<proc file="code\HUDS\HUDS - Windows.dm:8">createWindow</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:26">getWindowSkin</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:35">setState</proc>
+</object>
+<var file="code\HUDS\HUDS - Windows.dm:48">windowCreator</var>
+<obj file="code\HUDS\HUDS - Windows.dm:57">Window
+	<var file="code\HUDS\HUDS - Windows.dm:58">parent_type
+		<val file="code\HUDS\HUDS - Windows.dm:58">/Component</val>
+	</var>
+	<var file="code\HUDS\HUDS - Windows.dm:59">close_button</var>
+	<var file="code\HUDS\HUDS - Windows.dm:60">window_title</var>
+	<var file="code\HUDS\HUDS - Windows.dm:61">window_icon</var>
+	<var file="code\HUDS\HUDS - Windows.dm:62">title
+		<val file="code\HUDS\HUDS - Windows.dm:62">"--Untitled--"</val>
+	</var>
+	<var file="code\HUDS\HUDS - Windows.dm:63">open
+		<val file="code\HUDS\HUDS - Windows.dm:63">FALSE</val>
+	</var>
+	<proc file="code\HUDS\HUDS - Windows.dm:64">draw</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:67">New</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:72">build</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:74">init</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:88">setIcon</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:91">close</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:100">closeWindow</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:103">open</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:112">tryOpen</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:115">openWindow</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:117">setTitle</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:120">getID</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:121">Del</proc>
+	<obj file="code\HUDS\HUDS.dm:202">StatsWindow
+		<proc file="code\HUDS\HUDS.dm:203">getID</proc>
+		<var file="code\HUDS\HUDS.dm:204">owner</var>
+		<var file="code\HUDS\HUDS.dm:205">text_object</var>
+		<proc file="code\HUDS\HUDS.dm:207">build</proc>
+		<proc file="code\HUDS\HUDS.dm:213">open</proc>
+		<proc file="code\HUDS\HUDS.dm:217">draw</proc>
+	</obj>
+	<obj file="code\Items\Inventory HUD.dm:35">InventoryWindow
+		<proc file="code\Items\Inventory HUD.dm:36">getID</proc>
+		<var file="code\Items\Inventory HUD.dm:39">rightArrow</var>
+		<var file="code\Items\Inventory HUD.dm:40">leftArrow</var>
+		<var file="code\Items\Inventory HUD.dm:44">currentPage</var>
+		<var file="code\Items\Inventory HUD.dm:41">page
+			<val file="code\Items\Inventory HUD.dm:41">1</val>
+		</var>
+		<var file="code\Items\Inventory HUD.dm:42">items_list</var>
+		<var file="code\Items\Inventory HUD.dm:43">item_holders</var>
+		<var file="code\Items\Inventory HUD.dm:46">selected_x
+			<val file="code\Items\Inventory HUD.dm:46">-1</val>
+		</var>
+		<var file="code\Items\Inventory HUD.dm:47">selected_y
+			<val file="code\Items\Inventory HUD.dm:47">-1</val>
+		</var>
+		<proc file="code\Items\Inventory HUD.dm:49">build</proc>
+		<proc file="code\Items\Inventory HUD.dm:62">buildHolders</proc>
+		<proc file="code\Items\Inventory HUD.dm:89">setList</proc>
+		<proc file="code\Items\Inventory HUD.dm:94">goRight</proc>
+		<proc file="code\Items\Inventory HUD.dm:101">goLeft</proc>
+		<proc file="code\Items\Inventory HUD.dm:108">clear</proc>
+		<proc file="code\Items\Inventory HUD.dm:151">changeArrows</proc>
+		<proc file="code\Items\Inventory HUD.dm:111">open</proc>
+		<proc file="code\Items\Inventory HUD.dm:114">close</proc>
+		<proc file="code\Items\Inventory HUD.dm:119">draw</proc>
+	</obj>
+	<obj file="code\Items\Relic Fusing HUD.dm:20">RelicCombiningWindow
+		<var file="code\Items\Relic Fusing HUD.dm:21">owner</var>
+		<var file="code\Items\Relic Fusing HUD.dm:26">first_slot</var>
+		<var file="code\Items\Relic Fusing HUD.dm:27">second_slot</var>
+		<var file="code\Items\Relic Fusing HUD.dm:28">result_slot</var>
+		<var file="code\Items\Relic Fusing HUD.dm:29">catalyst_slot</var>
+		<var file="code\Items\Relic Fusing HUD.dm:32">equals_sign</var>
+		<proc file="code\Items\Relic Fusing HUD.dm:33">build</proc>
+		<proc file="code\Items\Relic Fusing HUD.dm:56">open</proc>
+		<proc file="code\Items\Relic Fusing HUD.dm:60">close</proc>
+		<proc file="code\Items\Relic Fusing HUD.dm:64">getID</proc>
+		<proc file="code\Items\Relic Fusing HUD.dm:66">setOwner</proc>
+		<proc file="code\Items\Relic Fusing HUD.dm:67">clear</proc>
+		<proc file="code\Items\Relic Fusing HUD.dm:72">fuse</proc>
+		<proc file="code\Items\Relic Fusing HUD.dm:89">do_fuse_sim</proc>
+		<proc file="code\Items\Relic Fusing HUD.dm:109">complete_sim_end</proc>
+	</obj>
+	<obj file="code\mobs\player\NewChar.dm:96">NewCharacterWindow
+		<var file="code\mobs\player\NewChar.dm:100">doneButton</var>
+		<var file="code\mobs\player\NewChar.dm:102">affLabel</var>
+		<var file="code\mobs\player\NewChar.dm:103">charName</var>
+		<var file="code\mobs\player\NewChar.dm:104">affSelectGroup</var>
+		<var file="code\mobs\player\NewChar.dm:106">newCharObj</var>
+		<proc file="code\mobs\player\NewChar.dm:107">build</proc>
+		<proc file="code\mobs\player\NewChar.dm:136">open</proc>
+		<proc file="code\mobs\player\NewChar.dm:139">close</proc>
+		<proc file="code\mobs\player\NewChar.dm:142">setNewCharacterObject</proc>
+	</obj>
+	<obj file="code\Quests\Quests Window.dm:2">QuestsWindow
+		<proc file="code\Quests\Quests Window.dm:3">build</proc>
+	</obj>
+</obj>
+<obj file="code\HUDS\HUDS - Windows.dm:126">WindowCloseButton
+	<var file="code\HUDS\HUDS - Windows.dm:127">parent_type
+		<val file="code\HUDS\HUDS - Windows.dm:127">/Component/StaticIcon</val>
+	</var>
+	<var file="code\HUDS\HUDS - Windows.dm:128">parent_window</var>
+	<var file="code\HUDS\HUDS - Windows.dm:129">icon
+		<val file="code\HUDS\HUDS - Windows.dm:129">'icons/HUDS/Windows/window close button.dmi'</val>
+	</var>
+	<var file="code\HUDS\HUDS - Windows.dm:130">icon_state
+		<val file="code\HUDS\HUDS - Windows.dm:130">"normal"</val>
+	</var>
+	<proc file="code\HUDS\HUDS - Windows.dm:133">setParentWindow</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:137">MouseEntered</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:140">MouseExited</proc>
+	<proc file="code\HUDS\HUDS - Windows.dm:143">Click</proc>
+</obj>
+<object file="code\HUDS\HUDS.dm:1">HUDS
+	<var file="code\HUDS\HUDS.dm:3">dialog</var>
+	<var file="code\HUDS\HUDS.dm:5">topLeftHolder</var>
+	<var file="code\HUDS\HUDS.dm:6">topLeftHolderBackground</var>
+	<var file="code\HUDS\HUDS.dm:7">hpManaBack</var>
+	<var file="code\HUDS\HUDS.dm:8">expBack</var>
+	<var file="code\HUDS\HUDS.dm:9">hpDisplay</var>
+	<var file="code\HUDS\HUDS.dm:10">mpDisplay</var>
+	<var file="code\HUDS\HUDS.dm:11">expDisplay</var>
+	<var file="code\HUDS\HUDS.dm:12">nameDisplay</var>
+	<var file="code\HUDS\HUDS.dm:13">topRightHolder</var>
+	<var file="code\HUDS\HUDS.dm:15">inventoryOpenButton</var>
+	<var file="code\HUDS\HUDS.dm:16">statsOpenButton</var>
+	<var file="code\HUDS\HUDS.dm:17">questsOpenButton</var>
+	<var file="code\HUDS\HUDS.dm:19">inventoryWindow</var>
+	<var file="code\HUDS\HUDS.dm:20">statWindow</var>
+	<var file="code\HUDS\HUDS.dm:21">newCharWindow</var>
+	<var file="code\HUDS\HUDS.dm:22">relicCombiningWindow</var>
+	<var file="code\HUDS\HUDS.dm:23">questsWindow</var>
+	<proc file="code\HUDS\HUDS.dm:25">updateNameDisplay</proc>
+</object>
+<obj file="code\HUDS\HUDS.dm:369">obj
+	<obj file="code\HUDS\HUDS.dm:370">util_buttons_oval
+		<var file="code\HUDS\HUDS.dm:371">icon
+			<val file="code\HUDS\HUDS.dm:371">'icons/HUDS/TopRightButton.dmi'</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:372">icon_state
+			<val file="code\HUDS\HUDS.dm:372">"oval"</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:373">pixel_x
+			<val file="code\HUDS\HUDS.dm:373">-7</val>
+		</var>
+		<var file="code\HUDS\HUDS.dm:374">pixel_y
+			<val file="code\HUDS\HUDS.dm:374">-4</val>
+		</var>
+	</obj>
+</obj>
+<var file="code\HUDS\HUDS.dm:376">ubo</var>
+<object file="code\HUDS\HUDS.dm:398">SelectableGroup
+	<var file="code\HUDS\HUDS.dm:399">selectables</var>
+	<proc file="code\HUDS\HUDS.dm:401">addSelectable</proc>
+	<proc file="code\HUDS\HUDS.dm:406">getSelection</proc>
+	<proc file="code\HUDS\HUDS.dm:411">allowSelection</proc>
+	<proc file="code\HUDS\HUDS.dm:412">allowDeselection</proc>
+	<proc file="code\HUDS\HUDS.dm:413">modifyNewSelectable</proc>
+	<proc file="code\HUDS\HUDS.dm:414">select</proc>
+	<proc file="code\HUDS\HUDS.dm:415">deselect</proc>
+</object>
+<object file="code\HUDS\HUDS.dm:418">DefaultSelectableGroup
+	<var file="code\HUDS\HUDS.dm:419">parent_type
+		<val file="code\HUDS\HUDS.dm:419">/SelectableGroup</val>
+	</var>
+	<var file="code\HUDS\HUDS.dm:421">select_first
+		<val file="code\HUDS\HUDS.dm:421">TRUE</val>
+	</var>
+	<proc file="code\HUDS\HUDS.dm:422">allowSelection</proc>
+	<proc file="code\HUDS\HUDS.dm:424">allowDeselection</proc>
+	<proc file="code\HUDS\HUDS.dm:428">select</proc>
+	<proc file="code\HUDS\HUDS.dm:434">modifyNewSelectable</proc>
+</object>
+<obj file="code\Items\Item def.dm:1">Item
+	<var file="code\Items\Item def.dm:2">parent_type
+		<val file="code\Items\Item def.dm:2">/obj</val>
+	</var>
+	<var file="code\Items\Item def.dm:3">stackable
+		<val file="code\Items\Item def.dm:3">FALSE</val>
+	</var>
+	<var file="code\Items\Item def.dm:4">max_stack
+		<val file="code\Items\Item def.dm:4">99</val>
+	</var>
+	<var file="code\Items\Item def.dm:5">stack_amount
+		<val file="code\Items\Item def.dm:5">1</val>
+	</var>
+	<var file="code\Items\Item def.dm:7">mouse_opacity
+		<val file="code\Items\Item def.dm:7">2</val>
+	</var>
+	<var file="code\Items\Item def.dm:9">item_type
+		<val file="code\Items\Item def.dm:9">"Item"</val>
+	</var>
+	<var file="code\Items\Item def.dm:11">hud_holder</var>
+	<var file="code\Items\Item def.dm:13">simulating
+		<val file="code\Items\Item def.dm:13">FALSE</val>
+	</var>
+	<var file="code\Items\Item def.dm:14">sim_removed
+		<val file="code\Items\Item def.dm:14">FALSE</val>
+	</var>
+	<var file="code\Items\Item def.dm:16">actual_stack_amount
+		<val file="code\Items\Item def.dm:16">0</val>
+	</var>
+	<proc file="code\Items\Item def.dm:19">get_small_icon</proc>
+	<proc file="code\Items\Item def.dm:20">get_small_state</proc>
+	<proc file="code\Items\Item def.dm:21">itemdraw</proc>
+	<proc file="code\Items\Item def.dm:25">use</proc>
+	<proc file="code\Items\Item def.dm:27">remove</proc>
+	<proc file="code\Items\Item def.dm:46">begin_sim</proc>
+	<proc file="code\Items\Item def.dm:50">end_sim</proc>
+	<proc file="code\Items\Item def.dm:53">sim_to_real</proc>
+	<proc file="code\Items\Item def.dm:61">MouseEntered</proc>
+	<proc file="code\Items\Item def.dm:64">MouseExited</proc>
+	<proc file="code\Items\Relic Fusing HUD.dm:5">MouseDown</proc>
+	<proc file="code\Items\Relic Fusing HUD.dm:7">MouseDrop</proc>
+</obj>
+<var file="code\Items\Relic Fusing HUD.dm:1">relic_combining_window_filter</var>
+<var file="code\Items\Relic Fusing.dm:2">_relic_fusions
+	<var file="code\Items\Relic Fusing.dm:3">"fire;fire;fire"
+		<val file="code\Items\Relic Fusing.dm:3">/Relic/GreaterFire</val>
+	</var>
+</var>
+<obj file="code\Items\Relics def.dm:1">Relic
+	<var file="code\Items\Relics def.dm:2">parent_type
+		<val file="code\Items\Relics def.dm:2">/Item</val>
+	</var>
+	<var file="code\Items\Relics def.dm:3">name
+		<val file="code\Items\Relics def.dm:3">""</val>
+	</var>
+	<var file="code\Items\Relics def.dm:4">icon
+		<val file="code\Items\Relics def.dm:4">'icons/Items/Items.dmi'</val>
+	</var>
+	<var file="code\Items\Relics def.dm:5">item_type
+		<val file="code\Items\Relics def.dm:5">"Relic"</val>
+	</var>
+	<var file="code\Items\Relics def.dm:7">stackable
+		<val file="code\Items\Relics def.dm:7">FALSE</val>
+	</var>
+	<var file="code\Items\Relics def.dm:9">relic_user</var>
+	<var file="code\Items\Relics def.dm:10">req_mana</var>
+	<var file="code\Items\Relics def.dm:11">max_mana</var>
+	<var file="code\Items\Relics def.dm:13">affinity
+		<val file="code\Items\Relics def.dm:13">0</val>
+	</var>
+	<var file="code\Items\Relics def.dm:14">relic_type
+		<val file="code\Items\Relics def.dm:14">1</val>
+	</var>
+	<proc file="code\Items\Relics def.dm:16">getRequiredMana</proc>
+	<proc file="code\Items\Relics def.dm:17">getMaxMana</proc>
+	<proc file="code\Items\Relics def.dm:18">getSimpleName</proc>
+	<obj file="code\Items\Relics.dm:2">Fire
+		<var file="code\Items\Relics.dm:3">relic_type
+			<val file="code\Items\Relics.dm:3">1</val>
+		</var>
+		<var file="code\Items\Relics.dm:4">affinity
+			<val file="code\Items\Relics.dm:4">1</val>
+		</var>
+		<var file="code\Items\Relics.dm:5">icon_state
+			<val file="code\Items\Relics.dm:5">"230"</val>
+		</var>
+		<var file="code\Items\Relics.dm:6">name
+			<val file="code\Items\Relics.dm:6">"Fire"</val>
+		</var>
+		<var file="code\Items\Relics.dm:8">desc
+			<val file="code\Items\Relics.dm:8">"Generates fire."</val>
+		</var>
+	</obj>
+	<obj file="code\Items\Relics.dm:10">GreaterFire
+		<var file="code\Items\Relics.dm:11">name
+			<val file="code\Items\Relics.dm:11">"Greater Fire"</val>
+		</var>
+		<var file="code\Items\Relics.dm:12">icon_state
+			<val file="code\Items\Relics.dm:12">"229"</val>
+		</var>
+		<var file="code\Items\Relics.dm:13">desc
+			<val file="code\Items\Relics.dm:13">"Creates an inferno."</val>
+		</var>
+	</obj>
+	<obj file="code\Items\Relics.dm:14">EarthGod
+		<var file="code\Items\Relics.dm:15">relic_type
+			<val file="code\Items\Relics.dm:15">4</val>
+		</var>
+		<var file="code\Items\Relics.dm:16">affinity
+			<val file="code\Items\Relics.dm:16">8</val>
+		</var>
+		<var file="code\Items\Relics.dm:17">icon_state
+			<val file="code\Items\Relics.dm:17">"262"</val>
+		</var>
+		<var file="code\Items\Relics.dm:18">name
+			<val file="code\Items\Relics.dm:18">"Earth God"</val>
+		</var>
+		<var file="code\Items\Relics.dm:20">desc
+			<val file="Relics.dme:44">"A protective golem that uses the user's mana to materialize."</val>
+		</var>
+	</obj>
+</obj>
+<mob file="code\mobs\AI\AI.dm:3">AI
+	<var file="code\mobs\AI\AI.dm:5">step_size
+		<val file="code\mobs\AI\AI.dm:5">8</val>
+	</var>
+	<var file="code\mobs\AI\AI.dm:7">actions</var>
+	<var file="code\mobs\AI\AI.dm:10">target</var>
+	<var file="code\mobs\AI\AI.dm:11">sight_range
+		<val file="code\mobs\AI\AI.dm:11">5</val>
+	</var>
+	<var file="code\mobs\AI\AI.dm:12">idle
+		<val file="code\mobs\AI\AI.dm:12">TRUE</val>
+	</var>
+	<var file="code\mobs\AI\AI.dm:13">idle_delay
+		<val file="code\mobs\AI\AI.dm:13">10</val>
+	</var>
+	<var file="code\mobs\AI\AI.dm:14">active_delay
+		<val file="code\mobs\AI\AI.dm:14">3</val>
+	</var>
+	<var file="code\mobs\AI\AI.dm:15">ai_looping
+		<val file="code\mobs\AI\AI.dm:15">FALSE</val>
+	</var>
+	<var file="code\mobs\AI\AI.dm:16">start_loc</var>
+	<var file="code\mobs\AI\AI.dm:18">walk_range
+		<val file="code\mobs\AI\AI.dm:18">5</val>
+	</var>
+	<var file="code\mobs\AI\AI.dm:19">steps_taken
+		<val file="code\mobs\AI\AI.dm:19">0</val>
+	</var>
+	<proc file="code\mobs\AI\AI.dm:21">Move</proc>
+	<var file="code\mobs\AI\AI.dm:25">parent_type
+		<val file="code\mobs\AI\AI.dm:25">/mob</val>
+	</var>
+	<proc file="code\mobs\AI\AI.dm:27">chooseAction</proc>
+	<proc file="code\mobs\AI\AI.dm:42">aiLoop</proc>
+	<proc file="code\mobs\AI\AI.dm:48">addActions</proc>
+	<proc file="code\mobs\AI\AI.dm:51">setup</proc>
+	<proc file="code\mobs\AI\AI.dm:55">New</proc>
+	<var file="code\mobs\AI\AIActions.dm:23">target_walk_to</var>
+</mob>
+<object file="code\mobs\AI\AIActions.dm:1">AIAction
+	<proc file="code\mobs\AI\AIActions.dm:3">canDo</proc>
+	<proc file="code\mobs\AI\AIActions.dm:9">rate</proc>
+	<proc file="code\mobs\AI\AIActions.dm:16">perform</proc>
+	<object file="code\mobs\AI\AIActions.dm:26">RandomWalk
+		<proc file="code\mobs\AI\AIActions.dm:27">canDo</proc>
+		<proc file="code\mobs\AI\AIActions.dm:29">rate</proc>
+		<proc file="code\mobs\AI\AIActions.dm:31">perform</proc>
+	</object>
+	<object file="code\mobs\AI\AIActions.dm:36">FindTarget
+		<proc file="code\mobs\AI\AIActions.dm:37">canDo</proc>
+		<proc file="code\mobs\AI\AIActions.dm:41">rate</proc>
+		<proc file="code\mobs\AI\AIActions.dm:45">perform</proc>
+	</object>
+	<object file="code\mobs\AI\AIActions.dm:53">FindTargetWalkRandom
+		<proc file="code\mobs\AI\AIActions.dm:54">canDo</proc>
+		<proc file="code\mobs\AI\AIActions.dm:56">rate</proc>
+		<proc file="code\mobs\AI\AIActions.dm:58">perform</proc>
+	</object>
+	<object file="code\mobs\AI\AIActions.dm:61">WalkToTarget
+		<proc file="code\mobs\AI\AIActions.dm:62">canDo</proc>
+		<proc file="code\mobs\AI\AIActions.dm:65">rate</proc>
+		<proc file="code\mobs\AI\AIActions.dm:67">perform</proc>
+	</object>
+	<object file="code\mobs\AI\AIActions.dm:69">LoseTarget
+		<proc file="code\mobs\AI\AIActions.dm:70">canDo</proc>
+		<proc file="code\mobs\AI\AIActions.dm:72">rate</proc>
+		<proc file="code\mobs\AI\AIActions.dm:75">perform</proc>
+	</object>
+	<object file="code\mobs\AI\AIActions.dm:78">WalkBackToPosition
+		<proc file="code\mobs\AI\AIActions.dm:79">canDo</proc>
+		<proc file="code\mobs\AI\AIActions.dm:83">rate</proc>
+		<proc file="code\mobs\AI\AIActions.dm:87">perform</proc>
+	</object>
+</object>
+<object file="code\mobs\AI\AIActions.dm:91">AI_Actions
+	<var file="code\mobs\AI\AIActions.dm:93">randomWalk</var>
+	<var file="code\mobs\AI\AIActions.dm:94">findTarget</var>
+	<var file="code\mobs\AI\AIActions.dm:95">findTargetWalkRandom</var>
+	<var file="code\mobs\AI\AIActions.dm:96">walkToTarget</var>
+	<var file="code\mobs\AI\AIActions.dm:97">walkBackToPosition</var>
+	<var file="code\mobs\AI\AIActions.dm:98">loseTarget</var>
+</object>
+<var file="code\mobs\AI\AIActions.dm:101">AIActions</var>
+<mob file="code\mobs\AI\Enemies.dm:1">Enemy
+	<var file="code\mobs\AI\Enemies.dm:2">parent_type
+		<val file="code\mobs\AI\Enemies.dm:2">/AI</val>
+	</var>
+	<proc file="code\mobs\AI\Enemies.dm:4">addDefaultActions</proc>
+	<mob file="code\mobs\AI\Enemies.dm:18">HumanEnemy
+		<var file="code\mobs\AI\Enemies.dm:19">icon
+			<val file="code\mobs\AI\Enemies.dm:19">'icons/Character/MaleBase.dmi'</val>
+		</var>
+		<var file="code\mobs\AI\Enemies.dm:20">icon_state
+			<val file="code\mobs\AI\Enemies.dm:20">"idle"</val>
+		</var>
+		<proc file="code\mobs\AI\Enemies.dm:22">addActions</proc>
+	</mob>
+</mob>
+<mob file="code\mobs\AI\Golems def.dm:1">Golem
+	<var file="code\mobs\AI\Golems def.dm:2">parent_type
+		<val file="code\mobs\AI\Golems def.dm:2">/AI</val>
+	</var>
+	<mob file="Relics.dme:51">EarthGod</mob>
+</mob>
+<mob file="code\mobs\NPC\#1 npc_def.dm:8">NPC
+	<var file="code\mobs\NPC\#1 npc_def.dm:9">parent_type
+		<val file="code\mobs\NPC\#1 npc_def.dm:9">/mob</val>
+	</var>
+	<var file="code\mobs\NPC\#1 npc_def.dm:10">turn_to_talk
+		<val file="code\mobs\NPC\#1 npc_def.dm:10">TRUE</val>
+	</var>
+	<proc file="code\mobs\NPC\#1 npc_def.dm:11">New</proc>
+	<proc file="code\mobs\NPC\#1 npc_def.dm:15">add_name</proc>
+	<proc file="code\mobs\NPC\#1 npc_def.dm:20">action</proc>
+	<mob file="code\mobs\NPC\Paxum.dm:2">Paxum
+		<mob file="code\mobs\NPC\Paxum.dm:3">Oracle
+			<var file="code\mobs\NPC\Paxum.dm:4">icon
+				<val file="code\mobs\NPC\Paxum.dm:4">'icons/character/FemaleBase.dmi'</val>
+			</var>
+			<var file="code\mobs\NPC\Paxum.dm:5">name
+				<val file="code\mobs\NPC\Paxum.dm:5">"Oracle of Paxum"</val>
+			</var>
+			<var file="code\mobs\NPC\Paxum.dm:6">pixel_y
+				<val file="code\mobs\NPC\Paxum.dm:6">-2</val>
+			</var>
+			<var file="code\mobs\NPC\Paxum.dm:7">pixel_x
+				<val file="code\mobs\NPC\Paxum.dm:7">-17</val>
+			</var>
+			<proc file="code\mobs\NPC\Paxum.dm:8">action</proc>
+		</mob>
+	</mob>
+</mob>
+<object file="code\mobs\player\NewChar.dm:145">NewCharacter
+	<var file="code\mobs\player\NewChar.dm:147">window</var>
+	<var file="code\mobs\player\NewChar.dm:148">user</var>
+	<var file="code\mobs\player\NewChar.dm:149">errors
+		<val file="code\mobs\player\NewChar.dm:149">null</val>
+	</var>
+	<var file="code\mobs\player\NewChar.dm:150">_error</var>
+	<var file="code\mobs\player\NewChar.dm:152">name
+		<val file="code\mobs\player\NewChar.dm:152">"{name}"</val>
+	</var>
+	<var file="code\mobs\player\NewChar.dm:153">aff
+		<val file="code\mobs\player\NewChar.dm:153">0</val>
+	</var>
+	<proc file="code\mobs\player\NewChar.dm:154">New</proc>
+	<proc file="code\mobs\player\NewChar.dm:158">init</proc>
+	<proc file="code\mobs\player\NewChar.dm:172">finalize</proc>
+	<proc file="code\mobs\player\NewChar.dm:180">valid</proc>
+	<proc file="code\mobs\player\NewChar.dm:188">buildCharacter</proc>
+	<proc file="code\mobs\player\NewChar.dm:194">displayErrors</proc>
+	<proc file="code\mobs\player\NewChar.dm:201">addError</proc>
+</object>
+<var file="code\mobs\player\NewChar.dm:207">intro_1
+	<val file="code\mobs\player\NewChar.dm:209">"Long ago...much of the world was ruled by the"</val>
+</var>
+<object file="code\mobs\player\player variables.dm:24">Resistance
+	<var file="code\mobs\player\player variables.dm:26">electric
+		<val file="code\mobs\player\player variables.dm:26">10</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:27">fire
+		<val file="code\mobs\player\player variables.dm:27">-10</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:28">water
+		<val file="code\mobs\player\player variables.dm:28">10</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:29">dark
+		<val file="code\mobs\player\player variables.dm:29">-20</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:30">wind
+		<val file="code\mobs\player\player variables.dm:30">-24</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:31">light
+		<val file="code\mobs\player\player variables.dm:31">30</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:32">ice
+		<val file="code\mobs\player\player variables.dm:32">10</val>
+	</var>
+	<var file="code\mobs\player\player variables.dm:33">earth
+		<val file="code\mobs\player\player variables.dm:33">15</val>
+	</var>
+</object>
+<object file="code\Quests\Quests.dm:1">Quest
+	<var file="code\Quests\Quests.dm:2">requirements</var>
+	<var file="code\Quests\Quests.dm:3">player</var>
+	<proc file="code\Quests\Quests.dm:5">addRequirements</proc>
+	<proc file="code\Quests\Quests.dm:7">getId</proc>
+	<proc file="code\Quests\Quests.dm:8">start</proc>
+	<proc file="code\Quests\Quests.dm:12">prepareRequirements</proc>
+	<proc file="code\Quests\Quests.dm:15">prepare</proc>
+	<proc file="code\Quests\Quests.dm:18">completed</proc>
+	<proc file="code\Quests\Quests.dm:22">getStatus</proc>
+	<proc file="code\Quests\Quests.dm:24">_get_event</proc>
+	<proc file="code\Quests\Quests.dm:26">event</proc>
+</object>
+<object file="code\Quests\Quests.dm:33">QuestRequirement
+	<proc file="code\Quests\Quests.dm:35">met</proc>
+	<proc file="code\Quests\Quests.dm:37">prepare</proc>
+	<proc file="code\Quests\Quests.dm:38">event</proc>
+	<object file="code\Quests\Quests.dm:44">KillX
+		<proc file="code\Quests\Quests.dm:45">prepare</proc>
+	</object>
+</object>
+<object file="code\Quests\Quests.dm:48">QuestEvent
+	<proc file="code\Quests\Quests.dm:49">get_type</proc>
+	<object file="code\Quests\Quests.dm:53">KilledEnemy
+		<var file="code\Quests\Quests.dm:54">enemy</var>
+		<proc file="code\Quests\Quests.dm:55">get_type</proc>
+		<proc file="code\Quests\Quests.dm:56">New</proc>
+	</object>
+	<object file="code\Quests\Quests.dm:57">TalkedTo
+		<var file="code\Quests\Quests.dm:58">talked_to</var>
+		<proc file="code\Quests\Quests.dm:59">get_type</proc>
+		<proc file="code\Quests\Quests.dm:60">New</proc>
+	</object>
+</object>

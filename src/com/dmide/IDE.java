@@ -126,9 +126,9 @@ public class IDE implements PropertiesHolder {
 
 	public void promtOpenDME() {
 		System.out.println("Opening dat dme file chooser...");
+		DMIDEUI.getInstance().getFileChooser().setFileFilter(IDEFileFilters.getInstance().getDMEFileFilter());
 		int r = DMIDEUI.getInstance().getFileChooser().
 				showOpenDialog(DMIDEUI.getInstance().getMainWindow());
-		DMIDEUI.getInstance().getFileChooser().setFileFilter(IDEFileFilters.getInstance().getDMEFileFilter());
 		if(r == JFileChooser.APPROVE_OPTION) {
 			DMEnvironment.setDMEFile(DMIDEUI.getInstance().
 					getFileChooser().getSelectedFile());

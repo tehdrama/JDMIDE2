@@ -7,7 +7,6 @@ import org.fife.ui.rsyntaxtextarea.AbstractTokenMakerFactory;
 import org.fife.ui.rsyntaxtextarea.TokenMakerFactory;
 
 import com.dmide.compiler.DMCompiler;
-import com.dmide.environment.DMEnvironment;
 import com.dmide.files.FileOpenHandler;
 import com.dmide.plugins.PluginManager;
 import com.dmide.ui.DMIDEUI;
@@ -31,7 +30,6 @@ public class DMIDEMain {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		DMEnvironment.setDMEFile(new File("C:/Documents and Settings/Saoude1/My Documents/Dropbox/BYOND Projects/Relics/Relics.dme"));
 	}
 
 	public void start() throws IOException {

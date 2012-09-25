@@ -25,6 +25,7 @@ public class TextEditorPane extends FileEditorPane {
 		this.setLayout(new BorderLayout());
 		this.add(this.scrollPane, BorderLayout.CENTER);
 		this.textArea.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_NONE);
+		Misc.ui.removeMappedMenuKeyStrokesFromComponent(this.textArea);
 	}
 
 	@Override

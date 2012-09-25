@@ -9,6 +9,7 @@ import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rtextarea.RTextScrollPane;
 
 import com.dmide.ui.editors.FileEditorPane;
+import com.dmide.util.misc.IDEProcess;
 import com.dmide.util.misc.Misc;
 
 @SuppressWarnings("serial")
@@ -33,12 +34,16 @@ public class DMFileEditorPane extends FileEditorPane {
 
 	@Override
 	public void save() {
+		IDEProcess ideProcess = new IDEProcess("Saving " + this.getFile().getName());
+		ideProcess.start();
+		ideProcess.setProgress(-1);
+		System.out.printf("Saving %s...\n", this.getFile().getPath());
+
 		try {
 
 			if(!this.getFile().exists()) this.getFile().createNewFile();
 
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 
@@ -55,10 +60,11 @@ public class DMFileEditorPane extends FileEditorPane {
 			try {
 				if(fw != null) fw.close();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
+		ideProcess.end();
+		System.out.printf("Saved %s.\n", this.getFile().getPath());
 	}
 
 	@Override
@@ -68,6 +74,7 @@ public class DMFileEditorPane extends FileEditorPane {
 		this.setLayout(new BorderLayout());
 		this.add(this.scrollPane, BorderLayout.CENTER);
 		this.textArea.setSyntaxEditingStyle("text/dm");
+		Misc.ui.removeMappedMenuKeyStrokesFromComponent(this.textArea);
 	}
 
 	RSyntaxTextArea textArea;

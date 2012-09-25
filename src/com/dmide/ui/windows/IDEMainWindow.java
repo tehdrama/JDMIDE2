@@ -2,6 +2,7 @@ package com.dmide.ui.windows;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -54,6 +55,7 @@ public class IDEMainWindow extends JFrame {
 	 * Create the frame.
 	 */
 	public IDEMainWindow() {
+		this.setIconImage(Toolkit.getDefaultToolkit().getImage(IDEMainWindow.class.getResource("/com/dmide/assets/JDMIDE-Icon.png")));
 		this.setTitle("JDMIDE");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setBounds(100, 100, 680, 500);

@@ -2,6 +2,7 @@ package com.dmide.util.misc;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
@@ -20,6 +21,7 @@ import org.xml.sax.SAXException;
 import com.dmide.util.PropertiesHolder;
 
 public class MiscUI {
+	ArrayList<KeyStroke> mappedKeyStrokes = new ArrayList<>();
 	public JMenuBar createMenuBar(File xmlFile) { return this.createMenuBar(xmlFile, null); }
 	public JMenuBar createMenuBar(File xmlFile, PropertiesHolder props) {
 		Document xmlDoc;
@@ -103,10 +105,27 @@ public class MiscUI {
 			_item.setIcon(new ImageIcon(this.getClass().getResource(iconU)));
 		}
 		if(acc != null) {
-			_item.setAccelerator(KeyStroke.getKeyStroke(acc));
+			KeyStroke _k = KeyStroke.getKeyStroke(acc);
+			_item.setAccelerator(_k);
+			this.mappedKeyStrokes.add(_k);
 		}
 		if(id != null && props != null) {props.setProperty(id, _item);}
 		if(parent != null) {parent.add(_item);}
+	}
+
+
+
+	/**
+	 * @return the mappedKeyStrokes
+	 */
+	public ArrayList<KeyStroke> getMappedKeyStrokes() {
+		return this.mappedKeyStrokes;
+	}
+
+	public void removeMappedMenuKeyStrokesFromComponent(JComponent component) {
+		for(KeyStroke ks : this.mappedKeyStrokes) {
+			component.getInputMap().put(ks, "none");
+		}
 	}
 
 	static MiscUI instance;

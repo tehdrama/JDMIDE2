@@ -44,6 +44,7 @@ public class IDE implements PropertiesHolder {
 	public void saveProperty(String key, Object value) {
 		this.setProperty(key, value);
 		this.savableProperties.put(key, value);
+		System.out.println("Property Saved: " + key + " = " + value);
 	}
 
 	/**

@@ -307,6 +307,11 @@ public class DMIDEUI {
 		this.preferencesDialog = preferencesDialog;
 	}
 
+	public void clearFileChooser() {
+		this.fileChooser.setFileFilter(null);
+		this.fileChooser.setMultiSelectionEnabled(false);
+	}
+
 
 	static DMIDEUI instance;
 	public static DMIDEUI getInstance() {

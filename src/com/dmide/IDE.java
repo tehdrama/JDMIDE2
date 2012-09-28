@@ -51,6 +51,7 @@ public class IDE implements PropertiesHolder {
 	 * Saves properties that can be saved.
 	 */
 	public void save() {
+		DMEnvironment.saveRecentEnvironments();
 		System.out.println("Saving properties...");
 		File sfile = new File("settings/ideproperties.xml");
 		if(!sfile.exists()) {
@@ -134,6 +135,9 @@ public class IDE implements PropertiesHolder {
 			DMEnvironment.setDMEFile(DMIDEUI.getInstance().
 					getFileChooser().getSelectedFile());
 		}
+	}
+
+	public void trackEditor(FileEditorPane fep) {
 	}
 
 }

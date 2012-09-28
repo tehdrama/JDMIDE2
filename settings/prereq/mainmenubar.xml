@@ -34,7 +34,7 @@
 	</menu>
 	
 	<menu id="menus.build" text="Build">
-		<item id="menus.build.compile" text="Compile..." acc="ctrl K" icon="%assets%/hammer-screwdriver.png" />
+		<item id="menus.build.compile" text="Compile..." acc="ctrl B" icon="%assets%/hammer-screwdriver.png" />
 	</menu>
 	
 	<menu id="menus.help" text="Help">

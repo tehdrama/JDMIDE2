@@ -20,6 +20,7 @@ import org.pushingpixels.substance.api.tabbed.VetoableTabCloseListener;
 import com.dmide.DMIDE;
 import com.dmide.DMIDESplashScreen;
 import com.dmide.IDE;
+import com.dmide.environment.DMEnvironment;
 import com.dmide.ui.editors.FileEditorPane;
 import com.dmide.ui.prefs.GeneralPreferences;
 import com.dmide.ui.prefs.PreferencesDialog;
@@ -48,14 +49,18 @@ public class DMIDEUI {
 		}
 	}
 
-	void createMainWindow() {
-		final DMIDEUI dmideUI = this;
+	public void openSplashScreen() {
 		Runnable openSplash = new Runnable() {
 			@Override
 			public void run() {
 				DMIDESplashScreen.getInstance().displaySplash();
 			}
 		};
+		UIUtil.toEventQueue(openSplash);
+	}
+
+	void createMainWindow() {
+		final DMIDEUI dmideUI = this;
 		Runnable closeSplash = new Runnable() {
 			@Override
 			public void run() {
@@ -78,7 +83,7 @@ public class DMIDEUI {
 				IDEEventHandler.addWatcher(dmideUI.progressHandler);
 
 				//Creates the main menu bar:
-				File menuBarSettings = new File("settings/mainmenubar.xml");
+				File menuBarSettings = new File("settings/prereq/mainmenubar.xml");
 				if(menuBarSettings.exists()) {
 					JMenuBar mbar = Misc.ui.createMenuBar(menuBarSettings, IDE.getInstance());
 					dmideUI.mainWindow.setJMenuBar(mbar);
@@ -111,11 +116,11 @@ public class DMIDEUI {
 				dmideUI.mainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 				dmideUI.mainWindow.setVisible(true);
 
+				DMEnvironment.createRecentsMenu();
 
 				DefaultMenuActions.setActions();
 			}
 		};
-		UIUtil.toEventQueue(openSplash);
 		UIUtil.toEventQueue(mainWindowCreate);
 		UIUtil.toEventQueue(closeSplash);
 		IDEEventHandler.sendIDEEvent(new IDEEvent("ide.windows.loaded", null));

@@ -2,19 +2,22 @@ package com.dmide.plugins;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.ArrayList;
+import java.util.ServiceLoader;
 
 public class PluginManager {
 
 
 	URLClassLoader urlClassLoader;
 	ArrayList<URL> urls;
+	ServiceLoader<AbstractPlugin> pluginsService;
 
 	File local;
 
-	public void getPlugins(File dir) {
+	public void getPlugins(File dir) throws MalformedURLException {
 		this.local = new File(".").getParentFile(); // Current directory.
 
 		if(this.urls == null) {this.urls = new ArrayList<>();}
@@ -41,12 +44,26 @@ public class PluginManager {
 			if(pluginFailed) { continue; }
 			else this.includeBundle(b);
 		}
+		this.createServices();
 	}
 
-	public void includeBundle(PluginBundle b) {
+	/**
+	 * Creates the service loader and the URLClassLoader.
+	 */
+	public void createServices() {
+		this.urlClassLoader =
+				new URLClassLoader(this.urls.toArray(new URL[this.urls.size()]));
+		this.pluginsService = ServiceLoader.load(AbstractPlugin.class, this.urlClassLoader);
+	}
+
+	public void includeBundle(PluginBundle b) throws MalformedURLException {
 		for(File f : b.getIncludes()) {
-			File absolute = new File(this.local, f.getPath());
-			System.out.println("Including: " + absolute.getAbsolutePath());
+			if(f.exists()) {
+				this.urls.add(f.toURI().toURL());
+				System.out.println("Including: " + f.getPath());
+			} else {
+				System.out.printf("Failed to include %s from bundle %s.\n", f.getPath(), b.getName());
+			}
 		}
 	}
 

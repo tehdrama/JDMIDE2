@@ -130,7 +130,7 @@ public class PluginBundleHandler {
 			if(this.includes == null) {
 				this.includes = new ArrayList<>();
 			}
-			this.includes.add(f);
+			this.includes.add(new File(this.bundleFile.getParent(), f.getPath()));
 		}
 	}
 }

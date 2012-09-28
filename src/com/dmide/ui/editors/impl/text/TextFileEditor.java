@@ -15,7 +15,7 @@ public class TextFileEditor extends FileEditor {
 	@Override
 	public void edit(File file) {
 		System.out.println("Editing Text File: " + file.getName());
-		TextEditorPane editorPane = new TextEditorPane();
+		TextFileEditorPane editorPane = new TextFileEditorPane();
 		editorPane.setFile(file);
 		DMIDEUI.getInstance().addTab(editorPane);
 	}

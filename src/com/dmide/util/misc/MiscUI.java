@@ -124,7 +124,13 @@ public class MiscUI {
 
 	public void removeMappedMenuKeyStrokesFromComponent(JComponent component) {
 		for(KeyStroke ks : this.mappedKeyStrokes) {
-			component.getInputMap().put(ks, "none");
+			/**
+			 * Ignore it if it's not being used.
+			 */
+			if(component.getInputMap().get(ks) == null) {
+				component.getInputMap().put(ks, "none");
+			} else {
+			}
 		}
 	}
 

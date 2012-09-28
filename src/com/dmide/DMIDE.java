@@ -2,6 +2,8 @@ package com.dmide;
 
 import java.util.Properties;
 
+import com.dmide.ui.editors.FileEditorPane;
+
 public class DMIDE {
 	static IDE ide;
 
@@ -84,5 +86,23 @@ public class DMIDE {
 	public static void saveFileAt(int index) {
 		ide.saveFileAt(index);
 	}
+
+	/**
+	 *
+	 * @see com.dmide.IDE#promtOpenDME()
+	 */
+	public static void promtOpenDME() {
+		ide.promtOpenDME();
+	}
+
+	/**
+	 * @param fep
+	 * @see com.dmide.IDE#trackEditor(com.dmide.ui.editors.FileEditorPane)
+	 */
+	public static void trackEditor(FileEditorPane fep) {
+		ide.trackEditor(fep);
+	}
+
+
 
 }

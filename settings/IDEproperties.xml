@@ -2,12 +2,14 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 <comment>Saved JDMIDE properties</comment>
-<entry key="mainwindow.y">165</entry>
-<entry key="mainwindow.x">344</entry>
-<entry key="mainwindow.splitter1.location">320</entry>
+<entry key="mainwindow.y">161</entry>
+<entry key="mainwindow.x">410</entry>
+<entry key="environment.recents"/>
+<entry key="mainwindow.splitter1.location">252</entry>
 <entry key="byond.userdir">C:\Documents and Settings\Saoude1\My Documents\BYOND\</entry>
 <entry key="mainwindow.width">680</entry>
 <entry key="mainwindow.splitter2.location">200</entry>
+<entry key="environment.maxrecents">5</entry>
 <entry key="mainwindow.maximized">false</entry>
 <entry key="byond.location">C:\Program Files\BYOND</entry>
 <entry key="mainwindow.height">500</entry>

@@ -2,7 +2,6 @@ loading Pandora's Box.dme
 loading interface.dmf
 loading map.dmm
 loading interface.dmf
-
 <var file="code\#defs.dm:10">HERAKLES_TTF
 	<val file="code\#defs.dm:10">'HERAKLES.TTF'</val>
 </var>

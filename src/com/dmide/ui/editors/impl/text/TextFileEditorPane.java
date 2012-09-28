@@ -12,7 +12,7 @@ import org.fife.ui.rtextarea.RTextScrollPane;
 import com.dmide.ui.editors.FileEditorPane;
 import com.dmide.util.misc.Misc;
 
-public class TextEditorPane extends FileEditorPane {
+public class TextFileEditorPane extends FileEditorPane {
 
 	@Override
 	public void onClose() {

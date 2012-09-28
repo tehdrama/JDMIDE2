@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.Toolkit;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
@@ -16,6 +17,7 @@ import javax.swing.tree.DefaultTreeModel;
 
 import net.miginfocom.swing.MigLayout;
 
+import com.dmide.compiler.CompilerMessageTable;
 import com.dmide.ui.filetree.FileTree;
 
 @SuppressWarnings("serial")
@@ -33,6 +35,9 @@ public class IDEMainWindow extends JFrame {
 	private FileTree tree;
 	private JPanel panel_2;
 	private JProgressBar progressBar;
+	private JPanel panel_3;
+	private JScrollPane scrollPane_1;
+	private CompilerMessageTable compilerMessageTable;
 
 	/**
 	 * Launch the application.
@@ -89,6 +94,7 @@ public class IDEMainWindow extends JFrame {
 	public JTabbedPane getTabbedPane() {
 		if (this.tabbedPane == null) {
 			this.tabbedPane = new JTabbedPane(JTabbedPane.TOP);
+			this.tabbedPane.addTab("Compiler", new ImageIcon(IDEMainWindow.class.getResource("/com/dmide/assets/hammer-screwdriver.png")), this.getPanel_3(), null);
 		}
 		return this.tabbedPane;
 	}
@@ -158,5 +164,26 @@ public class IDEMainWindow extends JFrame {
 	}
 	public JProgressBar getProgressBar() {
 		return this.getProgressBar_1();
+	}
+	public JPanel getPanel_3() {
+		if (this.panel_3 == null) {
+			this.panel_3 = new JPanel();
+			this.panel_3.setLayout(new BorderLayout(0, 0));
+			this.panel_3.add(this.getScrollPane_1(), BorderLayout.CENTER);
+		}
+		return this.panel_3;
+	}
+	public JScrollPane getScrollPane_1() {
+		if (this.scrollPane_1 == null) {
+			this.scrollPane_1 = new JScrollPane();
+			this.scrollPane_1.setViewportView(this.getCompilerMessageTable());
+		}
+		return this.scrollPane_1;
+	}
+	public CompilerMessageTable getCompilerMessageTable() {
+		if (this.compilerMessageTable == null) {
+			this.compilerMessageTable = new CompilerMessageTable();
+		}
+		return this.compilerMessageTable;
 	}
 }

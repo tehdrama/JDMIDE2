@@ -153,8 +153,19 @@ public class DMCompiler implements IDEEventWatcher {
 		tf.createNewFile();
 		FileWriter fw = new FileWriter(tf);
 
+		/*
+		 * modes:
+		 * 0 - COMPILER MESSAGE MODE
+		 * 1 - OBJECT TREE MODE
+		 */
+		int mode = 0;
+
 		while((line = reader.readLine()) != null) {
-			System.out.println("Read: " + line);
+			if(line.length() < 1) {mode++; continue;}
+			if(mode == 0) {
+				IDEEventHandler.sendIDEEvent(new IDEEvent("compiling.message",
+						CompilerMessage.fromString(line)));
+			}
 			fw.write(line.concat("\n"));
 		}
 

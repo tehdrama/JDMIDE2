@@ -129,17 +129,7 @@ public class DMCompiler implements IDEEventWatcher {
 			Runnable r = new Runnable() {
 				@Override
 				public void run() {
-					try {
-						BYONDValidation bv = new BYONDValidation();
-						bv.setBYONDDir();
-						bv.setProfileDir();
-					} catch (IllegalArgumentException e) {
-						e.printStackTrace();
-					} catch (IllegalAccessException e) {
-						e.printStackTrace();
-					} catch (InvocationTargetException e) {
-						e.printStackTrace();
-					}
+
 				}
 			};
 			UIUtil.toEventQueue(r);

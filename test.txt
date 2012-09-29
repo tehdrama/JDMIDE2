@@ -1,150 +1,341 @@
-loading BYONDMessenger.dme
-loading interface.dmf
-loading interface.dmf
-<object file="objects\client\client.dm:9">client
-	<var file="objects\client\client.dm:27">status_message
-		<val file="objects\client\client.dm:27">""</val>
+loading Arcadia.dme
+loading WorldMap.dmm
+<proc file="World.dm:3">DebugMsg</proc>
+<object file="World.dm:9">world
+	<var file="World.dm:10">name
+		<val file="World.dm:10">"Project Arcadia"</val>
 	</var>
-	<var file="objects\client\client.dm:29">picture
-		<val file="objects\client\client.dm:29">""</val>
+	<var file="World.dm:11">version
+		<val file="World.dm:11">0.1</val>
 	</var>
-	<var file="objects\client\client.dm:32">contacts</var>
-	<var file="objects\client\client.dm:34">flag_developer
-		<val file="objects\client\client.dm:34">FALSE</val>
+	<var file="World.dm:12">mob
+		<val file="World.dm:12">/mob/choosingCharacter/</val>
 	</var>
-	<var file="objects\client\client.dm:35">flag_motd
-		<val file="objects\client\client.dm:35">TRUE</val>
+	<var file="World.dm:13">view
+		<val file="Arcadia.dme:28">"14x12"</val>
 	</var>
-	<var file="objects\client\client.dm:37">refresh_time
-		<val file="objects\client\client.dm:37">0</val>
-	</var>
-	<var file="objects\client\client.dm:38">refresh_time_max
-		<val file="objects\client\client.dm:38">25</val>
-	</var>
-	<var file="objects\client\client.dm:40">name
-		<val file="objects\client\client.dm:40">""</val>
-	</var>
-	<var file="objects\client\client.dm:41">age
-		<val file="objects\client\client.dm:41">"n/a"</val>
-	</var>
-	<var file="objects\client\client.dm:42">button_gender
-		<val file="objects\client\client.dm:42">0</val>
-	</var>
-	<var file="objects\client\client.dm:43">client_gender
-		<val file="objects\client\client.dm:43">0</val>
-	</var>
-	<var file="objects\client\client.dm:45">preview_img</var>
-	<var file="objects\client\client.dm:46">client_img</var>
-	<var file="objects\client\client.dm:48">rooms
-		<val file="objects\client\client.dm:48">0</val>
-	</var>
-	<var file="objects\client\client.dm:49">rooms_ref</var>
-	<verb file="objects\client\client.dm:60">Browse</verb>
-	<verb file="objects\client\client.dm:65">Edit_StatusMessage</verb>
-	<verb file="objects\client\client.dm:72">Save_StatusMessage</verb>
-	<verb file="objects\client\client.dm:91">Event_Logout</verb>
-	<verb file="objects\client\client.dm:95">Event_AddFriend</verb>
-	<verb file="objects\client\client.dm:100">Open_BrowserWindow</verb>
-	<verb file="objects\client\client.dm:103">Open_MyBYONDPage</verb>
-	<verb file="objects\client\client.dm:108">Open_RoomsListWindow</verb>
-	<verb file="objects\client\client.dm:112">Refresh_RoomsList</verb>
-	<verb file="objects\client\client.dm:127">Open_MyProfileWindow</verb>
-	<verb file="objects\client\client.dm:146">Save_MyProfile</verb>
-	<verb file="objects\client\client.dm:158">Change_Gender</verb>
-	<verb file="objects\client\client.dm:172">Change_MOTDFlag</verb>
-	<verb file="objects\client\client.dm:180">Change_Picture</verb>
-	<verb file="objects\client\client.dm:193">Open_AddFriendWindow</verb>
-	<verb file="objects\client\client.dm:196">Open_SearchContactWindow</verb>
-	<verb file="objects\client\client.dm:199">Open_DebugWindow</verb>
-	<verb file="objects\client\client.dm:206">Event_Refresh</verb>
-	<verb file="objects\client\client.dm:210">Refresh_ContactList</verb>
-	<verb file="objects\client\client.dm:216">Output_ToRoom</verb>
-	<verb file="objects\client\client.dm:223">Disconnect</verb>
-	<verb file="objects\room\room.dm:107">Room_Speak</verb>
-	<verb file="objects\room\room.dm:113">Leave_Room</verb>
-	<proc file="objects\client\client.dm:234">Debug</proc>
-	<proc file="objects\client\client.dm:242">New</proc>
-	<proc file="objects\client\client.dm:260">Del</proc>
-	<proc file="objects\client\client_topic.dm:5">Topic</proc>
 </object>
-<var file="objects\client\client.dm:17">GENDER_NONE
-	<val file="objects\client\client.dm:17">0</val>
-</var>
-<var file="objects\client\client.dm:18">GENDER_MALE
-	<val file="objects\client\client.dm:18">1</val>
-</var>
-<var file="objects\client\client.dm:19">GENDER_FEMALE
-	<val file="objects\client\client.dm:19">2</val>
-</var>
-<object file="objects\contact\contact.dm:9">contact
-	<var file="objects\contact\contact.dm:10">parent_type
-		<val file="objects\contact\contact.dm:10">/datum</val>
+<turf file="map\crystals.dm:1">turf
+	<turf file="map\crystals.dm:1">crystals
+		<var file="map\crystals.dm:2">icon
+			<val file="map\crystals.dm:2">null</val>
+		</var>
+		<turf file="map\crystals.dm:4">debugtown</turf>
+	</turf>
+	<var file="map\turfs.dm:2">icon
+		<val file="map\turfs.dm:2">'turfs.dmi'</val>
 	</var>
-	<var file="objects\contact\contact.dm:18">name
-		<val file="objects\contact\contact.dm:18">""</val>
+	<var file="map\turfs.dm:3">icon_state
+		<val file="map\turfs.dm:3">"water"</val>
 	</var>
-	<var file="objects\contact\contact.dm:19">key
-		<val file="objects\contact\contact.dm:19">""</val>
+	<var file="map\turfs.dm:4">density
+		<val file="map\turfs.dm:4">1</val>
 	</var>
-	<var file="objects\contact\contact.dm:20">ckey
-		<val file="objects\contact\contact.dm:20">""</val>
+	<var file="map\turfs.dm:5">layer
+		<val file="map\turfs.dm:5">1</val>
 	</var>
-	<var file="objects\contact\contact.dm:21">icon
-		<val file="objects\contact\contact.dm:21">null</val>
+	<turf file="map\turfs.dm:7">dirt
+		<var file="map\turfs.dm:8">icon_state
+			<val file="map\turfs.dm:8">"dirt"</val>
+		</var>
+		<var file="map\turfs.dm:9">density
+			<val file="map\turfs.dm:9">0</val>
+		</var>
+	</turf>
+	<turf file="map\turfs.dm:11">grass
+		<var file="map\turfs.dm:12">icon_state
+			<val file="map\turfs.dm:12">"grass"</val>
+		</var>
+		<var file="map\turfs.dm:13">density
+			<val file="map\turfs.dm:13">0</val>
+		</var>
+		<turf file="map\turfs.dm:14">grass2
+			<var file="map\turfs.dm:14">icon_state
+				<val file="map\turfs.dm:14">"grass2"</val>
+			</var>
+		</turf>
+		<turf file="map\turfs.dm:15">grass3
+			<var file="map\turfs.dm:15">icon_state
+				<val file="map\turfs.dm:15">"grass3"</val>
+			</var>
+		</turf>
+		<turf file="map\turfs.dm:16">grass4
+			<var file="map\turfs.dm:16">icon_state
+				<val file="map\turfs.dm:16">"grass4"</val>
+			</var>
+		</turf>
+		<turf file="map\turfs.dm:17">grass5
+			<var file="map\turfs.dm:17">icon_state
+				<val file="map\turfs.dm:17">"grass5"</val>
+			</var>
+		</turf>
+		<turf file="map\turfs.dm:18">grass6
+			<var file="map\turfs.dm:18">icon_state
+				<val file="map\turfs.dm:18">"grass6"</val>
+			</var>
+		</turf>
+		<turf file="map\turfs.dm:19">grass7
+			<var file="map\turfs.dm:19">icon_state
+				<val file="map\turfs.dm:19">"grass7"</val>
+			</var>
+		</turf>
+		<turf file="map\turfs.dm:20">grass8
+			<var file="map\turfs.dm:20">icon_state
+				<val file="map\turfs.dm:20">"grass8"</val>
+			</var>
+		</turf>
+		<turf file="map\turfs.dm:21">grass9
+			<var file="map\turfs.dm:21">icon_state
+				<val file="map\turfs.dm:21">"grass9"</val>
+			</var>
+		</turf>
+	</turf>
+	<turf file="map\turfs.dm:23">bush
+		<var file="map\turfs.dm:24">icon_state
+			<val file="map\turfs.dm:24">"bush"</val>
+		</var>
+	</turf>
+	<turf file="map\turfs.dm:26">cliff
+		<var file="map\turfs.dm:27">icon_state
+			<val file="map\turfs.dm:27">"cliff"</val>
+		</var>
+		<var file="map\turfs.dm:28">density
+			<val file="map\turfs.dm:28">1</val>
+		</var>
+		<turf file="map\turfs.dm:29">cliff2
+			<var file="map\turfs.dm:29">icon_state
+				<val file="map\turfs.dm:29">"cliff2"</val>
+			</var>
+		</turf>
+		<turf file="map\turfs.dm:30">cliff3
+			<var file="map\turfs.dm:30">icon_state
+				<val file="map\turfs.dm:30">"cliff3"</val>
+			</var>
+		</turf>
+		<turf file="map\turfs.dm:31">cliff4
+			<var file="map\turfs.dm:31">icon_state
+				<val file="map\turfs.dm:31">"cliff4"</val>
+			</var>
+		</turf>
+	</turf>
+	<turf file="map\turfs.dm:32">fence
+		<var file="map\turfs.dm:33">icon_state
+			<val file="map\turfs.dm:33">"fence"</val>
+		</var>
+		<var file="map\turfs.dm:34">density
+			<val file="map\turfs.dm:34">0</val>
+		</var>
+		<turf file="map\turfs.dm:35">fence2
+			<var file="map\turfs.dm:35">icon_state
+				<val file="map\turfs.dm:35">"fence2"</val>
+			</var>
+		</turf>
+		<turf file="map\turfs.dm:36">fence3
+			<var file="map\turfs.dm:36">icon_state
+				<val file="map\turfs.dm:36">"fence3"</val>
+			</var>
+		</turf>
+		<turf file="map\turfs.dm:37">fence4
+			<var file="map\turfs.dm:37">icon_state
+				<val file="map\turfs.dm:37">"fence4"</val>
+			</var>
+		</turf>
+		<turf file="map\turfs.dm:38">fence5
+			<var file="map\turfs.dm:38">icon_state
+				<val file="map\turfs.dm:38">"fence5"</val>
+			</var>
+		</turf>
+	</turf>
+	<turf file="map\turfs.dm:39">path
+		<var file="map\turfs.dm:40">icon_state
+			<val file="map\turfs.dm:40">"path"</val>
+		</var>
+		<var file="map\turfs.dm:41">density
+			<val file="map\turfs.dm:41">0</val>
+		</var>
+	</turf>
+	<turf file="map\turfs.dm:42">stone
+		<var file="map\turfs.dm:43">icon_state
+			<val file="map\turfs.dm:43">"stone"</val>
+		</var>
+		<var file="map\turfs.dm:44">density
+			<val file="map\turfs.dm:44">0</val>
+		</var>
+		<turf file="map\turfs.dm:45">stone1
+			<var file="map\turfs.dm:45">icon_state
+				<val file="map\turfs.dm:45">"stone1"</val>
+			</var>
+		</turf>
+		<turf file="map\turfs.dm:46">stone2
+			<var file="map\turfs.dm:46">icon_state
+				<val file="map\turfs.dm:46">"stone2"</val>
+			</var>
+		</turf>
+		<turf file="map\turfs.dm:47">stone3
+			<var file="map\turfs.dm:47">icon_state
+				<val file="map\turfs.dm:47">"stone3"</val>
+			</var>
+		</turf>
+	</turf>
+</turf>
+<mob file="mob\combat.dm:1">mob
+	<proc file="mob\combat.dm:2">attack</proc>
+	<proc file="mob\combat.dm:6">takeDamage</proc>
+	<proc file="mob\combat.dm:12">deathCheck</proc>
+	<proc file="mob\combat.dm:28">afterDeath</proc>
+	<proc file="mob\combat.dm:31">IsAttackable</proc>
+	<proc file="mob\mob.dm:14">Attack</proc>
+	<proc file="mob\mob.dm:17">iconFadeAway</proc>
+	<proc file="mob\mob.dm:24">iconFlash</proc>
+	<var file="mob\mob.dm:2">hp</var>
+	<var file="mob\mob.dm:3">maxHP</var>
+	<var file="mob\mob.dm:4">strength</var>
+	<var file="mob\mob.dm:5">defense</var>
+	<var file="mob\mob.dm:6">agility</var>
+	<var file="mob\mob.dm:7">intelligence</var>
+	<var file="mob\mob.dm:9">dead
+		<val file="mob\mob.dm:9">FALSE</val>
 	</var>
-	<var file="objects\contact\contact.dm:24">ref
-		<val file="objects\contact\contact.dm:24">null</val>
-	</var>
-	<proc file="objects\contact\contact.dm:32">Test</proc>
-</object>
-<object file="objects\room\room.dm:9">room
-	<var file="objects\room\room.dm:10">parent_type
-		<val file="objects\room\room.dm:10">/datum</val>
-	</var>
-	<var file="objects\room\room.dm:26">id
-		<val file="objects\room\room.dm:26">0</val>
-	</var>
-	<var file="objects\room\room.dm:27">title
-		<val file="objects\room\room.dm:27">""</val>
-	</var>
-	<var file="objects\room\room.dm:28">motd
-		<val file="objects\room\room.dm:28">""</val>
-	</var>
-	<var file="objects\room\room.dm:31">creator
-		<val file="objects\room\room.dm:31">null</val>
-	</var>
-	<var file="objects\room\room.dm:35">moderators</var>
-	<var file="objects\room\room.dm:39">users</var>
-	<var file="objects\room\room.dm:42">update_time
-		<val file="objects\room\room.dm:42">0</val>
-	</var>
-	<var file="objects\room\room.dm:43">update_time_max
-		<val file="objects\room\room.dm:43">10</val>
-	</var>
-	<proc file="objects\room\room.dm:50">New</proc>
-	<proc file="objects\room\room.dm:65">Add_User</proc>
-	<proc file="objects\room\room.dm:70">Remove_User</proc>
-	<proc file="objects\room\room.dm:74">Output</proc>
-	<proc file="objects\room\room.dm:78">Event_JoinRoom</proc>
-	<proc file="objects\room\room.dm:86">Event_LeaveRoom</proc>
-	<proc file="objects\room\room.dm:93">Update_UsersList</proc>
-</object>
-<var file="objects\room\room.dm:18">MAX_USERS
-	<val file="objects\room\room.dm:18">32</val>
-</var>
-<object file="objects\world\world.dm:9">world
-	<var file="objects\world\world.dm:10">tick_lag
-		<val file="objects\world\world.dm:10">2</val>
-	</var>
-	<var file="objects\world\world.dm:11">name
-		<val file="objects\world\world.dm:11">"BYOND Messenger"</val>
-	</var>
-	<var file="objects\world\world.dm:12">hub
-		<val file="objects\world\world.dm:12">"Makeii.BYONDMessenger"</val>
-	</var>
-	<proc file="objects\world\world.dm:36">New</proc>
-	<proc file="objects\world\world.dm:65">Del</proc>
-</object>
-<var file="objects\world\world.dm:23">_rooms</var>
-<var file="objects\world\world.dm:26">_developers</var>
-<var file="objects\world\world.dm:29">_users</var>
+	<var file="mob\mob.dm:11">actions</var>
+	<var file="mob\mob.dm:12">equipment</var>
+	<mob file="mob\choosingCharacter\CharacterSelection.dm:1">choosingCharacter
+		<proc file="mob\choosingCharacter\CharacterSelection.dm:3">Login</proc>
+	</mob>
+	<mob file="mob\enemy\enemy.dm:1">enemy
+		<proc file="mob\enemy\enemy.dm:2">deathCheck</proc>
+		<proc file="mob\enemy\enemy.dm:12">afterDeath</proc>
+		<mob file="mob\enemy\slime.dm:2">slime
+			<var file="mob\enemy\slime.dm:3">icon
+				<val file="mob\enemy\slime.dm:3">'slime.dmi'</val>
+			</var>
+			<var file="mob\enemy\slime.dm:4">hp
+				<val file="mob\enemy\slime.dm:4">20</val>
+			</var>
+			<var file="mob\enemy\slime.dm:5">maxHP
+				<val file="mob\enemy\slime.dm:5">20</val>
+			</var>
+		</mob>
+		<mob file="mob\enemy\slime.dm:6">blueslime
+			<var file="mob\enemy\slime.dm:7">icon
+				<val file="mob\enemy\slime.dm:7">'blueslime.dmi'</val>
+			</var>
+			<var file="mob\enemy\slime.dm:8">hp
+				<val file="mob\enemy\slime.dm:8">25</val>
+			</var>
+			<var file="mob\enemy\slime.dm:9">maxHP
+				<val file="Arcadia.dme:36">25</val>
+			</var>
+		</mob>
+	</mob>
+	<mob file="mob\player\Debug.dm:1">player
+		<proc file="mob\player\Debug.dm:1">Login</proc>
+		<verb file="mob\player\Debug.dm:8">TestAttack</verb>
+		<var file="mob\player\Login.dm:2">icon
+			<val file="mob\player\Login.dm:2">'humanbase.dmi'</val>
+		</var>
+		<proc file="mob\player\Login.dm:3">Login</proc>
+		<proc file="mob\player\Login.dm:7">deathCheck</proc>
+	</mob>
+</mob>
+<obj file="mob\player\items\items.dm:1">obj
+	<obj file="mob\player\items\items.dm:1">items
+		<var file="mob\player\items\items.dm:2">parent_type
+			<val file="mob\player\items\items.dm:2">/obj/reactives/</val>
+		</var>
+		<proc file="mob\player\items\items.dm:5">GetOwner</proc>
+		<obj file="mob\player\items\items.dm:9">healthPotion
+			<var file="mob\player\items\items.dm:10">icon_state
+				<val file="mob\player\items\items.dm:10">"potion"</val>
+			</var>
+			<var file="mob\player\items\items.dm:11">name
+				<val file="Arcadia.dme:39">"Health Potion"</val>
+			</var>
+		</obj>
+		<obj file="mob\player\items\equipment\equipment.dm:1">equipment
+			<proc file="mob\player\items\equipment\equipment.dm:3">IsReactive</proc>
+			<proc file="mob\player\items\equipment\equipment.dm:9">OnAttack</proc>
+			<proc file="mob\player\items\equipment\equipment.dm:11">OnHit_Recieved</proc>
+			<proc file="mob\player\items\equipment\equipment.dm:13">OnHit_Gave</proc>
+			<proc file="mob\player\items\equipment\equipment.dm:15">OnCriticalHit_Received</proc>
+			<proc file="mob\player\items\equipment\equipment.dm:17">OnCriticalHit_Gave</proc>
+			<proc file="mob\player\items\equipment\equipment.dm:19">OnDeath_Player</proc>
+			<proc file="mob\player\items\equipment\equipment.dm:21">OnDeath_Enemy</proc>
+			<proc file="mob\player\items\equipment\equipment.dm:23">OnItemUsed_Player</proc>
+			<proc file="mob\player\items\equipment\equipment.dm:25">OnItemUsed_Enemy</proc>
+			<proc file="mob\player\items\equipment\equipment.dm:27">OnSpellUsed_Player</proc>
+			<proc file="mob\player\items\equipment\equipment.dm:29">OnSpellUsed_Enemy</proc>
+			<obj file="mob\player\items\equipment\weapons\bows.dm:1">weapons
+				<obj file="mob\player\items\equipment\weapons\bows.dm:1">bows
+					<proc file="mob\player\items\equipment\weapons\bows.dm:3">OnAttack</proc>
+					<proc file="mob\player\items\equipment\weapons\bows.dm:7">OnHit_Gave</proc>
+					<obj file="mob\player\items\equipment\weapons\bows.dm:11">beginnerbow</obj>
+				</obj>
+				<obj file="mob\player\items\equipment\weapons\physical.dm:1">physical
+					<proc file="mob\player\items\equipment\weapons\physical.dm:3">OnAttack</proc>
+					<proc file="mob\player\items\equipment\weapons\physical.dm:9">OnHit_Gave</proc>
+					<obj file="mob\player\items\equipment\weapons\physical.dm:13">daggers
+						<var file="mob\player\items\equipment\weapons\physical.dm:14">icon_state
+							<val file="mob\player\items\equipment\weapons\physical.dm:14">"dagger"</val>
+						</var>
+						<obj file="mob\player\items\equipment\weapons\physical.dm:15">small_dagger
+							<var file="mob\player\items\equipment\weapons\physical.dm:16">name
+								<val file="Arcadia.dme:43">"Small Dagger"</val>
+							</var>
+						</obj>
+					</obj>
+				</obj>
+				<var file="mob\player\items\equipment\weapons\weapons.dm:2">icon
+					<val file="Arcadia.dme:44">'weapons.dmi'</val>
+				</var>
+			</obj>
+		</obj>
+	</obj>
+	<obj file="mob\player\items\reactives.dm:1">reactives
+		<proc file="mob\player\items\reactives.dm:4">IsReactive</proc>
+		<proc file="mob\player\items\reactives.dm:7">OnAttack</proc>
+		<proc file="mob\player\items\reactives.dm:9">OnHit_Recieved</proc>
+		<proc file="mob\player\items\reactives.dm:11">OnHit_Gave</proc>
+		<proc file="mob\player\items\reactives.dm:13">OnCriticalHit_Received</proc>
+		<proc file="mob\player\items\reactives.dm:15">OnCriticalHit_Gave</proc>
+		<proc file="mob\player\items\reactives.dm:17">OnDeath_Player</proc>
+		<proc file="mob\player\items\reactives.dm:19">OnDeath_Enemy</proc>
+		<proc file="mob\player\items\reactives.dm:21">OnItemUsed_Player</proc>
+		<proc file="mob\player\items\reactives.dm:23">OnItemUsed_Enemy</proc>
+		<proc file="mob\player\items\reactives.dm:25">OnSpellUsed_Player</proc>
+		<proc file="mob\player\items\reactives.dm:27">OnSpellUsed_Enemy</proc>
+	</obj>
+	<obj file="visualeffects\attacking.dm:1">visualEffects
+		<var file="visualeffects\attacking.dm:2">icon
+			<val file="visualeffects\attacking.dm:2">'visualEffects.dmi'</val>
+		</var>
+		<var file="visualeffects\attacking.dm:3">density
+			<val file="visualeffects\attacking.dm:3">0</val>
+		</var>
+		<var file="visualeffects\attacking.dm:4">layer</var>
+		<obj file="visualeffects\attacking.dm:6">arrow
+			<var file="visualeffects\attacking.dm:7">icon_state
+				<val file="visualeffects\attacking.dm:7">"arrow"</val>
+			</var>
+			<var file="visualeffects\attacking.dm:8">density
+				<val file="visualeffects\attacking.dm:8">1</val>
+			</var>
+			<var file="visualeffects\attacking.dm:9">steps
+				<val file="visualeffects\attacking.dm:9">0</val>
+			</var>
+			<var file="visualeffects\attacking.dm:10">maxDistance
+				<val file="visualeffects\attacking.dm:10">25</val>
+			</var>
+			<var file="visualeffects\attacking.dm:12">Hit</var>
+			<var file="visualeffects\attacking.dm:13">parent</var>
+			<proc file="visualeffects\attacking.dm:15">New</proc>
+			<proc file="visualeffects\attacking.dm:20">MoveLoop</proc>
+			<proc file="visualeffects\attacking.dm:25">Bump</proc>
+		</obj>
+		<obj file="visualeffects\attacking.dm:30">infront
+			<var file="visualeffects\attacking.dm:31">density
+				<val file="visualeffects\attacking.dm:31">0</val>
+			</var>
+			<proc file="visualeffects\attacking.dm:32">New</proc>
+		</obj>
+	</obj>
+</obj>

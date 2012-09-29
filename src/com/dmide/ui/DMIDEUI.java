@@ -20,6 +20,7 @@ import org.pushingpixels.substance.api.tabbed.VetoableTabCloseListener;
 import com.dmide.DMIDE;
 import com.dmide.DMIDESplashScreen;
 import com.dmide.IDE;
+import com.dmide.compiler.SetupWizard;
 import com.dmide.environment.DMEnvironment;
 import com.dmide.ui.editors.FileEditorPane;
 import com.dmide.ui.prefs.GeneralPreferences;
@@ -53,7 +54,7 @@ public class DMIDEUI {
 		Runnable openSplash = new Runnable() {
 			@Override
 			public void run() {
-				DMIDESplashScreen.getInstance().displaySplash();
+				DMIDESplashScreen.getInstance().displaySplash();		
 			}
 		};
 		UIUtil.toEventQueue(openSplash);
@@ -72,6 +73,13 @@ public class DMIDEUI {
 			public void run() {
 				JFrame.setDefaultLookAndFeelDecorated(true);
 				JDialog.setDefaultLookAndFeelDecorated(true);
+				
+				//FIXME: Not sure if this is in the right place?
+				File ideproperties = new File("./settings/ideproperties.xml");
+				if (!ideproperties.exists()) {
+					SetupWizard SW = new SetupWizard();
+					SW.runWizard();
+				}
 
 				dmideUI.mainWindow = new IDEMainWindow();
 				dmideUI.mainWindow.addWindowListener(new IDEMainWindowListener());

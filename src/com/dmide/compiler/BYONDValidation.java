@@ -19,27 +19,29 @@ public class BYONDValidation {
 	final String[] userdirfiles = new String[] {"bin"};
 	final String[] installationFiles = new String[] {"bin\\", "cfg\\", "help\\"};
 
-	public void setBYONDDir() {
+	public boolean setBYONDDir() {
 		if(DMIDE.getProperty("byond.location") == null) {
-			if(!this.canGetInstallation()) return;
+			// Check the registry for the BYOND installation location.
 			if(!this.checkRegistryInstall()) {
+				// Check common folders for the BYOND installation.
 				if(!this.checkCommonInstall()) {
-					this.promptInstallDir();
+					// Prompt the user to enter the path manually.
+					if(!this.promptInstallDir()) {
+						// If the BYOND installation path still was not found, fail.
+						return false;
+					}
 				}
 			}
-			String inst = DMIDE.getProperty("byond.location") == null ? "" : ((String) DMIDE.getProperty("byond.location"));
-			System.out.println("BYOND Location: " + inst);
-			JOptionPane.showMessageDialog(DMIDEUI.getInstance().getMainWindow(),
-					String.format("Found BYOND directory at %s.", DMIDE.getProperty("byond.location")));
+			
+			if (DMIDE.getProperty("byond.location") == null) {
+				return false;
+			} else {
+				String inst = DMIDE.getProperty("byond.location") == null ? "" : ((String) DMIDE.getProperty("byond.location"));
+				System.out.println("BYOND Location: " + inst);
+				return true;
+			}
 		}
-	}
-
-	private boolean canGetInstallation() {
-		int r = JOptionPane.showConfirmDialog(DMIDEUI.getInstance().getMainWindow(),
-				"JDMIDE would like to try and find your BYOND directory, is this okay?",
-				"The quest for BYOND.", JOptionPane.YES_NO_OPTION);
-		if(r == JOptionPane.YES_OPTION) return true;
-		return false;
+		return true;
 	}
 
 	private boolean checkRegistryInstall() {
@@ -72,12 +74,12 @@ public class BYONDValidation {
 	private boolean promptInstallDir() {
 		System.out.println("Using prompt...");
 		int c = JOptionPane.showConfirmDialog(DMIDEUI.getInstance().getMainWindow(),
-				"The IDE failed to find your installation of BYOND! " +
+				"The IDE failed to find your installation of BYOND." +
 				"Would you like to locate it manually?\n" +
 				"Possible Locations:\n" +
 				"- C:\\Program Files\\BYOND\n" +
 				"- C:\\Program Files (x86)\\BYOND",
-				"O BYOND, BYOND, Wherefore Art Thou BYOND?",
+				"Environment Setup Wizard",
 				JOptionPane.YES_NO_OPTION,
 				JOptionPane.INFORMATION_MESSAGE);
 
@@ -92,11 +94,14 @@ public class BYONDValidation {
 				DMIDE.saveProperty("byond.location", selectedFile.getPath());
 				return true;
 			}
+		} else {
+			return false;
 		}
+
 		return false;
 	}
 
-	public boolean validateInstallDir(File d) {
+	private boolean validateInstallDir(File d) {
 		File[] files = d.listFiles();
 		List<File> fs = Arrays.asList(files);
 		for(String f : this.installationFiles) {
@@ -125,7 +130,7 @@ public class BYONDValidation {
 	 * @throws IllegalAccessException
 	 * @throws InvocationTargetException
 	 */
-	public void setProfileDir() throws IllegalArgumentException, IllegalAccessException, InvocationTargetException {
+	public boolean setProfileDir() throws IllegalArgumentException, IllegalAccessException, InvocationTargetException {
 
 		System.out.println("Checking User Directory...");
 		if(DMIDE.getProperty("byond.userdir") == null) {
@@ -136,7 +141,7 @@ public class BYONDValidation {
 						"Software\\Dantom\\BYOND", "userpath");
 				DMIDE.saveProperty("byond.userdir", regVal);
 				System.out.println("User Dir: " + DMIDE.getProperty("byond.userdir"));
-				return;
+				return true;
 
 			}
 
@@ -144,7 +149,11 @@ public class BYONDValidation {
 					"Please input the path of your BYOND user/profile directory.");
 			DMIDE.saveProperty("byond.userdir", _user_dir);
 			System.out.println("User Dir: " + DMIDE.getProperty("byond.userdir"));
+			return true;
 
 		}
+	
+		return true;
+	
 	}
 }

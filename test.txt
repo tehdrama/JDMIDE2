@@ -1,1167 +1,150 @@
-loading Pandora's Box.dme
+loading BYONDMessenger.dme
 loading interface.dmf
-loading map.dmm
 loading interface.dmf
-<var file="code\#defs.dm:10">HERAKLES_TTF
-	<val file="code\#defs.dm:10">'HERAKLES.TTF'</val>
-</var>
-<object file="code\#libs\expixel\screen_text\defined fonts.dm:35">TextFont
-	<object file="code\#libs\expixel\screen_text\defined fonts.dm:50">Courier
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:51">mode
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:51">1</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:52">width
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:52">8</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:53">height
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:53">16</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:54">horizontal_offset
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:54">0</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:55">space_width
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:55">4</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:56">tab_width
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:56">4</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:57">line_height_offset
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:57">2</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:58">icon
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:58">'icon/huds/fonts/CourierNewBold10pt.dmi'</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:59">extra_pad
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:59">1</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:60">space_pad
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:60">1</val>
-		</var>
-	</object>
-	<object file="code\#libs\expixel\screen_text\defined fonts.dm:61">ShadowFont
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:62">mode
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:62">1</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:63">width
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:63">6</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:64">height
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:64">10</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:65">horizontal_offset
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:65">0</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:66">space_width
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:66">4</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:67">tab_width
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:67">4</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:68">line_height_offset
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:68">4</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:69">icon
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:69">'icon/huds/fonts/_Font.dmi'</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:70">extra_pad
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:70">1</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\defined fonts.dm:71">space_pad
-			<val file="code\#libs\expixel\screen_text\defined fonts.dm:71">1</val>
-		</var>
-	</object>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:68">mode
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:68">1</val>
+<object file="objects\client\client.dm:9">client
+	<var file="objects\client\client.dm:27">status_message
+		<val file="objects\client\client.dm:27">""</val>
 	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:69">width</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:70">height</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:71">horizontal_offset</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:72">space_width
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:72">3</val>
+	<var file="objects\client\client.dm:29">picture
+		<val file="objects\client\client.dm:29">""</val>
 	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:73">tab_width
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:73">4</val>
+	<var file="objects\client\client.dm:32">contacts</var>
+	<var file="objects\client\client.dm:34">flag_developer
+		<val file="objects\client\client.dm:34">FALSE</val>
 	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:74">line_height_offset
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:74">2</val>
+	<var file="objects\client\client.dm:35">flag_motd
+		<val file="objects\client\client.dm:35">TRUE</val>
 	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:75">icon</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:76">extra_pad
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:76">1</val>
+	<var file="objects\client\client.dm:37">refresh_time
+		<val file="objects\client\client.dm:37">0</val>
 	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:77">space_pad
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:77">1</val>
+	<var file="objects\client\client.dm:38">refresh_time_max
+		<val file="objects\client\client.dm:38">25</val>
 	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:78">cached_colors</var>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:81">getLetterWidth</proc>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:86">getVariableWidth</proc>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:88">getColor</proc>
-	<object file="code\#libs\expixel\screen_text\screen_text.dm:101">Default
-		<var file="code\#libs\expixel\screen_text\screen_text.dm:103">mode
-			<val file="code\#libs\expixel\screen_text\screen_text.dm:103">1</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\screen_text.dm:104">width
-			<val file="code\#libs\expixel\screen_text\screen_text.dm:104">7</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\screen_text.dm:105">height
-			<val file="code\#libs\expixel\screen_text\screen_text.dm:105">9</val>
-		</var>
-		<var file="code\#libs\expixel\screen_text\screen_text.dm:106">horizontal_offset
-			<val file="code\#libs\expixel\screen_text\screen_text.dm:106">1</val>
-		</var>
-	</object>
+	<var file="objects\client\client.dm:40">name
+		<val file="objects\client\client.dm:40">""</val>
+	</var>
+	<var file="objects\client\client.dm:41">age
+		<val file="objects\client\client.dm:41">"n/a"</val>
+	</var>
+	<var file="objects\client\client.dm:42">button_gender
+		<val file="objects\client\client.dm:42">0</val>
+	</var>
+	<var file="objects\client\client.dm:43">client_gender
+		<val file="objects\client\client.dm:43">0</val>
+	</var>
+	<var file="objects\client\client.dm:45">preview_img</var>
+	<var file="objects\client\client.dm:46">client_img</var>
+	<var file="objects\client\client.dm:48">rooms
+		<val file="objects\client\client.dm:48">0</val>
+	</var>
+	<var file="objects\client\client.dm:49">rooms_ref</var>
+	<verb file="objects\client\client.dm:60">Browse</verb>
+	<verb file="objects\client\client.dm:65">Edit_StatusMessage</verb>
+	<verb file="objects\client\client.dm:72">Save_StatusMessage</verb>
+	<verb file="objects\client\client.dm:91">Event_Logout</verb>
+	<verb file="objects\client\client.dm:95">Event_AddFriend</verb>
+	<verb file="objects\client\client.dm:100">Open_BrowserWindow</verb>
+	<verb file="objects\client\client.dm:103">Open_MyBYONDPage</verb>
+	<verb file="objects\client\client.dm:108">Open_RoomsListWindow</verb>
+	<verb file="objects\client\client.dm:112">Refresh_RoomsList</verb>
+	<verb file="objects\client\client.dm:127">Open_MyProfileWindow</verb>
+	<verb file="objects\client\client.dm:146">Save_MyProfile</verb>
+	<verb file="objects\client\client.dm:158">Change_Gender</verb>
+	<verb file="objects\client\client.dm:172">Change_MOTDFlag</verb>
+	<verb file="objects\client\client.dm:180">Change_Picture</verb>
+	<verb file="objects\client\client.dm:193">Open_AddFriendWindow</verb>
+	<verb file="objects\client\client.dm:196">Open_SearchContactWindow</verb>
+	<verb file="objects\client\client.dm:199">Open_DebugWindow</verb>
+	<verb file="objects\client\client.dm:206">Event_Refresh</verb>
+	<verb file="objects\client\client.dm:210">Refresh_ContactList</verb>
+	<verb file="objects\client\client.dm:216">Output_ToRoom</verb>
+	<verb file="objects\client\client.dm:223">Disconnect</verb>
+	<verb file="objects\room\room.dm:107">Room_Speak</verb>
+	<verb file="objects\room\room.dm:113">Leave_Room</verb>
+	<proc file="objects\client\client.dm:234">Debug</proc>
+	<proc file="objects\client\client.dm:242">New</proc>
+	<proc file="objects\client\client.dm:260">Del</proc>
+	<proc file="objects\client\client_topic.dm:5">Topic</proc>
 </object>
-<var file="code\#libs\expixel\screen_text\defined fonts.dm:74">shadowFont</var>
-<var file="code\#libs\expixel\screen_text\defined fonts.dm:75">courierFont</var>
-<proc file="code\#libs\expixel\screen_text\screen_text.dm:2">dd_text2list</proc>
-<proc file="code\#libs\expixel\ui_framework\util funcs.dm:2">uif_isalpha</proc>
-<proc file="code\#libs\expixel\ui_framework\util funcs.dm:3">uif_isnum</proc>
-<proc file="code\#libs\expixel\ui_framework\util funcs.dm:4">uif_iscolon</proc>
-<proc file="code\#libs\expixel\ui_framework\util funcs.dm:5">uif_iscomma</proc>
-<proc file="code\#libs\expixel\ui_framework\util funcs.dm:6">uif_iswhitespace</proc>
-<proc file="code\#libs\expixel\ui_framework\util funcs.dm:10">uif_islist</proc>
-<proc file="code\#libs\expixel\ui_framework\util funcs.dm:14">uif_log</proc>
-<proc file="code\#libs\forum_account\text\text.dm:15">int</proc>
-<proc file="code\#libs\forum_account\text\text.dm:61">split</proc>
-<proc file="code\#libs\forum_account\text\text.dm:82">Split</proc>
-<proc file="code\#libs\forum_account\text\text.dm:103">replace</proc>
-<proc file="code\#libs\forum_account\text\text.dm:114">Replace</proc>
-<proc file="code\#libs\forum_account\text\text.dm:127">concat</proc>
-<proc file="code\#libs\forum_account\text\text.dm:174">join</proc>
-<proc file="code\#libs\forum_account\text\text.dm:178">merge</proc>
-<proc file="code\#libs\forum_account\text\text.dm:182">prefix</proc>
-<proc file="code\#libs\forum_account\text\text.dm:186">Prefix</proc>
-<proc file="code\#libs\forum_account\text\text.dm:190">ending</proc>
-<proc file="code\#libs\forum_account\text\text.dm:196">Ending</proc>
-<proc file="code\#libs\forum_account\text\text.dm:201">dir2txt</proc>
-<proc file="code\#libs\forum_account\text\text.dm:236">dir2text</proc>
-<proc file="code\misc\hooks.dm:11">invoke</proc>
-<proc file="code\misc\Loading.dm:135">create_bar</proc>
-<proc file="code\misc\util.dm:1">islist</proc>
-<proc file="code\misc\util.dm:4">getMiddleX</proc>
-<object file="code\#libs\expixel\screen_text\screen_text.dm:109">TextObjectInfoHolder
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:111">Width</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:112">Height</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:113">Text</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:114">Overlay</var>
+<var file="objects\client\client.dm:17">GENDER_NONE
+	<val file="objects\client\client.dm:17">0</val>
+</var>
+<var file="objects\client\client.dm:18">GENDER_MALE
+	<val file="objects\client\client.dm:18">1</val>
+</var>
+<var file="objects\client\client.dm:19">GENDER_FEMALE
+	<val file="objects\client\client.dm:19">2</val>
+</var>
+<object file="objects\contact\contact.dm:9">contact
+	<var file="objects\contact\contact.dm:10">parent_type
+		<val file="objects\contact\contact.dm:10">/datum</val>
+	</var>
+	<var file="objects\contact\contact.dm:18">name
+		<val file="objects\contact\contact.dm:18">""</val>
+	</var>
+	<var file="objects\contact\contact.dm:19">key
+		<val file="objects\contact\contact.dm:19">""</val>
+	</var>
+	<var file="objects\contact\contact.dm:20">ckey
+		<val file="objects\contact\contact.dm:20">""</val>
+	</var>
+	<var file="objects\contact\contact.dm:21">icon
+		<val file="objects\contact\contact.dm:21">null</val>
+	</var>
+	<var file="objects\contact\contact.dm:24">ref
+		<val file="objects\contact\contact.dm:24">null</val>
+	</var>
+	<proc file="objects\contact\contact.dm:32">Test</proc>
 </object>
-<obj file="code\#libs\expixel\screen_text\screen_text.dm:116">TextObject
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:117">parent_type
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:117">/Component</val>
+<object file="objects\room\room.dm:9">room
+	<var file="objects\room\room.dm:10">parent_type
+		<val file="objects\room\room.dm:10">/datum</val>
 	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:118">overlay_text</var>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:120">Copy</proc>
-</obj>
-<object file="code\#libs\expixel\screen_text\screen_text.dm:126">TemporaryTextHolder
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:128">current_x_pos
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:128">0</val>
+	<var file="objects\room\room.dm:26">id
+		<val file="objects\room\room.dm:26">0</val>
 	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:129">current_y_pos
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:129">0</val>
+	<var file="objects\room\room.dm:27">title
+		<val file="objects\room\room.dm:27">""</val>
 	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:130">highest_width_reached
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:130">0</val>
+	<var file="objects\room\room.dm:28">motd
+		<val file="objects\room\room.dm:28">""</val>
 	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:131">highest_height_reached
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:131">0</val>
+	<var file="objects\room\room.dm:31">creator
+		<val file="objects\room\room.dm:31">null</val>
 	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:132">max_width</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:133">max_height</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:134">Font</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:135">overlay_object</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:139">char</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:136">LAYER</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:137">height_reached
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:137">0</val>
+	<var file="objects\room\room.dm:35">moderators</var>
+	<var file="objects\room\room.dm:39">users</var>
+	<var file="objects\room\room.dm:42">update_time
+		<val file="objects\room\room.dm:42">0</val>
 	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:138">first_line_break
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:138">TRUE</val>
+	<var file="objects\room\room.dm:43">update_time_max
+		<val file="objects\room\room.dm:43">10</val>
 	</var>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:141">AddLetter</proc>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:157">AddTab</proc>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:163">AddLineBreak</proc>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:174">ForceAddLetter</proc>
+	<proc file="objects\room\room.dm:50">New</proc>
+	<proc file="objects\room\room.dm:65">Add_User</proc>
+	<proc file="objects\room\room.dm:70">Remove_User</proc>
+	<proc file="objects\room\room.dm:74">Output</proc>
+	<proc file="objects\room\room.dm:78">Event_JoinRoom</proc>
+	<proc file="objects\room\room.dm:86">Event_LeaveRoom</proc>
+	<proc file="objects\room\room.dm:93">Update_UsersList</proc>
 </object>
-<object file="code\#libs\expixel\screen_text\screen_text.dm:190">left_overs
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:191">more_text
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:191">""</val>
+<var file="objects\room\room.dm:18">MAX_USERS
+	<val file="objects\room\room.dm:18">32</val>
+</var>
+<object file="objects\world\world.dm:9">world
+	<var file="objects\world\world.dm:10">tick_lag
+		<val file="objects\world\world.dm:10">2</val>
 	</var>
+	<var file="objects\world\world.dm:11">name
+		<val file="objects\world\world.dm:11">"BYOND Messenger"</val>
+	</var>
+	<var file="objects\world\world.dm:12">hub
+		<val file="objects\world\world.dm:12">"Makeii.BYONDMessenger"</val>
+	</var>
+	<proc file="objects\world\world.dm:36">New</proc>
+	<proc file="objects\world\world.dm:65">Del</proc>
 </object>
-<object file="code\#libs\expixel\screen_text\screen_text.dm:193">TextWriter
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:194">cache</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:195">current_color
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:195">"null"</val>
-	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:196">current_icon</var>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:198">WrapText</proc>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:206">WordWrap</proc>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:217">GetWordSize</proc>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:237">changeColor</proc>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:247">WriteText</proc>
-</object>
-<object file="code\#libs\expixel\screen_text\screen_text.dm:308">WordGroupHandler
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:309">group</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:310">font</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:311">current_size
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:311">0</val>
-	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:312">x
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:312">0</val>
-	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:313">y
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:313">0</val>
-	</var>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:315">feed</proc>
-</object>
-<object file="code\#libs\expixel\screen_text\screen_text.dm:318">WordWriter
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:319">cache</var>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:321">getWordGroup</proc>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:327">processWord</proc>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:330">getLink</proc>
-</object>
-<object file="code\#libs\expixel\screen_text\screen_text.dm:340">WordGroup
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:341">words</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:342">height</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:343">width</var>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:350">screen</proc>
-</object>
-<obj file="code\#libs\expixel\screen_text\screen_text.dm:359">ScreenTextLink
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:360">parent_type
-		<val file="code\#libs\expixel\screen_text\screen_text.dm:360">/obj</val>
-	</var>
-	<var file="code\#libs\expixel\screen_text\screen_text.dm:361">link</var>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:362">New</proc>
-	<proc file="code\#libs\expixel\screen_text\screen_text.dm:366">Click</proc>
-</obj>
-<var file="code\#libs\expixel\screen_text\screen_text.dm:370">TextWriter</var>
-<var file="code\#libs\expixel\screen_text\screen_text.dm:371">DefaultFont</var>
-<obj file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:1">Component
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:2">parent_type
-		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:2">/HUD</val>
-	</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:5">comp_x
-		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:5">0</val>
-	</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:6">comp_y
-		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:6">0</val>
-	</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:7">comp_width
-		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:7">0</val>
-	</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:8">comp_height
-		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:8">0</val>
-	</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:10">children</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:11">parent
-		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:11">null</val>
-	</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:13">redraw_on_loc_change
-		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:13">TRUE</val>
-	</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:15">can_draw
-		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:15">TRUE</val>
-	</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:17">user</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:19">invisible
-		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:19">FALSE</val>
-	</var>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:27">New</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:39">get_invisible</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:45">set_invisible</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:52">invisibility_check</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:56">set_comp_screen_loc</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:62">set_loc</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:66">set_size</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:71">set_x</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:72">set_y</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:73">set_width</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:74">set_height</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:76">get_x</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:77">get_y</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:78">get_width</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:79">get_height</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:81">draw</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:83">redraw</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:84">reset</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:89">has_parent</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:90">get_parent</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:91">set_parent</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:96">add_child</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:101">remove_child</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:109">has_children</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:114">on_create</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:117">get_relative_x</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:120">get_relative_y</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:127">_loc_set</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:134">size_changed</proc>
-	<obj file="code\huds\def_huds.dm:4">Value
-		<var file="code\huds\def_huds.dm:5">value
-			<val file="code\huds\def_huds.dm:5">0</val>
-		</var>
-		<var file="code\huds\def_huds.dm:6">max_value
-			<val file="code\huds\def_huds.dm:6">0</val>
-		</var>
-		<proc file="code\huds\def_huds.dm:8">get_part</proc>
-		<proc file="code\huds\def_huds.dm:9">set_value</proc>
-		<proc file="code\huds\def_huds.dm:13">set_max_value</proc>
-		<proc file="code\huds\def_huds.dm:17">get_value</proc>
-		<proc file="code\huds\def_huds.dm:18">get_max_value</proc>
-		<obj file="code\huds\def_huds.dm:22">HealthBar
-			<proc file="code\huds\def_huds.dm:23">draw</proc>
-		</obj>
-	</obj>
-</obj>
-<object file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:1">HUDUtil
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:2">New</proc>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:6">world_icon_x
-		<val file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:6">0</val>
-	</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:7">world_icon_y
-		<val file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:7">0</val>
-	</var>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:32">_get_world_icon_size</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:38">_parse_size</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:62">_parse_loc</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:99">get_client</proc>
-</object>
-<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:107">HUDUtil</var>
-<obj file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:109">HUD
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:111">parent_type
-		<val file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:111">/obj</val>
-	</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:114">screen_x</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:115">screen_x_offset</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:116">screen_y</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:117">screen_y_offset</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:118">map</var>
-	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:122">_client</var>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:129">New</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:150">set_client</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:167">clear_client</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:175">get_client</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:205">set_screen_loc</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:223">set_screen_loc_vals</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:240">get_screen_loc</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:271">set_map</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:272">set_screen_x</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:273">set_screen_y</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:274">set_screen_x_offset</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:275">set_screen_y_offset</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:288">get_map</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:289">get_screen_x</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:290">get_screen_y</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:291">get_screen_x_offset</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:292">get_screen_y_offset</proc>
-	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:299">reposition</proc>
-</obj>
-<obj file="code\#libs\expixel\ui_framework\Components\Label.dm:1">LabelComponent
-	<var file="code\#libs\expixel\ui_framework\Components\Label.dm:2">parent_type
-		<val file="code\#libs\expixel\ui_framework\Components\Label.dm:2">/Component</val>
-	</var>
-	<var file="code\#libs\expixel\ui_framework\Components\Label.dm:3">label_text
-		<val file="code\#libs\expixel\ui_framework\Components\Label.dm:3">""</val>
-	</var>
-	<proc file="code\#libs\expixel\ui_framework\Components\Label.dm:5">set_text</proc>
-	<proc file="code\#libs\expixel\ui_framework\Components\Label.dm:8">get_text</proc>
-	<proc file="code\#libs\expixel\ui_framework\Components\Label.dm:9">size_changed</proc>
-	<proc file="code\#libs\expixel\ui_framework\Components\Label.dm:12">draw</proc>
-	<obj file="code\huds\dialog_box.dm:32">DialogText
-		<var file="code\huds\dialog_box.dm:35">txt</var>
-		<var file="code\huds\dialog_box.dm:36">_left_overs</var>
-		<proc file="code\huds\dialog_box.dm:37">on_create</proc>
-		<proc file="code\huds\dialog_box.dm:39">set_text</proc>
-		<proc file="code\huds\dialog_box.dm:48">draw</proc>
-	</obj>
-</obj>
-<object file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:1">MouseAwareComponent
-	<var file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:8">mouse_over
-		<val file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:8">FALSE</val>
-	</var>
-	<var file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:9">mouse_down
-		<val file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:9">FALSE</val>
-	</var>
-	<proc file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:12">MouseDown</proc>
-	<proc file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:15">MouseUp</proc>
-	<proc file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:18">MouseEntered</proc>
-	<proc file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:20">MouseExited</proc>
-</object>
-<object file="code\#libs\forum_account\keyboard\default.dm:12">client
-	<var file="code\#libs\forum_account\keyboard\default.dm:15">__default_action
-		<var file="code\#libs\forum_account\keyboard\default.dm:16">"north"
-			<val file="code\#libs\forum_account\keyboard\default.dm:16">"North"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\default.dm:17">"south"
-			<val file="code\#libs\forum_account\keyboard\default.dm:17">"South"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\default.dm:18">"east"
-			<val file="code\#libs\forum_account\keyboard\default.dm:18">"East"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\default.dm:19">"west"
-			<val file="code\#libs\forum_account\keyboard\default.dm:19">"West"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\default.dm:20">"southeast"
-			<val file="code\#libs\forum_account\keyboard\default.dm:20">"Southeast"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\default.dm:21">"southwest"
-			<val file="code\#libs\forum_account\keyboard\default.dm:21">"Southwest"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\default.dm:22">"northeast"
-			<val file="code\#libs\forum_account\keyboard\default.dm:22">"Northeast"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\default.dm:23">"northwest"
-			<val file="code\#libs\forum_account\keyboard\default.dm:23">"Northwest"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\default.dm:24">"center"
-			<val file="code\#libs\forum_account\keyboard\default.dm:24">"Center"</val>
-		</var>
-	</var>
-	<proc file="code\#libs\forum_account\keyboard\default.dm:29">key_up</proc>
-	<proc file="code\#libs\forum_account\keyboard\default.dm:31">key_down</proc>
-	<proc file="code\#libs\forum_account\keyboard\default.dm:35">key_repeat</proc>
-	<proc file="code\#libs\forum_account\keyboard\default.dm:40">click</proc>
-	<proc file="code\#libs\forum_account\keyboard\default.dm:43">__default_action</proc>
-	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:82">lock_input</proc>
-	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:85">unlock_input</proc>
-	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:88">clear_input</proc>
-	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:194">set_macros</proc>
-	<proc file="code\huds\dialog_box.dm:121">show_message</proc>
-	<proc file="code\huds\dialog_box.dm:122">next_message</proc>
-	<proc file="code\huds\dialog_box.dm:123">wait_for_messages</proc>
-	<proc file="code\huds\InstallHuds.dm:9">initHuds</proc>
-	<proc file="code\huds\InstallHuds.dm:11">installHuds</proc>
-	<proc file="code\misc\hooks.dm:24">set_hook</proc>
-	<proc file="code\misc\hooks.dm:27">push_hook_back</proc>
-	<proc file="code\misc\hooks.dm:33">clear_hook</proc>
-	<proc file="code\misc\hooks.dm:37">push_hook_forward</proc>
-	<proc file="code\misc\hooks.dm:44">hook_invoke</proc>
-	<proc file="code\misc\Loading.dm:6">clear_loads</proc>
-	<proc file="code\misc\Loading.dm:9">set_load</proc>
-	<proc file="code\misc\Loading.dm:21">add_load</proc>
-	<proc file="code\misc\Loading.dm:25">remove_load</proc>
-	<proc file="code\misc\Loading.dm:30">del_loads</proc>
-	<proc file="code\misc\Loading.dm:36">create_loads</proc>
-	<proc file="code\misc\Loading.dm:38">get_avg_load</proc>
-	<proc file="code\misc\Loading.dm:48">open_load</proc>
-	<proc file="code\misc\Loading.dm:51">close_load</proc>
-	<proc file="code\misc\Loading.dm:55">update_loading</proc>
-	<proc file="code\misc\Loading.dm:85">test_loading</proc>
-	<var file="code\#libs\forum_account\keyboard\keyboard.dm:55">keys
-		<val file="code\#libs\forum_account\keyboard\keyboard.dm:55">ALL_KEYS</val>
-	</var>
-	<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">__numpad_mappings
-		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad0"
-			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"0"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad1"
-			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"1"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad2"
-			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"2"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad3"
-			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"3"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad4"
-			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"4"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad5"
-			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"5"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad6"
-			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"6"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad7"
-			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"7"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad8"
-			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"8"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad9"
-			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"9"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"divide"
-			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"/"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"multiply"
-			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"*"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"subtract"
-			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"-"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"add"
-			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"+"</val>
-		</var>
-		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"decimal"
-			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"."</val>
-		</var>
-	</var>
-	<var file="code\#libs\forum_account\keyboard\keyboard.dm:61">input_lock
-		<val file="code\#libs\forum_account\keyboard\keyboard.dm:61">0</val>
-	</var>
-	<var file="code\#libs\forum_account\keyboard\keyboard.dm:67">focus</var>
-	<var file="code\#libs\forum_account\keyboard\keyboard.dm:69">use_numpad
-		<val file="code\#libs\forum_account\keyboard\keyboard.dm:69">1</val>
-	</var>
-	<var file="code\#libs\forum_account\keyboard\keyboard.dm:73">translate_numpad_to_numbers
-		<val file="code\#libs\forum_account\keyboard\keyboard.dm:73">1</val>
-	</var>
-	<verb file="code\#libs\forum_account\keyboard\keyboard.dm:97">KeyDown</verb>
-	<verb file="code\#libs\forum_account\keyboard\keyboard.dm:127">KeyUp</verb>
-	<verb file="code\#libs\forum_account\keyboard\keyboard.dm:158">KeyRepeat</verb>
-	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:172">New</proc>
-	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:183">Click</proc>
-	<proc file="code\#libs\forum_account\sidescroller\keyboard.dm:30">New</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:415">North</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:416">South</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:417">East</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:418">West</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:419">Southeast</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:420">Southwest</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:421">Northeast</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:422">Northwest</proc>
-	<var file="code\game\player.dm:3">perspective
-		<val file="code\game\player.dm:3">EDGE_PERSPECTIVE</val>
-	</var>
-	<var file="code\huds\dialog_box.dm:115">view
-		<val file="code\huds\dialog_box.dm:115">"20x15"</val>
-	</var>
-	<var file="code\huds\InstallHuds.dm:7">huds</var>
-	<var file="code\misc\hooks.dm:20">_hook
-		<val file="code\misc\hooks.dm:20">null</val>
-	</var>
-	<var file="code\misc\hooks.dm:21">_last_hooks</var>
-	<var file="code\misc\Loading.dm:2">loading</var>
-	<var file="code\misc\Loading.dm:3">last_pane
-		<val file="code\misc\Loading.dm:3">""</val>
-	</var>
-	<var file="code\misc\Loading.dm:4">max_loading_width
-		<val file="code\misc\Loading.dm:4">184</val>
-	</var>
-	<proc file="code\misc\Loading.dm:106">New</proc>
-</object>
-<object file="code\#libs\forum_account\keyboard\keyboard.dm:14">datum
-	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:20">key_up</proc>
-	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:21">key_down</proc>
-	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:30">key_repeat</proc>
-	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:34">click</proc>
-</object>
-<var file="code\#libs\forum_account\keyboard\keyboard.dm:39">ARROWS
-	<val file="code\#libs\forum_account\keyboard\keyboard.dm:39">"|west|east|north|south|"</val>
-</var>
-<var file="code\#libs\forum_account\keyboard\keyboard.dm:40">NUMPAD
-	<val file="code\#libs\forum_account\keyboard\keyboard.dm:40">"|west|east|north|south|northeast|southeast|northwest|southwest|center|numpad0|numpad1|numpad2|numpad3|numpad4|numpad5|numpad6|numpad7|numpad8|numpad9|divide|multiply|subtract|add|decimal|"</val>
-</var>
-<var file="code\#libs\forum_account\keyboard\keyboard.dm:41">EXTENDED
-	<val file="code\#libs\forum_account\keyboard\keyboard.dm:41">"|space|shift|ctrl|alt|escape|return|tab|back|delete|insert|"</val>
-</var>
-<var file="code\#libs\forum_account\keyboard\keyboard.dm:42">PUNCTUATION
-	<val file="code\#libs\forum_account\keyboard\keyboard.dm:42">"|`|-|=|\\\[|\]|;|'|,|.|/|\\\\|"</val>
-</var>
-<var file="code\#libs\forum_account\keyboard\keyboard.dm:43">FUNCTION
-	<val file="code\#libs\forum_account\keyboard\keyboard.dm:43">"|F1|F2|F3|F4|F5|F6|F7|F8|F9|F10|F11|F12|"</val>
-</var>
-<var file="code\#libs\forum_account\keyboard\keyboard.dm:44">LETTERS
-	<val file="code\#libs\forum_account\keyboard\keyboard.dm:44">"|a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|"</val>
-</var>
-<var file="code\#libs\forum_account\keyboard\keyboard.dm:45">NUMBERS
-	<val file="code\#libs\forum_account\keyboard\keyboard.dm:45">"|0|1|2|3|4|5|6|7|8|9|"</val>
-</var>
-<var file="code\#libs\forum_account\keyboard\keyboard.dm:47">ALL_KEYS</var>
-<var file="code\#libs\forum_account\sidescroller\background.dm:13">REPEAT_X
-	<val file="code\#libs\forum_account\sidescroller\background.dm:13">1</val>
-</var>
-<var file="code\#libs\forum_account\sidescroller\background.dm:14">REPEAT_Y
-	<val file="code\#libs\forum_account\sidescroller\background.dm:14">2</val>
-</var>
-<object file="code\#libs\forum_account\sidescroller\background.dm:21">Background
-	<var file="code\#libs\forum_account\sidescroller\background.dm:23">object</var>
-	<var file="code\#libs\forum_account\sidescroller\background.dm:24">image</var>
-	<var file="code\#libs\forum_account\sidescroller\background.dm:26">width</var>
-	<var file="code\#libs\forum_account\sidescroller\background.dm:27">height</var>
-	<var file="code\#libs\forum_account\sidescroller\background.dm:29">px
-		<val file="code\#libs\forum_account\sidescroller\background.dm:29">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\background.dm:30">py
-		<val file="code\#libs\forum_account\sidescroller\background.dm:30">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\background.dm:32">owner</var>
-	<var file="code\#libs\forum_account\sidescroller\background.dm:34">repeat
-		<val file="code\#libs\forum_account\sidescroller\background.dm:34">0</val>
-	</var>
-	<proc file="code\#libs\forum_account\sidescroller\background.dm:36">New</proc>
-	<proc file="code\#libs\forum_account\sidescroller\background.dm:85">Del</proc>
-	<proc file="code\#libs\forum_account\sidescroller\background.dm:92">show</proc>
-	<proc file="code\#libs\forum_account\sidescroller\background.dm:97">hide</proc>
-</object>
-<mob file="code\#libs\forum_account\sidescroller\background.dm:102">mob
-	<var file="code\#libs\forum_account\sidescroller\background.dm:104">backgrounds</var>
-	<proc file="code\#libs\forum_account\sidescroller\background.dm:108">background</proc>
-	<proc file="code\#libs\forum_account\sidescroller\background.dm:120">set_background</proc>
-	<proc file="code\#libs\forum_account\sidescroller\camera.dm:63">set_camera</proc>
-	<proc file="code\#libs\forum_account\sidescroller\collision.dm:23">check_collision</proc>
-	<proc file="code\#libs\forum_account\sidescroller\collision.dm:30">block_collision</proc>
-	<proc file="code\#libs\forum_account\sidescroller\collision.dm:84">ramp_collision</proc>
-	<proc file="code\#libs\forum_account\sidescroller\debugging.dm:24">start_trace</proc>
-	<proc file="code\#libs\forum_account\sidescroller\debugging.dm:29">stop_trace</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:57">bump</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:79">set_state</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:91">can_jump</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:107">jump</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:114">drop</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:122">move</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:143">climb</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:166">gravity</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:177">on_ladder</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:195">action</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:273">check_loc</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:285">movement</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:323">slow_down</proc>
-	<proc file="code\#libs\forum_account\sidescroller\movement.dm:365">set_flags</proc>
-	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:194">follow_path</proc>
-	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:293">stop</proc>
-	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:303">move_towards</proc>
-	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:321">move_to</proc>
-	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:134">can_bump</proc>
-	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:162">pixel_move</proc>
-	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:324">set_pos</proc>
-	<proc file="code\#libs\forum_account\sidescroller\procs.dm:111">center</proc>
-	<proc file="code\#libs\forum_account\sidescroller\procs.dm:123">dense</proc>
-	<proc file="code\#libs\forum_account\sidescroller\procs.dm:141">at_edge</proc>
-	<proc file="code\#libs\forum_account\sidescroller\procs.dm:163">face</proc>
-	<proc file="code\#libs\forum_account\sidescroller\procs.dm:171">turn_around</proc>
-	<proc file="code\#libs\forum_account\sidescroller\procs.dm:175">knockback</proc>
-	<proc file="code\game\player.dm:42">normalizePos</proc>
-	<proc file="code\huds\dialog_box.dm:127">show_message</proc>
-	<proc file="code\huds\dialog_box.dm:128">next_message</proc>
-	<proc file="code\huds\dialog_box.dm:129">wait_for_messages</proc>
-	<proc file="code\huds\Menus.dm:203">menu_test</proc>
-	<proc file="code\misc\util.dm:15">lock_movement</proc>
-	<proc file="code\misc\util.dm:16">unlock_movement</proc>
-	<var file="code\#libs\forum_account\sidescroller\camera.dm:59">camera</var>
-	<var file="code\#libs\forum_account\sidescroller\collision.dm:19">move_x</var>
-	<var file="code\#libs\forum_account\sidescroller\collision.dm:20">move_y</var>
-	<var file="code\#libs\forum_account\sidescroller\debugging.dm:21">trace</var>
-	<proc file="code\#libs\forum_account\sidescroller\debugging.dm:33">Del</proc>
-	<proc file="code\#libs\forum_account\sidescroller\debugging.dm:38">Stat</proc>
-	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:40">controls</var>
-	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:42">jumped
-		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:42">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:43">dropped
-		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:43">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:45">holding_left
-		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:45">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:46">holding_right
-		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:46">0</val>
-	</var>
-	<proc file="code\#libs\forum_account\sidescroller\keyboard.dm:49">key_down</proc>
-	<proc file="code\#libs\forum_account\sidescroller\keyboard.dm:56">key_up</proc>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:26">icon_state
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:26">"mob"</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:29">on_left
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:29">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:30">on_right
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:30">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:31">on_ceiling
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:31">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:32">on_ground
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:32">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:33">on_ladder
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:33">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:35">base_state
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:35">""</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:38">accel
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:38">1</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:39">decel
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:39">1</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:40">gravity
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:40">1</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:42">move_speed
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:42">5</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:43">climb_speed
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:43">5</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:44">jump_speed
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:44">10</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:45">fall_speed
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:45">20</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:47">moved
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:47">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:49">last_x
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:49">-1</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:50">last_y
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:50">-1</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\movement.dm:51">last_z
-		<val file="code\#libs\forum_account\sidescroller\movement.dm:51">-1</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:179">path</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:180">destination</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:181">next_step</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:183">__last_jump_loc</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:184">__jump_delay
-		<val file="code\#libs\forum_account\sidescroller\pathing.dm:184">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:186">__stuck_counter
-		<val file="code\#libs\forum_account\sidescroller\pathing.dm:186">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:120">animate_movement
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:120">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:124">vel_x
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:124">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:125">vel_y
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:125">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:128">bottom</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:129">was_on_ground
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:129">0</val>
-	</var>
-	<proc file="code\game\player.dm:25">set_pos</proc>
-	<proc file="code\huds\dialog_box.dm:132">Login</proc>
-	<proc file="code\huds\Menus.dm:206">Login</proc>
-	<proc file="code\misc\hooks.dm:56">key_down</proc>
-	<proc file="code\misc\hooks.dm:60">key_up</proc>
-	<proc file="code\misc\hooks.dm:62">key_repeat</proc>
-	<proc file="code\misc\Loading.dm:79">Login</proc>
-	<var file="code\misc\util.dm:13">movement_locked
-		<val file="code\misc\util.dm:13">FALSE</val>
-	</var>
-	<proc file="code\misc\util.dm:17">set_pos</proc>
-</mob>
-<object file="code\#libs\forum_account\sidescroller\camera.dm:12">Camera
-	<var file="code\#libs\forum_account\sidescroller\camera.dm:15">FOLLOW
-		<val file="code\#libs\forum_account\sidescroller\camera.dm:15">1</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\camera.dm:16">SLIDE
-		<val file="code\#libs\forum_account\sidescroller\camera.dm:16">2</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\camera.dm:19">px
-		<val file="code\#libs\forum_account\sidescroller\camera.dm:19">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\camera.dm:20">py
-		<val file="code\#libs\forum_account\sidescroller\camera.dm:20">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\camera.dm:21">lag
-		<val file="code\#libs\forum_account\sidescroller\camera.dm:21">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\camera.dm:22">mode
-		<val file="code\#libs\forum_account\sidescroller\camera.dm:22">FOLLOW</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\camera.dm:24">minx
-		<val file="code\#libs\forum_account\sidescroller\camera.dm:24">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\camera.dm:25">maxx
-		<val file="code\#libs\forum_account\sidescroller\camera.dm:25">320000</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\camera.dm:26">miny
-		<val file="code\#libs\forum_account\sidescroller\camera.dm:26">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\camera.dm:27">maxy
-		<val file="code\#libs\forum_account\sidescroller\camera.dm:27">320000</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\camera.dm:37">_px
-		<val file="code\#libs\forum_account\sidescroller\camera.dm:37">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\camera.dm:38">_py
-		<val file="code\#libs\forum_account\sidescroller\camera.dm:38">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\camera.dm:43">vel_x
-		<val file="code\#libs\forum_account\sidescroller\camera.dm:43">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\camera.dm:44">vel_y
-		<val file="code\#libs\forum_account\sidescroller\camera.dm:44">0</val>
-	</var>
-	<proc file="code\#libs\forum_account\sidescroller\camera.dm:49">center</proc>
-</object>
-<var file="code\#libs\forum_account\sidescroller\debugging.dm:16">SIDESCROLLER_DEBUG
-	<val file="code\#libs\forum_account\sidescroller\debugging.dm:16">0</val>
-</var>
-<object file="code\#libs\forum_account\sidescroller\debugging.dm:78">MovementLog
-	<var file="code\#libs\forum_account\sidescroller\debugging.dm:80">messages</var>
-	<proc file="code\#libs\forum_account\sidescroller\debugging.dm:83">event</proc>
-	<proc file="code\#libs\forum_account\sidescroller\debugging.dm:87">dump</proc>
-</object>
-<var file="code\#libs\forum_account\sidescroller\keyboard.dm:15">K_RIGHT
-	<val file="code\#libs\forum_account\sidescroller\keyboard.dm:15">"east"</val>
-</var>
-<var file="code\#libs\forum_account\sidescroller\keyboard.dm:16">K_LEFT
-	<val file="code\#libs\forum_account\sidescroller\keyboard.dm:16">"west"</val>
-</var>
-<var file="code\#libs\forum_account\sidescroller\keyboard.dm:17">K_UP
-	<val file="code\#libs\forum_account\sidescroller\keyboard.dm:17">"north"</val>
-</var>
-<var file="code\#libs\forum_account\sidescroller\keyboard.dm:18">K_DOWN
-	<val file="code\#libs\forum_account\sidescroller\keyboard.dm:18">"south"</val>
-</var>
-<var file="code\#libs\forum_account\sidescroller\keyboard.dm:19">K_SPACE
-	<val file="code\#libs\forum_account\sidescroller\keyboard.dm:19">"space"</val>
-</var>
-<object file="code\#libs\forum_account\sidescroller\keyboard.dm:21">Controls
-	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:23">up
-		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:23">K_UP</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:24">down
-		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:24">K_DOWN</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:25">left
-		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:25">K_LEFT</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:26">right
-		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:26">K_RIGHT</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:27">jump
-		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:27">K_SPACE</val>
-	</var>
-</object>
-<var file="code\#libs\forum_account\sidescroller\movement.dm:17">STANDING
-	<val file="code\#libs\forum_account\sidescroller\movement.dm:17">"standing"</val>
-</var>
-<var file="code\#libs\forum_account\sidescroller\movement.dm:18">MOVING
-	<val file="code\#libs\forum_account\sidescroller\movement.dm:18">"moving"</val>
-</var>
-<var file="code\#libs\forum_account\sidescroller\movement.dm:19">CLIMBING
-	<val file="code\#libs\forum_account\sidescroller\movement.dm:19">"climbing"</val>
-</var>
-<var file="code\#libs\forum_account\sidescroller\movement.dm:20">JUMPING
-	<val file="code\#libs\forum_account\sidescroller\movement.dm:20">"jumping"</val>
-</var>
-<var file="code\#libs\forum_account\sidescroller\movement.dm:22">RIGHT
-	<val file="code\#libs\forum_account\sidescroller\movement.dm:22">EAST</val>
-</var>
-<var file="code\#libs\forum_account\sidescroller\movement.dm:23">LEFT
-	<val file="code\#libs\forum_account\sidescroller\movement.dm:23">WEST</val>
-</var>
-<object file="code\#libs\forum_account\sidescroller\pathing.dm:17">Path
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:19">destination</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:26">current</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:20">mover</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:21">tiles</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:23">closed</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:24">fringe</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:25">parent</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:28">f_score</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:29">g_score</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:30">h_score</var>
-	<var file="code\#libs\forum_account\sidescroller\pathing.dm:32">limit
-		<val file="code\#libs\forum_account\sidescroller\pathing.dm:32">0</val>
-	</var>
-	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:34">New</proc>
-	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:43">add</proc>
-	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:67">distance</proc>
-	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:71">heuristic</proc>
-	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:74">compute</proc>
-</object>
-<turf file="code\#libs\forum_account\sidescroller\pixel-movement.dm:11">turf
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:13">ladder
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:13">0</val>
-	</var>
-	<turf file="code\game\turfs.dm:2">Cave
-		<turf file="code\game\turfs.dm:3">Stone
-			<var file="code\game\turfs.dm:4">icon
-				<val file="code\game\turfs.dm:4">'icon/turfs/cave/stone.dmi'</val>
-			</var>
-		</turf>
-	</turf>
-	<var file="code\huds\dialog_box.dm:139">icon
-		<val file="Pandora's Box.dme:47">'icon/test_turf.dmi'</val>
-	</var>
-</turf>
-<object file="code\#libs\forum_account\sidescroller\pixel-movement.dm:15">atom
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:20">px
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:20">-1</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:21">py
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:21">-1</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:24">_px
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:24">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:25">_py
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:25">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:28">pwidth
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:28">-1</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:29">pheight
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:29">-1</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:33">pleft
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:33">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:34">pright
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:34">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:47">scaffold
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:47">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:52">flags
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:52">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:55">flags_right
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:55">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:56">flags_left
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:56">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:57">flags_bottom
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:57">0</val>
-	</var>
-	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:58">flags_top
-		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:58">0</val>
-	</var>
-	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:60">New</proc>
-	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:93">height</proc>
-	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:107">stepped_on</proc>
-	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:108">stepping_on</proc>
-	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:109">stepped_off</proc>
-	<proc file="code\#libs\forum_account\sidescroller\procs.dm:22">inside4</proc>
-	<proc file="code\#libs\forum_account\sidescroller\procs.dm:37">inside</proc>
-	<proc file="code\#libs\forum_account\sidescroller\procs.dm:48">front</proc>
-	<proc file="code\#libs\forum_account\sidescroller\procs.dm:85">left</proc>
-	<proc file="code\#libs\forum_account\sidescroller\procs.dm:93">right</proc>
-	<proc file="code\#libs\forum_account\sidescroller\procs.dm:101">top</proc>
-	<proc file="code\#libs\forum_account\sidescroller\procs.dm:105">bottom</proc>
-	<object file="code\#libs\forum_account\sidescroller\pixel-movement.dm:112">movable
-		<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:113">step_size
-			<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:113">1</val>
-		</var>
-		<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:114">New</proc>
-	</object>
-</object>
-<var file="code\#libs\forum_account\sidescroller\world.dm:12">icon_width
-	<val file="code\#libs\forum_account\sidescroller\world.dm:12">-1</val>
-</var>
-<var file="code\#libs\forum_account\sidescroller\world.dm:13">icon_height
-	<val file="code\#libs\forum_account\sidescroller\world.dm:13">-1</val>
-</var>
-<var file="code\#libs\forum_account\sidescroller\world.dm:14">tick_count
-	<val file="code\#libs\forum_account\sidescroller\world.dm:14">0</val>
-</var>
-<object file="code\#libs\forum_account\sidescroller\world.dm:16">world
-	<var file="code\#libs\forum_account\sidescroller\world.dm:18">fps
-		<val file="code\#libs\forum_account\sidescroller\world.dm:18">40</val>
-	</var>
-	<proc file="code\#libs\forum_account\sidescroller\world.dm:24">movement_loop</proc>
-	<proc file="code\#libs\forum_account\sidescroller\world.dm:33">movement</proc>
-	<proc file="code\#libs\forum_account\sidescroller\world.dm:38">set_icon_size</proc>
-	<proc file="code\misc\Loading.dm:121">load</proc>
-	<proc file="code\misc\Loading.dm:129">create_loads</proc>
-	<proc file="code\#libs\forum_account\sidescroller\world.dm:47">New</proc>
-	<var file="code\game\player.dm:1">mob
-		<val file="code\game\player.dm:1">/player</val>
-	</var>
-	<var file="code\huds\dialog_box.dm:113">view
-		<val file="code\huds\dialog_box.dm:113">"20x15"</val>
-	</var>
-	<var file="code\misc\world.dm:2">name
-		<val file="code\misc\world.dm:2">"Pandora's Box"</val>
-	</var>
-</object>
-<mob file="code\game\player.dm:5">player
-	<var file="code\game\player.dm:6">pixel_x
-		<val file="code\game\player.dm:6">-16</val>
-	</var>
-	<var file="code\game\player.dm:7">bound_width
-		<val file="code\game\player.dm:7">21</val>
-	</var>
-	<var file="code\game\player.dm:8">pwidth
-		<val file="code\game\player.dm:8">21</val>
-	</var>
-	<var file="code\game\player.dm:9">jump_speed
-		<val file="code\game\player.dm:9">12</val>
-	</var>
-	<var file="code\game\player.dm:11">move_speed
-		<val file="code\game\player.dm:11">8</val>
-	</var>
-	<var file="code\game\player.dm:14">parent_type
-		<val file="code\game\player.dm:14">/mob</val>
-	</var>
-	<var file="code\game\player.dm:15">icon
-		<val file="code\game\player.dm:15">'icon/player/hope.dmi'</val>
-	</var>
-	<proc file="code\game\player.dm:16">set_state</proc>
-</mob>
-<obj file="code\game\turfs.dm:7">TurfModifiers
-	<var file="code\game\turfs.dm:11">parent_type
-		<val file="code\game\turfs.dm:11">/obj</val>
-	</var>
-	<var file="code\game\turfs.dm:12">icon
-		<val file="code\game\turfs.dm:12">'icon/turfs/modifiers.dmi'</val>
-	</var>
-	<proc file="code\game\turfs.dm:14">New</proc>
-	<proc file="code\game\turfs.dm:19">modify</proc>
-	<proc file="code\game\turfs.dm:20">remove</proc>
-	<proc file="code\game\turfs.dm:21">do_mod</proc>
-	<obj file="code\game\turfs.dm:26">Slope_Right
-		<var file="code\game\turfs.dm:27">icon_state
-			<val file="code\game\turfs.dm:27">"slope_right"</val>
-		</var>
-		<proc file="code\game\turfs.dm:28">modify</proc>
-	</obj>
-	<obj file="code\game\turfs.dm:32">Slope_Left
-		<var file="code\game\turfs.dm:33">icon_state
-			<val file="code\game\turfs.dm:33">"slope_left"</val>
-		</var>
-		<proc file="code\game\turfs.dm:34">modify</proc>
-	</obj>
-	<obj file="code\game\turfs.dm:38">Density
-		<var file="code\game\turfs.dm:39">icon_state
-			<val file="code\game\turfs.dm:39">"dense"</val>
-		</var>
-		<proc file="code\game\turfs.dm:40">modify</proc>
-	</obj>
-</obj>
-<obj file="code\huds\dialog_box.dm:1">DialogComponent
-	<var file="code\huds\dialog_box.dm:2">parent_type
-		<val file="code\huds\dialog_box.dm:2">/Component</val>
-	</var>
-	<var file="code\huds\dialog_box.dm:3">icon
-		<val file="code\huds\dialog_box.dm:3">'icon/huds/dialog_box.dmi'</val>
-	</var>
-	<var file="code\huds\dialog_box.dm:4">dialogText</var>
-	<proc file="code\huds\dialog_box.dm:7">create_dialog_text</proc>
-	<proc file="code\huds\dialog_box.dm:16">set_message</proc>
-	<proc file="code\huds\dialog_box.dm:26">_try_next_message</proc>
-	<proc file="code\huds\dialog_box.dm:11">on_create</proc>
-	<proc file="code\huds\dialog_box.dm:19">reset</proc>
-	<proc file="code\huds\dialog_box.dm:22">Click</proc>
-</obj>
-<object file="code\huds\dialog_box.dm:51">Dialog
-	<var file="code\huds\dialog_box.dm:52">queue</var>
-	<var file="code\huds\dialog_box.dm:53">_dialog</var>
-	<var file="code\huds\dialog_box.dm:54">_more_text</var>
-	<var file="code\huds\dialog_box.dm:55">displaying_message
-		<val file="code\huds\dialog_box.dm:55">FALSE</val>
-	</var>
-	<proc file="code\huds\dialog_box.dm:57">is_open</proc>
-	<proc file="code\huds\dialog_box.dm:58">_create</proc>
-	<proc file="code\huds\dialog_box.dm:62">show</proc>
-	<proc file="code\huds\dialog_box.dm:65">hide</proc>
-	<proc file="code\huds\dialog_box.dm:67">display_message</proc>
-	<proc file="code\huds\dialog_box.dm:79">force_next</proc>
-	<proc file="code\huds\dialog_box.dm:82">next_message</proc>
-	<proc file="code\huds\dialog_box.dm:88">has_next</proc>
-	<proc file="code\huds\dialog_box.dm:91">remove_front</proc>
-	<proc file="code\huds\dialog_box.dm:94">add_to_front</proc>
-	<proc file="code\huds\dialog_box.dm:97">init_queue</proc>
-	<proc file="code\huds\dialog_box.dm:99">del_queue</proc>
-	<proc file="code\huds\dialog_box.dm:105">add_message</proc>
-	<proc file="code\huds\dialog_box.dm:109">wait</proc>
-</object>
-<object file="code\huds\InstallHuds.dm:1">Huds
-	<var file="code\huds\InstallHuds.dm:3">dialog</var>
-</object>
-<obj file="code\huds\Menus.dm:1">MenuComponent
-	<var file="code\huds\Menus.dm:2">parent_type
-		<val file="code\huds\Menus.dm:2">/Component</val>
-	</var>
-	<var file="code\huds\Menus.dm:4">menu_components</var>
-	<var file="code\huds\Menus.dm:5">selected_component
-		<val file="code\huds\Menus.dm:5">FALSE</val>
-	</var>
-	<var file="code\huds\Menus.dm:6">menu_pos_x
-		<val file="code\huds\Menus.dm:6">1</val>
-	</var>
-	<var file="code\huds\Menus.dm:7">menu_pos_y
-		<val file="code\huds\Menus.dm:7">1</val>
-	</var>
-	<proc file="code\huds\Menus.dm:13">init_menu</proc>
-	<proc file="code\huds\Menus.dm:16">build_menu</proc>
-	<proc file="code\huds\Menus.dm:17">add_item</proc>
-	<proc file="code\huds\Menus.dm:24">open</proc>
-	<proc file="code\huds\Menus.dm:27">close</proc>
-	<proc file="code\huds\Menus.dm:30">keydown</proc>
-	<proc file="code\huds\Menus.dm:60">keyrepeat</proc>
-	<proc file="code\huds\Menus.dm:61">keyup</proc>
-	<proc file="code\huds\Menus.dm:62">trySetPosition</proc>
-	<proc file="code\huds\Menus.dm:70">redraw_items</proc>
-	<proc file="code\huds\Menus.dm:76">set_selected_at</proc>
-	<proc file="code\huds\Menus.dm:87">get_selected</proc>
-	<proc file="code\huds\Menus.dm:98">init_pos</proc>
-	<proc file="code\huds\Menus.dm:92">on_create</proc>
-	<obj file="code\huds\Menus.dm:144">EventDispatcher
-		<proc file="code\huds\Menus.dm:145">keyup</proc>
-		<proc file="code\huds\Menus.dm:148">keydown</proc>
-		<proc file="code\huds\Menus.dm:151">keyrepeat</proc>
-	</obj>
-	<obj file="code\huds\Menus.dm:157">Selector
-		<var file="code\huds\Menus.dm:158">accept_button
-			<val file="code\huds\Menus.dm:158">"z"</val>
-		</var>
-		<proc file="code\huds\Menus.dm:159">keydown</proc>
-		<proc file="code\huds\Menus.dm:165">on_select</proc>
-		<obj file="code\huds\Menus.dm:169">MainMenu
-			<proc file="code\huds\Menus.dm:170">build_menu</proc>
-			<proc file="code\huds\Menus.dm:191">on_select</proc>
-		</obj>
-	</obj>
-</obj>
-<obj file="code\huds\Menus.dm:103">Selectable
-	<var file="code\huds\Menus.dm:104">parent_type
-		<val file="code\huds\Menus.dm:104">/Component</val>
-	</var>
-	<var file="code\huds\Menus.dm:106">selected
-		<val file="code\huds\Menus.dm:106">FALSE</val>
-	</var>
-	<var file="code\huds\Menus.dm:107">id
-		<val file="code\huds\Menus.dm:107">"null_id"</val>
-	</var>
-	<proc file="code\huds\Menus.dm:109">toggle_select</proc>
-	<proc file="code\huds\Menus.dm:111">set_selected</proc>
-	<proc file="code\huds\Menus.dm:114">get_selected</proc>
-	<proc file="code\huds\Menus.dm:116">get_id</proc>
-	<proc file="code\huds\Menus.dm:117">set_id</proc>
-	<obj file="code\huds\Menus.dm:119">SelectableText
-		<var file="code\huds\Menus.dm:121">selected_color
-			<val file="code\huds\Menus.dm:121">"#FFFF00"</val>
-		</var>
-		<var file="code\huds\Menus.dm:122">unselected_color
-			<val file="code\huds\Menus.dm:122">"#FFFFFF"</val>
-		</var>
-		<var file="code\huds\Menus.dm:123">text_size
-			<val file="code\huds\Menus.dm:123">4</val>
-		</var>
-		<var file="code\huds\Menus.dm:124">_text</var>
-		<proc file="code\huds\Menus.dm:126">set_text</proc>
-		<proc file="code\huds\Menus.dm:129">get_text</proc>
-		<proc file="code\huds\Menus.dm:131">draw</proc>
-		<proc file="code\huds\Menus.dm:135">size_changed</proc>
-	</obj>
-</obj>
-<object file="code\misc\Loading.dm:66">LoadingProxy
-	<var file="code\misc\Loading.dm:67">held_clients</var>
-	<proc file="code\misc\Loading.dm:69">open</proc>
-	<proc file="code\misc\Loading.dm:70">close</proc>
-	<proc file="code\misc\Loading.dm:71">update</proc>
-	<proc file="code\misc\Loading.dm:72">set_load</proc>
-	<proc file="code\misc\Loading.dm:73">add_load</proc>
-	<proc file="code\misc\Loading.dm:74">remove_load</proc>
-	<proc file="code\misc\Loading.dm:75">add_client</proc>
-	<proc file="code\misc\Loading.dm:76">clear_loads</proc>
-</object>
-<var file="code\misc\Loading.dm:101">defaultLoad</var>
-<var file="code\misc\Loading.dm:103">first_client
-	<val file="code\misc\Loading.dm:103">TRUE</val>
-</var>
-<var file="code\misc\Loading.dm:115">health_bar_icon</var>
-<var file="code\misc\Loading.dm:116">energy_bar_icon</var>
-<var file="code\misc\Loading.dm:117">bar_background</var>
+<var file="objects\world\world.dm:23">_rooms</var>
+<var file="objects\world\world.dm:26">_developers</var>
+<var file="objects\world\world.dm:29">_users</var>

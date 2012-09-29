@@ -102,6 +102,16 @@ public class PluginManager {
 			}
 		}
 	}
+	
+	/**
+	 * Invokes the start method of all 
+	 * of the plugins.
+	 */
+	public void startPlugins() {
+		for(AbstractPlugin p : this.pluginsService) {
+			p.start();
+		}
+	}
 
 	/**
 	 * Constructor made private so that new instances cannot

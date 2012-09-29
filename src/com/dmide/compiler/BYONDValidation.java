@@ -43,6 +43,7 @@ public class BYONDValidation {
 	}
 
 	private boolean checkRegistryInstall() {
+		System.out.println("Checking registry...");
 		String regVal;
 		try {
 			regVal = WinRegistry.readString(WinRegistry.HKEY_LOCAL_MACHINE,
@@ -60,14 +61,16 @@ public class BYONDValidation {
 	}
 
 	private boolean checkCommonInstall() {
+		System.out.println("Checking commons...");
 		for(String p : this.commonLocations) {
 			File f = new File(p);
-			if(f.exists() && f.isDirectory()) {return true;}
+			if(f.exists() && f.isDirectory()) {DMIDE.saveProperty("byond.location", f.getPath()); return true;}
 		}
 		return false;
 	}
 
 	private boolean promptInstallDir() {
+		System.out.println("Using prompt...");
 		int c = JOptionPane.showConfirmDialog(DMIDEUI.getInstance().getMainWindow(),
 				"The IDE failed to find your installation of BYOND! " +
 				"Would you like to locate it manually?\n" +

@@ -25,73 +25,170 @@ import com.l2fprod.common.util.OS;
 public class DMCompiler implements IDEEventWatcher {
 
 	boolean compiling = false;
+	final String[] commonLocations = new String[] {"C:\\Program Files\\BYOND", "C:\\Program Files (x86)\\BYOND"};
 
 	/**
-	 * Checks the location of the compiler.
+	 * Searches for and assigns the BYOND installation path.
 	 * @throws InvocationTargetException
 	 * @throws IllegalAccessException
 	 * @throws IllegalArgumentException
 	 */
 	public void check() throws IllegalArgumentException, IllegalAccessException, InvocationTargetException {
+
 		System.out.println("Checking Compiler...");
 		if (DMIDE.getProperty("byond.location") == null) {
+			
 			int c = JOptionPane.showConfirmDialog(DMIDEUI.getInstance()
 					.getMainWindow(),
 					"The IDE would like to search for your installation of BYOND. "
-							+ "Is this okay?", "The Quest for BYOND",
+							+ "Proceed?", "The Quest for BYOND",
 					JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE);
 			if (c == JOptionPane.YES_OPTION) {
 				if(OS.isWindows()) {
+		
+					// Checks windows registry for installation path.
 					System.out.println("Checking Registry...");
 					String regVal = WinRegistry.readString(WinRegistry.HKEY_LOCAL_MACHINE,
 							"SOFTWARE\\Dantom\\BYOND", "installpath");
 					if(regVal != null && regVal.length() > 0) {
-						DMIDE.saveProperty("byond.location", regVal);
-						System.out.println("Compiler Location: " + DMIDE.getProperty("byond.location"));
-						return;
+						if (verifyInstallationDirectory(regVal) == true) {
+							DMIDE.saveProperty("byond.location", regVal);
+							System.out.println("Compiler Location: " + DMIDE.getProperty("byond.location"));
+							JOptionPane.showMessageDialog(DMIDEUI.getInstance().getMainWindow(),
+									String.format("Found BYOND directory at%s.", DMIDE.getProperty("byond.location")));
+							return;
+						}
 					}
+					
+					// Checks common folders for installation.
+					for (String path : commonLocations) {
+						if (verifyInstallationDirectory(path) == true) {
+							DMIDE.saveProperty("byond.location", path);
+							System.out.println("Compiler Location: " + DMIDE.getProperty("byond.location"));
+							JOptionPane.showMessageDialog(DMIDEUI.getInstance().getMainWindow(),
+									String.format("Found BYOND directory at %s.", DMIDE.getProperty("byond.location")));
+							return;
+						}
+					}
+					
+					
 				}
 				c = JOptionPane.showConfirmDialog(DMIDEUI.getInstance().getMainWindow(),
 							"The IDE failed to find your installation of BYOND! " +
 							"Would you like to locate it manually?\n" +
 							"Possible Locations:\n" +
 							"- C:\\Program Files\\BYOND\n" +
-							"- C:\\Program Files x86\\BYOND",
+							"- C:\\Program Files (x86)\\BYOND",
 							"O BYOND, BYOND, Wherefore Art Thou BYOND?",
 							JOptionPane.YES_NO_OPTION,
 							JOptionPane.INFORMATION_MESSAGE);
+
+				// Find the installation manually by user input.
 				if(c == JOptionPane.YES_OPTION) {
-					DMIDEUI.getInstance().getDirChooser().setMultiSelectionEnabled(false);
-					DMIDEUI.getInstance().getDirChooser().
-						setFileSelectionMode(JDirectoryChooser.FILES_ONLY);
-					if(DMIDEUI.getInstance().getDirChooser().
-							showDialog(DMIDEUI.getInstance().
-									getMainWindow(), "Select") == JDirectoryChooser.APPROVE_OPTION) {
-						DMIDE.saveProperty("byond.location", DMIDEUI.getInstance().
-								getDirChooser().getSelectedFile().getPath());
-						System.out.println("Compiler Location: " + DMIDE.getProperty("byond.location"));
+					
+					String selectedPath = null;
+					
+					while(selectedPath == null) {
+					
+						DMIDEUI.getInstance().getDirChooser().setMultiSelectionEnabled(false);
+						DMIDEUI.getInstance().getDirChooser().
+							setFileSelectionMode(JDirectoryChooser.FILES_ONLY);
+						if(DMIDEUI.getInstance().getDirChooser().
+								showDialog(DMIDEUI.getInstance().
+										getMainWindow(), "Select") == JDirectoryChooser.APPROVE_OPTION) {
+							
+							File selectedFile = DMIDEUI.getInstance().getDirChooser().getSelectedFile();
+							if (verifyInstallationDirectory(selectedFile.getPath()) == true) {
+								// The path they selected is valid.
+								selectedPath = selectedFile.getPath();
+								DMIDE.saveProperty("byond.location", DMIDEUI.getInstance().
+										getDirChooser().getSelectedFile().getPath());
+								System.out.println("Compiler Location: " + DMIDE.getProperty("byond.location"));
+							} else {
+								// Invalid path, we should prompt them again.
+								JOptionPane.showMessageDialog(DMIDEUI.getInstance().getMainWindow(),
+										"That folder is not a valid BYOND installation directory.");
+								selectedPath = null;
+							}
+							
+						}
+						
 					}
 				}
 			}
 		}
+		
 		System.out.println("Compiler Location: " + DMIDE.getProperty("byond.location"));
 	}
+	
+	/**
+	 * Ensures that the path given as the installation directory is valid.
+	 * @param installationPath
+	 * @return
+	 */
+	private boolean verifyInstallationDirectory(String installationPath) {
+		// Verify that the path given is an actual BYOND installation.
+		
+		File checkValidPath = new File(installationPath);
+		if (checkValidPath.exists() && checkValidPath.isDirectory()) {
+			
+			// Verify that the \bin folder exists.
+			File checkValidPath1 = new File(installationPath + "\\bin");
+			if (!checkValidPath1.exists() || !checkValidPath1.isDirectory()) {
+				return false;
+			}
+			
+			// Verify that the \\cfg folder exists.
+			File checkValidPath2 = new File(installationPath + "\\cfg");
+			if (!checkValidPath2.exists() || !checkValidPath2.isDirectory()) {
+				return false;
+			}
+			
+			// Verify that the \\help folder exists.
+			File checkValidPath3 = new File(installationPath + "\\help");
+			if (!checkValidPath3.exists() || !checkValidPath3.isDirectory()) {
+				return false;
+			}
+			
+			// Verify that the uninstall file exists.
+			File checkValidPath4 = new File(installationPath + "\\uninst.exe");
+			if (!checkValidPath4.exists() || !checkValidPath4.isFile()) {
+				return false;
+			}
+			
+			// The installation appears to be valid.
+			return true;
+		}
+		
+		return false;
+	}
 
+	/**
+	 * Searches for and assigns the User's BYOND config path.  C:\Users\Chris\Documents\BYOND
+	 * @throws IllegalArgumentException
+	 * @throws IllegalAccessException
+	 * @throws InvocationTargetException
+	 */
 	public void userCheck() throws IllegalArgumentException, IllegalAccessException, InvocationTargetException {
+
 		System.out.println("Checking User Directory...");
 		if(DMIDE.getProperty("byond.userdir") == null) {
 			if(OS.isWindows()) {
+				
 				System.out.println("Checking Registry...");
 				String regVal = WinRegistry.readString(WinRegistry.HKEY_CURRENT_USER,
 						"Software\\Dantom\\BYOND", "userpath");
 				DMIDE.saveProperty("byond.userdir", regVal);
 				System.out.println("User Dir: " + DMIDE.getProperty("byond.userdir"));
 				return;
+				
 			}
+
 			String _user_dir = JOptionPane.showInputDialog(DMIDEUI.getInstance().getMainWindow(),
 					"Please input the path of your BYOND user directory.");
 			DMIDE.saveProperty("byond.userdir", _user_dir);
 			System.out.println("User Dir: " + DMIDE.getProperty("byond.userdir"));
+
 		}
 	}
 

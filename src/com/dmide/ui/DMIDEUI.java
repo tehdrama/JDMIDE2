@@ -316,6 +316,10 @@ public class DMIDEUI {
 		this.fileChooser.setFileFilter(null);
 		this.fileChooser.setMultiSelectionEnabled(false);
 	}
+	public void clearDirectoryChooser() {
+		this.dirChooser.setFileFilter(null);
+		this.dirChooser.setMultiSelectionEnabled(false);
+	}
 
 
 	static DMIDEUI instance;

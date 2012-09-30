@@ -11,6 +11,7 @@ import com.dmide.ui.editors.impl.text.TextFileEditor;
 public class DefaultEditors {
 	public static void addDefaultEditors() {
 		FileOpenHandler.setEditorAssociation("dm", new DMFileEditor());
+		FileOpenHandler.setEditorAssociation("dme", new DMFileEditor());
 		FileOpenHandler.setEditorAssociation("txt", new TextFileEditor());
 	}
 }

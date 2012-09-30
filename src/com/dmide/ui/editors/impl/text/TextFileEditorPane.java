@@ -5,6 +5,9 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
+
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 import org.fife.ui.rtextarea.RTextScrollPane;
@@ -12,7 +15,7 @@ import org.fife.ui.rtextarea.RTextScrollPane;
 import com.dmide.ui.editors.FileEditorPane;
 import com.dmide.util.misc.Misc;
 
-public class TextFileEditorPane extends FileEditorPane {
+public class TextFileEditorPane extends FileEditorPane implements DocumentListener {
 
 	@Override
 	public void onClose() {
@@ -37,6 +40,7 @@ public class TextFileEditorPane extends FileEditorPane {
 				this.textArea.setCaretPosition(0);
 				this.textArea.setText(s);
 				this.textArea.discardAllEdits();
+				this.textArea.getDocument().addDocumentListener(this);
 			}
 		}
 	}
@@ -69,6 +73,28 @@ public class TextFileEditorPane extends FileEditorPane {
 				e.printStackTrace();
 			}
 		}
+		this.clearChanges();
+	}
+
+	@Override
+	public void changedUpdate(DocumentEvent e) {
+		//Adds a change to the file.
+		System.out.println("changed CHANGE!");
+		this.change();
+	}
+
+	@Override
+	public void insertUpdate(DocumentEvent e) {
+		//Adds a change to the file.
+		System.out.println("Insert CHANGE!");
+		this.change();
+	}
+
+	@Override
+	public void removeUpdate(DocumentEvent e) {
+		//Adds a change to the file.
+		System.out.println("Remove CHANGE!");
+		this.change();
 	}
 
 	RSyntaxTextArea textArea;

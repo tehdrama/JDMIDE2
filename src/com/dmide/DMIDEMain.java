@@ -81,7 +81,7 @@ public class DMIDEMain {
 			/* is it a jar file? */
 			if(!currentJar.getName().endsWith(".jar")) {
 				JOptionPane.showMessageDialog(DMIDEUI.getInstance().getMainWindow(),
-						"Failed to automatically restart IDE.\n" +
+						"Failed to automatically restart IDE. Please close and restart the IDE manually.\n" +
 						"Reason: Failed to locate IDE jar.", "Failed to Restart",
 						JOptionPane.ERROR_MESSAGE);
 				return;

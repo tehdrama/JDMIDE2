@@ -15,27 +15,48 @@ import com.dmide.util.events.IDEEvent;
 import com.dmide.util.events.IDEEventHandler;
 
 public class DMEnvironment {
-	static File dmeFile;
 	static ArrayList<File> recentEnvironments;
+	static DMEnvironment instance;
+	File dmeFile;
+
+	protected DMEnvironment(File f) {
+		this.dmeFile = f;
+	}
+
+	private static void newInstance(File f) {
+		instance = new DMEnvironment(f);
+	}
+
+	public static DMEnvironment getInstance() {
+		return instance;
+	}
 
 	static {
 		recentEnvironments = new ArrayList<File>();
 	}
 
+	public static void closeEnvironment() {
+
+	}
+
+	public static void openEnvironment() {
+
+	}
+
 	public static File getWorkingDirectory() {
-		if(dmeFile != null) return dmeFile.getParentFile();
+		if(getInstance().dmeFile != null) return getInstance().dmeFile.getParentFile();
 		return null;
 	}
 
 	public static void setDMEFile(File f) {
-		dmeFile = f;
+		newInstance(f);
 		System.out.println("Setting DME: " + f.getPath());
-		IDEEventHandler.sendIDEEvent(new IDEEvent("environment.open", dmeFile));
-		addRecentEnvironment(dmeFile);
+		IDEEventHandler.sendIDEEvent(new IDEEvent("environment.open", getInstance().dmeFile));
+		addRecentEnvironment(getInstance().dmeFile);
 	}
 
 	public static File getDMEFile() {
-		return dmeFile;
+		return getInstance().dmeFile;
 	}
 
 	public static void saveRecentEnvironments() {

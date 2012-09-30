@@ -21,6 +21,8 @@ import com.dmide.ui.laf.LafHandler;
 import com.dmide.ui.prefs.AppearancePreferences;
 import com.dmide.ui.prefs.GeneralPreferences;
 import com.dmide.ui.prefs.PreferencesDialog;
+import com.dmide.ui.tabs.TabbedPaneUI;
+import com.dmide.ui.tabs.TabbedPaneUIHeader;
 import com.dmide.ui.windows.IDEMainWindow;
 import com.dmide.ui.windows.dialogs.NewFileDialog;
 import com.dmide.util.events.IDEEvent;
@@ -235,20 +237,32 @@ public class DMIDEUI {
 			this.mainWindow.getFileEditorPane().addTab(tabbedPaneUI.getTabTitle(),
 					tabbedPaneUI.getTabIcon(), (Component) tabbedPaneUI);
 			this.mainWindow.getFileEditorPane().
-				setSelectedIndex(this.mainWindow.getFileEditorPane().getComponentCount() - 1);
+				setSelectedIndex(TabbedPaneUIHeader.getComponentIndex((Component) tabbedPaneUI,
+						this.mainWindow.getFileEditorPane()));
+			if(tabbedPaneUI instanceof FileEditorPane) {
+				FileEditorPane fep = (FileEditorPane) tabbedPaneUI;
+				if(fep.getTabHeader() != null) {
+					fep.getTabHeader().install(fep, this.mainWindow.getFileEditorPane());
+				}
+			}
 		}
 	}
 
 	public int containsEditorTab(FileEditorPane ep) {
 		if(this.mainWindow.getFileEditorPane().getComponentCount() > 0) {
-			for(int i = 0; i < this.mainWindow.getFileEditorPane().getComponentCount(); i++) {
-				Component c = this.getMainWindow().getFileEditorPane().getComponentAt(i);
-				if(c instanceof FileEditorPane) {
-					FileEditorPane e = (FileEditorPane) c;
-					if(e.getFile().equals(ep.getFile())) {
-						return i;
+			try {
+				int i = 0;
+				for(Component c : this.mainWindow.getFileEditorPane().getComponents()) {
+					if(c instanceof FileEditorPane) {
+						FileEditorPane e = (FileEditorPane) c;
+						if(e.getFile().equals(ep.getFile())) {
+							return i;
+						}
 					}
+					i++;
 				}
+			} catch(IndexOutOfBoundsException e) {
+				return -1;
 			}
 		}
 		return -1;

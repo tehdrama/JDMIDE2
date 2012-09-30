@@ -4,7 +4,6 @@ import it.cnr.imaa.essi.lablib.gui.checkboxtree.CheckboxTree;
 import it.cnr.imaa.essi.lablib.gui.checkboxtree.CheckboxTreeCellRenderer;
 import it.cnr.imaa.essi.lablib.gui.checkboxtree.TreeCheckingModel;
 
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.FlowLayout;
 import java.io.File;
@@ -119,13 +118,9 @@ public class FileTreeCellRenderer implements CheckboxTreeCellRenderer {
 			TreePath path = tree.getPathForRow(row);
 		boolean enabled = checkingModel.isPathEnabled(path);
 		boolean checked = checkingModel.isPathChecked(path);
-		boolean grayed = checkingModel.isPathGreyed(path);
+		//boolean grayed = checkingModel.isPathGreyed(path);
 		this.checkBox.setEnabled(enabled);
-		if (grayed) {
-			this.label.setForeground(Color.lightGray);
-		} else {
-			this.label.setForeground(UIManager.getColor("Tree.textForeground"));
-		}
+		this.label.setForeground(UIManager.getColor("Tree.textForeground"));
 		this.checkBox.setSelected(checked);
 
 		if(value instanceof IDEFile) {

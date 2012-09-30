@@ -92,7 +92,7 @@ public class FileTree extends CheckboxTree implements IDEEventWatcher {
 	}
 
 	public IDEFile createTree(File dme) {
-		this.root = new IDEFile(dme);
+		this.root = new IDEFile(new File(dme.getName()));
 		IDEProcess treeLoadProcess = new IDEProcess("Loading File Tree");
 		treeLoadProcess.start();
 		treeLoadProcess.setProgress(-1);

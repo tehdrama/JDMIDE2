@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.filechooser.FileSystemView;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -25,7 +26,14 @@ public class MiscIO {
 	 */
 	Map<String, Icon> extIconAssoc;
 	String ln = "\n";
+	Icon unsavedIcon;
 
+	public Icon getUnsavedIcon() {
+		if(this.unsavedIcon == null) {
+			this.unsavedIcon = new ImageIcon(this.getClass().getResource("/com/dmide/assets/disk-small-black.png"));
+		}
+		return this.unsavedIcon;
+	}
 
 	public Icon getFileTypeIcon(File f) {
 		if(!f.exists()) return null;
@@ -39,6 +47,13 @@ public class MiscIO {
 			this.extIconAssoc.put(ext, icon);
 		}
 		return this.extIconAssoc.get(ext);
+	}
+
+	public Icon getFileTypeIcon_unsaved(File f) {
+		MultiIcon multiIcon = new MultiIcon(this.getFileTypeIcon(f), this.getUnsavedIcon());
+		multiIcon.mix();
+		multiIcon.freeIcons();
+		return multiIcon;
 	}
 
 	public String readFileString(File f) {

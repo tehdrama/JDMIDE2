@@ -1,4 +1,4 @@
-package com.dmide.ui;
+package com.dmide.ui.tabs;
 
 import javax.swing.Icon;
 

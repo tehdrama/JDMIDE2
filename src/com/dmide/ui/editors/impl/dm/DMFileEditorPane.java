@@ -5,6 +5,9 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
+
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rtextarea.RTextScrollPane;
 
@@ -13,7 +16,7 @@ import com.dmide.util.misc.IDEProcess;
 import com.dmide.util.misc.Misc;
 
 @SuppressWarnings("serial")
-public class DMFileEditorPane extends FileEditorPane {
+public class DMFileEditorPane extends FileEditorPane implements DocumentListener {
 
 	@Override
 	public void onClose() {
@@ -28,6 +31,7 @@ public class DMFileEditorPane extends FileEditorPane {
 				this.textArea.setCaretPosition(0);
 				this.textArea.setText(s);
 				this.textArea.discardAllEdits();
+				this.textArea.getDocument().addDocumentListener(this);
 			}
 		}
 	}
@@ -64,6 +68,7 @@ public class DMFileEditorPane extends FileEditorPane {
 			}
 		}
 		ideProcess.end();
+		this.clearChanges();
 		System.out.printf("Saved %s.\n", this.getFile().getPath());
 	}
 
@@ -75,6 +80,27 @@ public class DMFileEditorPane extends FileEditorPane {
 		this.add(this.scrollPane, BorderLayout.CENTER);
 		this.textArea.setSyntaxEditingStyle("text/dm");
 		Misc.ui.removeMappedMenuKeyStrokesFromComponent(this.textArea);
+	}
+
+	@Override
+	public void changedUpdate(DocumentEvent e) {
+		//Adds a change to the file.
+		System.out.println("changed CHANGE!");
+		this.change();
+	}
+
+	@Override
+	public void insertUpdate(DocumentEvent e) {
+		//Adds a change to the file.
+		System.out.println("Insert CHANGE!");
+		this.change();
+	}
+
+	@Override
+	public void removeUpdate(DocumentEvent e) {
+		//Adds a change to the file.
+		System.out.println("Remove CHANGE!");
+		this.change();
 	}
 
 	RSyntaxTextArea textArea;

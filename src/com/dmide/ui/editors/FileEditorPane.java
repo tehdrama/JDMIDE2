@@ -7,8 +7,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 import com.dmide.ui.DMIDEUI;
-import com.dmide.ui.TabbedPaneUI;
-import com.dmide.ui.TabbedPaneUIHeader;
+import com.dmide.ui.tabs.TabbedPaneUI;
+import com.dmide.ui.tabs.TabbedPaneUIHeader;
 import com.dmide.util.misc.Misc;
 
 @SuppressWarnings("serial")
@@ -16,6 +16,8 @@ public abstract class FileEditorPane extends JPanel implements TabbedPaneUI {
 	File file;
 	int changes = 0;
 	TabbedPaneUIHeader tabHeader;
+
+	static FileEditorCloseHandler defaultCloseHandler = new FileEditorCloseHandler();
 
 	@Override
 	public void setHeader(TabbedPaneUIHeader header) {
@@ -30,8 +32,18 @@ public abstract class FileEditorPane extends JPanel implements TabbedPaneUI {
 		return this.tabHeader;
 	}
 
+	/**
+	 * Creates the {@link TabbedPaneUIHeader} for this component.
+	 */
+	public void createHeader() {
+		this.tabHeader = new TabbedPaneUIHeader();
+		this.tabHeader.setTabbedPaneUI(this);
+		this.tabHeader.setTabCloseHandler(defaultCloseHandler);
+	}
+
 	public FileEditorPane() {
 		this.createUI();
+		this.createHeader();
 	}
 
 	/**
@@ -62,7 +74,10 @@ public abstract class FileEditorPane extends JPanel implements TabbedPaneUI {
 	 * @return the icon of this editor, returns the file's icon if possible by
 	 *         default.
 	 */
-	public Icon getIcon() {return this.file != null ? Misc.io.getFileTypeIcon(this.file) : null;}
+	public Icon getIcon() {
+		if(this.getChanges() < 1) return this.file != null ? Misc.io.getFileTypeIcon(this.file) : null;
+		else return this.file != null ? Misc.io.getFileTypeIcon_unsaved(this.file) : null;
+	}
 
 	/**
 	 *
@@ -74,12 +89,23 @@ public abstract class FileEditorPane extends JPanel implements TabbedPaneUI {
 	/**
 	 * Called when the file in the editor has been changed.
 	 */
-	public void change() {this.changes++;}
+	public void change() {
+		boolean willupdate = false;
+		if(this.changes < 1) willupdate = true;
+		this.changes++;
+		if(willupdate) this.updateTab();
+	}
 
 	/**
 	 * Called when a change has been undone in the editor.
 	 */
-	public void removeChange() {this.changes--;}
+	public void removeChange() {
+		boolean willupdate = true;
+		this.changes--;
+		if(this.changes < 0) { willupdate = false; this.changes = 0; }
+		if(this.changes > 0) { willupdate = false;}
+		if(willupdate) this.updateTab();
+	}
 
 	/**
 	 *
@@ -90,7 +116,11 @@ public abstract class FileEditorPane extends JPanel implements TabbedPaneUI {
 	/**
 	 * Clears changes from the file, call after save.
 	 */
-	public void clearChanges() {this.changes = 0;}
+	public void clearChanges() {
+		boolean willupdate = (this.changes != 0);
+		this.changes = 0;
+		if(willupdate) this.updateTab();
+	}
 
 	/**
 	 * Called to save this file.
@@ -140,5 +170,12 @@ public abstract class FileEditorPane extends JPanel implements TabbedPaneUI {
 			FileEditorPane e = (FileEditorPane) obj;
 			return e.getFile().equals(this.getFile());
 		} else return false;
+	}
+
+	/**
+	 * Updates the tab header ui.
+	 */
+	public void updateTab() {
+		if(this.tabHeader != null) this.tabHeader.updateTabUI();
 	}
 }

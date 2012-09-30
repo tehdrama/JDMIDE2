@@ -103,6 +103,46 @@ public class DMIDE {
 		ide.trackEditor(fep);
 	}
 
+	/**
+	 * @param key
+	 * @param cast
+	 * @return
+	 * @see com.dmide.IDE#getProperty(java.lang.String, java.lang.Class)
+	 */
+	public static <T> T getProperty(String key, Class<T> cast) {
+		return ide.getProperty(key, cast);
+	}
+
+	/**
+	 * @param key
+	 * @return
+	 * @see com.dmide.IDE#hasProperty(java.lang.String)
+	 */
+	public static boolean hasProperty(String key) {
+		return ide.hasProperty(key);
+	}
+
+	/**
+	 * @param key
+	 * @param T
+	 * @return
+	 * @see com.dmide.IDE#hasProperty(java.lang.String, java.lang.Class)
+	 */
+	public static boolean hasProperty(String key, Class<?> T) {
+		return ide.hasProperty(key, T);
+	}
+
+	/**
+	 * @param key
+	 * @param cast
+	 * @param _default
+	 * @return
+	 * @see com.dmide.IDE#getProperty(java.lang.String, java.lang.Class, java.lang.Object)
+	 */
+	public static <T> T getProperty(String key, Class<T> cast, T _default) {
+		return ide.getProperty(key, cast, _default);
+	}
+
 
 
 }

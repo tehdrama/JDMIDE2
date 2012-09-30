@@ -45,6 +45,7 @@ public class PluginManager {
 			else this.includeBundle(b);
 		}
 		this.createServices();
+		this.startPlugins();
 	}
 
 	/**
@@ -102,9 +103,9 @@ public class PluginManager {
 			}
 		}
 	}
-	
+
 	/**
-	 * Invokes the start method of all 
+	 * Invokes the start method of all
 	 * of the plugins.
 	 */
 	public void startPlugins() {

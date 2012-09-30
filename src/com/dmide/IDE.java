@@ -27,6 +27,13 @@ public class IDE implements PropertiesHolder {
 
 	@Override
 	public void setProperty(String key, Object value) {
+		if(key == null) return;
+		if(value == null) {
+			if(this.properties.contains(key)) {
+				this.properties.remove(key);
+			}
+			return;
+		}
 		if(this.properties != null) this.properties.put(key, value);
 		System.out.println("Property Set: " + key + " = " + value);
 	}
@@ -36,12 +43,34 @@ public class IDE implements PropertiesHolder {
 		return this.properties != null ? this.properties.get(key) : null;
 	}
 
+	public <T> T getProperty(String key, Class<T>cast) {
+		Object o = this.getProperty(key);
+		if(o == null) return null;
+		if(cast.isAssignableFrom(o.getClass())) {
+			return cast.cast(o);
+		} else {
+			return null;
+		}
+	}
+
+	public  <T> T getProperty(String key, Class<T>cast, T _default) {
+		T r = this.getProperty(key, cast);
+		if(r == null) {r = _default;}
+		return r;
+	}
+
 	/**
 	 * Sets a property and saves it when the IDE closes.
 	 * @param key
 	 * @param value
 	 */
 	public void saveProperty(String key, Object value) {
+		if(key == null) return;
+		if(value == null) {
+			if(this.savableProperties.contains(key)) {
+				this.savableProperties.remove(key);
+			}
+		}
 		this.setProperty(key, value);
 		this.savableProperties.put(key, value);
 		System.out.println("Property Saved: " + key + " = " + value);
@@ -93,6 +122,13 @@ public class IDE implements PropertiesHolder {
 				e.printStackTrace();
 			}
 		}
+	}
+
+	public boolean hasProperty(String key) {
+		return (this.getProperty(key) != null);
+	}
+	public boolean hasProperty(String key, Class<?> T) {
+		return (this.getProperty(key, T) != null);
 	}
 
 	public Properties getAllProperties() {return this.properties;}

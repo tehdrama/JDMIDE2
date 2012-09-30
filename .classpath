@@ -2,16 +2,16 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="libs/substance/laf-plugin-7.1.jar"/>
-	<classpathentry kind="lib" path="libs/substance/laf-widget-7.1.jar"/>
-	<classpathentry kind="lib" path="libs/substance/substance-7.1.jar"/>
-	<classpathentry kind="lib" path="libs/substance/trident-7.1-swing.jar"/>
-	<classpathentry kind="lib" path="libs/substance/trident-7.1.jar"/>
 	<classpathentry kind="lib" path="miglayout15-swing.jar" sourcepath="miglayout-src.zip"/>
 	<classpathentry kind="lib" path="libs/commons-io-2.4/commons-io-2.4.jar"/>
 	<classpathentry kind="lib" path="libs/RSyntax/rsyntaxtextarea.jar"/>
 	<classpathentry kind="lib" path="forms-1.3.0.jar" sourcepath="forms-1.3.0-src.zip"/>
 	<classpathentry kind="lib" path="libs/L2FProd/l2fprod-common-7.3-20070317.jar"/>
 	<classpathentry kind="lib" path="libs/swingx-all-1.6.4.jar"/>
+	<classpathentry kind="lib" path="libs/substance/laf-plugin-7.1.jar"/>
+	<classpathentry kind="lib" path="libs/substance/laf-widget-7.1.jar"/>
+	<classpathentry kind="lib" path="libs/substance/substance-7.1.jar"/>
+	<classpathentry kind="lib" path="libs/substance/trident-7.1-swing.jar"/>
+	<classpathentry kind="lib" path="libs/substance/trident-7.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

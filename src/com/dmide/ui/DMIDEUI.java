@@ -9,13 +9,6 @@ import javax.swing.JDialog;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JMenuBar;
-import javax.swing.JTabbedPane;
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
-
-import org.pushingpixels.substance.api.SubstanceLookAndFeel;
-import org.pushingpixels.substance.api.skin.GraphiteGlassSkin;
-import org.pushingpixels.substance.api.tabbed.VetoableTabCloseListener;
 
 import com.dmide.DMIDE;
 import com.dmide.DMIDESplashScreen;
@@ -23,6 +16,9 @@ import com.dmide.IDE;
 import com.dmide.compiler.SetupWizard;
 import com.dmide.environment.DMEnvironment;
 import com.dmide.ui.editors.FileEditorPane;
+import com.dmide.ui.laf.DefaultLafHandler;
+import com.dmide.ui.laf.LafHandler;
+import com.dmide.ui.prefs.AppearancePreferences;
 import com.dmide.ui.prefs.GeneralPreferences;
 import com.dmide.ui.prefs.PreferencesDialog;
 import com.dmide.ui.windows.IDEMainWindow;
@@ -42,19 +38,20 @@ public class DMIDEUI {
 	public NewFileDialog newFileDialog;
 
 	void setLaf() {
-		try {
-			UIManager.setLookAndFeel(new SubstanceLookAndFeel(new GraphiteGlassSkin()){
-				private static final long serialVersionUID = 1L;});
-		} catch (UnsupportedLookAndFeelException e) {
-			e.printStackTrace();
+		IDEEventHandler.sendIDEEvent(new IDEEvent("ui.laf.set", this));
+		if(!DMIDE.hasProperty("ui.laf.handler", LafHandler.class)) {
+			DMIDE.setProperty("ui.laf.handler", new DefaultLafHandler());
 		}
+		LafHandler h = DMIDE.getProperty("ui.laf.handler", LafHandler.class);
+		if(h == null) return;
+		else h.setLaf();
 	}
 
 	public void openSplashScreen() {
 		Runnable openSplash = new Runnable() {
 			@Override
 			public void run() {
-				DMIDESplashScreen.getInstance().displaySplash();		
+				DMIDESplashScreen.getInstance().displaySplash();
 			}
 		};
 		UIUtil.toEventQueue(openSplash);
@@ -73,7 +70,7 @@ public class DMIDEUI {
 			public void run() {
 				JFrame.setDefaultLookAndFeelDecorated(true);
 				JDialog.setDefaultLookAndFeelDecorated(true);
-				
+
 				//FIXME: Not sure if this is in the right place?
 				File ideproperties = new File("./settings/ideproperties.xml");
 				if (!ideproperties.exists()) {
@@ -113,6 +110,7 @@ public class DMIDEUI {
 				dmideUI.preferencesDialog = new PreferencesDialog(dmideUI.mainWindow);
 				dmideUI.preferencesDialog.createUI();
 				dmideUI.preferencesDialog.addPreferencesPage(new GeneralPreferences());
+				dmideUI.preferencesDialog.addPreferencesPage(new AppearancePreferences());
 				DMIDE.setProperty("windows.dialogs.preferencesDialog", dmideUI.preferencesDialog);
 
 				//Creates new file dialog:
@@ -200,6 +198,7 @@ public class DMIDEUI {
 	}
 
 	public void initTabs() {
+		/*
 		this.mainWindow.getFileEditorPane().putClientProperty(
 				SubstanceLookAndFeel.TABBED_PANE_CLOSE_BUTTONS_PROPERTY,
 				Boolean.TRUE);
@@ -221,6 +220,7 @@ public class DMIDEUI {
 							Component tabComponent) {
 						return false;
 					}});
+		*/
 	}
 
 	public void addTab(TabbedPaneUI tabbedPaneUI) {

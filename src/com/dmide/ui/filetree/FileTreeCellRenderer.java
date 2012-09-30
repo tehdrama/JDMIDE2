@@ -5,15 +5,14 @@ import java.io.File;
 
 import javax.swing.JLabel;
 import javax.swing.JTree;
+import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.TreePath;
-
-import org.pushingpixels.substance.api.renderers.SubstanceDefaultTreeCellRenderer;
 
 import com.dmide.util.IDEFile;
 import com.dmide.util.misc.Misc;
 
 @SuppressWarnings("serial")
-public class FileTreeCellRenderer extends SubstanceDefaultTreeCellRenderer {
+public class FileTreeCellRenderer extends DefaultTreeCellRenderer {
 
 	FileTree fileTree;
 

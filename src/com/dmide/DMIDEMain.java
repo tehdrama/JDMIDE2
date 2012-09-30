@@ -2,6 +2,10 @@ package com.dmide;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
 
 import org.fife.ui.rsyntaxtextarea.AbstractTokenMakerFactory;
 import org.fife.ui.rsyntaxtextarea.TokenMakerFactory;
@@ -57,4 +61,40 @@ public class DMIDEMain {
 
 		DMEnvironment.loadRecentEnvironments();
 	}
+
+	public static void restartApplication()
+	{
+		System.out.println("Restarting...");
+		try {
+			final String javaBin = System.getProperty("java.home") + File.separator + "bin" + File.separator + "java";
+			final File currentJar = new File(DMIDEMain.class.getProtectionDomain().getCodeSource().getLocation().toURI());
+
+			/* is it a jar file? */
+			if(!currentJar.getName().endsWith(".jar")) {
+				JOptionPane.showMessageDialog(DMIDEUI.getInstance().getMainWindow(),
+						"Failed to automatically restart IDE.\n" +
+						"Reason: Failed to locate IDE jar.", "Failed to Restart",
+						JOptionPane.ERROR_MESSAGE);
+				return;
+			}
+
+			/* Build command: java -jar application.jar */
+			final ArrayList<String> command = new ArrayList<String>();
+			command.add(javaBin);
+			command.add("-jar");
+			command.add(currentJar.getPath());
+
+			final ProcessBuilder builder = new ProcessBuilder(command);
+			builder.start();
+		} catch(IOException | URISyntaxException e) {
+
+		}
+
+		DMIDEUI.getInstance().saveIDEWindowState();
+		DMIDE.save();
+
+		System.exit(0);
+	}
+
+
 }

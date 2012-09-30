@@ -12,8 +12,10 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.TreeCellRenderer;
 import javax.swing.tree.TreePath;
 
+import com.dmide.DMIDE;
 import com.dmide.util.IDEFile;
 import com.dmide.util.events.IDEEvent;
 import com.dmide.util.events.IDEEventHandler;
@@ -133,7 +135,11 @@ public class FileTree extends JTree implements IDEEventWatcher {
 	 * Sets the TreeCell Renderer and Editor.
 	 */
 	public void setTreeCellProperties() {
-		this.setCellRenderer(new FileTreeCellRenderer(this));
+		IDEEventHandler.sendIDEEvent(new IDEEvent("filetree.properties.setting", this));
+		if(DMIDE.getProperty("filetree.cells.renderer", TreeCellRenderer.class) == null) {
+			DMIDE.setProperty("filetree.cells.renderer", new FileTreeCellRenderer(this));
+		}
+		this.setCellRenderer(DMIDE.getProperty("filetree.cells.renderer", TreeCellRenderer.class));
 	}
 
 	@Override

@@ -54,8 +54,10 @@ public class DMEnvironment {
 		if(DMIDE.getProperty("environment.recents") != null) {
 			String s = (String) DMIDE.getProperty("environment.recents");
 			if(s.contains("|")) {
-				String[] r = s.split("|");
+				String[] r = s.split("\\|");
 				for(String _s : r) {
+					if(_s == null || _s.length() < 1) continue;
+					System.out.println("Found: " + _s);
 					recentEnvironments.add(new File(_s));
 				}
 			} else {

@@ -19,7 +19,10 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
 
+import com.dmide.DMIDE;
 import com.dmide.IDE;
+import com.dmide.util.events.IDEEvent;
+import com.dmide.util.events.IDEEventHandler;
 
 @SuppressWarnings("serial")
 public class GeneralPreferences extends PreferencesPage {
@@ -52,7 +55,10 @@ public class GeneralPreferences extends PreferencesPage {
 
 		this.setLayout(new BorderLayout());
 		this.add(jtabbedpane, BorderLayout.CENTER);
-
+		DMIDE.setProperty("prefs.page.general", this);
+		DMIDE.setProperty("prefs.page.general.tabs", jtabbedpane);
+		DMIDE.setProperty("prefs.page.general.tabs.properties", propertiesListHolder);
+		IDEEventHandler.sendIDEEvent(new IDEEvent("prefs.general.created", this));
 	}
 
 	public void updatePropertiesTable() {
@@ -115,7 +121,8 @@ public class GeneralPreferences extends PreferencesPage {
 
 	@Override
 	public void onDisplay(PreferencesDialog dialog) {
-		this.updatePropertiesTable();
+		IDEEventHandler.sendIDEEvent(new IDEEvent("prefs.page.opened:general", this));
+		//this.updatePropertiesTable();
 	}
 
 }

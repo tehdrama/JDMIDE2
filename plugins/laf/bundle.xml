@@ -7,12 +7,13 @@
 	
 	<version int="1">1.0.1</version>
 	
-	<!-- Substance Includes: -->
+	<!-- Substance Includes:  Added to the jar in v. 0.7.0
 	<include>jars/substance/laf-plugin-7.1.jar</include>
 	<include>jars/substance/laf-widget-7.1.jar</include>
 	<include>jars/substance/substance-7.1.jar</include>
 	<include>jars/substance/trident-7.1-swing.jar</include>
 	<include>jars/substance/trident-7.1.jar</include>
+	-->
 	
 	<!--Plugin Includes : -->
 	<include>jars/LafPlugin.jar</include>

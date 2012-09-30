@@ -6,6 +6,8 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
+import javax.swing.UIDefaults;
+import javax.swing.UIManager;
 
 import org.fife.ui.rsyntaxtextarea.AbstractTokenMakerFactory;
 import org.fife.ui.rsyntaxtextarea.TokenMakerFactory;
@@ -35,6 +37,13 @@ public class DMIDEMain {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
+		System.out.println("---------Defaults------");
+		UIDefaults ud = UIManager.getDefaults();
+		for(Object s : ud.keySet()) {
+			System.out.println("key: " + s.toString());
+		}
+		System.out.println("---------End Defaults------");
 	}
 
 	public void start() throws IOException {

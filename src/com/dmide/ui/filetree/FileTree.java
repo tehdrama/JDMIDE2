@@ -1,5 +1,7 @@
 package com.dmide.ui.filetree;
 
+import it.cnr.imaa.essi.lablib.gui.checkboxtree.CheckboxTree;
+
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
@@ -10,7 +12,6 @@ import java.util.Map;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
-import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreeCellRenderer;
 import javax.swing.tree.TreePath;
@@ -23,7 +24,7 @@ import com.dmide.util.events.IDEEventWatcher;
 import com.dmide.util.misc.IDEProcess;
 
 @SuppressWarnings("serial")
-public class FileTree extends JTree implements IDEEventWatcher {
+public class FileTree extends CheckboxTree implements IDEEventWatcher {
 
 	Map<Path, IDEFile> ideFiles = new HashMap<Path, IDEFile>();
 	IDEFile root;

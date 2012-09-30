@@ -13,5 +13,6 @@
 	<classpathentry kind="lib" path="libs/substance/substance-7.1.jar"/>
 	<classpathentry kind="lib" path="libs/substance/trident-7.1-swing.jar"/>
 	<classpathentry kind="lib" path="libs/substance/trident-7.1.jar"/>
+	<classpathentry kind="lib" path="libs/lablib-checkboxtree-3.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

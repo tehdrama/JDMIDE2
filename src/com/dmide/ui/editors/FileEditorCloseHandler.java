@@ -34,6 +34,7 @@ public class FileEditorCloseHandler implements TabCloseHandler {
 
 	@Override
 	public void onClose(TabbedPaneUI ui) {
+		DMIDEUI.getInstance().fileEditorPaneClosed((FileEditorPane) ui);
 	}
 
 	/**

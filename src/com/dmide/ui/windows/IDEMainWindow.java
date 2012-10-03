@@ -18,6 +18,7 @@ import javax.swing.tree.DefaultTreeModel;
 import net.miginfocom.swing.MigLayout;
 
 import com.dmide.compiler.CompilerMessageTable;
+import com.dmide.ui.DnDTabbedPane;
 import com.dmide.ui.filetree.FileTree;
 
 @SuppressWarnings("serial")
@@ -29,7 +30,7 @@ public class IDEMainWindow extends JFrame {
 	private JTabbedPane tabbedPane;
 	private JSplitPane splitPane_1;
 	private JTabbedPane tabbedPane_1;
-	private JTabbedPane fileEditorPane;
+	private DnDTabbedPane fileEditorPane;
 	private JPanel panel_1;
 	private JScrollPane scrollPane;
 	private FileTree tree;
@@ -116,7 +117,7 @@ public class IDEMainWindow extends JFrame {
 	}
 	public JTabbedPane getFileEditorPane() {
 		if (this.fileEditorPane == null) {
-			this.fileEditorPane = new JTabbedPane(JTabbedPane.TOP);
+			this.fileEditorPane = new DnDTabbedPane();
 		}
 		return this.fileEditorPane;
 	}

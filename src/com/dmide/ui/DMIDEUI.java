@@ -4,6 +4,7 @@ import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.io.File;
+import java.util.ArrayList;
 
 import javax.swing.JDialog;
 import javax.swing.JFileChooser;
@@ -38,6 +39,7 @@ public class DMIDEUI {
 	public JDirectoryChooser dirChooser;
 	public PreferencesDialog preferencesDialog;
 	public NewFileDialog newFileDialog;
+	public ArrayList<FileEditorPane> fileEditorPanes;
 
 	void setLaf() {
 		IDEEventHandler.sendIDEEvent(new IDEEvent("ui.laf.set", this));
@@ -233,6 +235,7 @@ public class DMIDEUI {
 					this.mainWindow.getFileEditorPane().setSelectedIndex(index);
 					return;
 				}
+				this.fileEditorPaneOpened((FileEditorPane) tabbedPaneUI);
 			}
 			this.mainWindow.getFileEditorPane().addTab(tabbedPaneUI.getTabTitle(),
 					tabbedPaneUI.getTabIcon(), (Component) tabbedPaneUI);
@@ -246,6 +249,23 @@ public class DMIDEUI {
 				}
 			}
 		}
+	}
+
+	/**
+	 * Called when a new tab is added for a {@link FileEditorPane}.
+	 * @param p
+	 */
+	public void fileEditorPaneOpened(FileEditorPane p) {
+		if(this.fileEditorPanes == null) this.fileEditorPanes = new ArrayList<>();
+		this.fileEditorPanes.add(p);
+	}
+
+	/**
+	 * Called when a {@link FileEditorPane} is removed.
+	 * @param p
+	 */
+	public void fileEditorPaneClosed(FileEditorPane p) {
+		while(this.fileEditorPanes.contains(p)) this.fileEditorPanes.remove(p);
 	}
 
 	public int containsEditorTab(FileEditorPane ep) {
@@ -332,6 +352,20 @@ public class DMIDEUI {
 	 */
 	public void setPreferencesDialog(PreferencesDialog preferencesDialog) {
 		this.preferencesDialog = preferencesDialog;
+	}
+
+	/**
+	 * @return the newFileDialog
+	 */
+	public NewFileDialog getNewFileDialog() {
+		return this.newFileDialog;
+	}
+
+	/**
+	 * @return the fileEditorPanes
+	 */
+	public ArrayList<FileEditorPane> getFileEditorPanes() {
+		return this.fileEditorPanes;
 	}
 
 	public void clearFileChooser() {

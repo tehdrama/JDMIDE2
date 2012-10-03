@@ -143,6 +143,14 @@ public class DMIDE {
 		return ide.getProperty(key, cast, _default);
 	}
 
+	/**
+	 *
+	 * @see com.dmide.IDE#saveAll()
+	 */
+	public static void saveAll() {
+		ide.saveAll();
+	}
+
 
 
 }

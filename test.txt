@@ -1,503 +1,1457 @@
-loading Chatters2.dme
-loading Interface.dmf
-loading Interface.dmf
-<var file="_Main.dm:1">GLOBAL_DELIMITER
-	<val file="_Main.dm:1">"\\\[!@#$%^&ABCB\\\]"</val>
-</var>
-<object file="_Main.dm:3">world
-	<var file="_Main.dm:4">name
-		<val file="_Main.dm:4">"Chatters"</val>
-	</var>
-	<var file="_Main.dm:5">hub
-		<val file="_Main.dm:5">"Xooxer.Chatters"</val>
-	</var>
-	<var file="_Main.dm:6">hub_password
-		<val file="_Main.dm:6">"rbl9FQ0hzWtOEKtg"</val>
-	</var>
-	<proc file="_libs\Spuzzum_SSmiley\s_smiley.dm:48">New</proc>
-	<proc file="World\Startup.dm:3">New</proc>
-	<proc file="World\Startup.dm:9">LoadChannelInformation</proc>
-	<var file="World\world.dm:3">fps
-		<val file="Chatters2.dme:61">5</val>
-	</var>
-</object>
-<proc file="_libs\ForumAccount_Text\text.dm:15">int</proc>
-<proc file="_libs\ForumAccount_Text\text.dm:61">split</proc>
-<proc file="_libs\ForumAccount_Text\text.dm:82">Split</proc>
-<proc file="_libs\ForumAccount_Text\text.dm:103">replace</proc>
-<proc file="_libs\ForumAccount_Text\text.dm:114">Replace</proc>
-<proc file="_libs\ForumAccount_Text\text.dm:127">concat</proc>
-<proc file="_libs\ForumAccount_Text\text.dm:174">join</proc>
-<proc file="_libs\ForumAccount_Text\text.dm:178">merge</proc>
-<proc file="_libs\ForumAccount_Text\text.dm:182">prefix</proc>
-<proc file="_libs\ForumAccount_Text\text.dm:186">Prefix</proc>
-<proc file="_libs\ForumAccount_Text\text.dm:190">ending</proc>
-<proc file="_libs\ForumAccount_Text\text.dm:196">Ending</proc>
-<proc file="_libs\ForumAccount_Text\text.dm:201">dir2txt</proc>
-<proc file="_libs\ForumAccount_Text\text.dm:236">dir2text</proc>
-<proc file="_libs\Spuzzum_SSmiley\alphabetics.dm:46">lowercase</proc>
-<proc file="_libs\Spuzzum_SSmiley\alphabetics.dm:65">uppercase</proc>
-<proc file="_libs\Spuzzum_SSmiley\replacetext.dm:13">replacetext</proc>
-<proc file="_libs\Spuzzum_SSmiley\replacetext.dm:25">replaceText</proc>
-<proc file="_libs\Spuzzum_SSmiley\replaceword.dm:25">replaceword</proc>
-<proc file="_libs\Spuzzum_SSmiley\replaceword.dm:55">replaceWord</proc>
-<proc file="_libs\Spuzzum_SSmiley\s_smiley.dm:284">s_smileys</proc>
-<proc file="Channel\MessageParsing\_Main.dm:1">ParseMsg</proc>
-<proc file="Channel\MessageParsing\_Main.dm:10">ParseHTML</proc>
-<var file="_libs\Spuzzum_SSmiley\alphabetics.dm:17">lowercase_alphabet</var>
-<var file="_libs\Spuzzum_SSmiley\alphabetics.dm:22">uppercase_alphabet</var>
-<var file="_libs\Spuzzum_SSmiley\alphabetics.dm:28">alphabet_vowels</var>
-<var file="_libs\Spuzzum_SSmiley\alphabetics.dm:36">alphabet_consonants</var>
-<var file="_libs\Spuzzum_SSmiley\alphabetics.dm:42">complete_alphabet</var>
-<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:59">s_smileys</var>
-<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:61">smiley
-	<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:63">smileys</var>
-	<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:64">iconstate</var>
-	<proc file="_libs\Spuzzum_SSmiley\s_smiley.dm:67">New</proc>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:74">surprised_thoughtful_wink
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:75">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:76">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:76">"surprised/thoughtful wink"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:78">sadistic
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:79">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:82">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:82">"sadistic"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:83">surprised
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:84">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:87">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:87">"surprised"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:88">angry
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:89">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:92">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:92">"angry"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:93">sad_b
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:94">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:97">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:97">"sad_b"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:98">mad_tongue
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:99">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:100">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:100">"mad/tongue"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:101">mad_tongue2
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:102">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:104">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:104">"mad/tongue2"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:105">sigh_tongue2
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:106">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:108">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:108">"sigh/tongue2"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:109">sigh_tongue
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:110">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:111">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:111">"sigh/tongue"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:112">evil_grin
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:113">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:114">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:114">"evil grin"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:115">worried_grin
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:116">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:117">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:117">"worried grin"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:118">naughty_wink
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:119">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:121">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:121">"naughty wink"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:122">surprised_wink
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:123">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:125">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:125">"surprised wink"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:126">angry_wink
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:127">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:129">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:129">"angry wink"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:130">sad_wink_b
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:131">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:133">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:133">"sad wink_b"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:134">sad_wink_tongue2
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:135">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:136">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:136">"sad wink/tongue2"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:137">sad_wink_tongue
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:138">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:139">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:139">"sad wink/tongue"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:140">angry_thoughtful_wink
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:141">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:142">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:142">"angry/thoughtful wink"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:143">skeptical
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:144">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:145">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:145">"skeptical"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:146">confused
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:147">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:148">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:148">"confused"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:149">angry_wink_tongue2
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:150">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:151">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:151">"angry wink/tongue2"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:152">angry_wink_tongue
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:153">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:154">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:154">"angry wink/tongue"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:155">angry_uncertain
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:156">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:158">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:158">"angry/uncertain"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:159">frustrated
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:160">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:162">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:162">"frustrated"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:163">naughty_wink_grin
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:164">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:165">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:165">"naughty wink/grin"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:166">sheepish_wink_grin
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:167">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:168">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:168">"sheepish wink/grin"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:169">surprised_b
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:170">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:172">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:172">"surprised_b"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:173">angry_weird
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:174">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:176">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:176">"angry/weird"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:177">sad_weird
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:178">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:180">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:180">"sad/weird"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:181">sad_uncertain
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:182">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:184">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:184">"sad/uncertain"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:185">uncertain_skeptical2
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:186">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:189">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:189">"uncertain/skeptical2"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:190">skeptical2
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:191">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:196">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:196">"skeptical2"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:197">sad_skeptical2
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:198">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:203">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:203">"sad/skeptical2"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:204">happy_skeptical2
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:205">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:210">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:210">"happy/skeptical2"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:211">wink_grin
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:212">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:213">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:213">"wink/grin"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:214">tongue2
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:215">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:217">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:217">"tongue2"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:218">tongue
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:219">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:220">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:220">"tongue"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:221">grin
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:222">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:223">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:223">"grin"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:224">wink
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:225">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:228">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:228">"wink"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:229">sad_wink_a
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:230">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:231">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:231">"sad wink_a"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:232">wink_tongue2
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:233">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:234">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:234">"wink/tongue2"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:235">wink_tongue
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:236">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:237">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:237">"wink/tongue"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:238">smile
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:239">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:242">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:242">"smile"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:243">neutral
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:244">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:246">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:246">"neutral"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:247">sad_a
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:248">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:250">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:250">"sad_a"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:251">thoughtful_wink
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:252">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:253">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:253">"thoughtful wink"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:254">weird
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:255">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:257">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:257">"weird"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:258">surprised_a
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:259">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:262">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:262">"surprised_a"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:263">anime_smile
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:264">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:265">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:265">"anime smile"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:266">anime_O
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:267">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:268">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:268">"anime O"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:269">anime_sleepy
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:270">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:271">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:271">"anime sleepy"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:272">shifty
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:273">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:274">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:274">"shifty"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:275">shifty2
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:276">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:277">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:277">"shifty2"</val>
-		</var>
-	</object>
-	<object file="_libs\Spuzzum_SSmiley\s_smiley.dm:278">uncertain
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:279">smileys</var>
-		<var file="_libs\Spuzzum_SSmiley\s_smiley.dm:281">iconstate
-			<val file="_libs\Spuzzum_SSmiley\s_smiley.dm:281">"uncertain"</val>
-		</var>
-	</object>
-</object>
-<object file="Channel\_Main.dm:1">Channel
-	<var file="Channel\_Main.dm:2">Name
-		<val file="Channel\_Main.dm:2">"Test Channel"</val>
-	</var>
-	<var file="Channel\_Main.dm:5">MinutesBeforeIdle
-		<val file="Channel\_Main.dm:5">1</val>
-	</var>
-	<var file="Channel\_Main.dm:7">OPs</var>
-	<var file="Channel\_Main.dm:10">Bots</var>
-	<var file="Channel\_Main.dm:11">DefaultBot</var>
-	<var file="Channel\_Main.dm:14">ChattersList</var>
-	<var file="Channel\_Main.dm:17">BannedList</var>
-	<var file="Channel\_Main.dm:20">MutedList</var>
-	<var file="Channel\_Main.dm:23">HTMLTagsAllowed</var>
-	<proc file="Channel\Functions.dm:3">IsChatterMuted</proc>
-	<proc file="Channel\Functions.dm:7">GetChatters</proc>
-	<proc file="Channel\Idle.dm:7">EventsLoop</proc>
-	<proc file="Channel\Idle.dm:14">TimerMinute</proc>
-	<proc file="Channel\Triggers.dm:5">Trigger_PlayerLoggedIn</proc>
-	<proc file="Channel\Triggers.dm:10">Trigger_PlayerLoggedOut</proc>
-	<proc file="Channel\Interface\WhoSidebar.dm:3">UpdateWho</proc>
-	<proc file="Channel\Idle.dm:2">New</proc>
-</object>
-<mob file="Channel\Idle.dm:25">Chatter
-	<proc file="Channel\Idle.dm:26">ReturnFromIdle</proc>
-	<proc file="Chatter\Functions.dm:6">HasChatterIgnored</proc>
-	<proc file="Chatter\Functions.dm:10">IgnoreChatter</proc>
-	<proc file="Chatter\Functions.dm:13">ReceiveMessage</proc>
-	<proc file="Chatter\Functions.dm:26">SendMessage</proc>
-	<proc file="Chatter\Functions.dm:33">SendPM</proc>
-	<proc file="Chatter\Functions.dm:45">ReceivePM</proc>
-	<proc file="Chatter\Functions.dm:72">GetName</proc>
-	<proc file="Chatter\Functions.dm:78">GetMsgColor</proc>
-	<proc file="Chatter\Functions.dm:82">GetTimestamp</proc>
-	<var file="Chatter\_Main.dm:3">parent_type
-		<val file="Chatter\_Main.dm:3">/mob</val>
-	</var>
-	<var file="Chatter\_Main.dm:9">Settings
-		<var file="Chatter\_Main.dm:9">"AllowNameColors"
-			<val file="Chatter\_Main.dm:9">1</val>
-		</var>
-		<var file="Chatter\_Main.dm:9">"AllowMsgColors"
-			<val file="Chatter\_Main.dm:9">1</val>
-		</var>
-		<var file="Chatter\_Main.dm:9">"MsgColor"
-			<val file="Chatter\_Main.dm:9">"black"</val>
-		</var>
-		<var file="Chatter\_Main.dm:9">"ColoredName"
-			<val file="Chatter\_Main.dm:9">""</val>
-		</var>
-		<var file="Chatter\_Main.dm:9">"TimestampStyle"
-			<val file="Chatter\_Main.dm:9">"12hr"</val>
-		</var>
-	</var>
-	<var file="Chatter\_Main.dm:10">IgnoredList</var>
-	<var file="Chatter\_Main.dm:11">SidebarColor
-		<val file="Chatter\_Main.dm:11">"black"</val>
-	</var>
-	<var file="Chatter\_Main.dm:14">IsIdle
-		<val file="Chatter\_Main.dm:14">FALSE</val>
-	</var>
-	<var file="Chatter\_Main.dm:15">WentIdleAt
-		<val file="Chatter\_Main.dm:15">null</val>
-	</var>
-	<var file="Chatter\_Main.dm:18">OpenWindows</var>
-	<proc file="Chatter\Login.dm:3">Login</proc>
-	<proc file="Chatter\Login.dm:15">Logout</proc>
-	<verb file="Chatter\Verbs.dm:2">say</verb>
-	<verb file="Chatter\Verbs.dm:6">pm</verb>
-	<mob file="Chatter\Bot\_Main.dm:2">Bot
-		<proc file="Chatter\Bot\_Main.dm:3">HasChatterIgnored</proc>
-		<proc file="Chatter\Bot\_Main.dm:4">IgnoreChatter</proc>
-		<proc file="Chatter\Bot\_Main.dm:5">ReceiveMessage</proc>
-	</mob>
-	<mob file="Chatter\DreamSeeker\_Main.dm:2">DreamSeeker
-		<proc file="Chatter\DreamSeeker\_Main.dm:3">Login</proc>
-		<proc file="Interface\_Main.dm:28">GetWindow</proc>
-		<verb file="Interface\_Main.dm:33">CloseWindow</verb>
-		<verb file="Interface\PM.dm:9">infSendPM</verb>
-		<verb file="Interface\ShortcutBar.dm:37">InsertCharacter</verb>
-		<verb file="Interface\ShortcutBar.dm:42">InsertTag</verb>
-	</mob>
-	<proc file="Interface\PM.dm:2">Click</proc>
-</mob>
-<mob file="Chatter\Telnet\_Main.dm:2">TelnetUser
-	<var file="Chatter\Telnet\_Main.dm:3">parent_type
-		<val file="Chatter\Telnet\_Main.dm:3">/Chatter</val>
-	</var>
-</mob>
-<object file="Client\Login.dm:1">client
-	<proc file="Client\Login.dm:2">New</proc>
-</object>
-<object file="Interface\_Main.dm:1">Windows
-	<var file="Interface\_Main.dm:2">owner</var>
-	<var file="Interface\_Main.dm:3">WindowName
-		<val file="Interface\_Main.dm:3">""</val>
-	</var>
-	<var file="Interface\_Main.dm:4">InfName
-		<val file="Interface\_Main.dm:4">""</val>
-	</var>
-	<proc file="Interface\_Main.dm:6">New</proc>
-	<proc file="Interface\_Main.dm:17">Setup</proc>
-	<proc file="Interface\_Main.dm:20">Show</proc>
-	<proc file="Interface\_Main.dm:24">Destroy</proc>
-	<proc file="Interface\ShortcutBar.dm:8">SetupShortcutBar</proc>
-	<object file="Interface\MainWindow.dm:6">Main
-		<var file="Interface\MainWindow.dm:7">WindowName
-			<val file="Interface\MainWindow.dm:7">"WinMain"</val>
-		</var>
-		<proc file="Interface\MainWindow.dm:8">Setup</proc>
-	</object>
-	<object file="Interface\PM.dm:13">IM
-		<var file="Interface\PM.dm:14">ReceiverCKey
-			<val file="Interface\PM.dm:14">""</val>
-		</var>
-		<proc file="Interface\PM.dm:16">Setup</proc>
-	</object>
-	<object file="Interface\ShortcutBar.dm:13">ShortcutBar
-		<proc file="Interface\ShortcutBar.dm:14">Setup</proc>
-	</object>
-</object>
-<var file="World\_Main.dm:2">Chan</var>
+loading baby rpg.dme
+#IDIOT PROOF\add portals.dm:19:error: F: expected end of statement
+#IDIOT PROOF\add portals.dm:21:error: expected expression
+loading skin.dmf
+##Tendrils of Grawl\dungeons.dm:4:error: start_loc: undefined var
+##Tendrils of Grawl\dungeons.dm:5:error: z: undefined var
+##Tendrils of Grawl\dungeons.dm:6:error: level_req: undefined var
+##Tendrils of Grawl\dungeons.dm:9:error: start_loc: undefined var
+##Tendrils of Grawl\dungeons.dm:10:error: z: undefined var
+##Tendrils of Grawl\dungeons.dm:11:error: level_req: undefined var
+##Tendrils of Grawl\dungeons.dm:14:error: start_loc: undefined var
+##Tendrils of Grawl\dungeons.dm:15:error: z: undefined var
+##Tendrils of Grawl\dungeons.dm:16:error: level_req: undefined var
+##Tendrils of Grawl\dungeons.dm:19:error: start_loc: undefined var
+##Tendrils of Grawl\dungeons.dm:20:error: z: undefined var
+##Tendrils of Grawl\dungeons.dm:21:error: level_req: undefined var
+##Tendrils of Grawl\dungeons.dm:24:error: start_loc: undefined var
+##Tendrils of Grawl\dungeons.dm:25:error: z: undefined var
+##Tendrils of Grawl\dungeons.dm:26:error: level_req: undefined var
+##Tendrils of Grawl\dungeons.dm:33:error: side: undefined var
+##Tendrils of Grawl\dungeons.dm:34:error: D: undefined var
+##Tendrils of Grawl\dungeons.dm:36:error: side: undefined var
+##Tendrils of Grawl\dungeons.dm:37:error: D: undefined var
+##Tendrils of Grawl\dungeons.dm:39:error: side: undefined var
+##Tendrils of Grawl\dungeons.dm:40:error: D: undefined var
+##Tendrils of Grawl\dungeons.dm:42:error: side: undefined var
+##Tendrils of Grawl\dungeons.dm:43:error: D: undefined var
+##Tendrils of Grawl\dungeons.dm:45:error: side: undefined var
+##Tendrils of Grawl\dungeons.dm:46:error: D: undefined var
+##Tendrils of Grawl\dungeons.dm:48:error: side: undefined var
+##Tendrils of Grawl\dungeons.dm:49:error: D: undefined var
+##Tendrils of Grawl\dungeons.dm:55:error: dname: undefined var
+##Tendrils of Grawl\dungeons.dm:56:error: fourth: undefined var
+##Tendrils of Grawl\dungeons.dm:57:error: story: undefined var
+##Tendrils of Grawl\dungeons.dm:60:error: dname: undefined var
+##Tendrils of Grawl\dungeons.dm:62:error: story: undefined var
+##Tendrils of Grawl\dungeons.dm:64:error: dname: undefined var
+##Tendrils of Grawl\dungeons.dm:66:error: story: undefined var
+##Tendrils of Grawl\dungeons.dm:68:error: dname: undefined var
+##Tendrils of Grawl\dungeons.dm:70:error: story: undefined var
+##Tendrils of Grawl\dungeons.dm:73:error: dname: undefined var
+##Tendrils of Grawl\dungeons.dm:75:error: story: undefined var
+#IDIOT PROOF\add portals.dm:3:error: dont_reset: undefined var
+##Tendrils of Grawl\enemies.dm:5:error: move_speed: undefined var
+##Tendrils of Grawl\enemies.dm:6:error: icon_state: undefined var
+##Tendrils of Grawl\enemies.dm:7:error: vrange: undefined var
+##Tendrils of Grawl\enemies.dm:8:error: hp: undefined var
+##Tendrils of Grawl\enemies.dm:11:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:11:error: /item/weapon/spider_fang: undefined type path
+##Tendrils of Grawl\enemies.dm:12:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:12:error: /item/weapon/spider_fang: undefined type path
+##Tendrils of Grawl\enemies.dm:13:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:15:error: move_speed: undefined var
+##Tendrils of Grawl\enemies.dm:16:error: icon_state: undefined var
+##Tendrils of Grawl\enemies.dm:17:error: vrange: undefined var
+##Tendrils of Grawl\enemies.dm:18:error: hp: undefined var
+##Tendrils of Grawl\enemies.dm:21:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:22:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:24:error: move_speed: undefined var
+##Tendrils of Grawl\enemies.dm:25:error: icon_state: undefined var
+##Tendrils of Grawl\enemies.dm:26:error: vrange: undefined var
+##Tendrils of Grawl\enemies.dm:27:error: hp: undefined var
+##Tendrils of Grawl\enemies.dm:30:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:31:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:33:error: move_speed: undefined var
+##Tendrils of Grawl\enemies.dm:34:error: icon_state: undefined var
+##Tendrils of Grawl\enemies.dm:35:error: vrange: undefined var
+##Tendrils of Grawl\enemies.dm:36:error: hp: undefined var
+##Tendrils of Grawl\enemies.dm:39:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:40:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:41:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:45:error: move_speed: undefined var
+##Tendrils of Grawl\enemies.dm:46:error: icon_state: undefined var
+##Tendrils of Grawl\enemies.dm:47:error: vrange: undefined var
+##Tendrils of Grawl\enemies.dm:48:error: hp: undefined var
+##Tendrils of Grawl\enemies.dm:51:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:52:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:54:error: move_speed: undefined var
+##Tendrils of Grawl\enemies.dm:55:error: icon_state: undefined var
+##Tendrils of Grawl\enemies.dm:56:error: vrange: undefined var
+##Tendrils of Grawl\enemies.dm:57:error: hp: undefined var
+##Tendrils of Grawl\enemies.dm:60:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:61:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:63:error: move_speed: undefined var
+##Tendrils of Grawl\enemies.dm:64:error: icon_state: undefined var
+##Tendrils of Grawl\enemies.dm:65:error: vrange: undefined var
+##Tendrils of Grawl\enemies.dm:66:error: hp: undefined var
+##Tendrils of Grawl\enemies.dm:69:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:70:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:74:error: move_speed: undefined var
+##Tendrils of Grawl\enemies.dm:75:error: icon_state: undefined var
+##Tendrils of Grawl\enemies.dm:76:error: vrange: undefined var
+##Tendrils of Grawl\enemies.dm:77:error: hp: undefined var
+##Tendrils of Grawl\enemies.dm:80:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:81:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:83:error: move_speed: undefined var
+##Tendrils of Grawl\enemies.dm:84:error: icon_state: undefined var
+##Tendrils of Grawl\enemies.dm:85:error: vrange: undefined var
+##Tendrils of Grawl\enemies.dm:86:error: hp: undefined var
+##Tendrils of Grawl\enemies.dm:89:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:90:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:92:error: move_speed: undefined var
+##Tendrils of Grawl\enemies.dm:93:error: icon_state: undefined var
+##Tendrils of Grawl\enemies.dm:94:error: vrange: undefined var
+##Tendrils of Grawl\enemies.dm:95:error: hp: undefined var
+##Tendrils of Grawl\enemies.dm:98:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:98:error: /item/weapon/darkfate_dagger: undefined type path
+##Tendrils of Grawl\enemies.dm:99:error: items: undefined var
+##Tendrils of Grawl\enemies.dm:99:error: /item/weapon/darkfate_dagger: undefined type path
+##Tendrils of Grawl\enemies.dm:100:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:33:error: name: undefined var
+#IDIOT PROOF\add enemies.dm:34:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:35:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:36:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:37:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:38:error: attack_d: undefined var
+#IDIOT PROOF\add enemies.dm:41:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:42:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:44:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:45:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:46:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:47:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:50:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:50:error: /item/weapon/claw: undefined type path
+#IDIOT PROOF\add enemies.dm:51:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:51:error: /item/weapon/claw: undefined type path
+#IDIOT PROOF\add enemies.dm:52:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:55:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:56:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:57:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:58:error: attack_d: undefined var
+#IDIOT PROOF\add enemies.dm:59:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:62:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:63:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:65:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:66:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:67:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:68:error: attack_d: undefined var
+#IDIOT PROOF\add enemies.dm:69:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:72:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:73:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:75:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:76:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:77:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:78:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:81:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:82:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:84:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:85:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:86:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:87:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:90:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:91:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:92:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:94:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:95:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:96:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:97:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:100:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:101:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:103:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:104:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:105:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:106:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:109:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:110:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:111:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:113:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:114:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:115:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:116:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:119:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:120:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:121:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:123:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:124:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:125:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:126:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:129:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:129:error: /item/weapon/rat_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:130:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:130:error: /item/weapon/rat_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:131:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:133:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:134:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:135:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:136:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:139:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:139:error: /item/weapon/enhanced_rat_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:140:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:140:error: /item/weapon/enhanced_rat_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:141:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:143:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:144:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:145:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:146:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:149:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:150:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:151:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:153:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:154:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:155:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:156:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:159:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:160:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:162:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:163:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:164:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:165:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:168:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:169:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:170:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:173:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:176:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:178:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:182:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:182:error: /item/weapon/orc_sword: undefined type path
+#IDIOT PROOF\add enemies.dm:183:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:184:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:186:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:189:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:191:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:195:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:196:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:197:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:199:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:200:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:203:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:205:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:209:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:210:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:212:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:213:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:215:error: name: undefined var
+#IDIOT PROOF\add enemies.dm:216:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:218:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:222:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:223:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:226:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:227:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:230:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:232:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:236:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:237:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:239:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:240:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:243:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:245:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:249:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:250:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:251:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:252:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:254:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:255:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:257:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:259:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:263:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:264:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:266:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:267:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:269:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:271:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:275:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:276:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:278:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:279:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:281:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:283:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:287:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:288:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:290:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:291:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:293:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:295:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:299:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:300:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:302:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:303:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:305:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:307:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:311:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:312:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:315:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:316:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:318:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:320:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:324:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:325:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:326:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:329:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:330:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:331:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:332:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:335:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:335:error: /item/weapon/rat_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:336:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:336:error: /item/weapon/rat_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:337:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:340:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:341:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:342:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:343:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:346:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:347:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:348:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:351:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:352:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:353:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:354:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:357:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:357:error: /item/weapon/black_bear_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:358:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:358:error: /item/weapon/black_bear_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:359:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:361:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:362:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:363:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:364:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:367:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:367:error: /item/weapon/snow_bear_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:368:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:368:error: /item/weapon/snow_bear_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:369:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:371:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:372:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:373:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:374:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:377:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:378:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:380:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:381:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:384:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:386:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:390:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:391:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:392:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:393:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:395:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:396:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:397:error: team: undefined var
+#IDIOT PROOF\add enemies.dm:398:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:399:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:402:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:403:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:405:error: live: undefined var
+#IDIOT PROOF\add enemies.dm:406:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:404:error: die: undefined proc
+#IDIOT PROOF\add enemies.dm:409:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:410:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:411:error: team: undefined var
+#IDIOT PROOF\add enemies.dm:412:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:413:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:416:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:416:error: /item/weapon/ice_staff: undefined type path
+#IDIOT PROOF\add enemies.dm:417:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:419:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:420:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:421:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:422:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:425:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:425:error: /item/weapon/digging_mitts: undefined type path
+#IDIOT PROOF\add enemies.dm:426:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:428:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:429:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:430:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:431:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:434:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:435:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:437:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:438:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:439:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:440:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:443:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:444:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:446:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:447:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:448:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:449:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:452:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:453:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:455:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:456:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:457:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:458:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:461:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:462:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:464:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:465:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:466:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:467:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:470:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:471:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:473:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:474:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:475:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:476:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:479:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:480:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:481:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:483:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:484:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:485:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:486:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:489:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:490:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:491:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:492:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:494:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:495:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:496:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:497:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:500:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:501:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:503:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:504:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:505:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:506:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:509:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:509:error: /item/weapon/swamp_rabbit_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:510:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:510:error: /item/weapon/swamp_rabbit_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:511:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:513:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:514:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:515:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:516:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:519:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:519:error: /item/weapon/undead_rabbit_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:520:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:520:error: /item/weapon/undead_rabbit_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:521:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:523:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:524:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:525:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:526:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:529:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:530:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:532:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:533:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:534:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:535:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:538:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:538:error: /item/weapon/refined_dagger: undefined type path
+#IDIOT PROOF\add enemies.dm:539:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:539:error: /item/weapon/refined_dagger: undefined type path
+#IDIOT PROOF\add enemies.dm:540:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:542:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:543:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:544:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:545:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:548:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:549:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:551:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:552:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:553:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:554:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:557:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:558:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:558:error: /item/weapon/refined_dagger: undefined type path
+#IDIOT PROOF\add enemies.dm:559:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:560:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:562:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:563:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:564:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:565:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:566:error: team: undefined var
+#IDIOT PROOF\add enemies.dm:569:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:569:error: /item/weapon/claw: undefined type path
+#IDIOT PROOF\add enemies.dm:570:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:570:error: /item/weapon/claw: undefined type path
+#IDIOT PROOF\add enemies.dm:572:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:573:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:574:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:575:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:578:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:579:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:581:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:582:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:583:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:584:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:587:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:588:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:588:error: /item/weapon/ritual_dagger: undefined type path
+#IDIOT PROOF\add enemies.dm:589:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:592:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:593:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:594:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:595:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:598:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:599:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:600:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:602:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:603:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:604:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:605:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:608:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:608:error: /item/weapon/dagger: undefined type path
+#IDIOT PROOF\add enemies.dm:609:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:609:error: /item/weapon/dagger: undefined type path
+#IDIOT PROOF\add enemies.dm:610:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:613:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:614:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:615:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:616:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:619:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:620:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:622:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:623:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:624:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:625:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:628:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:628:error: /item/weapon/rabbit_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:629:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:629:error: /item/weapon/rabbit_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:630:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:632:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:633:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:634:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:635:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:638:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:639:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:641:error: live: undefined var
+#IDIOT PROOF\add enemies.dm:642:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:640:error: die: undefined proc
+#IDIOT PROOF\add enemies.dm:645:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:646:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:647:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:648:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:651:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:652:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:654:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:655:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:656:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:657:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:660:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:661:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:663:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:664:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:665:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:666:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:669:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:670:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:672:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:673:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:674:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:675:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:678:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:678:error: /item/weapon/barbed_dagger: undefined type path
+#IDIOT PROOF\add enemies.dm:679:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:679:error: /item/weapon/barbed_dagger: undefined type path
+#IDIOT PROOF\add enemies.dm:680:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:682:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:683:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:684:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:685:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:688:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:688:error: /item/weapon/wind_spawn_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:689:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:689:error: /item/weapon/wind_spawn_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:690:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:692:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:693:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:694:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:695:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:698:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:699:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:702:error: live: undefined var
+#IDIOT PROOF\add enemies.dm:703:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:700:error: die: undefined proc
+#IDIOT PROOF\add enemies.dm:707:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:708:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:709:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:710:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:713:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:714:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:716:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:717:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:718:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:719:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:722:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:723:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:725:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:726:error: team: undefined var
+#IDIOT PROOF\add enemies.dm:727:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:728:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:729:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:732:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:733:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:735:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:736:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:737:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:738:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:741:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:742:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:743:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:746:error: live: undefined var
+#IDIOT PROOF\add enemies.dm:746:error: armor: undefined var
+#IDIOT PROOF\add enemies.dm:747:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:747:error: armor: undefined var
+#IDIOT PROOF\add enemies.dm:744:error: die: undefined proc
+#IDIOT PROOF\add enemies.dm:750:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:751:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:752:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:753:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:756:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:757:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:759:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:760:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:761:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:762:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:765:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:765:error: /item/weapon/water_spawn_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:766:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:766:error: /item/weapon/water_spawn_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:767:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:769:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:770:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:771:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:772:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:775:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:775:error: /item/weapon/water_dagger: undefined type path
+#IDIOT PROOF\add enemies.dm:776:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:780:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:781:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:782:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:783:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:786:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:787:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:790:error: live: undefined var
+#IDIOT PROOF\add enemies.dm:790:error: armor: undefined var
+#IDIOT PROOF\add enemies.dm:791:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:791:error: armor: undefined var
+#IDIOT PROOF\add enemies.dm:788:error: die: undefined proc
+#IDIOT PROOF\add enemies.dm:794:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:795:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:796:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:797:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:800:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:801:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:802:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:804:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:805:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:806:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:807:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:810:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:812:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:814:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:815:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:816:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:817:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:820:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:821:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:826:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:827:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:828:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:829:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:832:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:834:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:836:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:837:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:838:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:839:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:842:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:843:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:845:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:847:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:848:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:849:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:850:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:854:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:856:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:858:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:859:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:860:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:861:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:865:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:867:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:869:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:870:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:871:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:872:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:875:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:875:error: /item/weapon/water_dagger: undefined type path
+#IDIOT PROOF\add enemies.dm:876:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:876:error: /item/weapon/water_dagger: undefined type path
+#IDIOT PROOF\add enemies.dm:877:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:884:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:885:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:886:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:887:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:890:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:892:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:895:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:896:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:897:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:898:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:901:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:902:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:903:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:905:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:906:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:907:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:908:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:913:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:919:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:920:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:921:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:922:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:925:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:926:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:927:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:930:error: live: undefined var
+#IDIOT PROOF\add enemies.dm:930:error: armor: undefined var
+#IDIOT PROOF\add enemies.dm:931:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:931:error: armor: undefined var
+#IDIOT PROOF\add enemies.dm:928:error: die: undefined proc
+#IDIOT PROOF\add enemies.dm:934:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:935:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:936:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:937:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:940:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:941:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:942:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:944:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:945:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:946:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:947:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:950:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:951:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:954:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:955:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:956:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:957:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:960:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:960:error: /item/weapon/orc_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:961:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:963:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:964:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:965:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:966:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:969:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:970:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:972:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:973:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:974:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:975:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:978:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:979:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:981:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:982:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:983:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:984:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:987:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:988:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:990:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:991:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:992:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:993:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:996:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:997:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:999:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1000:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1001:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1002:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1005:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1006:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1008:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1009:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1010:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1011:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1014:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1015:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1017:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1018:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1019:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1020:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1023:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1024:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1026:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1027:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1028:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1029:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1032:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1032:error: /item/weapon/devilish_dagger: undefined type path
+#IDIOT PROOF\add enemies.dm:1033:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1035:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1036:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1037:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1038:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1041:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1042:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1044:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1045:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1046:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1047:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1050:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1051:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1053:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1054:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1055:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1056:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1059:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1060:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1062:error: name: undefined var
+#IDIOT PROOF\add enemies.dm:1063:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1064:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1065:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1068:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1068:error: /item/weapon/orc_sword: undefined type path
+#IDIOT PROOF\add enemies.dm:1069:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1070:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1071:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1073:error: name: undefined var
+#IDIOT PROOF\add enemies.dm:1074:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1075:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1076:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1079:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1080:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1081:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1082:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1084:error: name: undefined var
+#IDIOT PROOF\add enemies.dm:1085:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1086:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1087:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1088:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1091:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1092:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1093:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1094:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1096:error: name: undefined var
+#IDIOT PROOF\add enemies.dm:1097:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1098:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1099:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1100:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1103:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1104:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1105:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1107:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1108:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1109:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1110:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1113:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1114:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1115:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1117:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1118:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1119:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1120:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1123:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1124:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1125:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1126:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1129:error: live: undefined var
+#IDIOT PROOF\add enemies.dm:1129:error: armor: undefined var
+#IDIOT PROOF\add enemies.dm:1130:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1130:error: armor: undefined var
+#IDIOT PROOF\add enemies.dm:1127:error: die: undefined proc
+#IDIOT PROOF\add enemies.dm:1133:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1134:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1135:error: name: undefined var
+#IDIOT PROOF\add enemies.dm:1136:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1137:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1140:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1141:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1143:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1144:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1145:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1146:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1149:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1150:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1152:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1153:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1154:error: name: undefined var
+#IDIOT PROOF\add enemies.dm:1155:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1156:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1159:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1159:error: /item/weapon/pidgeon_talon: undefined type path
+#IDIOT PROOF\add enemies.dm:1160:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1160:error: /item/weapon/pidgeon_talon: undefined type path
+#IDIOT PROOF\add enemies.dm:1161:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1163:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1164:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1165:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1166:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1169:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1170:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1171:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1173:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1174:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1175:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1176:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1179:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1180:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1182:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1183:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1184:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1185:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1188:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1189:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1190:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1192:error: name: undefined var
+#IDIOT PROOF\add enemies.dm:1193:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1194:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1195:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1196:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1199:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1200:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1202:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1203:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1204:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1205:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1208:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1209:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1213:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1214:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1215:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1216:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1219:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1219:error: /item/weapon/glitched_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:1220:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1220:error: /item/weapon/glitched_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:1222:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1223:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1224:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1225:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1226:error: abilities: undefined var
+#IDIOT PROOF\add enemies.dm:1229:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1230:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1231:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1237:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1238:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1239:error: name: undefined var
+#IDIOT PROOF\add enemies.dm:1240:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1241:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1244:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1244:error: /item/weapon/hawk_talon: undefined type path
+#IDIOT PROOF\add enemies.dm:1245:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1245:error: /item/weapon/hawk_talon: undefined type path
+#IDIOT PROOF\add enemies.dm:1246:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1248:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1249:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1250:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1251:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1254:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1255:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1257:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1258:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1259:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1260:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1263:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1264:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1266:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1267:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1268:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1269:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1272:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1273:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1274:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1276:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1277:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1278:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1279:error: name: undefined var
+#IDIOT PROOF\add enemies.dm:1280:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1283:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1283:error: /item/weapon/eagle_talon: undefined type path
+#IDIOT PROOF\add enemies.dm:1284:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1284:error: /item/weapon/eagle_talon: undefined type path
+#IDIOT PROOF\add enemies.dm:1285:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1287:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1288:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1289:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1290:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1293:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1293:error: /item/weapon/scorpion_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:1294:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1294:error: /item/weapon/scorpion_claw: undefined type path
+#IDIOT PROOF\add enemies.dm:1295:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1297:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1298:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1299:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1300:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1303:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1303:error: /item/weapon/raven_talon: undefined type path
+#IDIOT PROOF\add enemies.dm:1304:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1304:error: /item/weapon/raven_talon: undefined type path
+#IDIOT PROOF\add enemies.dm:1305:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1307:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1308:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1309:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1310:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1317:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1318:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1319:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1320:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1324:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1325:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1326:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1327:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1337:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1338:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1339:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1340:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1343:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1343:error: /item/weapon/spider_fang: undefined type path
+#IDIOT PROOF\add enemies.dm:1344:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1344:error: /item/weapon/spider_fang: undefined type path
+#IDIOT PROOF\add enemies.dm:1345:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1347:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1348:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1349:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1350:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1353:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1354:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1356:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1357:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1358:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1359:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1362:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1363:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1365:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1366:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1367:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1368:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1371:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1372:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1373:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1377:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1378:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1379:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1380:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1383:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1384:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1386:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1387:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1388:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1389:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1392:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1393:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1395:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1396:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1397:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1398:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1401:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1402:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1406:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1407:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1408:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1409:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1412:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1413:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1415:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1416:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1417:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1418:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1421:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1422:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1424:error: move_speed: undefined var
+#IDIOT PROOF\add enemies.dm:1425:error: icon_state: undefined var
+#IDIOT PROOF\add enemies.dm:1426:error: vrange: undefined var
+#IDIOT PROOF\add enemies.dm:1427:error: hp: undefined var
+#IDIOT PROOF\add enemies.dm:1430:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1430:error: /item/weapon/darkfate_dagger: undefined type path
+#IDIOT PROOF\add enemies.dm:1431:error: items: undefined var
+#IDIOT PROOF\add enemies.dm:1431:error: /item/weapon/darkfate_dagger: undefined type path
+#IDIOT PROOF\add enemies.dm:1432:error: items: undefined var
+#IDIOT PROOF\add items.dm:17:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:21:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:23:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:25:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:27:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:29:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:37:error: price: undefined var
+#IDIOT PROOF\add items.dm:39:error: red: undefined var
+#IDIOT PROOF\add items.dm:41:error: green: undefined var
+#IDIOT PROOF\add items.dm:42:error: blue: undefined var
+#IDIOT PROOF\add items.dm:44:error: blue: undefined var
+#IDIOT PROOF\add items.dm:46:error: red: undefined var
+#IDIOT PROOF\add items.dm:47:error: blue: undefined var
+#IDIOT PROOF\add items.dm:48:error: green: undefined var
+#IDIOT PROOF\add items.dm:49:error: price: undefined var
+#IDIOT PROOF\add items.dm:51:error: red: undefined var
+#IDIOT PROOF\add items.dm:52:error: blue: undefined var
+#IDIOT PROOF\add items.dm:53:error: green: undefined var
+#IDIOT PROOF\add items.dm:54:error: price: undefined var
+#IDIOT PROOF\add items.dm:60:error: movex: undefined var
+#IDIOT PROOF\add items.dm:61:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:63:error: movex: undefined var
+#IDIOT PROOF\add items.dm:64:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:66:error: movex: undefined var
+#IDIOT PROOF\add items.dm:67:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:69:error: movex: undefined var
+#IDIOT PROOF\add items.dm:70:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:72:error: movex: undefined var
+#IDIOT PROOF\add items.dm:73:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:75:error: movex: undefined var
+#IDIOT PROOF\add items.dm:76:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:78:error: movex: undefined var
+#IDIOT PROOF\add items.dm:79:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:81:error: movex: undefined var
+#IDIOT PROOF\add items.dm:82:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:84:error: movex: undefined var
+#IDIOT PROOF\add items.dm:85:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:86:error: price: undefined var
+#IDIOT PROOF\add items.dm:108:error: desc: undefined var
+#IDIOT PROOF\add items.dm:111:error: skill: undefined var
+#IDIOT PROOF\add items.dm:113:error: skill: undefined var
+#IDIOT PROOF\add items.dm:115:error: skill: undefined var
+#IDIOT PROOF\add items.dm:117:error: skill: undefined var
+#IDIOT PROOF\add items.dm:119:error: skill: undefined var
+#IDIOT PROOF\add items.dm:120:error: price: undefined var
+#IDIOT PROOF\add items.dm:122:error: skill: undefined var
+#IDIOT PROOF\add items.dm:123:error: price: undefined var
+#IDIOT PROOF\add items.dm:125:error: skill: undefined var
+#IDIOT PROOF\add items.dm:126:error: price: undefined var
+#IDIOT PROOF\add items.dm:128:error: skill: undefined var
+#IDIOT PROOF\add items.dm:129:error: price: undefined var
+#IDIOT PROOF\add items.dm:131:error: skill: undefined var
+#IDIOT PROOF\add items.dm:132:error: price: undefined var
+#IDIOT PROOF\add items.dm:134:error: skill: undefined var
+#IDIOT PROOF\add items.dm:135:error: price: undefined var
+#IDIOT PROOF\add items.dm:137:error: skill: undefined var
+#IDIOT PROOF\add items.dm:138:error: price: undefined var
+#IDIOT PROOF\add items.dm:140:error: skill: undefined var
+#IDIOT PROOF\add items.dm:141:error: price: undefined var
+#IDIOT PROOF\add items.dm:143:error: skill: undefined var
+#IDIOT PROOF\add items.dm:144:error: price: undefined var
+#IDIOT PROOF\add items.dm:146:error: skill: undefined var
+#IDIOT PROOF\add items.dm:147:error: price: undefined var
+#IDIOT PROOF\add items.dm:149:error: skill: undefined var
+#IDIOT PROOF\add items.dm:150:error: price: undefined var
+#IDIOT PROOF\add items.dm:152:error: skill: undefined var
+#IDIOT PROOF\add items.dm:153:error: price: undefined var
+#IDIOT PROOF\add items.dm:155:error: skill: undefined var
+#IDIOT PROOF\add items.dm:156:error: price: undefined var
+#IDIOT PROOF\add items.dm:158:error: skill: undefined var
+#IDIOT PROOF\add items.dm:159:error: price: undefined var
+#IDIOT PROOF\add items.dm:161:error: skill: undefined var
+#IDIOT PROOF\add items.dm:162:error: price: undefined var
+#IDIOT PROOF\add items.dm:164:error: skill: undefined var
+#IDIOT PROOF\add items.dm:165:error: price: undefined var
+#IDIOT PROOF\add items.dm:167:error: skill: undefined var
+#IDIOT PROOF\add items.dm:168:error: price: undefined var
+#IDIOT PROOF\add items.dm:171:error: skill: undefined var
+#IDIOT PROOF\add items.dm:172:error: price: undefined var
+#IDIOT PROOF\add items.dm:174:error: skill: undefined var
+#IDIOT PROOF\add items.dm:175:error: price: undefined var
+#IDIOT PROOF\add items.dm:177:error: skill: undefined var
+#IDIOT PROOF\add items.dm:178:error: price: undefined var
+#IDIOT PROOF\add items.dm:180:error: skill: undefined var
+#IDIOT PROOF\add items.dm:181:error: price: undefined var
+#IDIOT PROOF\add items.dm:183:error: skill: undefined var
+#IDIOT PROOF\add items.dm:184:error: price: undefined var
+#IDIOT PROOF\add items.dm:186:error: skill: undefined var
+#IDIOT PROOF\add items.dm:187:error: price: undefined var
+#IDIOT PROOF\add items.dm:189:error: skill: undefined var
+#IDIOT PROOF\add items.dm:190:error: price: undefined var
+#IDIOT PROOF\add items.dm:192:error: skill: undefined var
+#IDIOT PROOF\add items.dm:193:error: price: undefined var
+#IDIOT PROOF\add items.dm:195:error: skill: undefined var
+#IDIOT PROOF\add items.dm:196:error: price: undefined var
+#IDIOT PROOF\add items.dm:198:error: skill: undefined var
+#IDIOT PROOF\add items.dm:199:error: price: undefined var
+#IDIOT PROOF\add items.dm:201:error: skill: undefined var
+#IDIOT PROOF\add items.dm:202:error: price: undefined var
+#IDIOT PROOF\add items.dm:204:error: skill: undefined var
+#IDIOT PROOF\add items.dm:205:error: price: undefined var
+#IDIOT PROOF\add items.dm:207:error: skill: undefined var
+#IDIOT PROOF\add items.dm:208:error: price: undefined var
+#IDIOT PROOF\add items.dm:210:error: skill: undefined var
+#IDIOT PROOF\add items.dm:211:error: price: undefined var
+#IDIOT PROOF\add items.dm:213:error: skill: undefined var
+#IDIOT PROOF\add items.dm:214:error: price: undefined var
+#IDIOT PROOF\add items.dm:216:error: skill: undefined var
+#IDIOT PROOF\add items.dm:217:error: price: undefined var
+#IDIOT PROOF\add items.dm:219:error: skill: undefined var
+#IDIOT PROOF\add items.dm:220:error: price: undefined var
+#IDIOT PROOF\add items.dm:222:error: skill: undefined var
+#IDIOT PROOF\add items.dm:223:error: price: undefined var
+#IDIOT PROOF\add items.dm:225:error: skill: undefined var
+#IDIOT PROOF\add items.dm:226:error: price: undefined var
+#IDIOT PROOF\add items.dm:228:error: skill: undefined var
+#IDIOT PROOF\add items.dm:229:error: price: undefined var
+#IDIOT PROOF\add items.dm:231:error: skill: undefined var
+#IDIOT PROOF\add items.dm:232:error: price: undefined var
+#IDIOT PROOF\add items.dm:234:error: skill: undefined var
+#IDIOT PROOF\add items.dm:235:error: price: undefined var
+#IDIOT PROOF\add items.dm:237:error: skill: undefined var
+#IDIOT PROOF\add items.dm:238:error: price: undefined var
+#IDIOT PROOF\add items.dm:240:error: skill: undefined var
+#IDIOT PROOF\add items.dm:241:error: price: undefined var
+#IDIOT PROOF\add items.dm:243:error: skill: undefined var
+#IDIOT PROOF\add items.dm:244:error: price: undefined var
+#IDIOT PROOF\add items.dm:246:error: skill: undefined var
+#IDIOT PROOF\add items.dm:247:error: price: undefined var
+#IDIOT PROOF\add items.dm:249:error: skill: undefined var
+#IDIOT PROOF\add items.dm:250:error: price: undefined var
+#IDIOT PROOF\add items.dm:252:error: skill: undefined var
+#IDIOT PROOF\add items.dm:253:error: price: undefined var
+#IDIOT PROOF\add items.dm:255:error: skill: undefined var
+#IDIOT PROOF\add items.dm:256:error: price: undefined var
+#IDIOT PROOF\add items.dm:258:error: skill: undefined var
+#IDIOT PROOF\add items.dm:259:error: price: undefined var
+#IDIOT PROOF\add items.dm:261:error: skill: undefined var
+#IDIOT PROOF\add items.dm:262:error: price: undefined var
+#IDIOT PROOF\add items.dm:264:error: skill: undefined var
+#IDIOT PROOF\add items.dm:265:error: price: undefined var
+#IDIOT PROOF\add items.dm:267:error: skill: undefined var
+#IDIOT PROOF\add items.dm:268:error: price: undefined var
+#IDIOT PROOF\add items.dm:270:error: skill: undefined var
+#IDIOT PROOF\add items.dm:271:error: price: undefined var
+#IDIOT PROOF\add items.dm:273:error: skill: undefined var
+#IDIOT PROOF\add items.dm:274:error: price: undefined var
+#IDIOT PROOF\add items.dm:276:error: skill: undefined var
+#IDIOT PROOF\add items.dm:277:error: price: undefined var
+#IDIOT PROOF\add items.dm:279:error: skill: undefined var
+#IDIOT PROOF\add items.dm:280:error: price: undefined var
+#IDIOT PROOF\add items.dm:282:error: skill: undefined var
+#IDIOT PROOF\add items.dm:283:error: price: undefined var
+#IDIOT PROOF\add items.dm:285:error: skill: undefined var
+#IDIOT PROOF\add items.dm:286:error: price: undefined var
+#IDIOT PROOF\add items.dm:288:error: skill: undefined var
+#IDIOT PROOF\add items.dm:289:error: price: undefined var
+#IDIOT PROOF\add items.dm:291:error: skill: undefined var
+#IDIOT PROOF\add items.dm:292:error: price: undefined var
+#IDIOT PROOF\add items.dm:294:error: skill: undefined var
+#IDIOT PROOF\add items.dm:295:error: price: undefined var
+#IDIOT PROOF\add items.dm:297:error: skill: undefined var
+#IDIOT PROOF\add items.dm:298:error: price: undefined var
+#IDIOT PROOF\add items.dm:300:error: skill: undefined var
+#IDIOT PROOF\add items.dm:301:error: price: undefined var
+#IDIOT PROOF\add items.dm:303:error: skill: undefined var
+#IDIOT PROOF\add items.dm:304:error: price: undefined var
+#IDIOT PROOF\add items.dm:306:error: skill: undefined var
+#IDIOT PROOF\add items.dm:307:error: price: undefined var
+#IDIOT PROOF\add items.dm:309:error: skill: undefined var
+#IDIOT PROOF\add items.dm:310:error: price: undefined var
+#IDIOT PROOF\add items.dm:312:error: skill: undefined var
+#IDIOT PROOF\add items.dm:313:error: price: undefined var
+#IDIOT PROOF\add items.dm:315:error: skill: undefined var
+#IDIOT PROOF\add items.dm:316:error: price: undefined var
+#IDIOT PROOF\add items.dm:318:error: skill: undefined var
+#IDIOT PROOF\add items.dm:319:error: price: undefined var
+#IDIOT PROOF\add items.dm:321:error: skill: undefined var
+#IDIOT PROOF\add items.dm:322:error: price: undefined var
+#IDIOT PROOF\add items.dm:324:error: skill: undefined var
+#IDIOT PROOF\add items.dm:325:error: price: undefined var
+#IDIOT PROOF\add items.dm:327:error: skill: undefined var
+#IDIOT PROOF\add items.dm:328:error: price: undefined var
+#IDIOT PROOF\add items.dm:330:error: skill: undefined var
+#IDIOT PROOF\add items.dm:331:error: price: undefined var
+#IDIOT PROOF\add items.dm:333:error: skill: undefined var
+#IDIOT PROOF\add items.dm:334:error: price: undefined var
+#IDIOT PROOF\add items.dm:336:error: skill: undefined var
+#IDIOT PROOF\add items.dm:337:error: price: undefined var
+#IDIOT PROOF\add items.dm:339:error: skill: undefined var
+#IDIOT PROOF\add items.dm:340:error: price: undefined var
+#IDIOT PROOF\add items.dm:342:error: skill: undefined var
+#IDIOT PROOF\add items.dm:343:error: price: undefined var
+#IDIOT PROOF\add items.dm:345:error: skill: undefined var
+#IDIOT PROOF\add items.dm:346:error: price: undefined var
+#IDIOT PROOF\add items.dm:348:error: skill: undefined var
+#IDIOT PROOF\add items.dm:349:error: price: undefined var
+#IDIOT PROOF\add items.dm:351:error: skill: undefined var
+#IDIOT PROOF\add items.dm:352:error: price: undefined var
+#IDIOT PROOF\add items.dm:354:error: skill: undefined var
+#IDIOT PROOF\add items.dm:355:error: price: undefined var
+#IDIOT PROOF\add items.dm:357:error: skill: undefined var
+#IDIOT PROOF\add items.dm:358:error: price: undefined var
+#IDIOT PROOF\add items.dm:360:error: skill: undefined var
+#IDIOT PROOF\add items.dm:361:error: price: undefined var
+#IDIOT PROOF\add items.dm:363:error: skill: undefined var
+#IDIOT PROOF\add items.dm:364:error: price: undefined var
+#IDIOT PROOF\add items.dm:366:error: skill: undefined var
+#IDIOT PROOF\add items.dm:367:error: price: undefined var
+#IDIOT PROOF\add items.dm:369:error: skill: undefined var
+#IDIOT PROOF\add items.dm:370:error: price: undefined var
+#IDIOT PROOF\add items.dm:372:error: skill: undefined var
+#IDIOT PROOF\add items.dm:373:error: price: undefined var
+#IDIOT PROOF\add items.dm:375:error: skill: undefined var
+#IDIOT PROOF\add items.dm:376:error: price: undefined var
+#IDIOT PROOF\add items.dm:378:error: skill: undefined var
+#IDIOT PROOF\add items.dm:379:error: price: undefined var
+#IDIOT PROOF\add items.dm:381:error: skill: undefined var
+#IDIOT PROOF\add items.dm:382:error: price: undefined var
+#IDIOT PROOF\add items.dm:384:error: skill: undefined var
+#IDIOT PROOF\add items.dm:385:error: price: undefined var
+#IDIOT PROOF\add items.dm:387:error: skill: undefined var
+#IDIOT PROOF\add items.dm:388:error: price: undefined var
+#IDIOT PROOF\add items.dm:421:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:422:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:423:error: skill: undefined var
+#IDIOT PROOF\add items.dm:424:error: delay: undefined var
+#IDIOT PROOF\add items.dm:427:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:428:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:429:error: skill: undefined var
+#IDIOT PROOF\add items.dm:430:error: delay: undefined var
+#IDIOT PROOF\add items.dm:434:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:435:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:436:error: skill: undefined var
+#IDIOT PROOF\add items.dm:437:error: delay: undefined var
+#IDIOT PROOF\add items.dm:441:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:442:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:443:error: skill: undefined var
+#IDIOT PROOF\add items.dm:444:error: delay: undefined var
+#IDIOT PROOF\add items.dm:446:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:447:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:448:error: skill: undefined var
+#IDIOT PROOF\add items.dm:449:error: delay: undefined var
+#IDIOT PROOF\add items.dm:450:error: price: undefined var
+#IDIOT PROOF\add items.dm:453:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:454:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:455:error: skill: undefined var
+#IDIOT PROOF\add items.dm:456:error: delay: undefined var
+#IDIOT PROOF\add items.dm:459:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:460:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:461:error: skill: undefined var
+#IDIOT PROOF\add items.dm:462:error: delay: undefined var
+#IDIOT PROOF\add items.dm:465:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:466:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:467:error: skill: undefined var
+#IDIOT PROOF\add items.dm:468:error: delay: undefined var
+#IDIOT PROOF\add items.dm:471:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:472:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:473:error: skill: undefined var
+#IDIOT PROOF\add items.dm:474:error: delay: undefined var
+#IDIOT PROOF\add items.dm:478:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:479:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:480:error: skill: undefined var
+#IDIOT PROOF\add items.dm:481:error: delay: undefined var
+#IDIOT PROOF\add items.dm:484:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:485:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:486:error: skill: undefined var
+#IDIOT PROOF\add items.dm:487:error: delay: undefined var
+#IDIOT PROOF\add items.dm:491:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:492:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:493:error: skill: undefined var
+#IDIOT PROOF\add items.dm:494:error: delay: undefined var
+#IDIOT PROOF\add items.dm:496:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:497:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:498:error: skill: undefined var
+#IDIOT PROOF\add items.dm:499:error: delay: undefined var
+#IDIOT PROOF\add items.dm:500:error: price: undefined var
+#IDIOT PROOF\add items.dm:504:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:505:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:506:error: skill: undefined var
+#IDIOT PROOF\add items.dm:507:error: delay: undefined var
+#IDIOT PROOF\add items.dm:511:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:512:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:513:error: skill: undefined var
+#IDIOT PROOF\add items.dm:514:error: delay: undefined var
+#IDIOT PROOF\add items.dm:515:error: double: undefined var
+#IDIOT PROOF\add items.dm:517:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:518:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:519:error: skill: undefined var
+#IDIOT PROOF\add items.dm:520:error: delay: undefined var
+#IDIOT PROOF\add items.dm:521:error: price: undefined var
+#IDIOT PROOF\add items.dm:523:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:524:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:525:error: skill: undefined var
+#IDIOT PROOF\add items.dm:526:error: delay: undefined var
+#IDIOT PROOF\add items.dm:527:error: price: undefined var
+#IDIOT PROOF\add items.dm:530:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:531:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:532:error: skill: undefined var
+#IDIOT PROOF\add items.dm:533:error: delay: undefined var
+#IDIOT PROOF\add items.dm:534:error: double: undefined var
+#IDIOT PROOF\add items.dm:537:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:538:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:539:error: skill: undefined var
+#IDIOT PROOF\add items.dm:540:error: delay: undefined var
+#IDIOT PROOF\add items.dm:543:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:544:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:545:error: skill: undefined var
+#IDIOT PROOF\add items.dm:546:error: delay: undefined var
+#IDIOT PROOF\add items.dm:549:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:550:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:551:error: skill: undefined var
+#IDIOT PROOF\add items.dm:552:error: delay: undefined var
+#IDIOT PROOF\add items.dm:555:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:556:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:557:error: skill: undefined var
+#IDIOT PROOF\add items.dm:558:error: delay: undefined var
+#IDIOT PROOF\add items.dm:561:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:562:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:563:error: skill: undefined var
+#IDIOT PROOF\add items.dm:564:error: delay: undefined var
+#IDIOT PROOF\add items.dm:567:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:568:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:569:error: skill: undefined var
+#IDIOT PROOF\add items.dm:570:error: delay: undefined var
+#IDIOT PROOF\add items.dm:573:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:574:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:575:error: skill: undefined var
+#IDIOT PROOF\add items.dm:576:error: delay: undefined var
+#IDIOT PROOF\add items.dm:579:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:580:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:581:error: skill: undefined var
+#IDIOT PROOF\add items.dm:582:error: delay: undefined var
+#IDIOT PROOF\add items.dm:584:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:585:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:586:error: skill: undefined var
+#IDIOT PROOF\add items.dm:587:error: delay: undefined var
+#IDIOT PROOF\add items.dm:590:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:591:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:592:error: skill: undefined var
+#IDIOT PROOF\add items.dm:593:error: delay: undefined var
+#IDIOT PROOF\add items.dm:596:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:597:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:598:error: skill: undefined var
+#IDIOT PROOF\add items.dm:599:error: delay: undefined var
+#IDIOT PROOF\add items.dm:602:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:603:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:604:error: skill: undefined var
+#IDIOT PROOF\add items.dm:605:error: delay: undefined var
+#IDIOT PROOF\add items.dm:608:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:609:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:610:error: skill: undefined var
+#IDIOT PROOF\add items.dm:611:error: delay: undefined var
+#IDIOT PROOF\add items.dm:614:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:615:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:616:error: skill: undefined var
+#IDIOT PROOF\add items.dm:617:error: delay: undefined var
+#IDIOT PROOF\add items.dm:620:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:621:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:622:error: skill: undefined var
+#IDIOT PROOF\add items.dm:623:error: delay: undefined var
+#IDIOT PROOF\add items.dm:626:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:627:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:628:error: skill: undefined var
+#IDIOT PROOF\add items.dm:629:error: delay: undefined var
+#IDIOT PROOF\add items.dm:632:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:633:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:634:error: skill: undefined var
+#IDIOT PROOF\add items.dm:635:error: delay: undefined var
+#IDIOT PROOF\add items.dm:640:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:641:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:642:error: skill: undefined var
+#IDIOT PROOF\add items.dm:643:error: delay: undefined var
+#IDIOT PROOF\add items.dm:645:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:646:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:647:error: skill: undefined var
+#IDIOT PROOF\add items.dm:648:error: delay: undefined var
+#IDIOT PROOF\add items.dm:651:error: icon_state: undefined var
+#IDIOT PROOF\add items.dm:652:error: pull_back: undefined var
+#IDIOT PROOF\add items.dm:653:error: skill: undefined var
+#IDIOT PROOF\add items.dm:654:error: delay: undefined var
+#IDIOT PROOF\add items.dm:655:error: price: undefined var
+#IDIOT PROOF\add items.dm:678:error: double: undefined var
+#IDIOT PROOF\add items.dm:680:error: can_attack: undefined var
+#IDIOT PROOF\add items.dm:681:error: m.shield: undefined proc
+#IDIOT PROOF\add items.dm:685:error: double: undefined var
+#IDIOT PROOF\add items.dm:686:error: can_attack: undefined var
+#IDIOT PROOF\add items.dm:687:error: m.unshield: undefined proc
+#IDIOT PROOF\add items.dm:688:error: can_attack: undefined var
+#IDIOT PROOF\add items.dm:689:error: m.shielding: undefined var
+#IDIOT PROOF\add items.dm:690:error: m.can_attack: undefined var
+#IDIOT PROOF\add

@@ -57,6 +57,13 @@ public class DefaultMenuActions {
 			public void actionPerformed(ActionEvent arg0) {
 				IDE.getInstance().promtOpenDME();
 			}});
+
+		addAction("menus.file.saveall", new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				DMIDE.saveAll();
+			}
+		});
 	}
 
 	private static void addAction(String prop, ActionListener actionL) {

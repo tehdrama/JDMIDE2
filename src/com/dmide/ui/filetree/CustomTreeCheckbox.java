@@ -1,6 +1,8 @@
 package com.dmide.ui.filetree;
 
+import java.awt.BasicStroke;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 
 import javax.swing.JCheckBox;
 
@@ -31,7 +33,13 @@ public class CustomTreeCheckbox extends JCheckBox {
 		this.rbu.getDefaultIcon().paintIcon(this, g, 0, 0);
 		if(this.isSelected()) {
 			g.setColor(cs.getForegroundColor());
-			g.fillOval(4, 4, 8, 8);
+			//g.fillOval(4, 4, 8, 8);
+			Graphics2D g2d = (Graphics2D) g;
+			g2d.setStroke(new BasicStroke(3));
+			//g2d.drawLine(6, 6, 10, 10);
+			//g2d.drawLine(6, 10, 10, 6);
+			g2d.drawLine(8, 12, 14, 6);
+			g2d.drawLine(4, 8, 6, 10);
 		}
 	}
 }

@@ -147,6 +147,15 @@ public class IDE implements PropertiesHolder {
 		return instance;
 	}
 
+	public void saveAll() {
+		if(DMIDEUI.getInstance().getFileEditorPanes() == null) return;
+		else {
+			for(FileEditorPane fep : DMIDEUI.getInstance().getFileEditorPanes()) {
+				if(fep.getChanges() > 0) fep.save();
+			}
+		}
+	}
+
 	public void saveCurrentFile() {
 		this.saveFileAt(DMIDEUI.getInstance().getMainWindow()
 				.getFileEditorPane().getSelectedIndex() );

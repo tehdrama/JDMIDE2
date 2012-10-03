@@ -17,6 +17,7 @@ import javax.swing.tree.TreeCellRenderer;
 import javax.swing.tree.TreePath;
 
 import com.dmide.DMIDE;
+import com.dmide.environment.DMEnvironment;
 import com.dmide.util.IDEFile;
 import com.dmide.util.events.IDEEvent;
 import com.dmide.util.events.IDEEventHandler;
@@ -28,7 +29,7 @@ public class FileTree extends CheckboxTree implements IDEEventWatcher {
 
 	Map<Path, IDEFile> ideFiles = new HashMap<Path, IDEFile>();
 	IDEFile root;
-	File DME;
+	DMEnvironment DME;
 
 	Icon dirOpenIcon;
 	Icon dirClosedIcon;
@@ -109,18 +110,18 @@ public class FileTree extends CheckboxTree implements IDEEventWatcher {
 		return this.root;
 	}
 
-	public void setEnvironment(File dmeFile) {
+	public void setEnvironment(DMEnvironment dmeFile) {
 		if(dmeFile == null) return; // This means that the argument for the environment.open
 									// event was not a file.
 		this.ideFiles.clear();
 		//this.walkDirectoryTree(dmeFile.getParentFile());
 		//this.getDirectoryPaths(dmeFile.getParentFile());
 		this.DME = dmeFile;
-		this.createTree(dmeFile);
+		this.createTree(dmeFile.getFile());
 		DefaultTreeModel newModel = new DefaultTreeModel(this.root);
 		this.setModel(newModel);
 		this.revalidate();
-		System.out.println("File tree opening environment: " + dmeFile.getName());
+		System.out.println("File tree opening environment: " + dmeFile.getFile().getName());
 	}
 
 	/**
@@ -147,14 +148,14 @@ public class FileTree extends CheckboxTree implements IDEEventWatcher {
 	public void eventRecieved(IDEEvent e) {
 		if(e.getEventName().equals("environment.open")) {
 			e.setHandled(true);
-			this.setEnvironment(e.getArgument(File.class));
+			this.setEnvironment(e.getArgument(DMEnvironment.class));
 		}
 	}
 
 	public File getAbsoluteFile(IDEFile ideFile) {
 		if(this.DME == null) return ideFile.getFileObject();
 		if(ideFile.getAbsolute() != null) return ideFile.getAbsolute();
-		ideFile.setAbsolute(new File(this.DME.getParentFile(),
+		ideFile.setAbsolute(new File(this.DME.getFile().getParentFile(),
 				ideFile.getFileObject().getPath()));
 		return ideFile.getAbsolute();
 	}

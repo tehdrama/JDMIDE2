@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Properties;
@@ -17,6 +18,7 @@ import org.apache.commons.io.FilenameUtils;
 
 import com.dmide.DMIDE;
 import com.dmide.ui.DMIDEUI;
+import com.dmide.util.IDEFileComparator;
 import com.dmide.util.events.IDEEvent;
 import com.dmide.util.events.IDEEventHandler;
 
@@ -25,9 +27,51 @@ public class DMEnvironment {
 	static DMEnvironment instance;
 	File dmeFile;
 	ArrayList<DMEnvironmentInclude> includes = new ArrayList<>();
+	public static IDEFileComparator ideFileComparator = new IDEFileComparator();
 
 	boolean DEBUG_MODE = false;
 	boolean FILEDIR_MODE = false;
+
+	public void build() {
+		DMEWriter writer = this.createWriter();
+		writer.write();
+		String dmeString = writer.build();
+		FileWriter fw = null;
+		try {
+			fw = new FileWriter(this.dmeFile);
+			fw.write(dmeString);
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if(fw != null) fw.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public boolean fileDirOn() {return this.FILEDIR_MODE;}
+	public boolean debugOn() {return this.DEBUG_MODE;}
+
+	public static void buildDME() {
+		if(getInstance() != null) getInstance().build();
+	}
+
+	/**
+	 * @return the includes
+	 */
+	public ArrayList<DMEnvironmentInclude> getIncludes() {
+		return this.includes;
+	}
+
+	/**
+	 * @param includes the includes to set
+	 */
+	public void setIncludes(ArrayList<DMEnvironmentInclude> includes) {
+		this.includes = includes;
+	}
 
 	/**
 	 * Removes the specified {@link DMEnvironmentInclude} from this environment's
@@ -36,6 +80,13 @@ public class DMEnvironment {
 	 */
 	public void removeInclude(DMEnvironmentInclude inc) {
 		while(this.includes.contains(inc)) this.includes.remove(inc);
+	}
+
+	public boolean findInclude(File f) {
+		for(DMEnvironmentInclude include : this.includes) {
+			if(include.getFile().equals(f)) {return true;}
+		}
+		return false;
 	}
 
 	/**
@@ -95,6 +146,7 @@ public class DMEnvironment {
 	private static void newInstance(File f) {
 		instance = new DMEnvironment(f);
 		instance.createReader().read();
+		IDEEventHandler.watchDirectory(f);
 	}
 
 	/**

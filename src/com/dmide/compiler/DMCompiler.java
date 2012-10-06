@@ -6,7 +6,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.lang.reflect.InvocationTargetException;
 
 import javax.swing.JOptionPane;
 
@@ -57,6 +56,7 @@ public class DMCompiler implements IDEEventWatcher {
 		IDEProcess idecp = new IDEProcess("Compiling");
 		idecp.start();
 		idecp.setProgress(-1);
+		DMEnvironment.buildDME();
 		IDEEventHandler.sendIDEEvent(new IDEEvent("compiling.start", this));
 		File compilerFile = this.getDMCompiler();
 		if(compilerFile == null) {

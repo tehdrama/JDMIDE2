@@ -31,11 +31,11 @@ public class DMEnvironmentInclude {
 	}
 
 	private String toString_lib() {
-		return null;
+		return String.format("\"%s\"", this.getFile().getPath());
 	}
 
 	private String toString_file() {
-		return null;
+		return String.format("<%s>", this.getFile().getPath());
 	}
 
 	/**
@@ -87,7 +87,7 @@ public class DMEnvironmentInclude {
 	 * @return A new include created using the specified string.
 	 */
 	private static DMEnvironmentInclude createLibInclude(String substring) {
-		return null;
+		return new DMEnvironmentInclude(new File(substring), type_LIBRARY);
 	}
 
 	/**
@@ -97,6 +97,17 @@ public class DMEnvironmentInclude {
 	public DMEnvironmentInclude(File file, int type) {
 		this.file = file;
 		this.type = type;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof DMEnvironmentInclude) {
+			DMEnvironmentInclude test = (DMEnvironmentInclude) obj;
+			if(test.getFile().equals(this.getFile()) &&
+					test.getType() == this.getType())
+				return true;
+		}
+		return false;
 	}
 
 

@@ -85,21 +85,18 @@ public class DMFileEditorPane extends FileEditorPane implements DocumentListener
 	@Override
 	public void changedUpdate(DocumentEvent e) {
 		//Adds a change to the file.
-		System.out.println("changed CHANGE!");
 		this.change();
 	}
 
 	@Override
 	public void insertUpdate(DocumentEvent e) {
 		//Adds a change to the file.
-		System.out.println("Insert CHANGE!");
 		this.change();
 	}
 
 	@Override
 	public void removeUpdate(DocumentEvent e) {
 		//Adds a change to the file.
-		System.out.println("Remove CHANGE!");
 		this.change();
 	}
 

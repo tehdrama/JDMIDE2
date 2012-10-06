@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- The above is not important. -->
+<bundle>
+	<name>Default Plugin Bundle</name>
+	
+	<author>ExPixel</author>
+	
+	<version int="1">1.0.1</version>
+	
+	<!--Plugin Includes : -->
+	
+	<!-- The Laf Plugin: -->
+	<include>jars/LafPlugin.jar</include>
+	
+	
+</bundle>

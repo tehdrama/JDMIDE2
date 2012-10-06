@@ -1,1457 +1,1167 @@
-loading baby rpg.dme
-#IDIOT PROOF\add portals.dm:19:error: F: expected end of statement
-#IDIOT PROOF\add portals.dm:21:error: expected expression
-loading skin.dmf
-##Tendrils of Grawl\dungeons.dm:4:error: start_loc: undefined var
-##Tendrils of Grawl\dungeons.dm:5:error: z: undefined var
-##Tendrils of Grawl\dungeons.dm:6:error: level_req: undefined var
-##Tendrils of Grawl\dungeons.dm:9:error: start_loc: undefined var
-##Tendrils of Grawl\dungeons.dm:10:error: z: undefined var
-##Tendrils of Grawl\dungeons.dm:11:error: level_req: undefined var
-##Tendrils of Grawl\dungeons.dm:14:error: start_loc: undefined var
-##Tendrils of Grawl\dungeons.dm:15:error: z: undefined var
-##Tendrils of Grawl\dungeons.dm:16:error: level_req: undefined var
-##Tendrils of Grawl\dungeons.dm:19:error: start_loc: undefined var
-##Tendrils of Grawl\dungeons.dm:20:error: z: undefined var
-##Tendrils of Grawl\dungeons.dm:21:error: level_req: undefined var
-##Tendrils of Grawl\dungeons.dm:24:error: start_loc: undefined var
-##Tendrils of Grawl\dungeons.dm:25:error: z: undefined var
-##Tendrils of Grawl\dungeons.dm:26:error: level_req: undefined var
-##Tendrils of Grawl\dungeons.dm:33:error: side: undefined var
-##Tendrils of Grawl\dungeons.dm:34:error: D: undefined var
-##Tendrils of Grawl\dungeons.dm:36:error: side: undefined var
-##Tendrils of Grawl\dungeons.dm:37:error: D: undefined var
-##Tendrils of Grawl\dungeons.dm:39:error: side: undefined var
-##Tendrils of Grawl\dungeons.dm:40:error: D: undefined var
-##Tendrils of Grawl\dungeons.dm:42:error: side: undefined var
-##Tendrils of Grawl\dungeons.dm:43:error: D: undefined var
-##Tendrils of Grawl\dungeons.dm:45:error: side: undefined var
-##Tendrils of Grawl\dungeons.dm:46:error: D: undefined var
-##Tendrils of Grawl\dungeons.dm:48:error: side: undefined var
-##Tendrils of Grawl\dungeons.dm:49:error: D: undefined var
-##Tendrils of Grawl\dungeons.dm:55:error: dname: undefined var
-##Tendrils of Grawl\dungeons.dm:56:error: fourth: undefined var
-##Tendrils of Grawl\dungeons.dm:57:error: story: undefined var
-##Tendrils of Grawl\dungeons.dm:60:error: dname: undefined var
-##Tendrils of Grawl\dungeons.dm:62:error: story: undefined var
-##Tendrils of Grawl\dungeons.dm:64:error: dname: undefined var
-##Tendrils of Grawl\dungeons.dm:66:error: story: undefined var
-##Tendrils of Grawl\dungeons.dm:68:error: dname: undefined var
-##Tendrils of Grawl\dungeons.dm:70:error: story: undefined var
-##Tendrils of Grawl\dungeons.dm:73:error: dname: undefined var
-##Tendrils of Grawl\dungeons.dm:75:error: story: undefined var
-#IDIOT PROOF\add portals.dm:3:error: dont_reset: undefined var
-##Tendrils of Grawl\enemies.dm:5:error: move_speed: undefined var
-##Tendrils of Grawl\enemies.dm:6:error: icon_state: undefined var
-##Tendrils of Grawl\enemies.dm:7:error: vrange: undefined var
-##Tendrils of Grawl\enemies.dm:8:error: hp: undefined var
-##Tendrils of Grawl\enemies.dm:11:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:11:error: /item/weapon/spider_fang: undefined type path
-##Tendrils of Grawl\enemies.dm:12:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:12:error: /item/weapon/spider_fang: undefined type path
-##Tendrils of Grawl\enemies.dm:13:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:15:error: move_speed: undefined var
-##Tendrils of Grawl\enemies.dm:16:error: icon_state: undefined var
-##Tendrils of Grawl\enemies.dm:17:error: vrange: undefined var
-##Tendrils of Grawl\enemies.dm:18:error: hp: undefined var
-##Tendrils of Grawl\enemies.dm:21:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:22:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:24:error: move_speed: undefined var
-##Tendrils of Grawl\enemies.dm:25:error: icon_state: undefined var
-##Tendrils of Grawl\enemies.dm:26:error: vrange: undefined var
-##Tendrils of Grawl\enemies.dm:27:error: hp: undefined var
-##Tendrils of Grawl\enemies.dm:30:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:31:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:33:error: move_speed: undefined var
-##Tendrils of Grawl\enemies.dm:34:error: icon_state: undefined var
-##Tendrils of Grawl\enemies.dm:35:error: vrange: undefined var
-##Tendrils of Grawl\enemies.dm:36:error: hp: undefined var
-##Tendrils of Grawl\enemies.dm:39:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:40:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:41:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:45:error: move_speed: undefined var
-##Tendrils of Grawl\enemies.dm:46:error: icon_state: undefined var
-##Tendrils of Grawl\enemies.dm:47:error: vrange: undefined var
-##Tendrils of Grawl\enemies.dm:48:error: hp: undefined var
-##Tendrils of Grawl\enemies.dm:51:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:52:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:54:error: move_speed: undefined var
-##Tendrils of Grawl\enemies.dm:55:error: icon_state: undefined var
-##Tendrils of Grawl\enemies.dm:56:error: vrange: undefined var
-##Tendrils of Grawl\enemies.dm:57:error: hp: undefined var
-##Tendrils of Grawl\enemies.dm:60:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:61:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:63:error: move_speed: undefined var
-##Tendrils of Grawl\enemies.dm:64:error: icon_state: undefined var
-##Tendrils of Grawl\enemies.dm:65:error: vrange: undefined var
-##Tendrils of Grawl\enemies.dm:66:error: hp: undefined var
-##Tendrils of Grawl\enemies.dm:69:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:70:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:74:error: move_speed: undefined var
-##Tendrils of Grawl\enemies.dm:75:error: icon_state: undefined var
-##Tendrils of Grawl\enemies.dm:76:error: vrange: undefined var
-##Tendrils of Grawl\enemies.dm:77:error: hp: undefined var
-##Tendrils of Grawl\enemies.dm:80:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:81:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:83:error: move_speed: undefined var
-##Tendrils of Grawl\enemies.dm:84:error: icon_state: undefined var
-##Tendrils of Grawl\enemies.dm:85:error: vrange: undefined var
-##Tendrils of Grawl\enemies.dm:86:error: hp: undefined var
-##Tendrils of Grawl\enemies.dm:89:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:90:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:92:error: move_speed: undefined var
-##Tendrils of Grawl\enemies.dm:93:error: icon_state: undefined var
-##Tendrils of Grawl\enemies.dm:94:error: vrange: undefined var
-##Tendrils of Grawl\enemies.dm:95:error: hp: undefined var
-##Tendrils of Grawl\enemies.dm:98:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:98:error: /item/weapon/darkfate_dagger: undefined type path
-##Tendrils of Grawl\enemies.dm:99:error: items: undefined var
-##Tendrils of Grawl\enemies.dm:99:error: /item/weapon/darkfate_dagger: undefined type path
-##Tendrils of Grawl\enemies.dm:100:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:33:error: name: undefined var
-#IDIOT PROOF\add enemies.dm:34:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:35:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:36:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:37:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:38:error: attack_d: undefined var
-#IDIOT PROOF\add enemies.dm:41:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:42:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:44:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:45:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:46:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:47:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:50:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:50:error: /item/weapon/claw: undefined type path
-#IDIOT PROOF\add enemies.dm:51:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:51:error: /item/weapon/claw: undefined type path
-#IDIOT PROOF\add enemies.dm:52:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:55:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:56:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:57:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:58:error: attack_d: undefined var
-#IDIOT PROOF\add enemies.dm:59:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:62:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:63:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:65:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:66:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:67:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:68:error: attack_d: undefined var
-#IDIOT PROOF\add enemies.dm:69:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:72:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:73:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:75:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:76:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:77:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:78:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:81:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:82:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:84:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:85:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:86:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:87:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:90:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:91:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:92:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:94:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:95:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:96:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:97:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:100:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:101:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:103:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:104:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:105:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:106:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:109:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:110:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:111:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:113:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:114:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:115:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:116:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:119:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:120:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:121:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:123:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:124:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:125:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:126:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:129:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:129:error: /item/weapon/rat_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:130:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:130:error: /item/weapon/rat_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:131:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:133:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:134:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:135:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:136:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:139:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:139:error: /item/weapon/enhanced_rat_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:140:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:140:error: /item/weapon/enhanced_rat_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:141:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:143:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:144:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:145:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:146:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:149:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:150:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:151:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:153:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:154:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:155:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:156:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:159:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:160:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:162:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:163:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:164:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:165:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:168:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:169:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:170:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:173:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:176:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:178:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:182:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:182:error: /item/weapon/orc_sword: undefined type path
-#IDIOT PROOF\add enemies.dm:183:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:184:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:186:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:189:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:191:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:195:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:196:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:197:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:199:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:200:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:203:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:205:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:209:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:210:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:212:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:213:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:215:error: name: undefined var
-#IDIOT PROOF\add enemies.dm:216:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:218:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:222:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:223:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:226:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:227:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:230:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:232:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:236:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:237:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:239:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:240:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:243:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:245:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:249:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:250:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:251:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:252:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:254:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:255:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:257:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:259:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:263:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:264:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:266:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:267:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:269:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:271:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:275:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:276:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:278:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:279:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:281:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:283:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:287:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:288:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:290:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:291:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:293:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:295:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:299:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:300:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:302:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:303:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:305:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:307:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:311:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:312:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:315:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:316:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:318:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:320:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:324:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:325:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:326:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:329:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:330:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:331:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:332:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:335:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:335:error: /item/weapon/rat_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:336:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:336:error: /item/weapon/rat_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:337:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:340:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:341:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:342:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:343:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:346:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:347:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:348:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:351:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:352:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:353:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:354:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:357:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:357:error: /item/weapon/black_bear_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:358:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:358:error: /item/weapon/black_bear_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:359:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:361:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:362:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:363:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:364:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:367:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:367:error: /item/weapon/snow_bear_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:368:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:368:error: /item/weapon/snow_bear_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:369:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:371:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:372:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:373:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:374:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:377:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:378:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:380:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:381:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:384:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:386:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:390:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:391:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:392:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:393:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:395:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:396:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:397:error: team: undefined var
-#IDIOT PROOF\add enemies.dm:398:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:399:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:402:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:403:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:405:error: live: undefined var
-#IDIOT PROOF\add enemies.dm:406:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:404:error: die: undefined proc
-#IDIOT PROOF\add enemies.dm:409:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:410:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:411:error: team: undefined var
-#IDIOT PROOF\add enemies.dm:412:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:413:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:416:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:416:error: /item/weapon/ice_staff: undefined type path
-#IDIOT PROOF\add enemies.dm:417:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:419:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:420:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:421:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:422:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:425:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:425:error: /item/weapon/digging_mitts: undefined type path
-#IDIOT PROOF\add enemies.dm:426:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:428:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:429:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:430:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:431:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:434:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:435:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:437:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:438:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:439:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:440:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:443:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:444:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:446:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:447:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:448:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:449:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:452:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:453:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:455:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:456:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:457:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:458:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:461:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:462:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:464:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:465:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:466:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:467:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:470:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:471:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:473:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:474:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:475:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:476:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:479:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:480:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:481:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:483:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:484:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:485:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:486:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:489:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:490:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:491:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:492:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:494:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:495:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:496:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:497:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:500:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:501:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:503:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:504:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:505:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:506:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:509:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:509:error: /item/weapon/swamp_rabbit_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:510:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:510:error: /item/weapon/swamp_rabbit_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:511:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:513:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:514:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:515:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:516:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:519:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:519:error: /item/weapon/undead_rabbit_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:520:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:520:error: /item/weapon/undead_rabbit_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:521:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:523:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:524:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:525:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:526:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:529:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:530:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:532:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:533:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:534:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:535:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:538:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:538:error: /item/weapon/refined_dagger: undefined type path
-#IDIOT PROOF\add enemies.dm:539:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:539:error: /item/weapon/refined_dagger: undefined type path
-#IDIOT PROOF\add enemies.dm:540:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:542:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:543:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:544:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:545:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:548:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:549:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:551:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:552:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:553:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:554:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:557:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:558:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:558:error: /item/weapon/refined_dagger: undefined type path
-#IDIOT PROOF\add enemies.dm:559:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:560:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:562:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:563:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:564:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:565:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:566:error: team: undefined var
-#IDIOT PROOF\add enemies.dm:569:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:569:error: /item/weapon/claw: undefined type path
-#IDIOT PROOF\add enemies.dm:570:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:570:error: /item/weapon/claw: undefined type path
-#IDIOT PROOF\add enemies.dm:572:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:573:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:574:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:575:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:578:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:579:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:581:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:582:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:583:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:584:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:587:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:588:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:588:error: /item/weapon/ritual_dagger: undefined type path
-#IDIOT PROOF\add enemies.dm:589:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:592:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:593:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:594:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:595:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:598:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:599:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:600:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:602:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:603:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:604:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:605:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:608:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:608:error: /item/weapon/dagger: undefined type path
-#IDIOT PROOF\add enemies.dm:609:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:609:error: /item/weapon/dagger: undefined type path
-#IDIOT PROOF\add enemies.dm:610:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:613:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:614:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:615:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:616:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:619:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:620:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:622:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:623:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:624:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:625:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:628:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:628:error: /item/weapon/rabbit_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:629:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:629:error: /item/weapon/rabbit_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:630:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:632:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:633:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:634:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:635:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:638:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:639:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:641:error: live: undefined var
-#IDIOT PROOF\add enemies.dm:642:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:640:error: die: undefined proc
-#IDIOT PROOF\add enemies.dm:645:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:646:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:647:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:648:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:651:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:652:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:654:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:655:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:656:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:657:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:660:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:661:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:663:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:664:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:665:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:666:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:669:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:670:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:672:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:673:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:674:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:675:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:678:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:678:error: /item/weapon/barbed_dagger: undefined type path
-#IDIOT PROOF\add enemies.dm:679:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:679:error: /item/weapon/barbed_dagger: undefined type path
-#IDIOT PROOF\add enemies.dm:680:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:682:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:683:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:684:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:685:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:688:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:688:error: /item/weapon/wind_spawn_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:689:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:689:error: /item/weapon/wind_spawn_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:690:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:692:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:693:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:694:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:695:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:698:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:699:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:702:error: live: undefined var
-#IDIOT PROOF\add enemies.dm:703:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:700:error: die: undefined proc
-#IDIOT PROOF\add enemies.dm:707:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:708:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:709:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:710:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:713:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:714:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:716:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:717:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:718:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:719:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:722:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:723:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:725:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:726:error: team: undefined var
-#IDIOT PROOF\add enemies.dm:727:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:728:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:729:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:732:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:733:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:735:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:736:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:737:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:738:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:741:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:742:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:743:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:746:error: live: undefined var
-#IDIOT PROOF\add enemies.dm:746:error: armor: undefined var
-#IDIOT PROOF\add enemies.dm:747:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:747:error: armor: undefined var
-#IDIOT PROOF\add enemies.dm:744:error: die: undefined proc
-#IDIOT PROOF\add enemies.dm:750:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:751:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:752:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:753:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:756:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:757:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:759:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:760:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:761:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:762:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:765:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:765:error: /item/weapon/water_spawn_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:766:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:766:error: /item/weapon/water_spawn_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:767:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:769:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:770:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:771:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:772:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:775:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:775:error: /item/weapon/water_dagger: undefined type path
-#IDIOT PROOF\add enemies.dm:776:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:780:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:781:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:782:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:783:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:786:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:787:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:790:error: live: undefined var
-#IDIOT PROOF\add enemies.dm:790:error: armor: undefined var
-#IDIOT PROOF\add enemies.dm:791:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:791:error: armor: undefined var
-#IDIOT PROOF\add enemies.dm:788:error: die: undefined proc
-#IDIOT PROOF\add enemies.dm:794:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:795:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:796:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:797:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:800:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:801:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:802:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:804:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:805:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:806:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:807:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:810:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:812:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:814:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:815:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:816:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:817:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:820:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:821:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:826:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:827:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:828:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:829:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:832:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:834:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:836:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:837:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:838:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:839:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:842:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:843:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:845:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:847:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:848:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:849:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:850:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:854:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:856:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:858:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:859:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:860:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:861:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:865:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:867:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:869:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:870:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:871:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:872:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:875:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:875:error: /item/weapon/water_dagger: undefined type path
-#IDIOT PROOF\add enemies.dm:876:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:876:error: /item/weapon/water_dagger: undefined type path
-#IDIOT PROOF\add enemies.dm:877:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:884:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:885:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:886:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:887:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:890:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:892:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:895:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:896:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:897:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:898:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:901:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:902:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:903:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:905:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:906:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:907:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:908:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:913:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:919:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:920:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:921:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:922:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:925:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:926:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:927:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:930:error: live: undefined var
-#IDIOT PROOF\add enemies.dm:930:error: armor: undefined var
-#IDIOT PROOF\add enemies.dm:931:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:931:error: armor: undefined var
-#IDIOT PROOF\add enemies.dm:928:error: die: undefined proc
-#IDIOT PROOF\add enemies.dm:934:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:935:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:936:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:937:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:940:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:941:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:942:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:944:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:945:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:946:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:947:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:950:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:951:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:954:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:955:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:956:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:957:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:960:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:960:error: /item/weapon/orc_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:961:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:963:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:964:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:965:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:966:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:969:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:970:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:972:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:973:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:974:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:975:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:978:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:979:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:981:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:982:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:983:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:984:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:987:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:988:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:990:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:991:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:992:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:993:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:996:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:997:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:999:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1000:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1001:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1002:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1005:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1006:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1008:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1009:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1010:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1011:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1014:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1015:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1017:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1018:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1019:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1020:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1023:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1024:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1026:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1027:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1028:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1029:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1032:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1032:error: /item/weapon/devilish_dagger: undefined type path
-#IDIOT PROOF\add enemies.dm:1033:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1035:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1036:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1037:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1038:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1041:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1042:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1044:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1045:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1046:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1047:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1050:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1051:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1053:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1054:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1055:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1056:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1059:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1060:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1062:error: name: undefined var
-#IDIOT PROOF\add enemies.dm:1063:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1064:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1065:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1068:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1068:error: /item/weapon/orc_sword: undefined type path
-#IDIOT PROOF\add enemies.dm:1069:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1070:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1071:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1073:error: name: undefined var
-#IDIOT PROOF\add enemies.dm:1074:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1075:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1076:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1079:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1080:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1081:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1082:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1084:error: name: undefined var
-#IDIOT PROOF\add enemies.dm:1085:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1086:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1087:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1088:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1091:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1092:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1093:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1094:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1096:error: name: undefined var
-#IDIOT PROOF\add enemies.dm:1097:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1098:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1099:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1100:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1103:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1104:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1105:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1107:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1108:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1109:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1110:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1113:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1114:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1115:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1117:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1118:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1119:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1120:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1123:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1124:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1125:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1126:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1129:error: live: undefined var
-#IDIOT PROOF\add enemies.dm:1129:error: armor: undefined var
-#IDIOT PROOF\add enemies.dm:1130:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1130:error: armor: undefined var
-#IDIOT PROOF\add enemies.dm:1127:error: die: undefined proc
-#IDIOT PROOF\add enemies.dm:1133:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1134:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1135:error: name: undefined var
-#IDIOT PROOF\add enemies.dm:1136:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1137:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1140:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1141:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1143:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1144:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1145:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1146:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1149:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1150:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1152:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1153:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1154:error: name: undefined var
-#IDIOT PROOF\add enemies.dm:1155:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1156:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1159:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1159:error: /item/weapon/pidgeon_talon: undefined type path
-#IDIOT PROOF\add enemies.dm:1160:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1160:error: /item/weapon/pidgeon_talon: undefined type path
-#IDIOT PROOF\add enemies.dm:1161:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1163:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1164:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1165:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1166:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1169:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1170:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1171:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1173:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1174:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1175:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1176:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1179:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1180:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1182:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1183:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1184:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1185:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1188:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1189:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1190:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1192:error: name: undefined var
-#IDIOT PROOF\add enemies.dm:1193:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1194:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1195:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1196:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1199:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1200:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1202:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1203:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1204:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1205:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1208:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1209:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1213:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1214:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1215:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1216:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1219:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1219:error: /item/weapon/glitched_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:1220:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1220:error: /item/weapon/glitched_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:1222:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1223:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1224:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1225:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1226:error: abilities: undefined var
-#IDIOT PROOF\add enemies.dm:1229:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1230:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1231:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1237:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1238:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1239:error: name: undefined var
-#IDIOT PROOF\add enemies.dm:1240:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1241:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1244:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1244:error: /item/weapon/hawk_talon: undefined type path
-#IDIOT PROOF\add enemies.dm:1245:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1245:error: /item/weapon/hawk_talon: undefined type path
-#IDIOT PROOF\add enemies.dm:1246:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1248:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1249:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1250:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1251:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1254:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1255:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1257:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1258:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1259:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1260:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1263:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1264:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1266:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1267:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1268:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1269:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1272:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1273:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1274:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1276:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1277:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1278:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1279:error: name: undefined var
-#IDIOT PROOF\add enemies.dm:1280:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1283:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1283:error: /item/weapon/eagle_talon: undefined type path
-#IDIOT PROOF\add enemies.dm:1284:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1284:error: /item/weapon/eagle_talon: undefined type path
-#IDIOT PROOF\add enemies.dm:1285:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1287:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1288:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1289:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1290:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1293:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1293:error: /item/weapon/scorpion_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:1294:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1294:error: /item/weapon/scorpion_claw: undefined type path
-#IDIOT PROOF\add enemies.dm:1295:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1297:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1298:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1299:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1300:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1303:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1303:error: /item/weapon/raven_talon: undefined type path
-#IDIOT PROOF\add enemies.dm:1304:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1304:error: /item/weapon/raven_talon: undefined type path
-#IDIOT PROOF\add enemies.dm:1305:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1307:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1308:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1309:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1310:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1317:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1318:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1319:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1320:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1324:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1325:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1326:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1327:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1337:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1338:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1339:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1340:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1343:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1343:error: /item/weapon/spider_fang: undefined type path
-#IDIOT PROOF\add enemies.dm:1344:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1344:error: /item/weapon/spider_fang: undefined type path
-#IDIOT PROOF\add enemies.dm:1345:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1347:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1348:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1349:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1350:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1353:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1354:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1356:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1357:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1358:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1359:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1362:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1363:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1365:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1366:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1367:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1368:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1371:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1372:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1373:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1377:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1378:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1379:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1380:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1383:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1384:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1386:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1387:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1388:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1389:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1392:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1393:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1395:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1396:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1397:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1398:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1401:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1402:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1406:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1407:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1408:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1409:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1412:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1413:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1415:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1416:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1417:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1418:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1421:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1422:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1424:error: move_speed: undefined var
-#IDIOT PROOF\add enemies.dm:1425:error: icon_state: undefined var
-#IDIOT PROOF\add enemies.dm:1426:error: vrange: undefined var
-#IDIOT PROOF\add enemies.dm:1427:error: hp: undefined var
-#IDIOT PROOF\add enemies.dm:1430:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1430:error: /item/weapon/darkfate_dagger: undefined type path
-#IDIOT PROOF\add enemies.dm:1431:error: items: undefined var
-#IDIOT PROOF\add enemies.dm:1431:error: /item/weapon/darkfate_dagger: undefined type path
-#IDIOT PROOF\add enemies.dm:1432:error: items: undefined var
-#IDIOT PROOF\add items.dm:17:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:21:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:23:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:25:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:27:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:29:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:37:error: price: undefined var
-#IDIOT PROOF\add items.dm:39:error: red: undefined var
-#IDIOT PROOF\add items.dm:41:error: green: undefined var
-#IDIOT PROOF\add items.dm:42:error: blue: undefined var
-#IDIOT PROOF\add items.dm:44:error: blue: undefined var
-#IDIOT PROOF\add items.dm:46:error: red: undefined var
-#IDIOT PROOF\add items.dm:47:error: blue: undefined var
-#IDIOT PROOF\add items.dm:48:error: green: undefined var
-#IDIOT PROOF\add items.dm:49:error: price: undefined var
-#IDIOT PROOF\add items.dm:51:error: red: undefined var
-#IDIOT PROOF\add items.dm:52:error: blue: undefined var
-#IDIOT PROOF\add items.dm:53:error: green: undefined var
-#IDIOT PROOF\add items.dm:54:error: price: undefined var
-#IDIOT PROOF\add items.dm:60:error: movex: undefined var
-#IDIOT PROOF\add items.dm:61:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:63:error: movex: undefined var
-#IDIOT PROOF\add items.dm:64:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:66:error: movex: undefined var
-#IDIOT PROOF\add items.dm:67:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:69:error: movex: undefined var
-#IDIOT PROOF\add items.dm:70:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:72:error: movex: undefined var
-#IDIOT PROOF\add items.dm:73:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:75:error: movex: undefined var
-#IDIOT PROOF\add items.dm:76:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:78:error: movex: undefined var
-#IDIOT PROOF\add items.dm:79:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:81:error: movex: undefined var
-#IDIOT PROOF\add items.dm:82:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:84:error: movex: undefined var
-#IDIOT PROOF\add items.dm:85:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:86:error: price: undefined var
-#IDIOT PROOF\add items.dm:108:error: desc: undefined var
-#IDIOT PROOF\add items.dm:111:error: skill: undefined var
-#IDIOT PROOF\add items.dm:113:error: skill: undefined var
-#IDIOT PROOF\add items.dm:115:error: skill: undefined var
-#IDIOT PROOF\add items.dm:117:error: skill: undefined var
-#IDIOT PROOF\add items.dm:119:error: skill: undefined var
-#IDIOT PROOF\add items.dm:120:error: price: undefined var
-#IDIOT PROOF\add items.dm:122:error: skill: undefined var
-#IDIOT PROOF\add items.dm:123:error: price: undefined var
-#IDIOT PROOF\add items.dm:125:error: skill: undefined var
-#IDIOT PROOF\add items.dm:126:error: price: undefined var
-#IDIOT PROOF\add items.dm:128:error: skill: undefined var
-#IDIOT PROOF\add items.dm:129:error: price: undefined var
-#IDIOT PROOF\add items.dm:131:error: skill: undefined var
-#IDIOT PROOF\add items.dm:132:error: price: undefined var
-#IDIOT PROOF\add items.dm:134:error: skill: undefined var
-#IDIOT PROOF\add items.dm:135:error: price: undefined var
-#IDIOT PROOF\add items.dm:137:error: skill: undefined var
-#IDIOT PROOF\add items.dm:138:error: price: undefined var
-#IDIOT PROOF\add items.dm:140:error: skill: undefined var
-#IDIOT PROOF\add items.dm:141:error: price: undefined var
-#IDIOT PROOF\add items.dm:143:error: skill: undefined var
-#IDIOT PROOF\add items.dm:144:error: price: undefined var
-#IDIOT PROOF\add items.dm:146:error: skill: undefined var
-#IDIOT PROOF\add items.dm:147:error: price: undefined var
-#IDIOT PROOF\add items.dm:149:error: skill: undefined var
-#IDIOT PROOF\add items.dm:150:error: price: undefined var
-#IDIOT PROOF\add items.dm:152:error: skill: undefined var
-#IDIOT PROOF\add items.dm:153:error: price: undefined var
-#IDIOT PROOF\add items.dm:155:error: skill: undefined var
-#IDIOT PROOF\add items.dm:156:error: price: undefined var
-#IDIOT PROOF\add items.dm:158:error: skill: undefined var
-#IDIOT PROOF\add items.dm:159:error: price: undefined var
-#IDIOT PROOF\add items.dm:161:error: skill: undefined var
-#IDIOT PROOF\add items.dm:162:error: price: undefined var
-#IDIOT PROOF\add items.dm:164:error: skill: undefined var
-#IDIOT PROOF\add items.dm:165:error: price: undefined var
-#IDIOT PROOF\add items.dm:167:error: skill: undefined var
-#IDIOT PROOF\add items.dm:168:error: price: undefined var
-#IDIOT PROOF\add items.dm:171:error: skill: undefined var
-#IDIOT PROOF\add items.dm:172:error: price: undefined var
-#IDIOT PROOF\add items.dm:174:error: skill: undefined var
-#IDIOT PROOF\add items.dm:175:error: price: undefined var
-#IDIOT PROOF\add items.dm:177:error: skill: undefined var
-#IDIOT PROOF\add items.dm:178:error: price: undefined var
-#IDIOT PROOF\add items.dm:180:error: skill: undefined var
-#IDIOT PROOF\add items.dm:181:error: price: undefined var
-#IDIOT PROOF\add items.dm:183:error: skill: undefined var
-#IDIOT PROOF\add items.dm:184:error: price: undefined var
-#IDIOT PROOF\add items.dm:186:error: skill: undefined var
-#IDIOT PROOF\add items.dm:187:error: price: undefined var
-#IDIOT PROOF\add items.dm:189:error: skill: undefined var
-#IDIOT PROOF\add items.dm:190:error: price: undefined var
-#IDIOT PROOF\add items.dm:192:error: skill: undefined var
-#IDIOT PROOF\add items.dm:193:error: price: undefined var
-#IDIOT PROOF\add items.dm:195:error: skill: undefined var
-#IDIOT PROOF\add items.dm:196:error: price: undefined var
-#IDIOT PROOF\add items.dm:198:error: skill: undefined var
-#IDIOT PROOF\add items.dm:199:error: price: undefined var
-#IDIOT PROOF\add items.dm:201:error: skill: undefined var
-#IDIOT PROOF\add items.dm:202:error: price: undefined var
-#IDIOT PROOF\add items.dm:204:error: skill: undefined var
-#IDIOT PROOF\add items.dm:205:error: price: undefined var
-#IDIOT PROOF\add items.dm:207:error: skill: undefined var
-#IDIOT PROOF\add items.dm:208:error: price: undefined var
-#IDIOT PROOF\add items.dm:210:error: skill: undefined var
-#IDIOT PROOF\add items.dm:211:error: price: undefined var
-#IDIOT PROOF\add items.dm:213:error: skill: undefined var
-#IDIOT PROOF\add items.dm:214:error: price: undefined var
-#IDIOT PROOF\add items.dm:216:error: skill: undefined var
-#IDIOT PROOF\add items.dm:217:error: price: undefined var
-#IDIOT PROOF\add items.dm:219:error: skill: undefined var
-#IDIOT PROOF\add items.dm:220:error: price: undefined var
-#IDIOT PROOF\add items.dm:222:error: skill: undefined var
-#IDIOT PROOF\add items.dm:223:error: price: undefined var
-#IDIOT PROOF\add items.dm:225:error: skill: undefined var
-#IDIOT PROOF\add items.dm:226:error: price: undefined var
-#IDIOT PROOF\add items.dm:228:error: skill: undefined var
-#IDIOT PROOF\add items.dm:229:error: price: undefined var
-#IDIOT PROOF\add items.dm:231:error: skill: undefined var
-#IDIOT PROOF\add items.dm:232:error: price: undefined var
-#IDIOT PROOF\add items.dm:234:error: skill: undefined var
-#IDIOT PROOF\add items.dm:235:error: price: undefined var
-#IDIOT PROOF\add items.dm:237:error: skill: undefined var
-#IDIOT PROOF\add items.dm:238:error: price: undefined var
-#IDIOT PROOF\add items.dm:240:error: skill: undefined var
-#IDIOT PROOF\add items.dm:241:error: price: undefined var
-#IDIOT PROOF\add items.dm:243:error: skill: undefined var
-#IDIOT PROOF\add items.dm:244:error: price: undefined var
-#IDIOT PROOF\add items.dm:246:error: skill: undefined var
-#IDIOT PROOF\add items.dm:247:error: price: undefined var
-#IDIOT PROOF\add items.dm:249:error: skill: undefined var
-#IDIOT PROOF\add items.dm:250:error: price: undefined var
-#IDIOT PROOF\add items.dm:252:error: skill: undefined var
-#IDIOT PROOF\add items.dm:253:error: price: undefined var
-#IDIOT PROOF\add items.dm:255:error: skill: undefined var
-#IDIOT PROOF\add items.dm:256:error: price: undefined var
-#IDIOT PROOF\add items.dm:258:error: skill: undefined var
-#IDIOT PROOF\add items.dm:259:error: price: undefined var
-#IDIOT PROOF\add items.dm:261:error: skill: undefined var
-#IDIOT PROOF\add items.dm:262:error: price: undefined var
-#IDIOT PROOF\add items.dm:264:error: skill: undefined var
-#IDIOT PROOF\add items.dm:265:error: price: undefined var
-#IDIOT PROOF\add items.dm:267:error: skill: undefined var
-#IDIOT PROOF\add items.dm:268:error: price: undefined var
-#IDIOT PROOF\add items.dm:270:error: skill: undefined var
-#IDIOT PROOF\add items.dm:271:error: price: undefined var
-#IDIOT PROOF\add items.dm:273:error: skill: undefined var
-#IDIOT PROOF\add items.dm:274:error: price: undefined var
-#IDIOT PROOF\add items.dm:276:error: skill: undefined var
-#IDIOT PROOF\add items.dm:277:error: price: undefined var
-#IDIOT PROOF\add items.dm:279:error: skill: undefined var
-#IDIOT PROOF\add items.dm:280:error: price: undefined var
-#IDIOT PROOF\add items.dm:282:error: skill: undefined var
-#IDIOT PROOF\add items.dm:283:error: price: undefined var
-#IDIOT PROOF\add items.dm:285:error: skill: undefined var
-#IDIOT PROOF\add items.dm:286:error: price: undefined var
-#IDIOT PROOF\add items.dm:288:error: skill: undefined var
-#IDIOT PROOF\add items.dm:289:error: price: undefined var
-#IDIOT PROOF\add items.dm:291:error: skill: undefined var
-#IDIOT PROOF\add items.dm:292:error: price: undefined var
-#IDIOT PROOF\add items.dm:294:error: skill: undefined var
-#IDIOT PROOF\add items.dm:295:error: price: undefined var
-#IDIOT PROOF\add items.dm:297:error: skill: undefined var
-#IDIOT PROOF\add items.dm:298:error: price: undefined var
-#IDIOT PROOF\add items.dm:300:error: skill: undefined var
-#IDIOT PROOF\add items.dm:301:error: price: undefined var
-#IDIOT PROOF\add items.dm:303:error: skill: undefined var
-#IDIOT PROOF\add items.dm:304:error: price: undefined var
-#IDIOT PROOF\add items.dm:306:error: skill: undefined var
-#IDIOT PROOF\add items.dm:307:error: price: undefined var
-#IDIOT PROOF\add items.dm:309:error: skill: undefined var
-#IDIOT PROOF\add items.dm:310:error: price: undefined var
-#IDIOT PROOF\add items.dm:312:error: skill: undefined var
-#IDIOT PROOF\add items.dm:313:error: price: undefined var
-#IDIOT PROOF\add items.dm:315:error: skill: undefined var
-#IDIOT PROOF\add items.dm:316:error: price: undefined var
-#IDIOT PROOF\add items.dm:318:error: skill: undefined var
-#IDIOT PROOF\add items.dm:319:error: price: undefined var
-#IDIOT PROOF\add items.dm:321:error: skill: undefined var
-#IDIOT PROOF\add items.dm:322:error: price: undefined var
-#IDIOT PROOF\add items.dm:324:error: skill: undefined var
-#IDIOT PROOF\add items.dm:325:error: price: undefined var
-#IDIOT PROOF\add items.dm:327:error: skill: undefined var
-#IDIOT PROOF\add items.dm:328:error: price: undefined var
-#IDIOT PROOF\add items.dm:330:error: skill: undefined var
-#IDIOT PROOF\add items.dm:331:error: price: undefined var
-#IDIOT PROOF\add items.dm:333:error: skill: undefined var
-#IDIOT PROOF\add items.dm:334:error: price: undefined var
-#IDIOT PROOF\add items.dm:336:error: skill: undefined var
-#IDIOT PROOF\add items.dm:337:error: price: undefined var
-#IDIOT PROOF\add items.dm:339:error: skill: undefined var
-#IDIOT PROOF\add items.dm:340:error: price: undefined var
-#IDIOT PROOF\add items.dm:342:error: skill: undefined var
-#IDIOT PROOF\add items.dm:343:error: price: undefined var
-#IDIOT PROOF\add items.dm:345:error: skill: undefined var
-#IDIOT PROOF\add items.dm:346:error: price: undefined var
-#IDIOT PROOF\add items.dm:348:error: skill: undefined var
-#IDIOT PROOF\add items.dm:349:error: price: undefined var
-#IDIOT PROOF\add items.dm:351:error: skill: undefined var
-#IDIOT PROOF\add items.dm:352:error: price: undefined var
-#IDIOT PROOF\add items.dm:354:error: skill: undefined var
-#IDIOT PROOF\add items.dm:355:error: price: undefined var
-#IDIOT PROOF\add items.dm:357:error: skill: undefined var
-#IDIOT PROOF\add items.dm:358:error: price: undefined var
-#IDIOT PROOF\add items.dm:360:error: skill: undefined var
-#IDIOT PROOF\add items.dm:361:error: price: undefined var
-#IDIOT PROOF\add items.dm:363:error: skill: undefined var
-#IDIOT PROOF\add items.dm:364:error: price: undefined var
-#IDIOT PROOF\add items.dm:366:error: skill: undefined var
-#IDIOT PROOF\add items.dm:367:error: price: undefined var
-#IDIOT PROOF\add items.dm:369:error: skill: undefined var
-#IDIOT PROOF\add items.dm:370:error: price: undefined var
-#IDIOT PROOF\add items.dm:372:error: skill: undefined var
-#IDIOT PROOF\add items.dm:373:error: price: undefined var
-#IDIOT PROOF\add items.dm:375:error: skill: undefined var
-#IDIOT PROOF\add items.dm:376:error: price: undefined var
-#IDIOT PROOF\add items.dm:378:error: skill: undefined var
-#IDIOT PROOF\add items.dm:379:error: price: undefined var
-#IDIOT PROOF\add items.dm:381:error: skill: undefined var
-#IDIOT PROOF\add items.dm:382:error: price: undefined var
-#IDIOT PROOF\add items.dm:384:error: skill: undefined var
-#IDIOT PROOF\add items.dm:385:error: price: undefined var
-#IDIOT PROOF\add items.dm:387:error: skill: undefined var
-#IDIOT PROOF\add items.dm:388:error: price: undefined var
-#IDIOT PROOF\add items.dm:421:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:422:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:423:error: skill: undefined var
-#IDIOT PROOF\add items.dm:424:error: delay: undefined var
-#IDIOT PROOF\add items.dm:427:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:428:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:429:error: skill: undefined var
-#IDIOT PROOF\add items.dm:430:error: delay: undefined var
-#IDIOT PROOF\add items.dm:434:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:435:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:436:error: skill: undefined var
-#IDIOT PROOF\add items.dm:437:error: delay: undefined var
-#IDIOT PROOF\add items.dm:441:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:442:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:443:error: skill: undefined var
-#IDIOT PROOF\add items.dm:444:error: delay: undefined var
-#IDIOT PROOF\add items.dm:446:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:447:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:448:error: skill: undefined var
-#IDIOT PROOF\add items.dm:449:error: delay: undefined var
-#IDIOT PROOF\add items.dm:450:error: price: undefined var
-#IDIOT PROOF\add items.dm:453:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:454:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:455:error: skill: undefined var
-#IDIOT PROOF\add items.dm:456:error: delay: undefined var
-#IDIOT PROOF\add items.dm:459:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:460:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:461:error: skill: undefined var
-#IDIOT PROOF\add items.dm:462:error: delay: undefined var
-#IDIOT PROOF\add items.dm:465:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:466:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:467:error: skill: undefined var
-#IDIOT PROOF\add items.dm:468:error: delay: undefined var
-#IDIOT PROOF\add items.dm:471:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:472:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:473:error: skill: undefined var
-#IDIOT PROOF\add items.dm:474:error: delay: undefined var
-#IDIOT PROOF\add items.dm:478:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:479:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:480:error: skill: undefined var
-#IDIOT PROOF\add items.dm:481:error: delay: undefined var
-#IDIOT PROOF\add items.dm:484:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:485:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:486:error: skill: undefined var
-#IDIOT PROOF\add items.dm:487:error: delay: undefined var
-#IDIOT PROOF\add items.dm:491:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:492:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:493:error: skill: undefined var
-#IDIOT PROOF\add items.dm:494:error: delay: undefined var
-#IDIOT PROOF\add items.dm:496:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:497:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:498:error: skill: undefined var
-#IDIOT PROOF\add items.dm:499:error: delay: undefined var
-#IDIOT PROOF\add items.dm:500:error: price: undefined var
-#IDIOT PROOF\add items.dm:504:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:505:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:506:error: skill: undefined var
-#IDIOT PROOF\add items.dm:507:error: delay: undefined var
-#IDIOT PROOF\add items.dm:511:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:512:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:513:error: skill: undefined var
-#IDIOT PROOF\add items.dm:514:error: delay: undefined var
-#IDIOT PROOF\add items.dm:515:error: double: undefined var
-#IDIOT PROOF\add items.dm:517:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:518:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:519:error: skill: undefined var
-#IDIOT PROOF\add items.dm:520:error: delay: undefined var
-#IDIOT PROOF\add items.dm:521:error: price: undefined var
-#IDIOT PROOF\add items.dm:523:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:524:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:525:error: skill: undefined var
-#IDIOT PROOF\add items.dm:526:error: delay: undefined var
-#IDIOT PROOF\add items.dm:527:error: price: undefined var
-#IDIOT PROOF\add items.dm:530:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:531:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:532:error: skill: undefined var
-#IDIOT PROOF\add items.dm:533:error: delay: undefined var
-#IDIOT PROOF\add items.dm:534:error: double: undefined var
-#IDIOT PROOF\add items.dm:537:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:538:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:539:error: skill: undefined var
-#IDIOT PROOF\add items.dm:540:error: delay: undefined var
-#IDIOT PROOF\add items.dm:543:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:544:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:545:error: skill: undefined var
-#IDIOT PROOF\add items.dm:546:error: delay: undefined var
-#IDIOT PROOF\add items.dm:549:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:550:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:551:error: skill: undefined var
-#IDIOT PROOF\add items.dm:552:error: delay: undefined var
-#IDIOT PROOF\add items.dm:555:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:556:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:557:error: skill: undefined var
-#IDIOT PROOF\add items.dm:558:error: delay: undefined var
-#IDIOT PROOF\add items.dm:561:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:562:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:563:error: skill: undefined var
-#IDIOT PROOF\add items.dm:564:error: delay: undefined var
-#IDIOT PROOF\add items.dm:567:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:568:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:569:error: skill: undefined var
-#IDIOT PROOF\add items.dm:570:error: delay: undefined var
-#IDIOT PROOF\add items.dm:573:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:574:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:575:error: skill: undefined var
-#IDIOT PROOF\add items.dm:576:error: delay: undefined var
-#IDIOT PROOF\add items.dm:579:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:580:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:581:error: skill: undefined var
-#IDIOT PROOF\add items.dm:582:error: delay: undefined var
-#IDIOT PROOF\add items.dm:584:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:585:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:586:error: skill: undefined var
-#IDIOT PROOF\add items.dm:587:error: delay: undefined var
-#IDIOT PROOF\add items.dm:590:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:591:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:592:error: skill: undefined var
-#IDIOT PROOF\add items.dm:593:error: delay: undefined var
-#IDIOT PROOF\add items.dm:596:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:597:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:598:error: skill: undefined var
-#IDIOT PROOF\add items.dm:599:error: delay: undefined var
-#IDIOT PROOF\add items.dm:602:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:603:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:604:error: skill: undefined var
-#IDIOT PROOF\add items.dm:605:error: delay: undefined var
-#IDIOT PROOF\add items.dm:608:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:609:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:610:error: skill: undefined var
-#IDIOT PROOF\add items.dm:611:error: delay: undefined var
-#IDIOT PROOF\add items.dm:614:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:615:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:616:error: skill: undefined var
-#IDIOT PROOF\add items.dm:617:error: delay: undefined var
-#IDIOT PROOF\add items.dm:620:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:621:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:622:error: skill: undefined var
-#IDIOT PROOF\add items.dm:623:error: delay: undefined var
-#IDIOT PROOF\add items.dm:626:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:627:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:628:error: skill: undefined var
-#IDIOT PROOF\add items.dm:629:error: delay: undefined var
-#IDIOT PROOF\add items.dm:632:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:633:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:634:error: skill: undefined var
-#IDIOT PROOF\add items.dm:635:error: delay: undefined var
-#IDIOT PROOF\add items.dm:640:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:641:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:642:error: skill: undefined var
-#IDIOT PROOF\add items.dm:643:error: delay: undefined var
-#IDIOT PROOF\add items.dm:645:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:646:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:647:error: skill: undefined var
-#IDIOT PROOF\add items.dm:648:error: delay: undefined var
-#IDIOT PROOF\add items.dm:651:error: icon_state: undefined var
-#IDIOT PROOF\add items.dm:652:error: pull_back: undefined var
-#IDIOT PROOF\add items.dm:653:error: skill: undefined var
-#IDIOT PROOF\add items.dm:654:error: delay: undefined var
-#IDIOT PROOF\add items.dm:655:error: price: undefined var
-#IDIOT PROOF\add items.dm:678:error: double: undefined var
-#IDIOT PROOF\add items.dm:680:error: can_attack: undefined var
-#IDIOT PROOF\add items.dm:681:error: m.shield: undefined proc
-#IDIOT PROOF\add items.dm:685:error: double: undefined var
-#IDIOT PROOF\add items.dm:686:error: can_attack: undefined var
-#IDIOT PROOF\add items.dm:687:error: m.unshield: undefined proc
-#IDIOT PROOF\add items.dm:688:error: can_attack: undefined var
-#IDIOT PROOF\add items.dm:689:error: m.shielding: undefined var
-#IDIOT PROOF\add items.dm:690:error: m.can_attack: undefined var
-#IDIOT PROOF\add
+loading Pandora's Box.dme
+loading interface.dmf
+loading map.dmm
+loading interface.dmf
+<var file="code\#defs.dm:10">HERAKLES_TTF
+	<val file="code\#defs.dm:10">'HERAKLES.TTF'</val>
+</var>
+<object file="code\#libs\expixel\screen_text\defined fonts.dm:35">TextFont
+	<object file="code\#libs\expixel\screen_text\defined fonts.dm:50">Courier
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:51">mode
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:51">1</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:52">width
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:52">8</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:53">height
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:53">16</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:54">horizontal_offset
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:54">0</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:55">space_width
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:55">4</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:56">tab_width
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:56">4</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:57">line_height_offset
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:57">2</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:58">icon
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:58">'icon/huds/fonts/CourierNewBold10pt.dmi'</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:59">extra_pad
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:59">1</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:60">space_pad
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:60">1</val>
+		</var>
+	</object>
+	<object file="code\#libs\expixel\screen_text\defined fonts.dm:61">ShadowFont
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:62">mode
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:62">1</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:63">width
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:63">6</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:64">height
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:64">10</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:65">horizontal_offset
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:65">0</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:66">space_width
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:66">4</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:67">tab_width
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:67">4</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:68">line_height_offset
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:68">4</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:69">icon
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:69">'icon/huds/fonts/_Font.dmi'</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:70">extra_pad
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:70">1</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\defined fonts.dm:71">space_pad
+			<val file="code\#libs\expixel\screen_text\defined fonts.dm:71">1</val>
+		</var>
+	</object>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:68">mode
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:68">1</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:69">width</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:70">height</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:71">horizontal_offset</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:72">space_width
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:72">3</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:73">tab_width
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:73">4</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:74">line_height_offset
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:74">2</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:75">icon</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:76">extra_pad
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:76">1</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:77">space_pad
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:77">1</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:78">cached_colors</var>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:81">getLetterWidth</proc>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:86">getVariableWidth</proc>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:88">getColor</proc>
+	<object file="code\#libs\expixel\screen_text\screen_text.dm:101">Default
+		<var file="code\#libs\expixel\screen_text\screen_text.dm:103">mode
+			<val file="code\#libs\expixel\screen_text\screen_text.dm:103">1</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\screen_text.dm:104">width
+			<val file="code\#libs\expixel\screen_text\screen_text.dm:104">7</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\screen_text.dm:105">height
+			<val file="code\#libs\expixel\screen_text\screen_text.dm:105">9</val>
+		</var>
+		<var file="code\#libs\expixel\screen_text\screen_text.dm:106">horizontal_offset
+			<val file="code\#libs\expixel\screen_text\screen_text.dm:106">1</val>
+		</var>
+	</object>
+</object>
+<var file="code\#libs\expixel\screen_text\defined fonts.dm:74">shadowFont</var>
+<var file="code\#libs\expixel\screen_text\defined fonts.dm:75">courierFont</var>
+<proc file="code\#libs\expixel\screen_text\screen_text.dm:2">dd_text2list</proc>
+<proc file="code\#libs\expixel\ui_framework\util funcs.dm:2">uif_isalpha</proc>
+<proc file="code\#libs\expixel\ui_framework\util funcs.dm:3">uif_isnum</proc>
+<proc file="code\#libs\expixel\ui_framework\util funcs.dm:4">uif_iscolon</proc>
+<proc file="code\#libs\expixel\ui_framework\util funcs.dm:5">uif_iscomma</proc>
+<proc file="code\#libs\expixel\ui_framework\util funcs.dm:6">uif_iswhitespace</proc>
+<proc file="code\#libs\expixel\ui_framework\util funcs.dm:10">uif_islist</proc>
+<proc file="code\#libs\expixel\ui_framework\util funcs.dm:14">uif_log</proc>
+<proc file="code\#libs\forum_account\text\text.dm:15">int</proc>
+<proc file="code\#libs\forum_account\text\text.dm:61">split</proc>
+<proc file="code\#libs\forum_account\text\text.dm:82">Split</proc>
+<proc file="code\#libs\forum_account\text\text.dm:103">replace</proc>
+<proc file="code\#libs\forum_account\text\text.dm:114">Replace</proc>
+<proc file="code\#libs\forum_account\text\text.dm:127">concat</proc>
+<proc file="code\#libs\forum_account\text\text.dm:174">join</proc>
+<proc file="code\#libs\forum_account\text\text.dm:178">merge</proc>
+<proc file="code\#libs\forum_account\text\text.dm:182">prefix</proc>
+<proc file="code\#libs\forum_account\text\text.dm:186">Prefix</proc>
+<proc file="code\#libs\forum_account\text\text.dm:190">ending</proc>
+<proc file="code\#libs\forum_account\text\text.dm:196">Ending</proc>
+<proc file="code\#libs\forum_account\text\text.dm:201">dir2txt</proc>
+<proc file="code\#libs\forum_account\text\text.dm:236">dir2text</proc>
+<proc file="code\misc\hooks.dm:11">invoke</proc>
+<proc file="code\misc\Loading.dm:135">create_bar</proc>
+<proc file="code\misc\util.dm:1">islist</proc>
+<proc file="code\misc\util.dm:4">getMiddleX</proc>
+<object file="code\#libs\expixel\screen_text\screen_text.dm:109">TextObjectInfoHolder
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:111">Width</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:112">Height</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:113">Text</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:114">Overlay</var>
+</object>
+<obj file="code\#libs\expixel\screen_text\screen_text.dm:116">TextObject
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:117">parent_type
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:117">/Component</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:118">overlay_text</var>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:120">Copy</proc>
+</obj>
+<object file="code\#libs\expixel\screen_text\screen_text.dm:126">TemporaryTextHolder
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:128">current_x_pos
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:128">0</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:129">current_y_pos
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:129">0</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:130">highest_width_reached
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:130">0</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:131">highest_height_reached
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:131">0</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:132">max_width</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:133">max_height</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:134">Font</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:135">overlay_object</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:139">char</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:136">LAYER</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:137">height_reached
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:137">0</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:138">first_line_break
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:138">TRUE</val>
+	</var>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:141">AddLetter</proc>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:157">AddTab</proc>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:163">AddLineBreak</proc>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:174">ForceAddLetter</proc>
+</object>
+<object file="code\#libs\expixel\screen_text\screen_text.dm:190">left_overs
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:191">more_text
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:191">""</val>
+	</var>
+</object>
+<object file="code\#libs\expixel\screen_text\screen_text.dm:193">TextWriter
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:194">cache</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:195">current_color
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:195">"null"</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:196">current_icon</var>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:198">WrapText</proc>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:206">WordWrap</proc>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:217">GetWordSize</proc>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:237">changeColor</proc>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:247">WriteText</proc>
+</object>
+<object file="code\#libs\expixel\screen_text\screen_text.dm:308">WordGroupHandler
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:309">group</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:310">font</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:311">current_size
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:311">0</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:312">x
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:312">0</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:313">y
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:313">0</val>
+	</var>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:315">feed</proc>
+</object>
+<object file="code\#libs\expixel\screen_text\screen_text.dm:318">WordWriter
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:319">cache</var>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:321">getWordGroup</proc>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:327">processWord</proc>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:330">getLink</proc>
+</object>
+<object file="code\#libs\expixel\screen_text\screen_text.dm:340">WordGroup
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:341">words</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:342">height</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:343">width</var>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:350">screen</proc>
+</object>
+<obj file="code\#libs\expixel\screen_text\screen_text.dm:359">ScreenTextLink
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:360">parent_type
+		<val file="code\#libs\expixel\screen_text\screen_text.dm:360">/obj</val>
+	</var>
+	<var file="code\#libs\expixel\screen_text\screen_text.dm:361">link</var>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:362">New</proc>
+	<proc file="code\#libs\expixel\screen_text\screen_text.dm:366">Click</proc>
+</obj>
+<var file="code\#libs\expixel\screen_text\screen_text.dm:370">TextWriter</var>
+<var file="code\#libs\expixel\screen_text\screen_text.dm:371">DefaultFont</var>
+<obj file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:1">Component
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:2">parent_type
+		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:2">/HUD</val>
+	</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:5">comp_x
+		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:5">0</val>
+	</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:6">comp_y
+		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:6">0</val>
+	</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:7">comp_width
+		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:7">0</val>
+	</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:8">comp_height
+		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:8">0</val>
+	</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:10">children</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:11">parent
+		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:11">null</val>
+	</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:13">redraw_on_loc_change
+		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:13">TRUE</val>
+	</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:15">can_draw
+		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:15">TRUE</val>
+	</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:17">user</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:19">invisible
+		<val file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:19">FALSE</val>
+	</var>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:27">New</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:39">get_invisible</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:45">set_invisible</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:52">invisibility_check</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:56">set_comp_screen_loc</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:62">set_loc</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:66">set_size</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:71">set_x</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:72">set_y</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:73">set_width</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:74">set_height</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:76">get_x</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:77">get_y</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:78">get_width</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:79">get_height</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:81">draw</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:83">redraw</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:84">reset</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:89">has_parent</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:90">get_parent</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:91">set_parent</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:96">add_child</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:101">remove_child</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:109">has_children</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:114">on_create</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:117">get_relative_x</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:120">get_relative_y</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:127">_loc_set</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_Component.dm:134">size_changed</proc>
+	<obj file="code\huds\def_huds.dm:4">Value
+		<var file="code\huds\def_huds.dm:5">value
+			<val file="code\huds\def_huds.dm:5">0</val>
+		</var>
+		<var file="code\huds\def_huds.dm:6">max_value
+			<val file="code\huds\def_huds.dm:6">0</val>
+		</var>
+		<proc file="code\huds\def_huds.dm:8">get_part</proc>
+		<proc file="code\huds\def_huds.dm:9">set_value</proc>
+		<proc file="code\huds\def_huds.dm:13">set_max_value</proc>
+		<proc file="code\huds\def_huds.dm:17">get_value</proc>
+		<proc file="code\huds\def_huds.dm:18">get_max_value</proc>
+		<obj file="code\huds\def_huds.dm:22">HealthBar
+			<proc file="code\huds\def_huds.dm:23">draw</proc>
+		</obj>
+	</obj>
+</obj>
+<object file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:1">HUDUtil
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:2">New</proc>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:6">world_icon_x
+		<val file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:6">0</val>
+	</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:7">world_icon_y
+		<val file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:7">0</val>
+	</var>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:32">_get_world_icon_size</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:38">_parse_size</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:62">_parse_loc</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:99">get_client</proc>
+</object>
+<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:107">HUDUtil</var>
+<obj file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:109">HUD
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:111">parent_type
+		<val file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:111">/obj</val>
+	</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:114">screen_x</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:115">screen_x_offset</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:116">screen_y</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:117">screen_y_offset</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:118">map</var>
+	<var file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:122">_client</var>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:129">New</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:150">set_client</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:167">clear_client</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:175">get_client</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:205">set_screen_loc</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:223">set_screen_loc_vals</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:240">get_screen_loc</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:271">set_map</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:272">set_screen_x</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:273">set_screen_y</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:274">set_screen_x_offset</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:275">set_screen_y_offset</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:288">get_map</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:289">get_screen_x</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:290">get_screen_y</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:291">get_screen_x_offset</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:292">get_screen_y_offset</proc>
+	<proc file="code\#libs\expixel\ui_framework\UIFrameWork_HUD.dm:299">reposition</proc>
+</obj>
+<obj file="code\#libs\expixel\ui_framework\Components\Label.dm:1">LabelComponent
+	<var file="code\#libs\expixel\ui_framework\Components\Label.dm:2">parent_type
+		<val file="code\#libs\expixel\ui_framework\Components\Label.dm:2">/Component</val>
+	</var>
+	<var file="code\#libs\expixel\ui_framework\Components\Label.dm:3">label_text
+		<val file="code\#libs\expixel\ui_framework\Components\Label.dm:3">""</val>
+	</var>
+	<proc file="code\#libs\expixel\ui_framework\Components\Label.dm:5">set_text</proc>
+	<proc file="code\#libs\expixel\ui_framework\Components\Label.dm:8">get_text</proc>
+	<proc file="code\#libs\expixel\ui_framework\Components\Label.dm:9">size_changed</proc>
+	<proc file="code\#libs\expixel\ui_framework\Components\Label.dm:12">draw</proc>
+	<obj file="code\huds\dialog_box.dm:32">DialogText
+		<var file="code\huds\dialog_box.dm:35">txt</var>
+		<var file="code\huds\dialog_box.dm:36">_left_overs</var>
+		<proc file="code\huds\dialog_box.dm:37">on_create</proc>
+		<proc file="code\huds\dialog_box.dm:39">set_text</proc>
+		<proc file="code\huds\dialog_box.dm:48">draw</proc>
+	</obj>
+</obj>
+<object file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:1">MouseAwareComponent
+	<var file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:8">mouse_over
+		<val file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:8">FALSE</val>
+	</var>
+	<var file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:9">mouse_down
+		<val file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:9">FALSE</val>
+	</var>
+	<proc file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:12">MouseDown</proc>
+	<proc file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:15">MouseUp</proc>
+	<proc file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:18">MouseEntered</proc>
+	<proc file="code\#libs\expixel\ui_framework\Components\MouseAware.dm:20">MouseExited</proc>
+</object>
+<object file="code\#libs\forum_account\keyboard\default.dm:12">client
+	<var file="code\#libs\forum_account\keyboard\default.dm:15">__default_action
+		<var file="code\#libs\forum_account\keyboard\default.dm:16">"north"
+			<val file="code\#libs\forum_account\keyboard\default.dm:16">"North"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\default.dm:17">"south"
+			<val file="code\#libs\forum_account\keyboard\default.dm:17">"South"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\default.dm:18">"east"
+			<val file="code\#libs\forum_account\keyboard\default.dm:18">"East"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\default.dm:19">"west"
+			<val file="code\#libs\forum_account\keyboard\default.dm:19">"West"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\default.dm:20">"southeast"
+			<val file="code\#libs\forum_account\keyboard\default.dm:20">"Southeast"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\default.dm:21">"southwest"
+			<val file="code\#libs\forum_account\keyboard\default.dm:21">"Southwest"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\default.dm:22">"northeast"
+			<val file="code\#libs\forum_account\keyboard\default.dm:22">"Northeast"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\default.dm:23">"northwest"
+			<val file="code\#libs\forum_account\keyboard\default.dm:23">"Northwest"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\default.dm:24">"center"
+			<val file="code\#libs\forum_account\keyboard\default.dm:24">"Center"</val>
+		</var>
+	</var>
+	<proc file="code\#libs\forum_account\keyboard\default.dm:29">key_up</proc>
+	<proc file="code\#libs\forum_account\keyboard\default.dm:31">key_down</proc>
+	<proc file="code\#libs\forum_account\keyboard\default.dm:35">key_repeat</proc>
+	<proc file="code\#libs\forum_account\keyboard\default.dm:40">click</proc>
+	<proc file="code\#libs\forum_account\keyboard\default.dm:43">__default_action</proc>
+	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:82">lock_input</proc>
+	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:85">unlock_input</proc>
+	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:88">clear_input</proc>
+	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:194">set_macros</proc>
+	<proc file="code\huds\dialog_box.dm:121">show_message</proc>
+	<proc file="code\huds\dialog_box.dm:122">next_message</proc>
+	<proc file="code\huds\dialog_box.dm:123">wait_for_messages</proc>
+	<proc file="code\huds\InstallHuds.dm:9">initHuds</proc>
+	<proc file="code\huds\InstallHuds.dm:11">installHuds</proc>
+	<proc file="code\misc\hooks.dm:24">set_hook</proc>
+	<proc file="code\misc\hooks.dm:27">push_hook_back</proc>
+	<proc file="code\misc\hooks.dm:33">clear_hook</proc>
+	<proc file="code\misc\hooks.dm:37">push_hook_forward</proc>
+	<proc file="code\misc\hooks.dm:44">hook_invoke</proc>
+	<proc file="code\misc\Loading.dm:6">clear_loads</proc>
+	<proc file="code\misc\Loading.dm:9">set_load</proc>
+	<proc file="code\misc\Loading.dm:21">add_load</proc>
+	<proc file="code\misc\Loading.dm:25">remove_load</proc>
+	<proc file="code\misc\Loading.dm:30">del_loads</proc>
+	<proc file="code\misc\Loading.dm:36">create_loads</proc>
+	<proc file="code\misc\Loading.dm:38">get_avg_load</proc>
+	<proc file="code\misc\Loading.dm:48">open_load</proc>
+	<proc file="code\misc\Loading.dm:51">close_load</proc>
+	<proc file="code\misc\Loading.dm:55">update_loading</proc>
+	<proc file="code\misc\Loading.dm:85">test_loading</proc>
+	<var file="code\#libs\forum_account\keyboard\keyboard.dm:55">keys
+		<val file="code\#libs\forum_account\keyboard\keyboard.dm:55">ALL_KEYS</val>
+	</var>
+	<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">__numpad_mappings
+		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad0"
+			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"0"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad1"
+			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"1"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad2"
+			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"2"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad3"
+			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"3"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad4"
+			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"4"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad5"
+			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"5"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad6"
+			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"6"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad7"
+			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"7"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad8"
+			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"8"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"numpad9"
+			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"9"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"divide"
+			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"/"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"multiply"
+			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"*"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"subtract"
+			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"-"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"add"
+			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"+"</val>
+		</var>
+		<var file="code\#libs\forum_account\keyboard\keyboard.dm:75">"decimal"
+			<val file="code\#libs\forum_account\keyboard\keyboard.dm:75">"."</val>
+		</var>
+	</var>
+	<var file="code\#libs\forum_account\keyboard\keyboard.dm:61">input_lock
+		<val file="code\#libs\forum_account\keyboard\keyboard.dm:61">0</val>
+	</var>
+	<var file="code\#libs\forum_account\keyboard\keyboard.dm:67">focus</var>
+	<var file="code\#libs\forum_account\keyboard\keyboard.dm:69">use_numpad
+		<val file="code\#libs\forum_account\keyboard\keyboard.dm:69">1</val>
+	</var>
+	<var file="code\#libs\forum_account\keyboard\keyboard.dm:73">translate_numpad_to_numbers
+		<val file="code\#libs\forum_account\keyboard\keyboard.dm:73">1</val>
+	</var>
+	<verb file="code\#libs\forum_account\keyboard\keyboard.dm:97">KeyDown</verb>
+	<verb file="code\#libs\forum_account\keyboard\keyboard.dm:127">KeyUp</verb>
+	<verb file="code\#libs\forum_account\keyboard\keyboard.dm:158">KeyRepeat</verb>
+	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:172">New</proc>
+	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:183">Click</proc>
+	<proc file="code\#libs\forum_account\sidescroller\keyboard.dm:30">New</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:415">North</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:416">South</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:417">East</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:418">West</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:419">Southeast</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:420">Southwest</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:421">Northeast</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:422">Northwest</proc>
+	<var file="code\game\player.dm:3">perspective
+		<val file="code\game\player.dm:3">EDGE_PERSPECTIVE</val>
+	</var>
+	<var file="code\huds\dialog_box.dm:115">view
+		<val file="code\huds\dialog_box.dm:115">"20x15"</val>
+	</var>
+	<var file="code\huds\InstallHuds.dm:7">huds</var>
+	<var file="code\misc\hooks.dm:20">_hook
+		<val file="code\misc\hooks.dm:20">null</val>
+	</var>
+	<var file="code\misc\hooks.dm:21">_last_hooks</var>
+	<var file="code\misc\Loading.dm:2">loading</var>
+	<var file="code\misc\Loading.dm:3">last_pane
+		<val file="code\misc\Loading.dm:3">""</val>
+	</var>
+	<var file="code\misc\Loading.dm:4">max_loading_width
+		<val file="code\misc\Loading.dm:4">184</val>
+	</var>
+	<proc file="code\misc\Loading.dm:106">New</proc>
+</object>
+<object file="code\#libs\forum_account\keyboard\keyboard.dm:14">datum
+	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:20">key_up</proc>
+	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:21">key_down</proc>
+	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:30">key_repeat</proc>
+	<proc file="code\#libs\forum_account\keyboard\keyboard.dm:34">click</proc>
+</object>
+<var file="code\#libs\forum_account\keyboard\keyboard.dm:39">ARROWS
+	<val file="code\#libs\forum_account\keyboard\keyboard.dm:39">"|west|east|north|south|"</val>
+</var>
+<var file="code\#libs\forum_account\keyboard\keyboard.dm:40">NUMPAD
+	<val file="code\#libs\forum_account\keyboard\keyboard.dm:40">"|west|east|north|south|northeast|southeast|northwest|southwest|center|numpad0|numpad1|numpad2|numpad3|numpad4|numpad5|numpad6|numpad7|numpad8|numpad9|divide|multiply|subtract|add|decimal|"</val>
+</var>
+<var file="code\#libs\forum_account\keyboard\keyboard.dm:41">EXTENDED
+	<val file="code\#libs\forum_account\keyboard\keyboard.dm:41">"|space|shift|ctrl|alt|escape|return|tab|back|delete|insert|"</val>
+</var>
+<var file="code\#libs\forum_account\keyboard\keyboard.dm:42">PUNCTUATION
+	<val file="code\#libs\forum_account\keyboard\keyboard.dm:42">"|`|-|=|\\\[|\]|;|'|,|.|/|\\\\|"</val>
+</var>
+<var file="code\#libs\forum_account\keyboard\keyboard.dm:43">FUNCTION
+	<val file="code\#libs\forum_account\keyboard\keyboard.dm:43">"|F1|F2|F3|F4|F5|F6|F7|F8|F9|F10|F11|F12|"</val>
+</var>
+<var file="code\#libs\forum_account\keyboard\keyboard.dm:44">LETTERS
+	<val file="code\#libs\forum_account\keyboard\keyboard.dm:44">"|a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|"</val>
+</var>
+<var file="code\#libs\forum_account\keyboard\keyboard.dm:45">NUMBERS
+	<val file="code\#libs\forum_account\keyboard\keyboard.dm:45">"|0|1|2|3|4|5|6|7|8|9|"</val>
+</var>
+<var file="code\#libs\forum_account\keyboard\keyboard.dm:47">ALL_KEYS</var>
+<var file="code\#libs\forum_account\sidescroller\background.dm:13">REPEAT_X
+	<val file="code\#libs\forum_account\sidescroller\background.dm:13">1</val>
+</var>
+<var file="code\#libs\forum_account\sidescroller\background.dm:14">REPEAT_Y
+	<val file="code\#libs\forum_account\sidescroller\background.dm:14">2</val>
+</var>
+<object file="code\#libs\forum_account\sidescroller\background.dm:21">Background
+	<var file="code\#libs\forum_account\sidescroller\background.dm:23">object</var>
+	<var file="code\#libs\forum_account\sidescroller\background.dm:24">image</var>
+	<var file="code\#libs\forum_account\sidescroller\background.dm:26">width</var>
+	<var file="code\#libs\forum_account\sidescroller\background.dm:27">height</var>
+	<var file="code\#libs\forum_account\sidescroller\background.dm:29">px
+		<val file="code\#libs\forum_account\sidescroller\background.dm:29">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\background.dm:30">py
+		<val file="code\#libs\forum_account\sidescroller\background.dm:30">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\background.dm:32">owner</var>
+	<var file="code\#libs\forum_account\sidescroller\background.dm:34">repeat
+		<val file="code\#libs\forum_account\sidescroller\background.dm:34">0</val>
+	</var>
+	<proc file="code\#libs\forum_account\sidescroller\background.dm:36">New</proc>
+	<proc file="code\#libs\forum_account\sidescroller\background.dm:85">Del</proc>
+	<proc file="code\#libs\forum_account\sidescroller\background.dm:92">show</proc>
+	<proc file="code\#libs\forum_account\sidescroller\background.dm:97">hide</proc>
+</object>
+<mob file="code\#libs\forum_account\sidescroller\background.dm:102">mob
+	<var file="code\#libs\forum_account\sidescroller\background.dm:104">backgrounds</var>
+	<proc file="code\#libs\forum_account\sidescroller\background.dm:108">background</proc>
+	<proc file="code\#libs\forum_account\sidescroller\background.dm:120">set_background</proc>
+	<proc file="code\#libs\forum_account\sidescroller\camera.dm:63">set_camera</proc>
+	<proc file="code\#libs\forum_account\sidescroller\collision.dm:23">check_collision</proc>
+	<proc file="code\#libs\forum_account\sidescroller\collision.dm:30">block_collision</proc>
+	<proc file="code\#libs\forum_account\sidescroller\collision.dm:84">ramp_collision</proc>
+	<proc file="code\#libs\forum_account\sidescroller\debugging.dm:24">start_trace</proc>
+	<proc file="code\#libs\forum_account\sidescroller\debugging.dm:29">stop_trace</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:57">bump</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:79">set_state</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:91">can_jump</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:107">jump</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:114">drop</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:122">move</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:143">climb</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:166">gravity</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:177">on_ladder</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:195">action</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:273">check_loc</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:285">movement</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:323">slow_down</proc>
+	<proc file="code\#libs\forum_account\sidescroller\movement.dm:365">set_flags</proc>
+	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:194">follow_path</proc>
+	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:293">stop</proc>
+	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:303">move_towards</proc>
+	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:321">move_to</proc>
+	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:134">can_bump</proc>
+	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:162">pixel_move</proc>
+	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:324">set_pos</proc>
+	<proc file="code\#libs\forum_account\sidescroller\procs.dm:111">center</proc>
+	<proc file="code\#libs\forum_account\sidescroller\procs.dm:123">dense</proc>
+	<proc file="code\#libs\forum_account\sidescroller\procs.dm:141">at_edge</proc>
+	<proc file="code\#libs\forum_account\sidescroller\procs.dm:163">face</proc>
+	<proc file="code\#libs\forum_account\sidescroller\procs.dm:171">turn_around</proc>
+	<proc file="code\#libs\forum_account\sidescroller\procs.dm:175">knockback</proc>
+	<proc file="code\game\player.dm:42">normalizePos</proc>
+	<proc file="code\huds\dialog_box.dm:127">show_message</proc>
+	<proc file="code\huds\dialog_box.dm:128">next_message</proc>
+	<proc file="code\huds\dialog_box.dm:129">wait_for_messages</proc>
+	<proc file="code\huds\Menus.dm:203">menu_test</proc>
+	<proc file="code\misc\util.dm:15">lock_movement</proc>
+	<proc file="code\misc\util.dm:16">unlock_movement</proc>
+	<var file="code\#libs\forum_account\sidescroller\camera.dm:59">camera</var>
+	<var file="code\#libs\forum_account\sidescroller\collision.dm:19">move_x</var>
+	<var file="code\#libs\forum_account\sidescroller\collision.dm:20">move_y</var>
+	<var file="code\#libs\forum_account\sidescroller\debugging.dm:21">trace</var>
+	<proc file="code\#libs\forum_account\sidescroller\debugging.dm:33">Del</proc>
+	<proc file="code\#libs\forum_account\sidescroller\debugging.dm:38">Stat</proc>
+	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:40">controls</var>
+	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:42">jumped
+		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:42">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:43">dropped
+		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:43">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:45">holding_left
+		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:45">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:46">holding_right
+		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:46">0</val>
+	</var>
+	<proc file="code\#libs\forum_account\sidescroller\keyboard.dm:49">key_down</proc>
+	<proc file="code\#libs\forum_account\sidescroller\keyboard.dm:56">key_up</proc>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:26">icon_state
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:26">"mob"</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:29">on_left
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:29">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:30">on_right
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:30">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:31">on_ceiling
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:31">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:32">on_ground
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:32">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:33">on_ladder
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:33">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:35">base_state
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:35">""</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:38">accel
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:38">1</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:39">decel
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:39">1</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:40">gravity
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:40">1</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:42">move_speed
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:42">5</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:43">climb_speed
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:43">5</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:44">jump_speed
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:44">10</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:45">fall_speed
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:45">20</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:47">moved
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:47">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:49">last_x
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:49">-1</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:50">last_y
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:50">-1</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\movement.dm:51">last_z
+		<val file="code\#libs\forum_account\sidescroller\movement.dm:51">-1</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:179">path</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:180">destination</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:181">next_step</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:183">__last_jump_loc</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:184">__jump_delay
+		<val file="code\#libs\forum_account\sidescroller\pathing.dm:184">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:186">__stuck_counter
+		<val file="code\#libs\forum_account\sidescroller\pathing.dm:186">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:120">animate_movement
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:120">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:124">vel_x
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:124">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:125">vel_y
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:125">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:128">bottom</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:129">was_on_ground
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:129">0</val>
+	</var>
+	<proc file="code\game\player.dm:25">set_pos</proc>
+	<proc file="code\huds\dialog_box.dm:132">Login</proc>
+	<proc file="code\huds\Menus.dm:206">Login</proc>
+	<proc file="code\misc\hooks.dm:56">key_down</proc>
+	<proc file="code\misc\hooks.dm:60">key_up</proc>
+	<proc file="code\misc\hooks.dm:62">key_repeat</proc>
+	<proc file="code\misc\Loading.dm:79">Login</proc>
+	<var file="code\misc\util.dm:13">movement_locked
+		<val file="code\misc\util.dm:13">FALSE</val>
+	</var>
+	<proc file="code\misc\util.dm:17">set_pos</proc>
+</mob>
+<object file="code\#libs\forum_account\sidescroller\camera.dm:12">Camera
+	<var file="code\#libs\forum_account\sidescroller\camera.dm:15">FOLLOW
+		<val file="code\#libs\forum_account\sidescroller\camera.dm:15">1</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\camera.dm:16">SLIDE
+		<val file="code\#libs\forum_account\sidescroller\camera.dm:16">2</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\camera.dm:19">px
+		<val file="code\#libs\forum_account\sidescroller\camera.dm:19">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\camera.dm:20">py
+		<val file="code\#libs\forum_account\sidescroller\camera.dm:20">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\camera.dm:21">lag
+		<val file="code\#libs\forum_account\sidescroller\camera.dm:21">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\camera.dm:22">mode
+		<val file="code\#libs\forum_account\sidescroller\camera.dm:22">FOLLOW</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\camera.dm:24">minx
+		<val file="code\#libs\forum_account\sidescroller\camera.dm:24">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\camera.dm:25">maxx
+		<val file="code\#libs\forum_account\sidescroller\camera.dm:25">320000</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\camera.dm:26">miny
+		<val file="code\#libs\forum_account\sidescroller\camera.dm:26">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\camera.dm:27">maxy
+		<val file="code\#libs\forum_account\sidescroller\camera.dm:27">320000</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\camera.dm:37">_px
+		<val file="code\#libs\forum_account\sidescroller\camera.dm:37">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\camera.dm:38">_py
+		<val file="code\#libs\forum_account\sidescroller\camera.dm:38">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\camera.dm:43">vel_x
+		<val file="code\#libs\forum_account\sidescroller\camera.dm:43">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\camera.dm:44">vel_y
+		<val file="code\#libs\forum_account\sidescroller\camera.dm:44">0</val>
+	</var>
+	<proc file="code\#libs\forum_account\sidescroller\camera.dm:49">center</proc>
+</object>
+<var file="code\#libs\forum_account\sidescroller\debugging.dm:16">SIDESCROLLER_DEBUG
+	<val file="code\#libs\forum_account\sidescroller\debugging.dm:16">0</val>
+</var>
+<object file="code\#libs\forum_account\sidescroller\debugging.dm:78">MovementLog
+	<var file="code\#libs\forum_account\sidescroller\debugging.dm:80">messages</var>
+	<proc file="code\#libs\forum_account\sidescroller\debugging.dm:83">event</proc>
+	<proc file="code\#libs\forum_account\sidescroller\debugging.dm:87">dump</proc>
+</object>
+<var file="code\#libs\forum_account\sidescroller\keyboard.dm:15">K_RIGHT
+	<val file="code\#libs\forum_account\sidescroller\keyboard.dm:15">"east"</val>
+</var>
+<var file="code\#libs\forum_account\sidescroller\keyboard.dm:16">K_LEFT
+	<val file="code\#libs\forum_account\sidescroller\keyboard.dm:16">"west"</val>
+</var>
+<var file="code\#libs\forum_account\sidescroller\keyboard.dm:17">K_UP
+	<val file="code\#libs\forum_account\sidescroller\keyboard.dm:17">"north"</val>
+</var>
+<var file="code\#libs\forum_account\sidescroller\keyboard.dm:18">K_DOWN
+	<val file="code\#libs\forum_account\sidescroller\keyboard.dm:18">"south"</val>
+</var>
+<var file="code\#libs\forum_account\sidescroller\keyboard.dm:19">K_SPACE
+	<val file="code\#libs\forum_account\sidescroller\keyboard.dm:19">"space"</val>
+</var>
+<object file="code\#libs\forum_account\sidescroller\keyboard.dm:21">Controls
+	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:23">up
+		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:23">K_UP</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:24">down
+		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:24">K_DOWN</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:25">left
+		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:25">K_LEFT</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:26">right
+		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:26">K_RIGHT</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\keyboard.dm:27">jump
+		<val file="code\#libs\forum_account\sidescroller\keyboard.dm:27">K_SPACE</val>
+	</var>
+</object>
+<var file="code\#libs\forum_account\sidescroller\movement.dm:17">STANDING
+	<val file="code\#libs\forum_account\sidescroller\movement.dm:17">"standing"</val>
+</var>
+<var file="code\#libs\forum_account\sidescroller\movement.dm:18">MOVING
+	<val file="code\#libs\forum_account\sidescroller\movement.dm:18">"moving"</val>
+</var>
+<var file="code\#libs\forum_account\sidescroller\movement.dm:19">CLIMBING
+	<val file="code\#libs\forum_account\sidescroller\movement.dm:19">"climbing"</val>
+</var>
+<var file="code\#libs\forum_account\sidescroller\movement.dm:20">JUMPING
+	<val file="code\#libs\forum_account\sidescroller\movement.dm:20">"jumping"</val>
+</var>
+<var file="code\#libs\forum_account\sidescroller\movement.dm:22">RIGHT
+	<val file="code\#libs\forum_account\sidescroller\movement.dm:22">EAST</val>
+</var>
+<var file="code\#libs\forum_account\sidescroller\movement.dm:23">LEFT
+	<val file="code\#libs\forum_account\sidescroller\movement.dm:23">WEST</val>
+</var>
+<object file="code\#libs\forum_account\sidescroller\pathing.dm:17">Path
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:19">destination</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:26">current</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:20">mover</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:21">tiles</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:23">closed</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:24">fringe</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:25">parent</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:28">f_score</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:29">g_score</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:30">h_score</var>
+	<var file="code\#libs\forum_account\sidescroller\pathing.dm:32">limit
+		<val file="code\#libs\forum_account\sidescroller\pathing.dm:32">0</val>
+	</var>
+	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:34">New</proc>
+	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:43">add</proc>
+	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:67">distance</proc>
+	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:71">heuristic</proc>
+	<proc file="code\#libs\forum_account\sidescroller\pathing.dm:74">compute</proc>
+</object>
+<turf file="code\#libs\forum_account\sidescroller\pixel-movement.dm:11">turf
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:13">ladder
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:13">0</val>
+	</var>
+	<turf file="code\game\turfs.dm:2">Cave
+		<turf file="code\game\turfs.dm:3">Stone
+			<var file="code\game\turfs.dm:4">icon
+				<val file="code\game\turfs.dm:4">'icon/turfs/cave/stone.dmi'</val>
+			</var>
+		</turf>
+	</turf>
+	<var file="code\huds\dialog_box.dm:139">icon
+		<val file="Pandora's Box.dme:49">'icon/test_turf.dmi'</val>
+	</var>
+</turf>
+<object file="code\#libs\forum_account\sidescroller\pixel-movement.dm:15">atom
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:20">px
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:20">-1</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:21">py
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:21">-1</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:24">_px
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:24">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:25">_py
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:25">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:28">pwidth
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:28">-1</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:29">pheight
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:29">-1</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:33">pleft
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:33">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:34">pright
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:34">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:47">scaffold
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:47">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:52">flags
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:52">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:55">flags_right
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:55">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:56">flags_left
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:56">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:57">flags_bottom
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:57">0</val>
+	</var>
+	<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:58">flags_top
+		<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:58">0</val>
+	</var>
+	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:60">New</proc>
+	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:93">height</proc>
+	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:107">stepped_on</proc>
+	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:108">stepping_on</proc>
+	<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:109">stepped_off</proc>
+	<proc file="code\#libs\forum_account\sidescroller\procs.dm:22">inside4</proc>
+	<proc file="code\#libs\forum_account\sidescroller\procs.dm:37">inside</proc>
+	<proc file="code\#libs\forum_account\sidescroller\procs.dm:48">front</proc>
+	<proc file="code\#libs\forum_account\sidescroller\procs.dm:85">left</proc>
+	<proc file="code\#libs\forum_account\sidescroller\procs.dm:93">right</proc>
+	<proc file="code\#libs\forum_account\sidescroller\procs.dm:101">top</proc>
+	<proc file="code\#libs\forum_account\sidescroller\procs.dm:105">bottom</proc>
+	<object file="code\#libs\forum_account\sidescroller\pixel-movement.dm:112">movable
+		<var file="code\#libs\forum_account\sidescroller\pixel-movement.dm:113">step_size
+			<val file="code\#libs\forum_account\sidescroller\pixel-movement.dm:113">1</val>
+		</var>
+		<proc file="code\#libs\forum_account\sidescroller\pixel-movement.dm:114">New</proc>
+	</object>
+</object>
+<var file="code\#libs\forum_account\sidescroller\world.dm:12">icon_width
+	<val file="code\#libs\forum_account\sidescroller\world.dm:12">-1</val>
+</var>
+<var file="code\#libs\forum_account\sidescroller\world.dm:13">icon_height
+	<val file="code\#libs\forum_account\sidescroller\world.dm:13">-1</val>
+</var>
+<var file="code\#libs\forum_account\sidescroller\world.dm:14">tick_count
+	<val file="code\#libs\forum_account\sidescroller\world.dm:14">0</val>
+</var>
+<object file="code\#libs\forum_account\sidescroller\world.dm:16">world
+	<var file="code\#libs\forum_account\sidescroller\world.dm:18">fps
+		<val file="code\#libs\forum_account\sidescroller\world.dm:18">40</val>
+	</var>
+	<proc file="code\#libs\forum_account\sidescroller\world.dm:24">movement_loop</proc>
+	<proc file="code\#libs\forum_account\sidescroller\world.dm:33">movement</proc>
+	<proc file="code\#libs\forum_account\sidescroller\world.dm:38">set_icon_size</proc>
+	<proc file="code\misc\Loading.dm:121">load</proc>
+	<proc file="code\misc\Loading.dm:129">create_loads</proc>
+	<proc file="code\#libs\forum_account\sidescroller\world.dm:47">New</proc>
+	<var file="code\game\player.dm:1">mob
+		<val file="code\game\player.dm:1">/player</val>
+	</var>
+	<var file="code\huds\dialog_box.dm:113">view
+		<val file="code\huds\dialog_box.dm:113">"20x15"</val>
+	</var>
+	<var file="code\misc\world.dm:2">name
+		<val file="code\misc\world.dm:2">"Pandora's Box"</val>
+	</var>
+</object>
+<mob file="code\game\player.dm:5">player
+	<var file="code\game\player.dm:6">pixel_x
+		<val file="code\game\player.dm:6">-16</val>
+	</var>
+	<var file="code\game\player.dm:7">bound_width
+		<val file="code\game\player.dm:7">21</val>
+	</var>
+	<var file="code\game\player.dm:8">pwidth
+		<val file="code\game\player.dm:8">21</val>
+	</var>
+	<var file="code\game\player.dm:9">jump_speed
+		<val file="code\game\player.dm:9">12</val>
+	</var>
+	<var file="code\game\player.dm:11">move_speed
+		<val file="code\game\player.dm:11">8</val>
+	</var>
+	<var file="code\game\player.dm:14">parent_type
+		<val file="code\game\player.dm:14">/mob</val>
+	</var>
+	<var file="code\game\player.dm:15">icon
+		<val file="code\game\player.dm:15">'icon/player/hope.dmi'</val>
+	</var>
+	<proc file="code\game\player.dm:16">set_state</proc>
+</mob>
+<obj file="code\game\turfs.dm:7">TurfModifiers
+	<var file="code\game\turfs.dm:11">parent_type
+		<val file="code\game\turfs.dm:11">/obj</val>
+	</var>
+	<var file="code\game\turfs.dm:12">icon
+		<val file="code\game\turfs.dm:12">'icon/turfs/modifiers.dmi'</val>
+	</var>
+	<proc file="code\game\turfs.dm:14">New</proc>
+	<proc file="code\game\turfs.dm:19">modify</proc>
+	<proc file="code\game\turfs.dm:20">remove</proc>
+	<proc file="code\game\turfs.dm:21">do_mod</proc>
+	<obj file="code\game\turfs.dm:26">Slope_Right
+		<var file="code\game\turfs.dm:27">icon_state
+			<val file="code\game\turfs.dm:27">"slope_right"</val>
+		</var>
+		<proc file="code\game\turfs.dm:28">modify</proc>
+	</obj>
+	<obj file="code\game\turfs.dm:32">Slope_Left
+		<var file="code\game\turfs.dm:33">icon_state
+			<val file="code\game\turfs.dm:33">"slope_left"</val>
+		</var>
+		<proc file="code\game\turfs.dm:34">modify</proc>
+	</obj>
+	<obj file="code\game\turfs.dm:38">Density
+		<var file="code\game\turfs.dm:39">icon_state
+			<val file="code\game\turfs.dm:39">"dense"</val>
+		</var>
+		<proc file="code\game\turfs.dm:40">modify</proc>
+	</obj>
+</obj>
+<obj file="code\huds\dialog_box.dm:1">DialogComponent
+	<var file="code\huds\dialog_box.dm:2">parent_type
+		<val file="code\huds\dialog_box.dm:2">/Component</val>
+	</var>
+	<var file="code\huds\dialog_box.dm:3">icon
+		<val file="code\huds\dialog_box.dm:3">'icon/huds/dialog_box.dmi'</val>
+	</var>
+	<var file="code\huds\dialog_box.dm:4">dialogText</var>
+	<proc file="code\huds\dialog_box.dm:7">create_dialog_text</proc>
+	<proc file="code\huds\dialog_box.dm:16">set_message</proc>
+	<proc file="code\huds\dialog_box.dm:26">_try_next_message</proc>
+	<proc file="code\huds\dialog_box.dm:11">on_create</proc>
+	<proc file="code\huds\dialog_box.dm:19">reset</proc>
+	<proc file="code\huds\dialog_box.dm:22">Click</proc>
+</obj>
+<object file="code\huds\dialog_box.dm:51">Dialog
+	<var file="code\huds\dialog_box.dm:52">queue</var>
+	<var file="code\huds\dialog_box.dm:53">_dialog</var>
+	<var file="code\huds\dialog_box.dm:54">_more_text</var>
+	<var file="code\huds\dialog_box.dm:55">displaying_message
+		<val file="code\huds\dialog_box.dm:55">FALSE</val>
+	</var>
+	<proc file="code\huds\dialog_box.dm:57">is_open</proc>
+	<proc file="code\huds\dialog_box.dm:58">_create</proc>
+	<proc file="code\huds\dialog_box.dm:62">show</proc>
+	<proc file="code\huds\dialog_box.dm:65">hide</proc>
+	<proc file="code\huds\dialog_box.dm:67">display_message</proc>
+	<proc file="code\huds\dialog_box.dm:79">force_next</proc>
+	<proc file="code\huds\dialog_box.dm:82">next_message</proc>
+	<proc file="code\huds\dialog_box.dm:88">has_next</proc>
+	<proc file="code\huds\dialog_box.dm:91">remove_front</proc>
+	<proc file="code\huds\dialog_box.dm:94">add_to_front</proc>
+	<proc file="code\huds\dialog_box.dm:97">init_queue</proc>
+	<proc file="code\huds\dialog_box.dm:99">del_queue</proc>
+	<proc file="code\huds\dialog_box.dm:105">add_message</proc>
+	<proc file="code\huds\dialog_box.dm:109">wait</proc>
+</object>
+<object file="code\huds\InstallHuds.dm:1">Huds
+	<var file="code\huds\InstallHuds.dm:3">dialog</var>
+</object>
+<obj file="code\huds\Menus.dm:1">MenuComponent
+	<var file="code\huds\Menus.dm:2">parent_type
+		<val file="code\huds\Menus.dm:2">/Component</val>
+	</var>
+	<var file="code\huds\Menus.dm:4">menu_components</var>
+	<var file="code\huds\Menus.dm:5">selected_component
+		<val file="code\huds\Menus.dm:5">FALSE</val>
+	</var>
+	<var file="code\huds\Menus.dm:6">menu_pos_x
+		<val file="code\huds\Menus.dm:6">1</val>
+	</var>
+	<var file="code\huds\Menus.dm:7">menu_pos_y
+		<val file="code\huds\Menus.dm:7">1</val>
+	</var>
+	<proc file="code\huds\Menus.dm:13">init_menu</proc>
+	<proc file="code\huds\Menus.dm:16">build_menu</proc>
+	<proc file="code\huds\Menus.dm:17">add_item</proc>
+	<proc file="code\huds\Menus.dm:24">open</proc>
+	<proc file="code\huds\Menus.dm:27">close</proc>
+	<proc file="code\huds\Menus.dm:30">keydown</proc>
+	<proc file="code\huds\Menus.dm:60">keyrepeat</proc>
+	<proc file="code\huds\Menus.dm:61">keyup</proc>
+	<proc file="code\huds\Menus.dm:62">trySetPosition</proc>
+	<proc file="code\huds\Menus.dm:70">redraw_items</proc>
+	<proc file="code\huds\Menus.dm:76">set_selected_at</proc>
+	<proc file="code\huds\Menus.dm:87">get_selected</proc>
+	<proc file="code\huds\Menus.dm:98">init_pos</proc>
+	<proc file="code\huds\Menus.dm:92">on_create</proc>
+	<obj file="code\huds\Menus.dm:144">EventDispatcher
+		<proc file="code\huds\Menus.dm:145">keyup</proc>
+		<proc file="code\huds\Menus.dm:148">keydown</proc>
+		<proc file="code\huds\Menus.dm:151">keyrepeat</proc>
+	</obj>
+	<obj file="code\huds\Menus.dm:157">Selector
+		<var file="code\huds\Menus.dm:158">accept_button
+			<val file="code\huds\Menus.dm:158">"z"</val>
+		</var>
+		<proc file="code\huds\Menus.dm:159">keydown</proc>
+		<proc file="code\huds\Menus.dm:165">on_select</proc>
+		<obj file="code\huds\Menus.dm:169">MainMenu
+			<proc file="code\huds\Menus.dm:170">build_menu</proc>
+			<proc file="code\huds\Menus.dm:191">on_select</proc>
+		</obj>
+	</obj>
+</obj>
+<obj file="code\huds\Menus.dm:103">Selectable
+	<var file="code\huds\Menus.dm:104">parent_type
+		<val file="code\huds\Menus.dm:104">/Component</val>
+	</var>
+	<var file="code\huds\Menus.dm:106">selected
+		<val file="code\huds\Menus.dm:106">FALSE</val>
+	</var>
+	<var file="code\huds\Menus.dm:107">id
+		<val file="code\huds\Menus.dm:107">"null_id"</val>
+	</var>
+	<proc file="code\huds\Menus.dm:109">toggle_select</proc>
+	<proc file="code\huds\Menus.dm:111">set_selected</proc>
+	<proc file="code\huds\Menus.dm:114">get_selected</proc>
+	<proc file="code\huds\Menus.dm:116">get_id</proc>
+	<proc file="code\huds\Menus.dm:117">set_id</proc>
+	<obj file="code\huds\Menus.dm:119">SelectableText
+		<var file="code\huds\Menus.dm:121">selected_color
+			<val file="code\huds\Menus.dm:121">"#FFFF00"</val>
+		</var>
+		<var file="code\huds\Menus.dm:122">unselected_color
+			<val file="code\huds\Menus.dm:122">"#FFFFFF"</val>
+		</var>
+		<var file="code\huds\Menus.dm:123">text_size
+			<val file="code\huds\Menus.dm:123">4</val>
+		</var>
+		<var file="code\huds\Menus.dm:124">_text</var>
+		<proc file="code\huds\Menus.dm:126">set_text</proc>
+		<proc file="code\huds\Menus.dm:129">get_text</proc>
+		<proc file="code\huds\Menus.dm:131">draw</proc>
+		<proc file="code\huds\Menus.dm:135">size_changed</proc>
+	</obj>
+</obj>
+<object file="code\misc\Loading.dm:66">LoadingProxy
+	<var file="code\misc\Loading.dm:67">held_clients</var>
+	<proc file="code\misc\Loading.dm:69">open</proc>
+	<proc file="code\misc\Loading.dm:70">close</proc>
+	<proc file="code\misc\Loading.dm:71">update</proc>
+	<proc file="code\misc\Loading.dm:72">set_load</proc>
+	<proc file="code\misc\Loading.dm:73">add_load</proc>
+	<proc file="code\misc\Loading.dm:74">remove_load</proc>
+	<proc file="code\misc\Loading.dm:75">add_client</proc>
+	<proc file="code\misc\Loading.dm:76">clear_loads</proc>
+</object>
+<var file="code\misc\Loading.dm:101">defaultLoad</var>
+<var file="code\misc\Loading.dm:103">first_client
+	<val file="code\misc\Loading.dm:103">TRUE</val>
+</var>
+<var file="code\misc\Loading.dm:115">health_bar_icon</var>
+<var file="code\misc\Loading.dm:116">energy_bar_icon</var>
+<var file="code\misc\Loading.dm:117">bar_background</var>

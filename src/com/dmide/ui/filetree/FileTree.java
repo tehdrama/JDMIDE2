@@ -1,12 +1,15 @@
 package com.dmide.ui.filetree;
 
 import it.cnr.imaa.essi.lablib.gui.checkboxtree.CheckboxTree;
+import it.cnr.imaa.essi.lablib.gui.checkboxtree.TreeCheckingEvent;
+import it.cnr.imaa.essi.lablib.gui.checkboxtree.TreeCheckingListener;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,6 +21,7 @@ import javax.swing.tree.TreePath;
 
 import com.dmide.DMIDE;
 import com.dmide.environment.DMEnvironment;
+import com.dmide.environment.DMEnvironmentInclude;
 import com.dmide.util.IDEFile;
 import com.dmide.util.events.IDEEvent;
 import com.dmide.util.events.IDEEventHandler;
@@ -28,11 +32,14 @@ import com.dmide.util.misc.IDEProcess;
 public class FileTree extends CheckboxTree implements IDEEventWatcher {
 
 	Map<Path, IDEFile> ideFiles = new HashMap<Path, IDEFile>();
+	ArrayList<TreePath> checkedFiles;
 	IDEFile root;
 	DMEnvironment DME;
 
 	Icon dirOpenIcon;
 	Icon dirClosedIcon;
+
+	FileTreeOptionPane optionPane;
 
 	public Icon getDirOpenedIcon() {
 		if(this.dirOpenIcon == null) {
@@ -53,6 +60,7 @@ public class FileTree extends CheckboxTree implements IDEEventWatcher {
 
 	public ArrayList<Path> getDirectoryPaths(File f, int pathcutoff) {
 		File[] files = f.listFiles();
+		Arrays.sort(files, DMEnvironment.ideFileComparator);
 		if(files == null || files.length < 1) {return null;}
 		ArrayList<Path> paths = new ArrayList<>();
 		for(File file : files) {
@@ -89,7 +97,18 @@ public class FileTree extends CheckboxTree implements IDEEventWatcher {
 			this.getPathNode(p.subpath(0, p.getNameCount() - 1)).add(ifile);
 		}
 		this.ideFiles.put(p, ifile);
+		this.tryCheckFile(ifile);
 		return ifile;
+	}
+
+	/**
+	 * Attempts to check the file if it is
+	 * included in the DME.
+	 */
+	public void tryCheckFile(IDEFile f) {
+		if(this.DME.findInclude(f.getFileObject())) {
+			this.checkedFiles.add(new TreePath(f.getPath()));
+		}
 	}
 
 	public IDEFile createTree(File dme) {
@@ -113,6 +132,7 @@ public class FileTree extends CheckboxTree implements IDEEventWatcher {
 	public void setEnvironment(DMEnvironment dmeFile) {
 		if(dmeFile == null) return; // This means that the argument for the environment.open
 									// event was not a file.
+		this.checkedFiles = new ArrayList<>();
 		this.ideFiles.clear();
 		//this.walkDirectoryTree(dmeFile.getParentFile());
 		//this.getDirectoryPaths(dmeFile.getParentFile());
@@ -120,8 +140,12 @@ public class FileTree extends CheckboxTree implements IDEEventWatcher {
 		this.createTree(dmeFile.getFile());
 		DefaultTreeModel newModel = new DefaultTreeModel(this.root);
 		this.setModel(newModel);
+		TreePath[] tps = this.checkedFiles.toArray(new TreePath[0]);
+		this.getCheckingModel().addCheckingPaths(tps);
 		this.revalidate();
 		System.out.println("File tree opening environment: " + dmeFile.getFile().getName());
+		this.checkedFiles.clear();
+		this.checkedFiles = null;
 	}
 
 	/**
@@ -131,6 +155,7 @@ public class FileTree extends CheckboxTree implements IDEEventWatcher {
 		this.setTreeCellProperties();
 		this.addEventHandlers();
 		IDEEventHandler.addWatcher(this);
+		this.optionPane = new FileTreeOptionPane(this);
 	}
 
 	/**
@@ -161,6 +186,32 @@ public class FileTree extends CheckboxTree implements IDEEventWatcher {
 	}
 
 	public void addEventHandlers() {
+		this.addMouseListener();
+		this.addCheckBoxListener();
+	}
+
+	private void addCheckBoxListener() {
+		final FileTree ft = this;
+		this.addTreeCheckingListener(new TreeCheckingListener() {
+			@Override
+			public void valueChanged(TreeCheckingEvent e) {
+				Object o = e.getPath().getLastPathComponent();
+				if(o instanceof IDEFile) {
+					IDEFile ideFile = (IDEFile) o;
+					TreePath tp = new TreePath(ideFile.getPath());
+					if(ft.getCheckingModel().isPathChecked(tp)) {
+						ft.DME.addInclude(new DMEnvironmentInclude(ideFile.getFileObject(),
+								DMEnvironmentInclude.type_FILE));
+					} else {
+						ft.DME.removeInclude(new DMEnvironmentInclude(ideFile.getFileObject(),
+								DMEnvironmentInclude.type_FILE));
+					}
+				}
+			}
+		});
+	}
+	private void addMouseListener() {
+
 		final FileTree ft = this;
 		this.addMouseListener(new MouseListener(){
 
@@ -191,6 +242,13 @@ public class FileTree extends CheckboxTree implements IDEEventWatcher {
 
 			}
 		});
+	}
+
+	/**
+	 * Reloads the file tree.
+	 */
+	public void reload() {
+		if(this.DME != null) this.setEnvironment(this.DME);
 	}
 
 	public void clicked(int x, int y) {
